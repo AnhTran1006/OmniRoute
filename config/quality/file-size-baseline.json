@@ -1,4 +1,5 @@
 {
+  "_rebaseline_2026_10_06_fixes_board": "Fixes board own growth, measured with split(\"\\n\").length on the post-squash tip. src/app/api/providers/[id]/models/route.ts 2432->2446 (#15024 live cursor-api catalog discovery wired at the existing models route). tests/unit/combo-routing-engine.test.ts 3625->3663 (#15535 hedge skip for large bodies; the new cases stay in the existing combo engine suite). Ceilings are the measured sizes, not slack.",
   "_rebaseline_2026_10_06_wave6_board": "Wave 6 board own growth, measured with split(\"\\n\").length on the post-squash tip. open-sse/executors/opencode.ts 1518->1519 (#15453 one irreducible keepAgentUserAgent flag at the existing forwardOpencodeClientHeaders call). tests/unit/combo/quota-weighted-strategy.test.ts new testFrozen 1217 (#15480 monthly-quota weighted-draw suite, 17 lines over testCap 1200; splitting the cohesive suite would not shrink the behavior). Covered by tests/unit/opencode-go-client-user-agent-15311.test.ts and the quota-weighted suite itself.",
   "_rebaseline_2026_10_06_wave5_board": "Wave 5 board own growth, measured with split(\"\\n\").length on the post-merge tip. src/lib/db/providers.ts 1237->1240 (#15485 explicit provider priority on edit); src/lib/usage/usageHistory.ts crossed the 1200 new-file cap to 1227 (#15640 pending-map byte ceiling; newly frozen); src/sse/services/auth.ts 3642->3666 (#15628 stream-stall must not cool the account); open-sse/translator/response/openai-responses.ts 1536->1547 and open-sse/utils/stream.ts 3313->3325 (#15310 premature upstream EOF); open-sse/utils/proxyFetch.ts 1405->1406 (#15318 upstream HTTP/2 opt-out). Ceilings are the measured sizes, not slack.",
   "_rebaseline_2026_10_06_wave2_hou_fastpath": "Wave 2 (HouMinXi fast-path, 26 squash-merges onto release/v3.8.52) own growth, measured with split(\"\\n\").length on the post-merge tip. src/app/(dashboard)/dashboard/settings/components/RoutingTab.tsx 1618->1678; src/sse/services/auth.ts 3640->3642; open-sse/handlers/responseSanitizer.ts 1204->1210; open-sse/handlers/search.ts 1789->1805; open-sse/utils/proxyFetch.ts 1404->1405; open-sse/utils/stream.ts 3298->3313. gateways.ts stays at the #15679 ceiling when it no longer exceeds it. Covered by the wave-2 focused tests (OIDC, cache scope, allowlist, tokens, TLS proxy, stream replay, Claude empty end_turn, collaboration plaintext, quota, combo timeout, MCP analytics, content-length, cloudflared, no-auth banner, thinking floor, provider crud, serve port, validation, catalog/version pins).",
@@ -299,7 +300,7 @@
     "tests/unit/cc-compatible-provider.test.ts": 1225,
     "tests/unit/chatcore-translation-paths.test.ts": 3558,
     "tests/unit/chatgpt-web.test.ts": 4911,
-    "tests/unit/combo-routing-engine.test.ts": 3625,
+    "tests/unit/combo-routing-engine.test.ts": 3663,
     "tests/unit/db-migration-runner.test.ts": 1509,
     "tests/unit/executor-codex.test.ts": 1620,
     "tests/unit/executor-default-base.test.ts": 1632,
@@ -562,7 +563,7 @@
     "src/app/(dashboard)/dashboard/settings/components/RoutingTab.tsx": 1678,
     "src/app/(dashboard)/dashboard/settings/components/SystemStorageTab.tsx": 1611,
     "src/app/(dashboard)/dashboard/usage/components/EvalsTab.tsx": 2152,
-    "src/app/api/providers/[id]/models/route.ts": 2432,
+    "src/app/api/providers/[id]/models/route.ts": 2446,
     "src/app/api/providers/[id]/test/route.ts": 1252,
     "src/app/api/v1/models/catalog.ts": 2127,
     "src/app/docs/lib/openapi.generated.ts": 1347,
