@@ -1,4 +1,5 @@
 {
+  "_rebaseline_2026_10_06_wave6_board": "Wave 6 board own growth, measured with split(\"\\n\").length on the post-squash tip. open-sse/executors/opencode.ts 1518->1519 (#15453 one irreducible keepAgentUserAgent flag at the existing forwardOpencodeClientHeaders call). tests/unit/combo/quota-weighted-strategy.test.ts new testFrozen 1217 (#15480 monthly-quota weighted-draw suite, 17 lines over testCap 1200; splitting the cohesive suite would not shrink the behavior). Covered by tests/unit/opencode-go-client-user-agent-15311.test.ts and the quota-weighted suite itself.",
   "_rebaseline_2026_10_06_wave5_board": "Wave 5 board own growth, measured with split(\"\\n\").length on the post-merge tip. src/lib/db/providers.ts 1237->1240 (#15485 explicit provider priority on edit); src/lib/usage/usageHistory.ts crossed the 1200 new-file cap to 1227 (#15640 pending-map byte ceiling; newly frozen); src/sse/services/auth.ts 3642->3666 (#15628 stream-stall must not cool the account); open-sse/translator/response/openai-responses.ts 1536->1547 and open-sse/utils/stream.ts 3313->3325 (#15310 premature upstream EOF); open-sse/utils/proxyFetch.ts 1405->1406 (#15318 upstream HTTP/2 opt-out). Ceilings are the measured sizes, not slack.",
   "_rebaseline_2026_10_06_wave2_hou_fastpath": "Wave 2 (HouMinXi fast-path, 26 squash-merges onto release/v3.8.52) own growth, measured with split(\"\\n\").length on the post-merge tip. src/app/(dashboard)/dashboard/settings/components/RoutingTab.tsx 1618->1678; src/sse/services/auth.ts 3640->3642; open-sse/handlers/responseSanitizer.ts 1204->1210; open-sse/handlers/search.ts 1789->1805; open-sse/utils/proxyFetch.ts 1404->1405; open-sse/utils/stream.ts 3298->3313. gateways.ts stays at the #15679 ceiling when it no longer exceeds it. Covered by the wave-2 focused tests (OIDC, cache scope, allowlist, tokens, TLS proxy, stream replay, Claude empty end_turn, collaboration plaintext, quota, combo timeout, MCP analytics, content-length, cloudflared, no-auth banner, thinking floor, provider crud, serve port, validation, catalog/version pins).",
   "_rebaseline_2026_10_06_15520_freetheai_domain": "PR #15520 (jonlwheat2-gif) own growth: src/shared/constants/providers/apikey/gateways.ts 1544->1547 (freetheai base URL and signup copy moved off the dead .xyz host onto freetheai.org; declarative catalog strings only, same god-file no-split rationale as prior gateways.ts rebaselines). Measured with split(\"\\n\").length on origin/release/v3.8.52 after the wave-1 squash. Covered by tests/unit/provider-registry-freetheai.test.ts.",
@@ -291,6 +292,7 @@
     "_rebaseline_basered_codebuddy_cn": "Base-red fix (#4664 CodeBuddy CN): oauth-providers-config.test.ts 867->870 (+3) to align the EXPECTED provider list/config with the codebuddy-cn provider that #4664 added to the registry without updating this test (it asserts 'exactly once').",
     "_rebaseline_2026_09_04_12737_codex_ws_premature_close_tests": "PR #12737 own test growth: executor-codex.test.ts 1465->1620 (+155, entirely this PR's diff — regression coverage for the premature WebSocket close fix: emits terminal response.failed with code upstream_websocket_closed when the socket closes before any terminal event, and proves no second terminal event fires after a normal post-response.completed close).",
     "_rebaseline_pr4613_compatible_provider_groups": "Reconcile #4613 already-merged growth: providers-page-utils.test.ts 1004->1052 (+48, buildCompatibleProviderGroups partition unit test). Fast-gate PR->release does not run check:file-size, so this surfaced post-merge.",
+    "tests/unit/combo/quota-weighted-strategy.test.ts": 1217,
     "tests/integration/chat-pipeline.test.ts": 1756,
     "tests/unit/account-fallback-service.test.ts": 2086,
     "tests/unit/batch_api.test.ts": 1353,
@@ -583,7 +585,7 @@
     "open-sse/executors/deepseek-web.ts": 1228,
     "open-sse/executors/default.ts": 1209,
     "open-sse/services/rateLimitManager.ts": 1329,
-    "open-sse/executors/opencode.ts": 1518,
+    "open-sse/executors/opencode.ts": 1519,
     "open-sse/handlers/responseSanitizer.ts": 1210,
     "src/lib/usage/usageHistory.ts": 1227
   },
