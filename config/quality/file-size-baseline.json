@@ -1,4 +1,5 @@
 {
+  "_rebaseline_2026_10_06_wave8_board": "Wave 8 own growth, measured with split(\"\\n\").length on the post-squash tip. src/app/(dashboard)/dashboard/settings/components/ResilienceTab.tsx 1271->1285 (#15469 token-refresh breaker scope, threshold, and cooldown controls on the existing resilience tab). src/lib/proxySubscription/subscriptionService.ts crossed the 1200 new-file cap to 1212 and is newly frozen (#15564 skipped-count warning, with the core-config stack that landed in the same squash). Ceilings are the measured sizes, not slack.",
   "_rebaseline_2026_10_06_fixes_board": "Fixes board own growth, measured with split(\"\\n\").length on the post-squash tip. src/app/api/providers/[id]/models/route.ts 2432->2446 (#15024 live cursor-api catalog discovery wired at the existing models route). tests/unit/combo-routing-engine.test.ts 3625->3663 (#15535 hedge skip for large bodies; the new cases stay in the existing combo engine suite). Ceilings are the measured sizes, not slack.",
   "_rebaseline_2026_10_06_wave6_board": "Wave 6 board own growth, measured with split(\"\\n\").length on the post-squash tip. open-sse/executors/opencode.ts 1518->1519 (#15453 one irreducible keepAgentUserAgent flag at the existing forwardOpencodeClientHeaders call). tests/unit/combo/quota-weighted-strategy.test.ts new testFrozen 1217 (#15480 monthly-quota weighted-draw suite, 17 lines over testCap 1200; splitting the cohesive suite would not shrink the behavior). Covered by tests/unit/opencode-go-client-user-agent-15311.test.ts and the quota-weighted suite itself.",
   "_rebaseline_2026_10_06_wave5_board": "Wave 5 board own growth, measured with split(\"\\n\").length on the post-merge tip. src/lib/db/providers.ts 1237->1240 (#15485 explicit provider priority on edit); src/lib/usage/usageHistory.ts crossed the 1200 new-file cap to 1227 (#15640 pending-map byte ceiling; newly frozen); src/sse/services/auth.ts 3642->3666 (#15628 stream-stall must not cool the account); open-sse/translator/response/openai-responses.ts 1536->1547 and open-sse/utils/stream.ts 3313->3325 (#15310 premature upstream EOF); open-sse/utils/proxyFetch.ts 1405->1406 (#15318 upstream HTTP/2 opt-out). Ceilings are the measured sizes, not slack.",
@@ -559,7 +560,7 @@
     "src/app/(dashboard)/dashboard/providers/page.tsx": 2025,
     "src/app/(dashboard)/dashboard/runtime/RuntimePageClient.tsx": 1222,
     "src/app/(dashboard)/dashboard/settings/components/ProxyRegistryManager.tsx": 1483,
-    "src/app/(dashboard)/dashboard/settings/components/ResilienceTab.tsx": 1271,
+    "src/app/(dashboard)/dashboard/settings/components/ResilienceTab.tsx": 1285,
     "src/app/(dashboard)/dashboard/settings/components/RoutingTab.tsx": 1678,
     "src/app/(dashboard)/dashboard/settings/components/SystemStorageTab.tsx": 1611,
     "src/app/(dashboard)/dashboard/usage/components/EvalsTab.tsx": 2152,
@@ -570,6 +571,7 @@
     "src/lib/db/apiKeys.ts": 1719,
     "src/lib/db/core.ts": 1802,
     "src/lib/db/migrationRunner.ts": 1206,
+    "src/lib/proxySubscription/subscriptionService.ts": 1212,
     "src/lib/tailscaleTunnel.ts": 1208,
     "src/lib/tokenHealthCheck.ts": 1254,
     "src/shared/components/RequestLoggerV2.tsx": 1762,
