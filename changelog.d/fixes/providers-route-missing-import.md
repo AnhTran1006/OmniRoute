@@ -1,1 +1,1 @@
-Fix `POST /api/providers` throwing a ReferenceError (HTTP 500) when `allowNoCredential` is true: the route called `providerAllowsOptionalApiKey` without importing it. ([#15730](https://github.com/diegosouzapw/OmniRoute/pull/15730))
+Fix `POST /api/providers` throwing a ReferenceError (HTTP 500) when `allowNoCredential` is true: the route called `providerAllowsOptionalApiKey` without importing it. ([#15721](https://github.com/diegosouzapw/OmniRoute/pull/15721))
