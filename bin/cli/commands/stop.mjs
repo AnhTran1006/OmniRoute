@@ -72,28 +72,26 @@ export async function runStopCommand(opts = {}, deps = {}) {
   const port = resolveStopPort(opts);
   // A stale PID file (pid set but process gone) must still fall back to the port, otherwise a
   // server whose PID file went stale survives `stop` (#15177).
-  {
-    console.log(t("stop.portFallback"));
-    // #9455: a stale supervisor PID file would let the port-fallback stop also
-    // leave the supervisor running and respawning. Stop it first.
-    if (supervisorPid && isPidRunning(supervisorPid)) {
-      try {
-        process.kill(supervisorPid, "SIGTERM");
-      } catch {}
-    }
-    const portFreed = await killByPort(port, deps);
-    killAllSubprocesses();
-    cleanupPidFile("server");
-    cleanupPidFile("supervisor");
-    // #9455: only report success when the port is actually free — previously stop
-    // printed "Server stopped." even when killByPort was a no-op (win32).
-    if (portFreed) {
-      console.log(t("stop.stopped"));
-    } else {
-      console.log(t("stop.notRunning"));
-    }
-    return 0;
+  console.log(t("stop.portFallback"));
+  // #9455: a stale supervisor PID file would let the port-fallback stop also
+  // leave the supervisor running and respawning. Stop it first.
+  if (supervisorPid && isPidRunning(supervisorPid)) {
+    try {
+      process.kill(supervisorPid, "SIGTERM");
+    } catch {}
   }
+  const portFreed = await killByPort(port, deps);
+  killAllSubprocesses();
+  cleanupPidFile("server");
+  cleanupPidFile("supervisor");
+  // #9455: only report success when the port is actually free — previously stop
+  // printed "Server stopped." even when killByPort was a no-op (win32).
+  if (portFreed) {
+    console.log(t("stop.stopped"));
+  } else {
+    console.log(t("stop.notRunning"));
+  }
+  return 0;
 }
 
 function resolveStopPort(opts) {
