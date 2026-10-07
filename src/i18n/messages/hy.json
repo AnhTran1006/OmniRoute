@@ -5375,7 +5375,7 @@
     "resetToUpstreamDefaults": "Վերականգնել վերին աղբյուրի լռելյայն կարգավորումները",
     "resetToUpstreamDefaultsSuccess": "Վերին աղբյուրի մոդելի լռելյայն կարգավորումները վերականգնվել են",
     "resetToUpstreamDefaultsFailed": "Չհաջողվեց վերականգնել վերին աղբյուրի մոդելի լռելյայն կարգավորումները",
-    "autoSyncTooltip": "Ավտոմատ թարմացնել մոդելների ցանկը յուրաքանչյուր 24 ժամը մեկ (կարգավորվում է MODEL_SYNC_INTERVAL_HOURS-ի միջոցով)",
+    "autoSyncTooltip": "__MISSING__:Automatically refresh model list every 6h by default (configurable via MODEL_SYNC_INTERVAL_HOURS)",
     "autoSyncEnabled": "Ավտոմատ համաժամացումը միացված է. մոդելները պարբերաբար կթարմացվեն",
     "autoSyncDisabled": "Ավտոմատ համաժամացումն անջատված է",
     "autoSyncToggleFailed": "Չհաջողվեց փոխել ավտոմատ համաժամացման կարգավորումը",

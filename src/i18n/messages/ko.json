@@ -5375,7 +5375,7 @@
     "resetToUpstreamDefaults": "업스트림 기본값 복원",
     "resetToUpstreamDefaultsSuccess": "복원된 업스트림 모델 기본값",
     "resetToUpstreamDefaultsFailed": "업스트림 모델 기본값을 복원하지 못했습니다.",
-    "autoSyncTooltip": "24시간마다 모델 목록 자동 업데이트 (MODEL_SYNC_INTERVAL_HOURS로 구성 가능)",
+    "autoSyncTooltip": "__MISSING__:Automatically refresh model list every 6h by default (configurable via MODEL_SYNC_INTERVAL_HOURS)",
     "autoSyncEnabled": "자동 동기화 활성화 — 모델이 주기적으로 업데이트됩니다",
     "autoSyncDisabled": "자동 동기화 비활성화",
     "autoSyncToggleFailed": "자동 동기화 전환 실패",

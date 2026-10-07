@@ -5375,7 +5375,7 @@
     "resetToUpstreamDefaults": "Restaurar valores predeterminados del upstream",
     "resetToUpstreamDefaultsSuccess": "Restaurados los valores predeterminados del modelo upstream",
     "resetToUpstreamDefaultsFailed": "No se pudo restaurar los valores predeterminados del modelo upstream",
-    "autoSyncTooltip": "Actualiza automáticamente la lista de modelos cada 24 horas (configurable vía MODEL_SYNC_INTERVAL_HOURS)",
+    "autoSyncTooltip": "__MISSING__:Automatically refresh model list every 6h by default (configurable via MODEL_SYNC_INTERVAL_HOURS)",
     "autoSyncEnabled": "Sincronización automática activada — los modelos se actualizarán periódicamente",
     "autoSyncDisabled": "Sincronización automática desactivada",
     "autoSyncToggleFailed": "Error al alternar sincronización automática",

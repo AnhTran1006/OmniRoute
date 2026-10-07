@@ -5375,7 +5375,7 @@
     "resetToUpstreamDefaults": "ଅପ୍ଷ୍ଟ୍ରିମ୍ ଡିଫଲ୍ଟଗୁଡ଼ିକୁ ପୁନଃସ୍ଥାପନ କରନ୍ତୁ",
     "resetToUpstreamDefaultsSuccess": "ଅପ୍ଷ୍ଟ୍ରିମ୍ ମଡେଲ୍ର ଡିଫଲ୍ଟଗୁଡ଼ିକ ପୁନଃସ୍ଥାପିତ ହେଲା",
     "resetToUpstreamDefaultsFailed": "ଅପ୍ଷ୍ଟ୍ରିମ୍ ମଡେଲ୍ର ଡିଫଲ୍ଟଗୁଡ଼ିକୁ ପୁନଃସ୍ଥାପନ କରିବାରେ ବିଫଳ",
-    "autoSyncTooltip": "ପ୍ରତି 24 ଘଣ୍ଟାରେ ମଡେଲ୍ ତାଲିକାକୁ ସ୍ୱୟଂଚାଳିତ ଭାବେ ସତେଜ କରନ୍ତୁ (MODEL_SYNC_INTERVAL_HOURS ମାଧ୍ୟମରେ ବିନ୍ୟାସଯୋଗ୍ୟ)",
+    "autoSyncTooltip": "__MISSING__:Automatically refresh model list every 6h by default (configurable via MODEL_SYNC_INTERVAL_HOURS)",
     "autoSyncEnabled": "ସ୍ୱୟଂ-ସିଙ୍କ୍ ସକ୍ଷମ ହୋଇଛି — ମଡେଲ୍ଗୁଡ଼ିକ ସମୟାନୁସାରେ ସତେଜ ହେବ",
     "autoSyncDisabled": "ସ୍ୱୟଂ-ସିଙ୍କ୍ ଅକ୍ଷମ ହୋଇଛି",
     "autoSyncToggleFailed": "ସ୍ୱୟଂ-ସିଙ୍କ୍ ଟୋଗଲ୍ କରାଯାଇପାରିଲା ନାହିଁ",

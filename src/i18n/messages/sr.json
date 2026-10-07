@@ -5375,7 +5375,7 @@
     "resetToUpstreamDefaults": "Врати подразумевана подешавања изворног модела",
     "resetToUpstreamDefaultsSuccess": "Подразумевана подешавања изворног модела су враћена",
     "resetToUpstreamDefaultsFailed": "Враћање подразумеваних подешавања изворног модела није успело",
-    "autoSyncTooltip": "Аутоматски освежи листу модела свака 24 сата (подесиво преко MODEL_SYNC_INTERVAL_HOURS)",
+    "autoSyncTooltip": "__MISSING__:Automatically refresh model list every 6h by default (configurable via MODEL_SYNC_INTERVAL_HOURS)",
     "autoSyncEnabled": "Ауто-синхронизација је омогућена — модели ће се периодично освежавати",
     "autoSyncDisabled": "Ауто-синхронизација је онемогућена",
     "autoSyncToggleFailed": "Промена ауто-синхронизације није успела",

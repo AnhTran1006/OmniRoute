@@ -5375,7 +5375,7 @@
     "resetToUpstreamDefaults": "Atkurti pirminio šaltinio numatytąsias nuostatas",
     "resetToUpstreamDefaultsSuccess": "Atkurtos numatytosios pirminio šaltinio modelio nuostatos",
     "resetToUpstreamDefaultsFailed": "Nepavyko atkurti numatytųjų pirminio šaltinio modelio nuostatų",
-    "autoSyncTooltip": "Automatiškai atnaujinti modelių sąrašą kas 24 val. (galima konfigūruoti naudojant MODEL_SYNC_INTERVAL_HOURS)",
+    "autoSyncTooltip": "__MISSING__:Automatically refresh model list every 6h by default (configurable via MODEL_SYNC_INTERVAL_HOURS)",
     "autoSyncEnabled": "Automatinis sinchronizavimas įjungtas — modeliai bus periodiškai atnaujinami",
     "autoSyncDisabled": "Automatinis sinchronizavimas išjungtas",
     "autoSyncToggleFailed": "Nepavyko perjungti automatinio sinchronizavimo",

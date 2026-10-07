@@ -5375,7 +5375,7 @@
     "resetToUpstreamDefaults": "முதன்மை இயல்புகளை மீட்டமைக்கவும்",
     "resetToUpstreamDefaultsSuccess": "மீட்டமைக்கப்பட்ட மேல்நிலை மாதிரி இயல்புகள்",
     "resetToUpstreamDefaultsFailed": "மேல்நிலை மாதிரி இயல்புகளை மீட்டெடுக்க முடியவில்லை",
-    "autoSyncTooltip": "ஒவ்வொரு 24 மணிநேரத்திலும் மாடல் பட்டியலைத் தானாகப் புதுப்பிக்கும் (MODEL_SYNC_INTERVAL_HOURS மூலம் உள்ளமைக்கலாம்)",
+    "autoSyncTooltip": "__MISSING__:Automatically refresh model list every 6h by default (configurable via MODEL_SYNC_INTERVAL_HOURS)",
     "autoSyncEnabled": "தானியங்கு ஒத்திசைவு இயக்கப்பட்டுள்ளது — மாடல்கள் அவ்வப்போது புதுப்பிக்கப்படும்",
     "autoSyncDisabled": "தானியங்கு ஒத்திசைவு முடக்கப்பட்டுள்ளது",
     "autoSyncToggleFailed": "தானியங்கு ஒத்திசைவை மாற்ற முடியவில்லை",

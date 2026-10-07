@@ -5375,7 +5375,7 @@
     "resetToUpstreamDefaults": "アップストリームのデフォルトを復元する",
     "resetToUpstreamDefaultsSuccess": "アップストリームモデルのデフォルトを復元しました",
     "resetToUpstreamDefaultsFailed": "アップストリームモデルのデフォルトを復元できませんでした",
-    "autoSyncTooltip": "24時間ごとにモデルリストを自動更新（MODEL_SYNC_INTERVAL_HOURSで設定可能）",
+    "autoSyncTooltip": "__MISSING__:Automatically refresh model list every 6h by default (configurable via MODEL_SYNC_INTERVAL_HOURS)",
     "autoSyncEnabled": "自動同期有効 — モデルは定期的に更新されます",
     "autoSyncDisabled": "自動同期無効",
     "autoSyncToggleFailed": "自動同期の切り替えに失敗",

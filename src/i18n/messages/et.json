@@ -5375,7 +5375,7 @@
     "resetToUpstreamDefaults": "Taasta ülesvoolu vaikeseaded",
     "resetToUpstreamDefaultsSuccess": "Ülesvoolu mudeli vaikeseaded taastati",
     "resetToUpstreamDefaultsFailed": "Ülesvoolu mudeli vaikeseadete taastamine nurjus",
-    "autoSyncTooltip": "Värskenda mudelite loendit automaatselt iga 24 tunni järel (seadistatav muutuja MODEL_SYNC_INTERVAL_HOURS abil)",
+    "autoSyncTooltip": "__MISSING__:Automatically refresh model list every 6h by default (configurable via MODEL_SYNC_INTERVAL_HOURS)",
     "autoSyncEnabled": "Automaatne sünkroonimine on lubatud — mudeleid värskendatakse perioodiliselt",
     "autoSyncDisabled": "Automaatne sünkroonimine on keelatud",
     "autoSyncToggleFailed": "Automaatse sünkroonimise lülitamine nurjus",

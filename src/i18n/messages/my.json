@@ -5375,7 +5375,7 @@
     "resetToUpstreamDefaults": "မူလရင်းမြစ်၏ ပုံသေဆက်တင်များကို ပြန်လည်ရယူမည်",
     "resetToUpstreamDefaultsSuccess": "မူလရင်းမြစ် မော်ဒယ်၏ ပုံသေဆက်တင်များကို ပြန်လည်ရယူပြီးပါပြီ",
     "resetToUpstreamDefaultsFailed": "မူလရင်းမြစ် မော်ဒယ်၏ ပုံသေဆက်တင်များကို ပြန်လည်ရယူ၍မရပါ",
-    "autoSyncTooltip": "မော်ဒယ်စာရင်းကို 24 နာရီတိုင်း အလိုအလျောက် ပြန်လည်စစ်ဆေးမည် (MODEL_SYNC_INTERVAL_HOURS မှတစ်ဆင့် ချိန်ညှိနိုင်သည်)",
+    "autoSyncTooltip": "__MISSING__:Automatically refresh model list every 6h by default (configurable via MODEL_SYNC_INTERVAL_HOURS)",
     "autoSyncEnabled": "အလိုအလျောက် စင့်ခ်လုပ်ခြင်းကို ဖွင့်ထားသည် — မော်ဒယ်များကို အချိန်အပိုင်းအခြားအလိုက် ပြန်လည်စစ်ဆေးမည်",
     "autoSyncDisabled": "အလိုအလျောက် စင့်ခ်လုပ်ခြင်းကို ပိတ်ထားသည်",
     "autoSyncToggleFailed": "အလိုအလျောက် စင့်ခ်လုပ်ခြင်းကို ဖွင့်/ပိတ်၍မရပါ",

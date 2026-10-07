@@ -5375,7 +5375,7 @@
     "resetToUpstreamDefaults": "Ibalik ang mga default ng upstream",
     "resetToUpstreamDefaultsSuccess": "Ibinalik ang mga default ng upstream model",
     "resetToUpstreamDefaultsFailed": "Nabigong maibalik ang mga default ng upstream model",
-    "autoSyncTooltip": "Awtomatikong i-refresh ang listahan ng modelo tuwing 24h (mako-configure sa pamamagitan ng MODEL_SYNC_INTERVAL_HOURS)",
+    "autoSyncTooltip": "__MISSING__:Automatically refresh model list every 6h by default (configurable via MODEL_SYNC_INTERVAL_HOURS)",
     "autoSyncEnabled": "Pinagana ang auto-sync — pana-panahong magre-refresh ang mga modelo",
     "autoSyncDisabled": "Na-disable ang auto-sync",
     "autoSyncToggleFailed": "Nabigong i-toggle ang auto-sync",

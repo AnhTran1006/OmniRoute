@@ -5375,7 +5375,7 @@
     "resetToUpstreamDefaults": "Khôi phục mặc định của upstream",
     "resetToUpstreamDefaultsSuccess": "Đã khôi phục các giá trị mặc định của mô hình upstream",
     "resetToUpstreamDefaultsFailed": "Không thể khôi phục mặc định mô hình upstream",
-    "autoSyncTooltip": "Tự động làm mới danh sách mô hình sau mỗi 24 giờ (có thể cấu hình qua MODEL_SYNC_INTERVAL_HOURS)",
+    "autoSyncTooltip": "__MISSING__:Automatically refresh model list every 6h by default (configurable via MODEL_SYNC_INTERVAL_HOURS)",
     "autoSyncEnabled": "Đã bật tự động đồng bộ hóa — các mô hình sẽ được làm mới định kỳ",
     "autoSyncDisabled": "Đã tắt tự động đồng bộ hóa",
     "autoSyncToggleFailed": "Không thể chuyển đổi trạng thái tự động đồng bộ hóa",

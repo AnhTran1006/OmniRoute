@@ -5375,7 +5375,7 @@
     "resetToUpstreamDefaults": "Pulihkan pengaturan default upstream",
     "resetToUpstreamDefaultsSuccess": "Mengembalikan pengaturan default model upstream",
     "resetToUpstreamDefaultsFailed": "Gagal mengembalikan pengaturan model upstream ke default",
-    "autoSyncTooltip": "Segarkan daftar model secara otomatis setiap 24 jam (dapat dikonfigurasi melalui MODEL_SYNC_INTERVAL_HOURS)",
+    "autoSyncTooltip": "__MISSING__:Automatically refresh model list every 6h by default (configurable via MODEL_SYNC_INTERVAL_HOURS)",
     "autoSyncEnabled": "Sinkronisasi otomatis diaktifkan — model akan disegarkan secara berkala",
     "autoSyncDisabled": "Sinkronisasi otomatis dinonaktifkan",
     "autoSyncToggleFailed": "Gagal mengaktifkan sinkronisasi otomatis",

@@ -5375,7 +5375,7 @@
     "resetToUpstreamDefaults": "恢复上游默认值",
     "resetToUpstreamDefaultsSuccess": "已恢复上游模型默认设置",
     "resetToUpstreamDefaultsFailed": "恢复上游模型默认设置失败",
-    "autoSyncTooltip": "每 24 小时自动刷新模型列表（可通过 MODEL_SYNC_INTERVAL_HOURS 配置）",
+    "autoSyncTooltip": "__MISSING__:Automatically refresh model list every 6h by default (configurable via MODEL_SYNC_INTERVAL_HOURS)",
     "autoSyncEnabled": "自动同步已启用 — 模型将定期刷新",
     "autoSyncDisabled": "自动同步已禁用",
     "autoSyncToggleFailed": "切换自动同步失败",

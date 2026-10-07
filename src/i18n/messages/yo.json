@@ -5375,7 +5375,7 @@
     "resetToUpstreamDefaults": "Dá àwọn ìṣètò àkọ́kọ́ orísun òkè padà",
     "resetToUpstreamDefaultsSuccess": "A ti dá àwọn ìṣètò àkọ́kọ́ módẹ́lì orísun òkè padà",
     "resetToUpstreamDefaultsFailed": "Dídá àwọn ìṣètò àkọ́kọ́ módẹ́lì orísun òkè padà kò ṣàṣeyọrí",
-    "autoSyncTooltip": "Máa sọ àkójọ módẹ́lì di tuntun láìfọwọ́sí ní gbogbo wákàtí 24 (a lè ṣètò rẹ̀ nípasẹ̀ MODEL_SYNC_INTERVAL_HOURS)",
+    "autoSyncTooltip": "__MISSING__:Automatically refresh model list every 6h by default (configurable via MODEL_SYNC_INTERVAL_HOURS)",
     "autoSyncEnabled": "Ìmúdọ́gba aládàáṣiṣẹ́ ti ṣiṣẹ́ — a ó máa sọ àwọn módẹ́lì di tuntun lẹ́ẹ̀kọ̀ọ̀kan",
     "autoSyncDisabled": "Ìmúdọ́gba aládàáṣiṣẹ́ ti dáwọ́ dúró",
     "autoSyncToggleFailed": "Yíyí ìmúdọ́gba aládàáṣiṣẹ́ padà kò ṣàṣeyọrí",

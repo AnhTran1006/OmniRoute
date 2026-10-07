@@ -5375,7 +5375,7 @@
     "resetToUpstreamDefaults": "Atjaunot augšupējā modeļa noklusējuma iestatījumus",
     "resetToUpstreamDefaultsSuccess": "Augšupējā modeļa noklusējuma iestatījumi atjaunoti",
     "resetToUpstreamDefaultsFailed": "Neizdevās atjaunot augšupējā modeļa noklusējuma iestatījumus",
-    "autoSyncTooltip": "Automātiski atsvaidzināt modeļu sarakstu ik pēc 24 h (konfigurējams ar MODEL_SYNC_INTERVAL_HOURS)",
+    "autoSyncTooltip": "__MISSING__:Automatically refresh model list every 6h by default (configurable via MODEL_SYNC_INTERVAL_HOURS)",
     "autoSyncEnabled": "Automātiskā sinhronizācija iespējota — modeļi tiks periodiski atsvaidzināti",
     "autoSyncDisabled": "Automātiskā sinhronizācija atspējota",
     "autoSyncToggleFailed": "Neizdevās pārslēgt automātisko sinhronizāciju",

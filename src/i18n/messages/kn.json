@@ -5375,7 +5375,7 @@
     "resetToUpstreamDefaults": "ಅಪ್ಸ್ಟ್ರೀಮ್ ಡೀಫಾಲ್ಟ್ಗಳನ್ನು ಮರುಸ್ಥಾಪಿಸಿ",
     "resetToUpstreamDefaultsSuccess": "ಅಪ್ಸ್ಟ್ರೀಮ್ ಮಾದರಿಯ ಡೀಫಾಲ್ಟ್ಗಳನ್ನು ಮರುಸ್ಥಾಪಿಸಲಾಗಿದೆ",
     "resetToUpstreamDefaultsFailed": "ಅಪ್ಸ್ಟ್ರೀಮ್ ಮಾದರಿಯ ಡೀಫಾಲ್ಟ್ಗಳನ್ನು ಮರುಸ್ಥಾಪಿಸಲು ವಿಫಲವಾಗಿದೆ",
-    "autoSyncTooltip": "ಪ್ರತಿ 24 ಗಂಟೆಗಳಿಗೊಮ್ಮೆ ಮಾದರಿಗಳ ಪಟ್ಟಿಯನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ರಿಫ್ರೆಶ್ ಮಾಡಿ (MODEL_SYNC_INTERVAL_HOURS ಮೂಲಕ ಕಾನ್ಫಿಗರ್ ಮಾಡಬಹುದು)",
+    "autoSyncTooltip": "__MISSING__:Automatically refresh model list every 6h by default (configurable via MODEL_SYNC_INTERVAL_HOURS)",
     "autoSyncEnabled": "ಸ್ವಯಂ-ಸಿಂಕ್ ಸಕ್ರಿಯವಾಗಿದೆ — ಮಾದರಿಗಳನ್ನು ನಿಯತಕಾಲಿಕವಾಗಿ ರಿಫ್ರೆಶ್ ಮಾಡಲಾಗುತ್ತದೆ",
     "autoSyncDisabled": "ಸ್ವಯಂ-ಸಿಂಕ್ ನಿಷ್ಕ್ರಿಯವಾಗಿದೆ",
     "autoSyncToggleFailed": "ಸ್ವಯಂ-ಸಿಂಕ್ ಅನ್ನು ಬದಲಾಯಿಸಲು ವಿಫಲವಾಗಿದೆ",

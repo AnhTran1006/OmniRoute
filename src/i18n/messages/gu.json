@@ -5375,7 +5375,7 @@
     "resetToUpstreamDefaults": "અપસ્ટ્રીમ ડિફોલ્ટ્સ પુનઃસ્થાપિત કરો",
     "resetToUpstreamDefaultsSuccess": "ઉપરવાળી મોડલ ડિફોલ્ટ્સ પુનઃસ્થાપિત કરવામાં આવ્યા",
     "resetToUpstreamDefaultsFailed": "અપસ્ટ્રીમ મોડલ ડિફોલ્ટ્સ પુનઃસ્થાપિત કરવામાં નિષ્ફળ થયું",
-    "autoSyncTooltip": "દર 24 કલાકે મોડેલ સૂચિ આપમેળે રિફ્રેશ થાય છે (MODEL_SYNC_INTERVAL_HOURS દ્વારા ગોઠવી શકાય છે)",
+    "autoSyncTooltip": "__MISSING__:Automatically refresh model list every 6h by default (configurable via MODEL_SYNC_INTERVAL_HOURS)",
     "autoSyncEnabled": "ઑટો-સિંક સક્ષમ છે — મોડેલો સમયાંતરે રિફ્રેશ થશે",
     "autoSyncDisabled": "ઑટો-સિંક અક્ષમ છે",
     "autoSyncToggleFailed": "ઑટો-સિંક ટૉગલ કરવામાં નિષ્ફળતા",

@@ -5375,7 +5375,7 @@
     "resetToUpstreamDefaults": "अपस्ट्रीम डिफॉल्ट्स पुनर्स्थापित करा",
     "resetToUpstreamDefaultsSuccess": "उपस्ट्रीम मॉडेल डिफॉल्ट्स पुनर्स्थापित केले",
     "resetToUpstreamDefaultsFailed": "उपस्ट्रीम मॉडेल डिफॉल्ट्स पुनर्स्थापित करण्यात अयशस्वी",
-    "autoSyncTooltip": "दर 24 तासांनी मॉडेलची यादी स्वयंचलितपणे रीफ्रेश करते (MODEL_SYNC_INTERVAL_HOURS द्वारे कॉन्फिगर करता येते)",
+    "autoSyncTooltip": "__MISSING__:Automatically refresh model list every 6h by default (configurable via MODEL_SYNC_INTERVAL_HOURS)",
     "autoSyncEnabled": "स्वयं-समक्रमण सक्षम केले — मॉडेल वेळोवेळी रीफ्रेश होतील",
     "autoSyncDisabled": "स्वयं-समक्रमण अक्षम केले",
     "autoSyncToggleFailed": "स्वयं-समक्रमण टॉगल करण्यात अयशस्वी",

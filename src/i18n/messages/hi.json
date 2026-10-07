@@ -5375,7 +5375,7 @@
     "resetToUpstreamDefaults": "उपधारा डिफ़ॉल्ट्स को पुनर्स्थापित करें",
     "resetToUpstreamDefaultsSuccess": "उपधारा मॉडल डिफ़ॉल्ट्स को पुनर्स्थापित किया गया",
     "resetToUpstreamDefaultsFailed": "उपधारा मॉडल डिफ़ॉल्ट्स को पुनर्स्थापित करने में विफल",
-    "autoSyncTooltip": "हर 24 घंटे में मॉडल सूची को स्वचालित रूप से रीफ़्रेश करें (MODEL_SYNC_INTERVAL_HOURS के माध्यम से कॉन्फ़िगर किया जा सकता है)",
+    "autoSyncTooltip": "__MISSING__:Automatically refresh model list every 6h by default (configurable via MODEL_SYNC_INTERVAL_HOURS)",
     "autoSyncEnabled": "स्वतः-सिंक सक्षम है — मॉडल समय-समय पर रीफ़्रेश होंगे",
     "autoSyncDisabled": "स्वतः-सिंक अक्षम है",
     "autoSyncToggleFailed": "स्वतः-सिंक टॉगल करने में विफल",
