@@ -19,7 +19,6 @@ import {
 } from "../accountFallback.ts";
 import {
   errorResponse,
-  errorResponseWithComboDiagnostics,
   logRetryHintUnreadable,
   parseRetryAfterHeader,
   readProseRetryAfter,
@@ -73,6 +72,7 @@ import {
   requestScopedReplayKey,
 } from "./comboPredicates.ts";
 import { applyComboTargetExhaustion } from "./targetExhaustion.ts";
+import { buildBudgetExhaustedResponse } from "./budgetExhaustion.ts";
 import { advanceNativeCodexTurnGeneration, pinNativeCodexTurn } from "./nativeCodexTurnPin.ts";
 import { recordComboDecision } from "./decisionTrace.ts";
 import { recordProviderCooldown } from "../providerCooldownTracker.ts";
@@ -91,7 +91,6 @@ import { classifyComboOutcome, redactConnectionLabel } from "./comboErrorAggrega
 import { readConnectionForCooldownGate } from "./executeTargetGates.ts";
 import { recordLkgpPin } from "./recordLkgpPin.ts";
 import {
-  buildComboDiag,
   handlePreContentStreamRetry,
   qualityValidationFailure,
   remainderIsHomogeneous,
@@ -160,26 +159,13 @@ export async function executeTargetAttempt(opts: {
         "COMBO",
         `Maximum combo attempts (${maxGlobalAttempts}) exceeded across all targets and fallbacks. Terminating loop to prevent runaway background requests.`
       );
-      // Actionable failure instead of an opaque 503 when every candidate
-      // failed the same recoverable way. If the dominant cause was reasoning
-      // models exhausting a too-small max_tokens budget (no content output),
-      // retrying other models can't help — tell the caller to raise max_tokens.
-      // Silent-stop fix: bump the consecutive-failure counter for this session-combo pair
-      // so the pin gets cleared on the 3rd attempt (recovery.next_step tells the client).
-      const reasoningExhausted = /reasoning consumed \d+\/\d+ tokens/.test(state.lastError || "");
-      const failureReason = reasoningExhausted
-        ? "reasoning_budget_exhausted"
-        : "max_attempts_exceeded";
+      // Actionable failure instead of an opaque 503 (reasoning budget exhausted /
+      // context overflow — see budgetExhaustion.ts). Silent-stop fix: bump the
+      // consecutive-failure counter so the pin gets cleared on the 3rd attempt.
       recordComboFailure(deps.effectiveSessionId, deps.combo.name);
       return {
         ok: false,
-        response: errorResponseWithComboDiagnostics(
-          503,
-          reasoningExhausted
-            ? "All combo candidates exhausted their token budget on reasoning without producing content. Increase max_tokens — reasoning models need a larger budget to emit content."
-            : "Maximum combo retry limit reached",
-          buildComboDiag(state, deps.traceInvocationId, failureReason)
-        ),
+        response: buildBudgetExhaustedResponse(state, deps.traceInvocationId),
       };
     }
     // Predictive TTFT Circuit Breaker (skip slow models)
