@@ -164,6 +164,23 @@ function isAutoEnableActive(settings: RequestQueueSettings): boolean {
   return settings.autoEnableApiKeyProviders;
 }
 
+/**
+ * True when a connection is covered by the auto-enable safety net (and has no
+ * explicit `rateLimitProtection` of its own). Shared with the providers API so the
+ * dashboard badge matches what the limiter actually does.
+ */
+export function isConnectionAutoProtected(
+  conn: { provider: string; isActive?: boolean | null; rateLimitProtection?: boolean | null },
+  requestQueueSettings: RequestQueueSettings
+): boolean {
+  if (conn.rateLimitProtection === true) return false;
+  return (
+    isAutoEnableActive(requestQueueSettings) &&
+    getProviderCategory(conn.provider) === "apikey" &&
+    conn.isActive === true
+  );
+}
+
 // Sentinels for "no rate limit" / effectively infinite capacity. The reservoir
 // value uses Number.MAX_SAFE_INTEGER so the bucket can never realistically be
 // exhausted; maxConcurrent uses a smaller-but-still-vast ceiling since
@@ -340,9 +357,7 @@ function reconcileEnabledConnections(
     }
 
     if (
-      isAutoEnableActive(requestQueueSettings) &&
-      getProviderCategory(provider) === "apikey" &&
-      isActive
+      isConnectionAutoProtected({ provider, isActive, rateLimitProtection }, requestQueueSettings)
     ) {
       nextEnabledConnections.add(connectionId);
       autoCount++;

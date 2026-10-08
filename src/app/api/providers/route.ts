@@ -1,5 +1,8 @@
 import { getAllProviderLimitsCache } from "@/lib/db/providerLimits";
 import { NextResponse } from "next/server";
+import { getSettings } from "@/lib/db/settings";
+import { resolveResilienceSettings } from "@/lib/resilience/settings";
+import { isConnectionAutoProtected } from "@omniroute/open-sse/services/rateLimitManager.ts";
 export const dynamic = "force-dynamic";
 import { getAuditRequestContext, logAuditEvent } from "@/lib/compliance/index";
 import {
@@ -139,6 +142,7 @@ export async function GET(request: Request) {
       : {};
 
     // Hide or mask sensitive fields
+    const requestQueueSettings = resolveResilienceSettings(await getSettings()).requestQueue;
     const safeConnections = connections.map((c) => {
       const providerSpecificData = c.providerSpecificData
         ? sanitizeProviderSpecificDataForResponse(c.providerSpecificData)
@@ -150,6 +154,7 @@ export async function GET(request: Request) {
         refreshToken: undefined,
         idToken: undefined,
         providerSpecificData,
+        rateLimitAutoProtected: isConnectionAutoProtected(c, requestQueueSettings),
         ...(c.provider === "codex"
           ? {
               codexAccountPool: projectCodexAccountPoolWithRoutingQuota(
