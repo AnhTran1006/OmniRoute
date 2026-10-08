@@ -35,6 +35,7 @@ import {
   webSessionCredentialKey,
   parseProviderSpecificData,
   isMatchingOauthIdentity,
+  isWebCookieProviderId,
 } from "./webSessionDedup";
 import { LOCAL_PROVIDERS } from "@/shared/constants/providers";
 import { pickCodexConnectionForUser } from "@/lib/oauth/utils/codexConnectionSelection";
@@ -597,8 +598,7 @@ export async function createProviderConnection(data: JsonRecord) {
         ) || null;
     }
   } else if (data.authType === "apikey") {
-    // Name-based upsert (existing behavior): same provider + same name → update.
-    if (data.name) {
+    if (data.name && !isWebCookieProviderId(data.provider)) {
       existing =
         (db
           .prepare(
