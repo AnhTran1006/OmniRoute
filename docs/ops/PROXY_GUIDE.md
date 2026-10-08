@@ -784,9 +784,7 @@ PROXY_AUTO_REMOVE_AFTER=3
 How it fits into a multi-proxy chain:
 
 1. The scheduler probes every registered proxy every `PROXY_HEALTH_INTERVAL_MS`
-   (default 10 min; minimum 1 min). Edge-relay types (`deno`/`vercel`/`cloudflare`) instead use the
-   longer `PROXY_HEALTH_RELAY_INTERVAL_MS` (default 6h) and are not probed on first sight, so idle
-   relays are not woken and billed.
+   (default 10 min; minimum 1 min).
 2. After `PROXY_AUTO_REMOVE_AFTER` consecutive **conclusive** failures (a real
    connection failure — a timeout or the probe target's own 5xx never counts, see
    [Proxy Health Checking](#proxy-health-checking-v3816)), the proxy's `status` is
