@@ -1,1 +1,0 @@
-- fix(sse): stop a failed deduplicated request with no joiners from raising an unhandled rejection that exits the server with code 7 (#15706)

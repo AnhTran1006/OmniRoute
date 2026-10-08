@@ -238,15 +238,10 @@ export async function deduplicate<T>(
     if (oldestKey !== undefined) inflight.delete(oldestKey);
   }
 
-  let resolve!: (value: T) => void;
-  let reject!: (reason: unknown) => void;
-  const sharedPromise = new Promise<T>((res, rej) => {
-    resolve = res;
-    reject = rej;
-  });
-  // #15706: the leader rethrows its own error and joiners observe sharedPromise via
-  // their own await. With no joiner the rejection would be unhandled (process exit 7).
-  sharedPromise.catch(() => {});
+  // Defer fn until the shared promise is registered so synchronous re-entry
+  // sees this request. The initiator and every follower await the same promise;
+  // a separate rejected shadow promise would be unhandled when there are no followers.
+  const sharedPromise = Promise.resolve().then(fn);
   inflight.set(hash, sharedPromise as Promise<unknown>);
 
   const timer = setTimeout(() => {
@@ -254,12 +249,8 @@ export async function deduplicate<T>(
   }, config.timeoutMs);
 
   try {
-    const result = await fn();
-    resolve(result);
+    const result = await sharedPromise;
     return { result, wasDeduplicated: false, hash };
-  } catch (err) {
-    reject(err);
-    throw err;
   } finally {
     clearTimeout(timer);
     if (inflight.get(hash) === sharedPromise) inflight.delete(hash);
