@@ -244,6 +244,9 @@ export async function deduplicate<T>(
     resolve = res;
     reject = rej;
   });
+  // #15706: the leader rethrows its own error and joiners observe sharedPromise via
+  // their own await. With no joiner the rejection would be unhandled (process exit 7).
+  sharedPromise.catch(() => {});
   inflight.set(hash, sharedPromise as Promise<unknown>);
 
   const timer = setTimeout(() => {
