@@ -4,9 +4,12 @@
 
 ---
 
-🌐 **Languages:** 🇺🇸 [English](../../../../reference/API_REFERENCE.md) · 🇪🇹 [am](../../../am/docs/reference/API_REFERENCE.md) · 🇸🇦 [ar](../../../ar/docs/reference/API_REFERENCE.md) · 🇦🇿 [az](../../../az/docs/reference/API_REFERENCE.md) · 🇧🇬 [bg](../../../bg/docs/reference/API_REFERENCE.md) · 🇧🇩 [bn](../../../bn/docs/reference/API_REFERENCE.md) · 🇧🇦 [bs](../../../bs/docs/reference/API_REFERENCE.md) · 🇨🇿 [cs](../../../cs/docs/reference/API_REFERENCE.md) · 🇩🇰 [da](../../../da/docs/reference/API_REFERENCE.md) · 🇩🇪 [de](../../../de/docs/reference/API_REFERENCE.md) · 🇬🇷 [el](../../../el/docs/reference/API_REFERENCE.md) · 🇪🇸 [es](../../../es/docs/reference/API_REFERENCE.md) · 🇪🇪 [et](../../../et/docs/reference/API_REFERENCE.md) · 🇮🇷 [fa](../../../fa/docs/reference/API_REFERENCE.md) · 🇫🇮 [fi](../../../fi/docs/reference/API_REFERENCE.md) · 🇫🇷 [fr](../../../fr/docs/reference/API_REFERENCE.md) · 🇮🇪 [ga](../../../ga/docs/reference/API_REFERENCE.md) · 🇮🇳 [gu](../../../gu/docs/reference/API_REFERENCE.md) · 🇳🇬 [ha](../../../ha/docs/reference/API_REFERENCE.md) · 🇮🇱 [he](../../../he/docs/reference/API_REFERENCE.md) · 🇮🇳 [hi](../../../hi/docs/reference/API_REFERENCE.md) · 🇭🇷 [hr](../../../hr/docs/reference/API_REFERENCE.md) · 🇭🇺 [hu](../../../hu/docs/reference/API_REFERENCE.md) · 🇦🇲 [hy](../../../hy/docs/reference/API_REFERENCE.md) · 🇮🇩 [id](../../../id/docs/reference/API_REFERENCE.md) · 🇳🇬 [ig](../../../ig/docs/reference/API_REFERENCE.md) · 🇮🇹 [it](../../../it/docs/reference/API_REFERENCE.md) · 🇯🇵 [ja](../../../ja/docs/reference/API_REFERENCE.md) · 🇬🇪 [ka](../../../ka/docs/reference/API_REFERENCE.md) · 🇰🇭 [km](../../../km/docs/reference/API_REFERENCE.md) · 🇮🇳 [kn](../../../kn/docs/reference/API_REFERENCE.md) · 🇰🇷 [ko](../../../ko/docs/reference/API_REFERENCE.md) · 🇱🇹 [lt](../../../lt/docs/reference/API_REFERENCE.md) · 🇱🇻 [lv](../../../lv/docs/reference/API_REFERENCE.md) · 🇮🇳 [ml](../../../ml/docs/reference/API_REFERENCE.md) · 🇮🇳 [mr](../../../mr/docs/reference/API_REFERENCE.md) · 🇲🇾 [ms](../../../ms/docs/reference/API_REFERENCE.md) · 🇲🇲 [my](../../../my/docs/reference/API_REFERENCE.md) · 🇳🇵 [ne](../../../ne/docs/reference/API_REFERENCE.md) · 🇳🇱 [nl](../../../nl/docs/reference/API_REFERENCE.md) · 🇳🇴 [no](../../../no/docs/reference/API_REFERENCE.md) · 🇮🇳 [or](../../../or/docs/reference/API_REFERENCE.md) · 🇮🇳 [pa](../../../pa/docs/reference/API_REFERENCE.md) · 🇵🇭 [phi](../../../phi/docs/reference/API_REFERENCE.md) · 🇵🇱 [pl](../../../pl/docs/reference/API_REFERENCE.md) · 🇵🇹 [pt](../../../pt/docs/reference/API_REFERENCE.md) · 🇧🇷 [pt-BR](../../../pt-BR/docs/reference/API_REFERENCE.md) · 🇷🇴 [ro](../../../ro/docs/reference/API_REFERENCE.md) · 🇷🇺 [ru](../../../ru/docs/reference/API_REFERENCE.md) · 🇱🇰 [si](../../../si/docs/reference/API_REFERENCE.md) · 🇸🇰 [sk](../../../sk/docs/reference/API_REFERENCE.md) · 🇸🇮 [sl](../../../sl/docs/reference/API_REFERENCE.md) · 🇷🇸 [sr](../../../sr/docs/reference/API_REFERENCE.md) · 🇸🇪 [sv](../../../sv/docs/reference/API_REFERENCE.md) · 🇰🇪 [sw](../../../sw/docs/reference/API_REFERENCE.md) · 🇮🇳 [ta](../../../ta/docs/reference/API_REFERENCE.md) · 🇮🇳 [te](../../../te/docs/reference/API_REFERENCE.md) · 🇹🇭 [th](../../../th/docs/reference/API_REFERENCE.md) · 🇹🇷 [tr](../../../tr/docs/reference/API_REFERENCE.md) · 🇺🇦 [uk-UA](../../../uk-UA/docs/reference/API_REFERENCE.md) · 🇵🇰 [ur](../../../ur/docs/reference/API_REFERENCE.md) · 🇺🇿 [uz](../../../uz/docs/reference/API_REFERENCE.md) · 🇻🇳 [vi](../../../vi/docs/reference/API_REFERENCE.md) · 🇳🇬 [yo](../../../yo/docs/reference/API_REFERENCE.md) · 🇨🇳 [zh-CN](../../../zh-CN/docs/reference/API_REFERENCE.md) · 🇹🇼 [zh-TW](../../../zh-TW/docs/reference/API_REFERENCE.md)
+🌐 **Lingwi:** 🇺🇸 [English](./API_REFERENCE.md) | 🇪🇹 [አማርኛ](../i18n/am/docs/reference/API_REFERENCE.md) | 🇸🇦 [العربية](../i18n/ar/docs/reference/API_REFERENCE.md) | 🇦🇿 [Azərbaycan dili](../i18n/az/docs/reference/API_REFERENCE.md) | 🇧🇬 [Български](../i18n/bg/docs/reference/API_REFERENCE.md) | 🇧🇩 [বাংলা](../i18n/bn/docs/reference/API_REFERENCE.md) | 🇧🇦 [Bosanski](../i18n/bs/docs/reference/API_REFERENCE.md) | 🇨🇿 [Čeština](../i18n/cs/docs/reference/API_REFERENCE.md) | 🇩🇰 [Dansk](../i18n/da/docs/reference/API_REFERENCE.md) | 🇩🇪 [Deutsch](../i18n/de/docs/reference/API_REFERENCE.md) | 🇬🇷 [Ελληνικά](../i18n/el/docs/reference/API_REFERENCE.md) | 🇪🇸 [Español](../i18n/es/docs/reference/API_REFERENCE.md) | 🇪🇪 [Eesti](../i18n/et/docs/reference/API_REFERENCE.md) | 🇮🇷 [فارسی](../i18n/fa/docs/reference/API_REFERENCE.md) | 🇫🇮 [Suomi](../i18n/fi/docs/reference/API_REFERENCE.md) | 🇫🇷 [Français](../i18n/fr/docs/reference/API_REFERENCE.md) | 🇮🇪 [Gaeilge](../i18n/ga/docs/reference/API_REFERENCE.md) | 🇮🇳 [ગુજરાતી](../i18n/gu/docs/reference/API_REFERENCE.md) | 🇳🇬 [Hausa](../i18n/ha/docs/reference/API_REFERENCE.md) | 🇮🇱 [עברית](../i18n/he/docs/reference/API_REFERENCE.md) | 🇮🇳 [हिन्दी](../i18n/hi/docs/reference/API_REFERENCE.md) | 🇭🇷 [Hrvatski](../i18n/hr/docs/reference/API_REFERENCE.md) | 🇭🇺 [Magyar](../i18n/hu/docs/reference/API_REFERENCE.md) | 🇦🇲 [Հայերեն](../i18n/hy/docs/reference/API_REFERENCE.md) | 🇮🇩 [Bahasa Indonesia](../i18n/id/docs/reference/API_REFERENCE.md) | 🇳🇬 [Igbo](../i18n/ig/docs/reference/API_REFERENCE.md) | 🇮🇹 [Italiano](../i18n/it/docs/reference/API_REFERENCE.md) | 🇯🇵 [日本語](../i18n/ja/docs/reference/API_REFERENCE.md) | 🇬🇪 [ქართული](../i18n/ka/docs/reference/API_REFERENCE.md) | 🇰🇭 [ខ្មែរ](../i18n/km/docs/reference/API_REFERENCE.md) | 🇮🇳 [ಕನ್ನಡ](../i18n/kn/docs/reference/API_REFERENCE.md) | 🇰🇷 [한국어](../i18n/ko/docs/reference/API_REFERENCE.md) | 🇱🇹 [Lietuvių](../i18n/lt/docs/reference/API_REFERENCE.md) | 🇱🇻 [Latviešu](../i18n/lv/docs/reference/API_REFERENCE.md) | 🇮🇳 [മലയാളം](../i18n/ml/docs/reference/API_REFERENCE.md) | 🇮🇳 [मराठी](../i18n/mr/docs/reference/API_REFERENCE.md) | 🇲🇾 [Bahasa Melayu](../i18n/ms/docs/reference/API_REFERENCE.md) | 🇲🇹 [Malti](../i18n/mt/docs/reference/API_REFERENCE.md) | 🇲🇲 [မြန်မာ](../i18n/my/docs/reference/API_REFERENCE.md) | 🇳🇵 [नेपाली](../i18n/ne/docs/reference/API_REFERENCE.md) | 🇳🇱 [Nederlands](../i18n/nl/docs/reference/API_REFERENCE.md) | 🇳🇴 [Norsk](../i18n/no/docs/reference/API_REFERENCE.md) | 🇮🇳 [ଓଡ଼ିଆ](../i18n/or/docs/reference/API_REFERENCE.md) | 🇮🇳 [ਪੰਜਾਬੀ](../i18n/pa/docs/reference/API_REFERENCE.md) | 🇵🇭 [Filipino](../i18n/phi/docs/reference/API_REFERENCE.md) | 🇵🇱 [Polski](../i18n/pl/docs/reference/API_REFERENCE.md) | 🇵🇹 [Português (Portugal)](../i18n/pt/docs/reference/API_REFERENCE.md) | 🇧🇷 [Português (Brasil)](../i18n/pt-BR/docs/reference/API_REFERENCE.md) | 🇷🇴 [Română](../i18n/ro/docs/reference/API_REFERENCE.md) | 🇷🇺 [Русский](../i18n/ru/docs/reference/API_REFERENCE.md) | 🇱🇰 [සිංහල](../i18n/si/docs/reference/API_REFERENCE.md) | 🇸🇰 [Slovenčina](../i18n/sk/docs/reference/API_REFERENCE.md) | 🇸🇮 [Slovenščina](../i18n/sl/docs/reference/API_REFERENCE.md) | 🇷🇸 [Српски](../i18n/sr/docs/reference/API_REFERENCE.md) | 🇸🇪 [Svenska](../i18n/sv/docs/reference/API_REFERENCE.md) | 🇰🇪 [Kiswahili](../i18n/sw/docs/reference/API_REFERENCE.md) | 🇮🇳 [தமிழ்](../i18n/ta/docs/reference/API_REFERENCE.md) | 🇮🇳 [తెలుగు](../i18n/te/docs/reference/API_REFERENCE.md) | 🇹🇭 [ไทย](../i18n/th/docs/reference/API_REFERENCE.md) | 🇹🇷 [Türkçe](../i18n/tr/docs/reference/API_REFERENCE.md) | 🇺🇦 [Українська](../i18n/uk-UA/docs/reference/API_REFERENCE.md) | 🇵🇰 [اردو](../i18n/ur/docs/reference/API_REFERENCE.md) | 🇺🇿 [Oʻzbekcha](../i18n/uz/docs/reference/API_REFERENCE.md) | 🇻🇳 [Tiếng Việt](../i18n/vi/docs/reference/API_REFERENCE.md) | 🇳🇬 [Yorùbá](../i18n/yo/docs/reference/API_REFERENCE.md) | 🇨🇳 [中文 (简体)](../i18n/zh-CN/docs/reference/API_REFERENCE.md) | 🇹🇼 [中文 (繁體)](../i18n/zh-TW/docs/reference/API_REFERENCE.md)
 
 Referenza ewlenija għall-API ta’ OmniRoute. Din tkopri l-interfaċċa pubblika `/v1` u l-endpoints ta’ ġestjoni l-aktar użati; il-fajl li jista’ jinqara mill-magni [`docs/openapi.yaml`](../openapi.yaml) u s-siġra tar-rotot taħt `src/app/api/` huma s-sorsi eżawrjenti.
+
+Għall-protokoll iffukat kompatibbli ma’ OpenAI u l-matriċi tal-kapaċitajiet tal-fornituri, ara
+[`OPENAI_COMPATIBILITY.md`](./OPENAI_COMPATIBILITY.md).
 
 ---
 
@@ -204,13 +207,16 @@ Content-Type: application/json
 
 Fornituri disponibbli: Nebius, OpenAI, Mistral, Together AI, Fireworks, NVIDIA, **OpenRouter**, Jina AI.
 
-L-IDs tal-katalgu huma `provider/model` (eżempju: `jina-ai/jina-embeddings-v5-omni-small`). L-IDs tal-mudelli Jina mingħajr prefiss li jidhru fir-reġistru (pereżempju `jina-embeddings-v5-text-small`, `jina-reranker-v3.5`) jiġu riżolti wkoll. Il-funzjonijiet embed/rerank/classify/segment ta’ Jina jużaw l-ewwel il-kredenzjali `jina-ai` tad-dashboard; `JINA_AI_API_KEY` jintuża bħala alternattiva biss meta ma teżisti l-ebda kjavi fid-dashboard. Il-kard `jina-reader` hija biss għal Reader / `r.jina.ai` (`POST /v1/web/fetch`) u qatt ma tipprovdi embeddings jew rerank.
+L-IDs tal-katalgu huma `provider/model` (eżempju: `jina-ai/jina-embeddings-v5-omni-small`). L-IDs tal-mudelli Jina mingħajr prefiss li jidhru fir-reġistru (pereżempju `jina-embeddings-v5-text-small`, `jina-reranker-v3.5`) jiġu riżolti wkoll. L-operazzjonijiet embed/rerank/classify/segment ta’ Jina jużaw l-ewwel il-kredenzjali `jina-ai` tad-dashboard; `JINA_AI_API_KEY` jintuża bħala alternattiva biss meta ma tkun teżisti l-ebda ċavetta tad-dashboard. Il-kard `jina-reader` hija biss għal Reader / `r.jina.ai` (`POST /v1/web/fetch`) u qatt ma tipprovdi inkorporazzjonijiet jew klassifikazzjoni mill-ġdid.
 
-Il-mudelli fir-reġistru li jiddikjaraw appoġġ multimodali jaċċettaw ukoll sa 32 element strutturat newtrali għall-fornitur. It-tipi ta’ elementi tal-midja huma `text`, `image`, `audio`, `video`, u `document`. Is-`source` tal-midja tagħhom huwa jew `{"type":"url","url":"https://..."}` jew
+Il-mudelli tar-reġistru li jiddikjaraw appoġġ multimodali jaċċettaw ukoll sa 32 element strutturat
+newtrali għall-fornitur. It-tipi ta’ elementi tal-midja huma `text`, `image`, `audio`, `video`, u `document`. Is-`source`
+tal-midja tagħhom tkun jew `{"type":"url","url":"https://..."}` jew
 `{"type":"base64","data":"...","media_type":"..."}`.
 
 Jina v5 Omni (`jina-ai/jina-embeddings-v5-omni-small`, `jina-ai/jina-embeddings-v5-omni-nano`,
-u l-alias tal-familja `jina-ai/jina-embeddings-v5-omni` → omni-small) jaċċetta wkoll id-dokumenti nattivi EmbeddingsV5Request ta’ Jina u **jgħaddihom intatti** lil `https://api.jina.ai/v1/embeddings`:
+u l-alias tal-familja `jina-ai/jina-embeddings-v5-omni` → omni-small) jaċċetta wkoll id-dokumenti nattivi
+EmbeddingsV5Request ta’ Jina u **jgħaddihom intatti** lil `https://api.jina.ai/v1/embeddings`:
 
 ```json
 {
@@ -227,17 +233,32 @@ u l-alias tal-familja `jina-ai/jina-embeddings-v5-omni` → omni-small) jaċċet
 }
 ```
 
-Il-valuri nattivi `{ image | audio | video | pdf }` jistgħu jkunu URL HTTPS pubbliku, URI `data:`, jew base64 mhux ipproċessat. OmniRoute ma jikkonvertix dawk l-oġġetti għal strings u lanqas ma jġib URLs nattivi tal-immaġnijiet — Jina jġib il-midja pubblika huwa stess. Oqsma addizzjonali ta’ Jina (`task`, `normalized`, `truncate`, `embedding_type`) jiġu mgħoddija. L-SKUs ta’ Jina li jaċċettaw test biss xorta jirrifjutaw dokumenti mhux testwali.
+Il-valuri nattivi `{ image | audio | video | pdf }` jistgħu jkunu URL HTTPS pubbliku, URI `data:`, jew
+base64 mhux ipproċessat. OmniRoute ma jikkonvertix dawk l-oġġetti f’strings u lanqas ma jġib l-URLs tal-immaġnijiet nattivi — Jina
+jġib il-midja pubblika huwa stess. Il-fields addizzjonali ta’ Jina (`task`, `normalized`, `truncate`, `embedding_type`) jiġu
+mgħoddija. L-SKUs ta’ Jina li jaħdmu bit-test biss xorta jirrifjutaw dokumenti li mhumiex test.
 
 Limiti tas-sigurtà u tat-trasport:
 
-- L-URLs tal-midja remota jridu jkunu HTTPS pubbliċi. Elementi kanoniċi `{type,source:url}` jinġiebu min-naħa tas-server (b’validazzjoni mill-ġdid tar-ridirezzjonijiet, timeout, limiti tad-daqs, DNS pubbliku, u ffissar tal-konnessjoni) u jiddaħħlu inline qabel is-sejħa lill-fornitur. Elementi nattivi ta’ Jina `{image:"https://..."}` jiġu mgħoddija kif inhuma wara l-istess verifika ta’ HTTPS pubbliku; Jina jġib il-URL.
-- Midja base64 inline hija limitata għal 8 MiB dekodifikati għal kull element u 16 MiB dekodifikati fit-talba kollha.
+- L-URLs tal-midja remota jridu jkunu HTTPS pubbliċi. L-elementi kanoniċi `{type,source:url}` jinġiebu
+  min-naħa tas-server (validazzjoni mill-ġdid tar-redirects, timeout, limiti tad-daqs, DNS pubbliku, iffissar tal-konnessjoni) u
+  jiġu inklużi direttament qabel is-sejħa lill-fornitur. L-elementi nattivi ta’ Jina `{image:"https://..."}` jiġu mgħoddija kif inhuma
+  wara l-istess verifika ta’ HTTPS pubbliku; Jina jġib il-URL.
+- Il-midja base64 inkluża direttament hija limitata għal 8 MiB dekodifikati għal kull element u 16 MiB dekodifikati fit-talba kollha.
 
 Traduzzjoni għall-fornitur (l-elementi kanoniċi qatt ma jiġu mgħoddija mingħajr tibdil):
 
-- Mudelli multimodali ta’ Jina: kull element tal-ogħla livell isir oġġett wieħed b’kjavi skont il-modalità (`text` / `image` / `audio` / `video` / `pdf`), bl-użu ta’ URIs tad-data għall-midja inline; vettur wieħed għal kull element tal-ogħla livell.
-- Familja Gemini Embedding 2: array wieħed tal-ogħla livell isir talba nattiva waħda `models/{model}:embedContent` b’`content.parts` (`text` jew `inline_data`).
+- Mudelli multimodali ta’ Jina: kull element tal-ogħla livell isir oġġett wieħed b’ċavetta skont il-modalità
+  (`text` / `image` / `audio` / `video` / `pdf`) bl-użu ta’ URIs tad-data għall-midja inkluża direttament; vettur wieħed għal kull
+  element tal-ogħla livell.
+- Familja Gemini Embedding 2: array wieħed tal-ogħla livell isir talba nattiva waħda
+  `models/{model}:embedContent` b’`content.parts` (`text` jew `inline_data`).
+- llama.cpp (`llama-cpp/<model>`, kwalunkwe mudell li jkun tella’ s-server lokali): l-elementi kanoniċi `text`
+  jsiru strings sempliċi, u `image` / `audio` / `video` isiru oġġett wieħed
+  `{"content": [part]}` kull wieħed, bl-użu tal-partijiet tal-kontenut taċ-chat ta’ llama-server (`image_url`,
+  `input_audio` bil-format `wav` / `mp3` / `flac`, `input_video`) b’data inkluża direttament; vettur wieħed
+  għal kull element tal-ogħla livell. Is-server irid jitħaddem b’`--embedding --mmproj …`; mingħajr projettur
+  huwa stess jirrifjuta l-midja. `document` mhuwiex appoġġjat.
 - Mudelli mhux magħrufa/dinamiċi mingħajr metadata espliċita tal-modalità jirrifjutaw input strutturat b’HTTP 400.
 
 ```json
@@ -255,7 +276,8 @@ Traduzzjoni għall-fornitur (l-elementi kanoniċi qatt ma jiġu mgħoddija ming�
 }
 ```
 
-Kombinazzjonijiet mhux appoġġjati ta’ mudell/modalità jirritornaw HTTP 400 minflok jikkonvertu l-element bil-forza. Oqsma ta’ estensjoni li mhumiex tal-input f’talbiet legacy ta’ strings/tokens ikomplu jiġu mgħoddija mingħajr tibdil.
+Kombinazzjonijiet mhux appoġġjati ta’ mudell/modalità jirritornaw HTTP 400 minflok ma jikkonvertu l-element. Fields ta’ estensjoni
+li mhumiex tal-input fuq talbiet storiċi ta’ strings/tokens ikomplu jgħaddu mingħajr tibdil.
 
 ```bash
 # Elenka l-mudelli kollha tal-inkorporazzjonijiet

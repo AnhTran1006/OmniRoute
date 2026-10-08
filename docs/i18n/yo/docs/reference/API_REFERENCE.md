@@ -4,9 +4,12 @@
 
 ---
 
-🌐 **Languages:** 🇺🇸 [English](../../../../reference/API_REFERENCE.md) · 🇪🇹 [am](../../../am/docs/reference/API_REFERENCE.md) · 🇸🇦 [ar](../../../ar/docs/reference/API_REFERENCE.md) · 🇦🇿 [az](../../../az/docs/reference/API_REFERENCE.md) · 🇧🇬 [bg](../../../bg/docs/reference/API_REFERENCE.md) · 🇧🇩 [bn](../../../bn/docs/reference/API_REFERENCE.md) · 🇧🇦 [bs](../../../bs/docs/reference/API_REFERENCE.md) · 🇨🇿 [cs](../../../cs/docs/reference/API_REFERENCE.md) · 🇩🇰 [da](../../../da/docs/reference/API_REFERENCE.md) · 🇩🇪 [de](../../../de/docs/reference/API_REFERENCE.md) · 🇬🇷 [el](../../../el/docs/reference/API_REFERENCE.md) · 🇪🇸 [es](../../../es/docs/reference/API_REFERENCE.md) · 🇪🇪 [et](../../../et/docs/reference/API_REFERENCE.md) · 🇮🇷 [fa](../../../fa/docs/reference/API_REFERENCE.md) · 🇫🇮 [fi](../../../fi/docs/reference/API_REFERENCE.md) · 🇫🇷 [fr](../../../fr/docs/reference/API_REFERENCE.md) · 🇮🇪 [ga](../../../ga/docs/reference/API_REFERENCE.md) · 🇮🇳 [gu](../../../gu/docs/reference/API_REFERENCE.md) · 🇳🇬 [ha](../../../ha/docs/reference/API_REFERENCE.md) · 🇮🇱 [he](../../../he/docs/reference/API_REFERENCE.md) · 🇮🇳 [hi](../../../hi/docs/reference/API_REFERENCE.md) · 🇭🇷 [hr](../../../hr/docs/reference/API_REFERENCE.md) · 🇭🇺 [hu](../../../hu/docs/reference/API_REFERENCE.md) · 🇦🇲 [hy](../../../hy/docs/reference/API_REFERENCE.md) · 🇮🇩 [id](../../../id/docs/reference/API_REFERENCE.md) · 🇳🇬 [ig](../../../ig/docs/reference/API_REFERENCE.md) · 🇮🇹 [it](../../../it/docs/reference/API_REFERENCE.md) · 🇯🇵 [ja](../../../ja/docs/reference/API_REFERENCE.md) · 🇬🇪 [ka](../../../ka/docs/reference/API_REFERENCE.md) · 🇰🇭 [km](../../../km/docs/reference/API_REFERENCE.md) · 🇮🇳 [kn](../../../kn/docs/reference/API_REFERENCE.md) · 🇰🇷 [ko](../../../ko/docs/reference/API_REFERENCE.md) · 🇱🇹 [lt](../../../lt/docs/reference/API_REFERENCE.md) · 🇱🇻 [lv](../../../lv/docs/reference/API_REFERENCE.md) · 🇮🇳 [ml](../../../ml/docs/reference/API_REFERENCE.md) · 🇮🇳 [mr](../../../mr/docs/reference/API_REFERENCE.md) · 🇲🇾 [ms](../../../ms/docs/reference/API_REFERENCE.md) · 🇲🇹 [mt](../../../mt/docs/reference/API_REFERENCE.md) · 🇲🇲 [my](../../../my/docs/reference/API_REFERENCE.md) · 🇳🇵 [ne](../../../ne/docs/reference/API_REFERENCE.md) · 🇳🇱 [nl](../../../nl/docs/reference/API_REFERENCE.md) · 🇳🇴 [no](../../../no/docs/reference/API_REFERENCE.md) · 🇮🇳 [or](../../../or/docs/reference/API_REFERENCE.md) · 🇮🇳 [pa](../../../pa/docs/reference/API_REFERENCE.md) · 🇵🇭 [phi](../../../phi/docs/reference/API_REFERENCE.md) · 🇵🇱 [pl](../../../pl/docs/reference/API_REFERENCE.md) · 🇵🇹 [pt](../../../pt/docs/reference/API_REFERENCE.md) · 🇧🇷 [pt-BR](../../../pt-BR/docs/reference/API_REFERENCE.md) · 🇷🇴 [ro](../../../ro/docs/reference/API_REFERENCE.md) · 🇷🇺 [ru](../../../ru/docs/reference/API_REFERENCE.md) · 🇱🇰 [si](../../../si/docs/reference/API_REFERENCE.md) · 🇸🇰 [sk](../../../sk/docs/reference/API_REFERENCE.md) · 🇸🇮 [sl](../../../sl/docs/reference/API_REFERENCE.md) · 🇷🇸 [sr](../../../sr/docs/reference/API_REFERENCE.md) · 🇸🇪 [sv](../../../sv/docs/reference/API_REFERENCE.md) · 🇰🇪 [sw](../../../sw/docs/reference/API_REFERENCE.md) · 🇮🇳 [ta](../../../ta/docs/reference/API_REFERENCE.md) · 🇮🇳 [te](../../../te/docs/reference/API_REFERENCE.md) · 🇹🇭 [th](../../../th/docs/reference/API_REFERENCE.md) · 🇹🇷 [tr](../../../tr/docs/reference/API_REFERENCE.md) · 🇺🇦 [uk-UA](../../../uk-UA/docs/reference/API_REFERENCE.md) · 🇵🇰 [ur](../../../ur/docs/reference/API_REFERENCE.md) · 🇺🇿 [uz](../../../uz/docs/reference/API_REFERENCE.md) · 🇻🇳 [vi](../../../vi/docs/reference/API_REFERENCE.md) · 🇨🇳 [zh-CN](../../../zh-CN/docs/reference/API_REFERENCE.md) · 🇹🇼 [zh-TW](../../../zh-TW/docs/reference/API_REFERENCE.md)
+🌐 **Àwọn èdè:** 🇺🇸 [Èdè Gẹ̀ẹ́sì](./API_REFERENCE.md) | 🇪🇹 [አማርኛ](../i18n/am/docs/reference/API_REFERENCE.md) | 🇸🇦 [العربية](../i18n/ar/docs/reference/API_REFERENCE.md) | 🇦🇿 [Azərbaycan dili](../i18n/az/docs/reference/API_REFERENCE.md) | 🇧🇬 [Български](../i18n/bg/docs/reference/API_REFERENCE.md) | 🇧🇩 [বাংলা](../i18n/bn/docs/reference/API_REFERENCE.md) | 🇧🇦 [Bosanski](../i18n/bs/docs/reference/API_REFERENCE.md) | 🇨🇿 [Čeština](../i18n/cs/docs/reference/API_REFERENCE.md) | 🇩🇰 [Dansk](../i18n/da/docs/reference/API_REFERENCE.md) | 🇩🇪 [Deutsch](../i18n/de/docs/reference/API_REFERENCE.md) | 🇬🇷 [Ελληνικά](../i18n/el/docs/reference/API_REFERENCE.md) | 🇪🇸 [Español](../i18n/es/docs/reference/API_REFERENCE.md) | 🇪🇪 [Eesti](../i18n/et/docs/reference/API_REFERENCE.md) | 🇮🇷 [فارسی](../i18n/fa/docs/reference/API_REFERENCE.md) | 🇫🇮 [Suomi](../i18n/fi/docs/reference/API_REFERENCE.md) | 🇫🇷 [Français](../i18n/fr/docs/reference/API_REFERENCE.md) | 🇮🇪 [Gaeilge](../i18n/ga/docs/reference/API_REFERENCE.md) | 🇮🇳 [ગુજરાતી](../i18n/gu/docs/reference/API_REFERENCE.md) | 🇳🇬 [Hausa](../i18n/ha/docs/reference/API_REFERENCE.md) | 🇮🇱 [עברית](../i18n/he/docs/reference/API_REFERENCE.md) | 🇮🇳 [हिन्दी](../i18n/hi/docs/reference/API_REFERENCE.md) | 🇭🇷 [Hrvatski](../i18n/hr/docs/reference/API_REFERENCE.md) | 🇭🇺 [Magyar](../i18n/hu/docs/reference/API_REFERENCE.md) | 🇦🇲 [Հայերեն](../i18n/hy/docs/reference/API_REFERENCE.md) | 🇮🇩 [Bahasa Indonesia](../i18n/id/docs/reference/API_REFERENCE.md) | 🇳🇬 [Igbo](../i18n/ig/docs/reference/API_REFERENCE.md) | 🇮🇹 [Italiano](../i18n/it/docs/reference/API_REFERENCE.md) | 🇯🇵 [日本語](../i18n/ja/docs/reference/API_REFERENCE.md) | 🇬🇪 [ქართული](../i18n/ka/docs/reference/API_REFERENCE.md) | 🇰🇭 [ខ្មែរ](../i18n/km/docs/reference/API_REFERENCE.md) | 🇮🇳 [ಕನ್ನಡ](../i18n/kn/docs/reference/API_REFERENCE.md) | 🇰🇷 [한국어](../i18n/ko/docs/reference/API_REFERENCE.md) | 🇱🇹 [Lietuvių](../i18n/lt/docs/reference/API_REFERENCE.md) | 🇱🇻 [Latviešu](../i18n/lv/docs/reference/API_REFERENCE.md) | 🇮🇳 [മലയാളം](../i18n/ml/docs/reference/API_REFERENCE.md) | 🇮🇳 [मराठी](../i18n/mr/docs/reference/API_REFERENCE.md) | 🇲🇾 [Bahasa Melayu](../i18n/ms/docs/reference/API_REFERENCE.md) | 🇲🇹 [Malti](../i18n/mt/docs/reference/API_REFERENCE.md) | 🇲🇲 [မြန်မာ](../i18n/my/docs/reference/API_REFERENCE.md) | 🇳🇵 [नेपाली](../i18n/ne/docs/reference/API_REFERENCE.md) | 🇳🇱 [Nederlands](../i18n/nl/docs/reference/API_REFERENCE.md) | 🇳🇴 [Norsk](../i18n/no/docs/reference/API_REFERENCE.md) | 🇮🇳 [ଓଡ଼ିଆ](../i18n/or/docs/reference/API_REFERENCE.md) | 🇮🇳 [ਪੰਜਾਬੀ](../i18n/pa/docs/reference/API_REFERENCE.md) | 🇵🇭 [Filipino](../i18n/phi/docs/reference/API_REFERENCE.md) | 🇵🇱 [Polski](../i18n/pl/docs/reference/API_REFERENCE.md) | 🇵🇹 [Português (Portugal)](../i18n/pt/docs/reference/API_REFERENCE.md) | 🇧🇷 [Português (Brasil)](../i18n/pt-BR/docs/reference/API_REFERENCE.md) | 🇷🇴 [Română](../i18n/ro/docs/reference/API_REFERENCE.md) | 🇷🇺 [Русский](../i18n/ru/docs/reference/API_REFERENCE.md) | 🇱🇰 [සිංහල](../i18n/si/docs/reference/API_REFERENCE.md) | 🇸🇰 [Slovenčina](../i18n/sk/docs/reference/API_REFERENCE.md) | 🇸🇮 [Slovenščina](../i18n/sl/docs/reference/API_REFERENCE.md) | 🇷🇸 [Српски](../i18n/sr/docs/reference/API_REFERENCE.md) | 🇸🇪 [Svenska](../i18n/sv/docs/reference/API_REFERENCE.md) | 🇰🇪 [Kiswahili](../i18n/sw/docs/reference/API_REFERENCE.md) | 🇮🇳 [தமிழ்](../i18n/ta/docs/reference/API_REFERENCE.md) | 🇮🇳 [తెలుగు](../i18n/te/docs/reference/API_REFERENCE.md) | 🇹🇭 [ไทย](../i18n/th/docs/reference/API_REFERENCE.md) | 🇹🇷 [Türkçe](../i18n/tr/docs/reference/API_REFERENCE.md) | 🇺🇦 [Українська](../i18n/uk-UA/docs/reference/API_REFERENCE.md) | 🇵🇰 [اردو](../i18n/ur/docs/reference/API_REFERENCE.md) | 🇺🇿 [Oʻzbekcha](../i18n/uz/docs/reference/API_REFERENCE.md) | 🇻🇳 [Tiếng Việt](../i18n/vi/docs/reference/API_REFERENCE.md) | 🇳🇬 [Yorùbá](../i18n/yo/docs/reference/API_REFERENCE.md) | 🇨🇳 [中文 (简体)](../i18n/zh-CN/docs/reference/API_REFERENCE.md) | 🇹🇼 [中文 (繁體)](../i18n/zh-TW/docs/reference/API_REFERENCE.md)
 
-Àkọ́tọ́ pàtàkì fún OmniRoute API. Ó ṣàlàyé ojú-ọ̀nà gbogbogbò `/v1` àti àwọn endpoint ìṣàkóso tí a ń lò jù lọ; [`docs/openapi.yaml`](../openapi.yaml) tí ẹ̀rọ lè kà àti igi route tó wà lábẹ́ `src/app/api/` ni àwọn orísun tó pé pátápátá.
+Ìtọ́kasí pàtàkì fún API OmniRoute. Ó ṣàlàyé ojú-ọ̀nà gbogbogbò `/v1` àti àwọn endpoint ìṣàkóso tí a ń lò jù lọ; [`docs/openapi.yaml`](../openapi.yaml) tí ẹ̀rọ lè kà àti igi àwọn route lábẹ́ `src/app/api/` ni àwọn orísun tó péye jù lọ.
+
+Fún protocol tó dojú kọ́ ìbámu pẹ̀lú OpenAI àti àtòjọ agbára àwọn provider, wo
+[`OPENAI_COMPATIBILITY.md`](./OPENAI_COMPATIBILITY.md).
 
 ---
 
@@ -204,16 +207,16 @@ Content-Type: application/json
 
 Àwọn olùpèsè tó wà: Nebius, OpenAI, Mistral, Together AI, Fireworks, NVIDIA, **OpenRouter**, Jina AI.
 
-Àwọn id katalọ́ọ̀gù jẹ́ `provider/model` (àpẹẹrẹ: `jina-ai/jina-embeddings-v5-omni-small`). Àwọn id awoṣe Jina tí kò ní orúkọ olùpèsè, tí ó hàn nínú registry (fún àpẹẹrẹ `jina-embeddings-v5-text-small`, `jina-reranker-v3.5`) tún máa ń ṣiṣẹ́. Jina embed/rerank/classify/segment máa ń kọ́kọ́ lo àwọn ìwé-ẹ̀rí `jina-ai` inú dashboard; `JINA_AI_API_KEY` jẹ́ àṣàyàn ìpamọ́ nìkan nígbà tí kò bá sí kọ́kọ́rọ́ dashboard. Káàdì `jina-reader` jẹ́ fún Reader / `r.jina.ai` nìkan (`POST /v1/web/fetch`), kò sì ní ṣe iṣẹ́ embedding tàbí rerank láéláé.
+Àwọn id katalọ́ọ̀gù jẹ́ `provider/model` (àpẹẹrẹ: `jina-ai/jina-embeddings-v5-omni-small`). Àwọn id awoṣe Jina lásán tí ó hàn nínú registry (fún àpẹẹrẹ `jina-embeddings-v5-text-small`, `jina-reranker-v3.5`) tún máa ń ṣiṣẹ́. Embed/rerank/classify/segment ti Jina máa ń lo àwọn ìwé ẹ̀rí `jina-ai` láti dashboard lákọ̀ọ́kọ́; `JINA_AI_API_KEY` jẹ́ àṣàyàn ìgbàkejì nìkan nígbà tí kò sí kọ́kọ́rọ́ dashboard. Káàdì `jina-reader` jẹ́ fún Reader / `r.jina.ai` nìkan (`POST /v1/web/fetch`), kò sì ní pèsè embeddings tàbí rerank láé.
 
-Àwọn awoṣe registry tí ó sọ pé wọ́n ṣe àtìlẹ́yìn fún multimodal tún gba tó àwọn ohun èlò oníṣètò 32 tí kò dá lórí olùpèsè kan pàtó.
-Àwọn irú ohun èlò mídíà ni `text`, `image`, `audio`, `video`, àti `document`. `source` mídíà wọn
+Àwọn awoṣe registry tí ó kéde àtìlẹ́yìn multimodal tún gba tó àwọn ohun èlò structured 32 tí kò sinmi lé olùpèsè kan pàtó.
+Àwọn irú ohun èlò media ni `text`, `image`, `audio`, `video`, àti `document`. `source` media wọn
 jẹ́ bóyá `{"type":"url","url":"https://..."}` tàbí
 `{"type":"base64","data":"...","media_type":"..."}`.
 
 Jina v5 Omni (`jina-ai/jina-embeddings-v5-omni-small`, `jina-ai/jina-embeddings-v5-omni-nano`,
-àti alias ìdílé `jina-ai/jina-embeddings-v5-omni` → omni-small) tún gba àwọn ìwé EmbeddingsV5Request abinibi ti Jina,
-ó sì **rán wọn síwájú láìyí wọn padà** sí `https://api.jina.ai/v1/embeddings`:
+àti alias ìdílé `jina-ai/jina-embeddings-v5-omni` → omni-small) tún gba àwọn docs EmbeddingsV5Request
+ìbílẹ̀ Jina, ó sì **ń fi wọ́n ránṣẹ́ lọ láìyípadà** sí `https://api.jina.ai/v1/embeddings`:
 
 ```json
 {
@@ -230,27 +233,33 @@ Jina v5 Omni (`jina-ai/jina-embeddings-v5-omni-small`, `jina-ai/jina-embeddings-
 }
 ```
 
-Àwọn iye abinibi `{ image | audio | video | pdf }` lè jẹ́ URL HTTPS gbogbogbò, URI `data:`, tàbí
-base64 aise. OmniRoute kì í sọ àwọn object wọ̀nyẹn di string tàbí gba àwọn URL àwòrán abinibi wá — Jina fúnra rẹ̀
-ló ń gba mídíà gbogbogbò náà wá. Àwọn field Jina àfikún (`task`, `normalized`, `truncate`, `embedding_type`) ni a
-rán síwájú. Àwọn SKU Jina tó jẹ́ text-only ṣì máa kọ àwọn ìwé tí kì í ṣe text.
+Àwọn iye ìbílẹ̀ `{ image | audio | video | pdf }` lè jẹ́ URL HTTPS ti gbogbo ènìyàn lè wọlé sí, URI `data:`, tàbí
+base64 raw. OmniRoute kì í sọ àwọn object wọ̀nyẹn di string, bẹ́ẹ̀ ni kì í fetch àwọn URL àwòrán ìbílẹ̀ — Jina fúnra rẹ̀
+ló ń gba media gbogbogbò náà. Àwọn field Jina àfikún (`task`, `normalized`, `truncate`, `embedding_type`) ni
+a máa ń fi ránṣẹ́ lọ. Àwọn SKU Jina tó jẹ́ text nìkan ṣì máa ń kọ àwọn docs tí kì í ṣe text.
 
-Àwọn ààlà ààbò àti ìgbékalẹ̀:
+Àwọn ààlà ààbò àti ìgbé-ránṣẹ́:
 
-- Àwọn URL mídíà jíjìn gbọ́dọ̀ jẹ́ HTTPS gbogbogbò. Àwọn ohun èlò Canonical `{type,source:url}` ni a máa ń gbà
-  wá ní ẹ̀gbẹ́ server (àyẹ̀wò redirect lẹ́ẹ̀kan sí i, timeout, ààlà ìwọ̀n, DNS gbogbogbò, connection pinning), a sì máa ń
-  fi wọ́n sínú request kí a tó pe olùpèsè. Àwọn ohun èlò Jina-native `{image:"https://..."}` ni a rán síwájú bí wọ́n ṣe rí
-  lẹ́yìn àyẹ̀wò public-HTTPS kan náà; Jina ló máa gba URL náà wá.
-- Mídíà base64 inline ní ààlà 8 MiB tí a ti decode fún ohun èlò kọ̀ọ̀kan àti 16 MiB tí a ti decode fún gbogbo request náà.
+- Àwọn URL media jíjìn gbọ́dọ̀ jẹ́ HTTPS gbogbogbò. Àwọn ohun èlò canonical `{type,source:url}` ni a máa ń fetch
+  ní ẹ̀gbẹ́ server (àtúnyẹ̀wò redirect, timeout, ààlà ìwọ̀n, DNS gbogbogbò, pínní connection), a sì máa ń
+  fi wọ́n sínú request kí a tó pe olùpèsè. Àwọn ohun èlò ìbílẹ̀ Jina `{image:"https://..."}` ni a máa ń fi ránṣẹ́ bí wọ́n ṣe rí
+  lẹ́yìn àyẹ̀wò HTTPS gbogbogbò kan náà; Jina ló máa ń fetch URL náà.
+- Media base64 inline ní ààlà 8 MiB decoded fún ohun èlò kọ̀ọ̀kan àti 16 MiB decoded fún gbogbo request náà.
 
-Ìtumọ̀ sí ọna olùpèsè (a kì í rán àwọn ohun èlò canonical síwájú láìyí wọn padà):
+Ìtumọ̀ sí fọ́ọ̀mù olùpèsè (a kì í fi àwọn ohun èlò canonical ránṣẹ́ láìyípadà):
 
-- Àwọn awoṣe multimodal Jina: ohun èlò top-level kọ̀ọ̀kan di object kan tí a fi kọ́kọ́rọ́ modality sí
-  (`text` / `image` / `audio` / `video` / `pdf`), tí ó ń lo data URI fún mídíà inline; vector kan fún
+- Àwọn awoṣe multimodal Jina: ohun èlò top-level kọ̀ọ̀kan di object kan tí modality-key ń tọ́ka sí
+  (`text` / `image` / `audio` / `video` / `pdf`), ní lílo data URI fún media inline; vector kan fún
   ohun èlò top-level kọ̀ọ̀kan.
-- Ìdílé Gemini Embedding 2: array top-level kan di request abinibi kan ṣoṣo
+- Ìdílé Gemini Embedding 2: array top-level kan di request ìbílẹ̀ kan ṣoṣo
   `models/{model}:embedContent` pẹ̀lú `content.parts` (`text` tàbí `inline_data`).
-- Àwọn awoṣe àìmọ̀/dynamic tí kò ní metadata modality tó ṣe kedere máa kọ structured input pẹ̀lú HTTP 400.
+- llama.cpp (`llama-cpp/<model>`, awoṣe èyíkéyìí tí server agbègbè ti load): àwọn ohun èlò canonical `text`
+  di àwọn string lásán, `image` / `audio` / `video` sì di object
+  `{"content": [part]}` kan kọ̀ọ̀kan, ní lílo àwọn part àkóónú chat ti llama-server (`image_url`,
+  `input_audio` pẹ̀lú format `wav` / `mp3` / `flac`, `input_video`) pẹ̀lú data inline; vector kan
+  fún ohun èlò top-level kọ̀ọ̀kan. Server náà gbọ́dọ̀ ṣiṣẹ́ pẹ̀lú `--embedding --mmproj …`; láìsí projector,
+  òun fúnra rẹ̀ máa kọ media náà. A kò ṣàtìlẹ́yìn fún `document`.
+- Àwọn awoṣe unknown/dynamic tí kò ní metadata modality tó ṣe kedere máa kọ input structured pẹ̀lú HTTP 400.
 
 ```json
 {
@@ -267,11 +276,11 @@ rán síwájú. Àwọn SKU Jina tó jẹ́ text-only ṣì máa kọ àwọn ì
 }
 ```
 
-Àwọn àkópọ̀ awoṣe/modality tí a kò ṣe àtìlẹ́yìn fún máa dá HTTP 400 padà dípò fífi ipá yí ohun èlò náà padà. Àwọn field
-extension tí kì í ṣe input lórí àwọn request string/token àtijọ́ ṣì máa kọjá lọ láìyípadà.
+Àwọn àkójọpọ̀ awoṣe/modality tí a kò ṣàtìlẹ́yìn fún máa dá HTTP 400 padà dípò fífi ipá mú ohun èlò náà yí padà. Àwọn field
+extension tí kì í ṣe input lórí àwọn request string/token àtijọ́ ṣì máa ń kọjá lọ láìyípadà.
 
 ```bash
-# Ṣàkọsílẹ̀ gbogbo àwọn awoṣe embedding
+# Ṣàtòjọ gbogbo àwọn awoṣe embedding
 GET /v1/embeddings
 ```
 

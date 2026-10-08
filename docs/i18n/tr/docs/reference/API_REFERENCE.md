@@ -4,9 +4,12 @@
 
 ---
 
-🌐 **Languages:** 🇺🇸 [English](../../../../reference/API_REFERENCE.md) · 🇪🇹 [am](../../../am/docs/reference/API_REFERENCE.md) · 🇸🇦 [ar](../../../ar/docs/reference/API_REFERENCE.md) · 🇦🇿 [az](../../../az/docs/reference/API_REFERENCE.md) · 🇧🇬 [bg](../../../bg/docs/reference/API_REFERENCE.md) · 🇧🇩 [bn](../../../bn/docs/reference/API_REFERENCE.md) · 🇧🇦 [bs](../../../bs/docs/reference/API_REFERENCE.md) · 🇨🇿 [cs](../../../cs/docs/reference/API_REFERENCE.md) · 🇩🇰 [da](../../../da/docs/reference/API_REFERENCE.md) · 🇩🇪 [de](../../../de/docs/reference/API_REFERENCE.md) · 🇬🇷 [el](../../../el/docs/reference/API_REFERENCE.md) · 🇪🇸 [es](../../../es/docs/reference/API_REFERENCE.md) · 🇪🇪 [et](../../../et/docs/reference/API_REFERENCE.md) · 🇮🇷 [fa](../../../fa/docs/reference/API_REFERENCE.md) · 🇫🇮 [fi](../../../fi/docs/reference/API_REFERENCE.md) · 🇫🇷 [fr](../../../fr/docs/reference/API_REFERENCE.md) · 🇮🇪 [ga](../../../ga/docs/reference/API_REFERENCE.md) · 🇮🇳 [gu](../../../gu/docs/reference/API_REFERENCE.md) · 🇳🇬 [ha](../../../ha/docs/reference/API_REFERENCE.md) · 🇮🇱 [he](../../../he/docs/reference/API_REFERENCE.md) · 🇮🇳 [hi](../../../hi/docs/reference/API_REFERENCE.md) · 🇭🇷 [hr](../../../hr/docs/reference/API_REFERENCE.md) · 🇭🇺 [hu](../../../hu/docs/reference/API_REFERENCE.md) · 🇦🇲 [hy](../../../hy/docs/reference/API_REFERENCE.md) · 🇮🇩 [id](../../../id/docs/reference/API_REFERENCE.md) · 🇳🇬 [ig](../../../ig/docs/reference/API_REFERENCE.md) · 🇮🇹 [it](../../../it/docs/reference/API_REFERENCE.md) · 🇯🇵 [ja](../../../ja/docs/reference/API_REFERENCE.md) · 🇬🇪 [ka](../../../ka/docs/reference/API_REFERENCE.md) · 🇰🇭 [km](../../../km/docs/reference/API_REFERENCE.md) · 🇮🇳 [kn](../../../kn/docs/reference/API_REFERENCE.md) · 🇰🇷 [ko](../../../ko/docs/reference/API_REFERENCE.md) · 🇱🇹 [lt](../../../lt/docs/reference/API_REFERENCE.md) · 🇱🇻 [lv](../../../lv/docs/reference/API_REFERENCE.md) · 🇮🇳 [ml](../../../ml/docs/reference/API_REFERENCE.md) · 🇮🇳 [mr](../../../mr/docs/reference/API_REFERENCE.md) · 🇲🇾 [ms](../../../ms/docs/reference/API_REFERENCE.md) · 🇲🇹 [mt](../../../mt/docs/reference/API_REFERENCE.md) · 🇲🇲 [my](../../../my/docs/reference/API_REFERENCE.md) · 🇳🇵 [ne](../../../ne/docs/reference/API_REFERENCE.md) · 🇳🇱 [nl](../../../nl/docs/reference/API_REFERENCE.md) · 🇳🇴 [no](../../../no/docs/reference/API_REFERENCE.md) · 🇮🇳 [or](../../../or/docs/reference/API_REFERENCE.md) · 🇮🇳 [pa](../../../pa/docs/reference/API_REFERENCE.md) · 🇵🇭 [phi](../../../phi/docs/reference/API_REFERENCE.md) · 🇵🇱 [pl](../../../pl/docs/reference/API_REFERENCE.md) · 🇵🇹 [pt](../../../pt/docs/reference/API_REFERENCE.md) · 🇧🇷 [pt-BR](../../../pt-BR/docs/reference/API_REFERENCE.md) · 🇷🇴 [ro](../../../ro/docs/reference/API_REFERENCE.md) · 🇷🇺 [ru](../../../ru/docs/reference/API_REFERENCE.md) · 🇱🇰 [si](../../../si/docs/reference/API_REFERENCE.md) · 🇸🇰 [sk](../../../sk/docs/reference/API_REFERENCE.md) · 🇸🇮 [sl](../../../sl/docs/reference/API_REFERENCE.md) · 🇷🇸 [sr](../../../sr/docs/reference/API_REFERENCE.md) · 🇸🇪 [sv](../../../sv/docs/reference/API_REFERENCE.md) · 🇰🇪 [sw](../../../sw/docs/reference/API_REFERENCE.md) · 🇮🇳 [ta](../../../ta/docs/reference/API_REFERENCE.md) · 🇮🇳 [te](../../../te/docs/reference/API_REFERENCE.md) · 🇹🇭 [th](../../../th/docs/reference/API_REFERENCE.md) · 🇺🇦 [uk-UA](../../../uk-UA/docs/reference/API_REFERENCE.md) · 🇵🇰 [ur](../../../ur/docs/reference/API_REFERENCE.md) · 🇺🇿 [uz](../../../uz/docs/reference/API_REFERENCE.md) · 🇻🇳 [vi](../../../vi/docs/reference/API_REFERENCE.md) · 🇳🇬 [yo](../../../yo/docs/reference/API_REFERENCE.md) · 🇨🇳 [zh-CN](../../../zh-CN/docs/reference/API_REFERENCE.md) · 🇹🇼 [zh-TW](../../../zh-TW/docs/reference/API_REFERENCE.md)
+🌐 **Diller:** 🇺🇸 [English](./API_REFERENCE.md) | 🇪🇹 [አማርኛ](../i18n/am/docs/reference/API_REFERENCE.md) | 🇸🇦 [العربية](../i18n/ar/docs/reference/API_REFERENCE.md) | 🇦🇿 [Azərbaycan dili](../i18n/az/docs/reference/API_REFERENCE.md) | 🇧🇬 [Български](../i18n/bg/docs/reference/API_REFERENCE.md) | 🇧🇩 [বাংলা](../i18n/bn/docs/reference/API_REFERENCE.md) | 🇧🇦 [Bosanski](../i18n/bs/docs/reference/API_REFERENCE.md) | 🇨🇿 [Čeština](../i18n/cs/docs/reference/API_REFERENCE.md) | 🇩🇰 [Dansk](../i18n/da/docs/reference/API_REFERENCE.md) | 🇩🇪 [Deutsch](../i18n/de/docs/reference/API_REFERENCE.md) | 🇬🇷 [Ελληνικά](../i18n/el/docs/reference/API_REFERENCE.md) | 🇪🇸 [Español](../i18n/es/docs/reference/API_REFERENCE.md) | 🇪🇪 [Eesti](../i18n/et/docs/reference/API_REFERENCE.md) | 🇮🇷 [فارسی](../i18n/fa/docs/reference/API_REFERENCE.md) | 🇫🇮 [Suomi](../i18n/fi/docs/reference/API_REFERENCE.md) | 🇫🇷 [Français](../i18n/fr/docs/reference/API_REFERENCE.md) | 🇮🇪 [Gaeilge](../i18n/ga/docs/reference/API_REFERENCE.md) | 🇮🇳 [ગુજરાતી](../i18n/gu/docs/reference/API_REFERENCE.md) | 🇳🇬 [Hausa](../i18n/ha/docs/reference/API_REFERENCE.md) | 🇮🇱 [עברית](../i18n/he/docs/reference/API_REFERENCE.md) | 🇮🇳 [हिन्दी](../i18n/hi/docs/reference/API_REFERENCE.md) | 🇭🇷 [Hrvatski](../i18n/hr/docs/reference/API_REFERENCE.md) | 🇭🇺 [Magyar](../i18n/hu/docs/reference/API_REFERENCE.md) | 🇦🇲 [Հայերեն](../i18n/hy/docs/reference/API_REFERENCE.md) | 🇮🇩 [Bahasa Indonesia](../i18n/id/docs/reference/API_REFERENCE.md) | 🇳🇬 [Igbo](../i18n/ig/docs/reference/API_REFERENCE.md) | 🇮🇹 [Italiano](../i18n/it/docs/reference/API_REFERENCE.md) | 🇯🇵 [日本語](../i18n/ja/docs/reference/API_REFERENCE.md) | 🇬🇪 [ქართული](../i18n/ka/docs/reference/API_REFERENCE.md) | 🇰🇭 [ខ្មែរ](../i18n/km/docs/reference/API_REFERENCE.md) | 🇮🇳 [ಕನ್ನಡ](../i18n/kn/docs/reference/API_REFERENCE.md) | 🇰🇷 [한국어](../i18n/ko/docs/reference/API_REFERENCE.md) | 🇱🇹 [Lietuvių](../i18n/lt/docs/reference/API_REFERENCE.md) | 🇱🇻 [Latviešu](../i18n/lv/docs/reference/API_REFERENCE.md) | 🇮🇳 [മലയാളം](../i18n/ml/docs/reference/API_REFERENCE.md) | 🇮🇳 [मराठी](../i18n/mr/docs/reference/API_REFERENCE.md) | 🇲🇾 [Bahasa Melayu](../i18n/ms/docs/reference/API_REFERENCE.md) | 🇲🇹 [Malti](../i18n/mt/docs/reference/API_REFERENCE.md) | 🇲🇲 [မြန်မာ](../i18n/my/docs/reference/API_REFERENCE.md) | 🇳🇵 [नेपाली](../i18n/ne/docs/reference/API_REFERENCE.md) | 🇳🇱 [Nederlands](../i18n/nl/docs/reference/API_REFERENCE.md) | 🇳🇴 [Norsk](../i18n/no/docs/reference/API_REFERENCE.md) | 🇮🇳 [ଓଡ଼ିଆ](../i18n/or/docs/reference/API_REFERENCE.md) | 🇮🇳 [ਪੰਜਾਬੀ](../i18n/pa/docs/reference/API_REFERENCE.md) | 🇵🇭 [Filipino](../i18n/phi/docs/reference/API_REFERENCE.md) | 🇵🇱 [Polski](../i18n/pl/docs/reference/API_REFERENCE.md) | 🇵🇹 [Português (Portugal)](../i18n/pt/docs/reference/API_REFERENCE.md) | 🇧🇷 [Português (Brasil)](../i18n/pt-BR/docs/reference/API_REFERENCE.md) | 🇷🇴 [Română](../i18n/ro/docs/reference/API_REFERENCE.md) | 🇷🇺 [Русский](../i18n/ru/docs/reference/API_REFERENCE.md) | 🇱🇰 [සිංහල](../i18n/si/docs/reference/API_REFERENCE.md) | 🇸🇰 [Slovenčina](../i18n/sk/docs/reference/API_REFERENCE.md) | 🇸🇮 [Slovenščina](../i18n/sl/docs/reference/API_REFERENCE.md) | 🇷🇸 [Српски](../i18n/sr/docs/reference/API_REFERENCE.md) | 🇸🇪 [Svenska](../i18n/sv/docs/reference/API_REFERENCE.md) | 🇰🇪 [Kiswahili](../i18n/sw/docs/reference/API_REFERENCE.md) | 🇮🇳 [தமிழ்](../i18n/ta/docs/reference/API_REFERENCE.md) | 🇮🇳 [తెలుగు](../i18n/te/docs/reference/API_REFERENCE.md) | 🇹🇭 [ไทย](../i18n/th/docs/reference/API_REFERENCE.md) | 🇹🇷 [Türkçe](../i18n/tr/docs/reference/API_REFERENCE.md) | 🇺🇦 [Українська](../i18n/uk-UA/docs/reference/API_REFERENCE.md) | 🇵🇰 [اردو](../i18n/ur/docs/reference/API_REFERENCE.md) | 🇺🇿 [Oʻzbekcha](../i18n/uz/docs/reference/API_REFERENCE.md) | 🇻🇳 [Tiếng Việt](../i18n/vi/docs/reference/API_REFERENCE.md) | 🇳🇬 [Yorùbá](../i18n/yo/docs/reference/API_REFERENCE.md) | 🇨🇳 [中文 (简体)](../i18n/zh-CN/docs/reference/API_REFERENCE.md) | 🇹🇼 [中文 (繁體)](../i18n/zh-TW/docs/reference/API_REFERENCE.md)
 
-OmniRoute API için temel başvuru kaynağı. Herkese açık `/v1` yüzeyini ve en sık kullanılan yönetim uç noktalarını kapsar; makine tarafından okunabilir [`docs/openapi.yaml`](../openapi.yaml) ile `src/app/api/` altındaki rota ağacı, kapsamlı kaynaklardır.
+OmniRoute API için temel başvuru kaynağı. Genel `/v1` yüzeyini ve en sık kullanılan yönetim uç noktalarını kapsar; makine tarafından okunabilir [`docs/openapi.yaml`](../openapi.yaml) ile `src/app/api/` altındaki rota ağacı eksiksiz kaynaklardır.
+
+OpenAI uyumlu protokole ve sağlayıcı yetenekleri matrisine odaklanan bilgiler için
+[`OPENAI_COMPATIBILITY.md`](./OPENAI_COMPATIBILITY.md) belgesine bakın.
 
 ---
 
@@ -189,7 +192,7 @@ burada `<source>`, `request-header`, `routing-override`, `active-profile`, `auto
 
 ---
 
-## Embedding'ler
+## Gömme Vektörleri
 
 ```bash
 POST /v1/embeddings
@@ -204,16 +207,16 @@ Content-Type: application/json
 
 Kullanılabilir sağlayıcılar: Nebius, OpenAI, Mistral, Together AI, Fireworks, NVIDIA, **OpenRouter**, Jina AI.
 
-Katalog kimlikleri `provider/model` biçimindedir (örnek: `jina-ai/jina-embeddings-v5-omni-small`). Kayıt defterinde yer alan yalın Jina model kimlikleri de (örneğin `jina-embeddings-v5-text-small`, `jina-reranker-v3.5`) çözümlenir. Jina embed/rerank/classify/segment işlemleri öncelikle kontrol panelindeki `jina-ai` kimlik bilgilerini kullanır; `JINA_AI_API_KEY` yalnızca kontrol paneli anahtarı olmadığında geri dönüş seçeneğidir. `jina-reader` kartı yalnızca Reader / `r.jina.ai` içindir (`POST /v1/web/fetch`) ve hiçbir zaman embedding veya yeniden sıralama hizmeti sunmaz.
+Katalog kimlikleri `provider/model` biçimindedir (örnek: `jina-ai/jina-embeddings-v5-omni-small`). Kayıt defterinde yer alan yalın Jina model kimlikleri de (örneğin `jina-embeddings-v5-text-small`, `jina-reranker-v3.5`) çözümlenir. Jina embed/rerank/classify/segment işlemleri önce kontrol panelindeki `jina-ai` kimlik bilgilerini kullanır; `JINA_AI_API_KEY`, yalnızca kontrol paneli anahtarı bulunmadığında yedek olarak kullanılır. `jina-reader` kartı yalnızca Reader / `r.jina.ai` içindir (`POST /v1/web/fetch`) ve hiçbir zaman gömme vektörü veya yeniden sıralama hizmeti sunmaz.
 
-Çok modlu desteği olduğunu belirten kayıt defteri modelleri, sağlayıcıdan bağımsız en fazla 32 yapılandırılmış
+Çok modlu desteğe sahip olduğunu belirten kayıt defteri modelleri, sağlayıcıdan bağımsız en fazla 32 yapılandırılmış
 öğeyi de kabul eder. Medya öğesi türleri `text`, `image`, `audio`, `video` ve `document` şeklindedir. Bunların medya `source`
 değeri ya `{"type":"url","url":"https://..."}` ya da
 `{"type":"base64","data":"...","media_type":"..."}` biçimindedir.
 
 Jina v5 Omni (`jina-ai/jina-embeddings-v5-omni-small`, `jina-ai/jina-embeddings-v5-omni-nano`
 ve aile diğer adı `jina-ai/jina-embeddings-v5-omni` → omni-small), Jina'nın yerel
-EmbeddingsV5Request belgelerini de kabul eder ve bunları `https://api.jina.ai/v1/embeddings` adresine **değiştirmeden iletir**:
+EmbeddingsV5Request belgelerini de kabul eder ve bunları **değiştirmeden** `https://api.jina.ai/v1/embeddings` adresine iletir:
 
 ```json
 {
@@ -231,25 +234,30 @@ EmbeddingsV5Request belgelerini de kabul eder ve bunları `https://api.jina.ai/v
 ```
 
 Yerel `{ image | audio | video | pdf }` değerleri herkese açık bir HTTPS URL'si, bir `data:` URI'si veya ham
-base64 olabilir. OmniRoute bu nesneleri dizeye dönüştürmez veya yerel görüntü URL'lerini getirmez — herkese açık
-medyayı Jina kendisi alır. Ek Jina alanları (`task`, `normalized`, `truncate`, `embedding_type`)
+base64 olabilir. OmniRoute bu nesneleri dizelere dönüştürmez veya yerel görüntü URL'lerini getirmez — herkese açık
+medyayı Jina'nın kendisi alır. Ek Jina alanları (`task`, `normalized`, `truncate`, `embedding_type`)
 iletilir. Yalnızca metin destekleyen Jina SKU'ları, metin dışı belgeleri reddetmeye devam eder.
 
 Güvenlik ve aktarım sınırları:
 
-- Uzak medya URL'leri herkese açık HTTPS olmalıdır. Standart `{type,source:url}` öğeleri
+- Uzak medya URL'leri herkese açık HTTPS olmalıdır. Kurallı `{type,source:url}` öğeleri
   sunucu tarafında alınır (yönlendirme yeniden doğrulaması, zaman aşımı, boyut sınırları, herkese açık DNS, bağlantı sabitleme) ve
-  sağlayıcı çağrısından önce satır içine eklenir. Jina'ya özgü `{image:"https://..."}` öğeleri,
-  aynı herkese açık HTTPS kontrolünden sonra olduğu gibi iletilir; URL'yi Jina getirir.
+  sağlayıcı çağrısından önce satır içine eklenir. Jina'ya özgü `{image:"https://..."}` öğeleri, aynı herkese açık HTTPS denetiminden
+  sonra olduğu gibi iletilir; URL'yi Jina alır.
 - Satır içi base64 medya, öğe başına çözümlenmiş 8 MiB ve istek genelinde çözümlenmiş 16 MiB ile sınırlıdır.
 
-Sağlayıcı dönüşümü (standart öğeler hiçbir zaman değiştirilmeden iletilmez):
+Sağlayıcı dönüşümü (kurallı öğeler hiçbir zaman değiştirilmeden iletilmez):
 
-- Jina çok modlu modelleri: her üst düzey öğe, satır içi medya için veri URI'leri kullanılarak
+- Jina çok modlu modelleri: Her üst düzey öğe, satır içi medya için veri URI'leri kullanan,
   modalite anahtarlı tek bir nesneye (`text` / `image` / `audio` / `video` / `pdf`) dönüştürülür; her
   üst düzey öğe için bir vektör oluşturulur.
-- Gemini Embedding 2 ailesi: bir üst düzey dizi, `content.parts` (`text` veya `inline_data`) içeren tek bir yerel
-  `models/{model}:embedContent` isteğine dönüştürülür.
+- Gemini Embedding 2 ailesi: Bir üst düzey dizi, `content.parts` (`text` veya `inline_data`)
+  içeren tek bir yerel `models/{model}:embedContent` isteğine dönüştürülür.
+- llama.cpp (`llama-cpp/<model>`, yerel sunucunun yüklediği herhangi bir model): Kurallı `text` öğeleri
+  düz dizelere, `image` / `audio` / `video` öğeleri ise satır içi verilerle llama-server'ın sohbet içeriği parçalarını (`image_url`,
+  `wav` / `mp3` / `flac` biçimli `input_audio`, `input_video`) kullanan birer
+  `{"content": [part]}` nesnesine dönüştürülür; her üst düzey öğe için bir vektör oluşturulur. Sunucu `--embedding --mmproj …`
+  ile çalıştırılmalıdır; projektör olmadan medyayı sunucunun kendisi reddeder. `document` desteklenmez.
 - Açık modalite meta verileri bulunmayan bilinmeyen/dinamik modeller, yapılandırılmış girdiyi HTTP 400 ile reddeder.
 
 ```json
@@ -267,11 +275,11 @@ Sağlayıcı dönüşümü (standart öğeler hiçbir zaman değiştirilmeden il
 }
 ```
 
-Desteklenmeyen model/modalite kombinasyonları, öğeyi zorla dönüştürmek yerine HTTP 400 döndürür. Eski dize/token isteklerindeki
-girdi dışı uzantı alanları değişmeden aktarılmaya devam eder.
+Desteklenmeyen model/modalite birleşimleri, öğeyi dönüştürmeye zorlamak yerine HTTP 400 döndürür. Eski dize/belirteç
+isteklerindeki girdi dışı uzantı alanları, değiştirilmeden aktarılmaya devam eder.
 
 ```bash
-# Tüm embedding modellerini listele
+# Tüm gömme vektörü modellerini listele
 GET /v1/embeddings
 ```
 

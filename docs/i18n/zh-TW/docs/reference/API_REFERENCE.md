@@ -4,9 +4,12 @@
 
 ---
 
-🌐 **Languages:** 🇺🇸 [English](../../../../reference/API_REFERENCE.md) · 🇪🇹 [am](../../../am/docs/reference/API_REFERENCE.md) · 🇸🇦 [ar](../../../ar/docs/reference/API_REFERENCE.md) · 🇦🇿 [az](../../../az/docs/reference/API_REFERENCE.md) · 🇧🇬 [bg](../../../bg/docs/reference/API_REFERENCE.md) · 🇧🇩 [bn](../../../bn/docs/reference/API_REFERENCE.md) · 🇧🇦 [bs](../../../bs/docs/reference/API_REFERENCE.md) · 🇨🇿 [cs](../../../cs/docs/reference/API_REFERENCE.md) · 🇩🇰 [da](../../../da/docs/reference/API_REFERENCE.md) · 🇩🇪 [de](../../../de/docs/reference/API_REFERENCE.md) · 🇬🇷 [el](../../../el/docs/reference/API_REFERENCE.md) · 🇪🇸 [es](../../../es/docs/reference/API_REFERENCE.md) · 🇪🇪 [et](../../../et/docs/reference/API_REFERENCE.md) · 🇮🇷 [fa](../../../fa/docs/reference/API_REFERENCE.md) · 🇫🇮 [fi](../../../fi/docs/reference/API_REFERENCE.md) · 🇫🇷 [fr](../../../fr/docs/reference/API_REFERENCE.md) · 🇮🇪 [ga](../../../ga/docs/reference/API_REFERENCE.md) · 🇮🇳 [gu](../../../gu/docs/reference/API_REFERENCE.md) · 🇳🇬 [ha](../../../ha/docs/reference/API_REFERENCE.md) · 🇮🇱 [he](../../../he/docs/reference/API_REFERENCE.md) · 🇮🇳 [hi](../../../hi/docs/reference/API_REFERENCE.md) · 🇭🇷 [hr](../../../hr/docs/reference/API_REFERENCE.md) · 🇭🇺 [hu](../../../hu/docs/reference/API_REFERENCE.md) · 🇦🇲 [hy](../../../hy/docs/reference/API_REFERENCE.md) · 🇮🇩 [id](../../../id/docs/reference/API_REFERENCE.md) · 🇳🇬 [ig](../../../ig/docs/reference/API_REFERENCE.md) · 🇮🇹 [it](../../../it/docs/reference/API_REFERENCE.md) · 🇯🇵 [ja](../../../ja/docs/reference/API_REFERENCE.md) · 🇬🇪 [ka](../../../ka/docs/reference/API_REFERENCE.md) · 🇰🇭 [km](../../../km/docs/reference/API_REFERENCE.md) · 🇮🇳 [kn](../../../kn/docs/reference/API_REFERENCE.md) · 🇰🇷 [ko](../../../ko/docs/reference/API_REFERENCE.md) · 🇱🇹 [lt](../../../lt/docs/reference/API_REFERENCE.md) · 🇱🇻 [lv](../../../lv/docs/reference/API_REFERENCE.md) · 🇮🇳 [ml](../../../ml/docs/reference/API_REFERENCE.md) · 🇮🇳 [mr](../../../mr/docs/reference/API_REFERENCE.md) · 🇲🇾 [ms](../../../ms/docs/reference/API_REFERENCE.md) · 🇲🇹 [mt](../../../mt/docs/reference/API_REFERENCE.md) · 🇲🇲 [my](../../../my/docs/reference/API_REFERENCE.md) · 🇳🇵 [ne](../../../ne/docs/reference/API_REFERENCE.md) · 🇳🇱 [nl](../../../nl/docs/reference/API_REFERENCE.md) · 🇳🇴 [no](../../../no/docs/reference/API_REFERENCE.md) · 🇮🇳 [or](../../../or/docs/reference/API_REFERENCE.md) · 🇮🇳 [pa](../../../pa/docs/reference/API_REFERENCE.md) · 🇵🇭 [phi](../../../phi/docs/reference/API_REFERENCE.md) · 🇵🇱 [pl](../../../pl/docs/reference/API_REFERENCE.md) · 🇵🇹 [pt](../../../pt/docs/reference/API_REFERENCE.md) · 🇧🇷 [pt-BR](../../../pt-BR/docs/reference/API_REFERENCE.md) · 🇷🇴 [ro](../../../ro/docs/reference/API_REFERENCE.md) · 🇷🇺 [ru](../../../ru/docs/reference/API_REFERENCE.md) · 🇱🇰 [si](../../../si/docs/reference/API_REFERENCE.md) · 🇸🇰 [sk](../../../sk/docs/reference/API_REFERENCE.md) · 🇸🇮 [sl](../../../sl/docs/reference/API_REFERENCE.md) · 🇷🇸 [sr](../../../sr/docs/reference/API_REFERENCE.md) · 🇸🇪 [sv](../../../sv/docs/reference/API_REFERENCE.md) · 🇰🇪 [sw](../../../sw/docs/reference/API_REFERENCE.md) · 🇮🇳 [ta](../../../ta/docs/reference/API_REFERENCE.md) · 🇮🇳 [te](../../../te/docs/reference/API_REFERENCE.md) · 🇹🇭 [th](../../../th/docs/reference/API_REFERENCE.md) · 🇹🇷 [tr](../../../tr/docs/reference/API_REFERENCE.md) · 🇺🇦 [uk-UA](../../../uk-UA/docs/reference/API_REFERENCE.md) · 🇵🇰 [ur](../../../ur/docs/reference/API_REFERENCE.md) · 🇺🇿 [uz](../../../uz/docs/reference/API_REFERENCE.md) · 🇻🇳 [vi](../../../vi/docs/reference/API_REFERENCE.md) · 🇳🇬 [yo](../../../yo/docs/reference/API_REFERENCE.md) · 🇨🇳 [zh-CN](../../../zh-CN/docs/reference/API_REFERENCE.md)
+🌐 **語言：** 🇺🇸 [English](./API_REFERENCE.md) | 🇪🇹 [አማርኛ](../i18n/am/docs/reference/API_REFERENCE.md) | 🇸🇦 [العربية](../i18n/ar/docs/reference/API_REFERENCE.md) | 🇦🇿 [Azərbaycan dili](../i18n/az/docs/reference/API_REFERENCE.md) | 🇧🇬 [Български](../i18n/bg/docs/reference/API_REFERENCE.md) | 🇧🇩 [বাংলা](../i18n/bn/docs/reference/API_REFERENCE.md) | 🇧🇦 [Bosanski](../i18n/bs/docs/reference/API_REFERENCE.md) | 🇨🇿 [Čeština](../i18n/cs/docs/reference/API_REFERENCE.md) | 🇩🇰 [Dansk](../i18n/da/docs/reference/API_REFERENCE.md) | 🇩🇪 [Deutsch](../i18n/de/docs/reference/API_REFERENCE.md) | 🇬🇷 [Ελληνικά](../i18n/el/docs/reference/API_REFERENCE.md) | 🇪🇸 [Español](../i18n/es/docs/reference/API_REFERENCE.md) | 🇪🇪 [Eesti](../i18n/et/docs/reference/API_REFERENCE.md) | 🇮🇷 [فارسی](../i18n/fa/docs/reference/API_REFERENCE.md) | 🇫🇮 [Suomi](../i18n/fi/docs/reference/API_REFERENCE.md) | 🇫🇷 [Français](../i18n/fr/docs/reference/API_REFERENCE.md) | 🇮🇪 [Gaeilge](../i18n/ga/docs/reference/API_REFERENCE.md) | 🇮🇳 [ગુજરાતી](../i18n/gu/docs/reference/API_REFERENCE.md) | 🇳🇬 [Hausa](../i18n/ha/docs/reference/API_REFERENCE.md) | 🇮🇱 [עברית](../i18n/he/docs/reference/API_REFERENCE.md) | 🇮🇳 [हिन्दी](../i18n/hi/docs/reference/API_REFERENCE.md) | 🇭🇷 [Hrvatski](../i18n/hr/docs/reference/API_REFERENCE.md) | 🇭🇺 [Magyar](../i18n/hu/docs/reference/API_REFERENCE.md) | 🇦🇲 [Հայերեն](../i18n/hy/docs/reference/API_REFERENCE.md) | 🇮🇩 [Bahasa Indonesia](../i18n/id/docs/reference/API_REFERENCE.md) | 🇳🇬 [Igbo](../i18n/ig/docs/reference/API_REFERENCE.md) | 🇮🇹 [Italiano](../i18n/it/docs/reference/API_REFERENCE.md) | 🇯🇵 [日本語](../i18n/ja/docs/reference/API_REFERENCE.md) | 🇬🇪 [ქართული](../i18n/ka/docs/reference/API_REFERENCE.md) | 🇰🇭 [ខ្មែរ](../i18n/km/docs/reference/API_REFERENCE.md) | 🇮🇳 [ಕನ್ನಡ](../i18n/kn/docs/reference/API_REFERENCE.md) | 🇰🇷 [한국어](../i18n/ko/docs/reference/API_REFERENCE.md) | 🇱🇹 [Lietuvių](../i18n/lt/docs/reference/API_REFERENCE.md) | 🇱🇻 [Latviešu](../i18n/lv/docs/reference/API_REFERENCE.md) | 🇮🇳 [മലയാളം](../i18n/ml/docs/reference/API_REFERENCE.md) | 🇮🇳 [मराठी](../i18n/mr/docs/reference/API_REFERENCE.md) | 🇲🇾 [Bahasa Melayu](../i18n/ms/docs/reference/API_REFERENCE.md) | 🇲🇹 [Malti](../i18n/mt/docs/reference/API_REFERENCE.md) | 🇲🇲 [မြန်မာ](../i18n/my/docs/reference/API_REFERENCE.md) | 🇳🇵 [नेपाली](../i18n/ne/docs/reference/API_REFERENCE.md) | 🇳🇱 [Nederlands](../i18n/nl/docs/reference/API_REFERENCE.md) | 🇳🇴 [Norsk](../i18n/no/docs/reference/API_REFERENCE.md) | 🇮🇳 [ଓଡ଼ିଆ](../i18n/or/docs/reference/API_REFERENCE.md) | 🇮🇳 [ਪੰਜਾਬੀ](../i18n/pa/docs/reference/API_REFERENCE.md) | 🇵🇭 [Filipino](../i18n/phi/docs/reference/API_REFERENCE.md) | 🇵🇱 [Polski](../i18n/pl/docs/reference/API_REFERENCE.md) | 🇵🇹 [Português (Portugal)](../i18n/pt/docs/reference/API_REFERENCE.md) | 🇧🇷 [Português (Brasil)](../i18n/pt-BR/docs/reference/API_REFERENCE.md) | 🇷🇴 [Română](../i18n/ro/docs/reference/API_REFERENCE.md) | 🇷🇺 [Русский](../i18n/ru/docs/reference/API_REFERENCE.md) | 🇱🇰 [සිංහල](../i18n/si/docs/reference/API_REFERENCE.md) | 🇸🇰 [Slovenčina](../i18n/sk/docs/reference/API_REFERENCE.md) | 🇸🇮 [Slovenščina](../i18n/sl/docs/reference/API_REFERENCE.md) | 🇷🇸 [Српски](../i18n/sr/docs/reference/API_REFERENCE.md) | 🇸🇪 [Svenska](../i18n/sv/docs/reference/API_REFERENCE.md) | 🇰🇪 [Kiswahili](../i18n/sw/docs/reference/API_REFERENCE.md) | 🇮🇳 [தமிழ்](../i18n/ta/docs/reference/API_REFERENCE.md) | 🇮🇳 [తెలుగు](../i18n/te/docs/reference/API_REFERENCE.md) | 🇹🇭 [ไทย](../i18n/th/docs/reference/API_REFERENCE.md) | 🇹🇷 [Türkçe](../i18n/tr/docs/reference/API_REFERENCE.md) | 🇺🇦 [Українська](../i18n/uk-UA/docs/reference/API_REFERENCE.md) | 🇵🇰 [اردو](../i18n/ur/docs/reference/API_REFERENCE.md) | 🇺🇿 [Oʻzbekcha](../i18n/uz/docs/reference/API_REFERENCE.md) | 🇻🇳 [Tiếng Việt](../i18n/vi/docs/reference/API_REFERENCE.md) | 🇳🇬 [Yorùbá](../i18n/yo/docs/reference/API_REFERENCE.md) | 🇨🇳 [中文 (简体)](../i18n/zh-CN/docs/reference/API_REFERENCE.md) | 🇹🇼 [中文 (繁體)](../i18n/zh-TW/docs/reference/API_REFERENCE.md)
 
-OmniRoute API 的核心參考文件。涵蓋公開的 `/v1` 介面及最常用的管理端點；機器可讀的 [`docs/openapi.yaml`](../openapi.yaml) 與 `src/app/api/` 下的路由樹則是完整的參考來源。
+OmniRoute API 的核心參考文件。本文涵蓋公開的 `/v1` 介面以及最常用的管理端點；機器可讀的 [`docs/openapi.yaml`](../openapi.yaml) 與 `src/app/api/` 下的路由樹則是完整且詳盡的資訊來源。
+
+如需聚焦於 OpenAI 相容協定與提供者功能矩陣的資訊，請參閱
+[`OPENAI_COMPATIBILITY.md`](./OPENAI_COMPATIBILITY.md)。
 
 ---
 
@@ -204,14 +207,12 @@ Content-Type: application/json
 
 可用的提供者：Nebius、OpenAI、Mistral、Together AI、Fireworks、NVIDIA、**OpenRouter**、Jina AI。
 
-目錄 ID 採用 `provider/model` 格式（例如：`jina-ai/jina-embeddings-v5-omni-small`）。登錄檔中出現的純 Jina 模型 ID（例如 `jina-embeddings-v5-text-small`、`jina-reranker-v3.5`）也可以解析。Jina 的嵌入／重新排序／分類／分段功能會優先使用儀表板中的 `jina-ai` 憑證；只有在不存在儀表板金鑰時，才會使用 `JINA_AI_API_KEY` 作為備援。`jina-reader` 卡片僅供 Reader／`r.jina.ai` 使用（`POST /v1/web/fetch`），絕不提供嵌入或重新排序服務。
+目錄 ID 的格式為 `provider/model`（範例：`jina-ai/jina-embeddings-v5-omni-small`）。登錄檔中出現的不含前綴的 Jina 模型 ID（例如 `jina-embeddings-v5-text-small`、`jina-reranker-v3.5`）也可解析。Jina 的嵌入／重新排序／分類／分段功能會優先使用儀表板中的 `jina-ai` 憑證；僅在不存在儀表板金鑰時，才會改用 `JINA_AI_API_KEY`。`jina-reader` 卡片僅供 Reader／`r.jina.ai` 使用（`POST /v1/web/fetch`），絕不提供嵌入或重新排序功能。
 
-登錄模型若標示支援多模態，也可接受最多 32 個提供者中立的結構化
-項目。媒體項目類型為 `text`、`image`、`audio`、`video` 與 `document`。其媒體 `source`
-可以是 `{"type":"url","url":"https://..."}`，也可以是
+登錄檔中標示支援多模態的模型，也接受最多 32 個提供者中立的結構化項目。媒體項目類型包括 `text`、`image`、`audio`、`video` 和 `document`。其媒體 `source` 可以是 `{"type":"url","url":"https://..."}`，或
 `{"type":"base64","data":"...","media_type":"..."}`。
 
-Jina v5 Omni（`jina-ai/jina-embeddings-v5-omni-small`、`jina-ai/jina-embeddings-v5-omni-nano`
+Jina v5 Omni（`jina-ai/jina-embeddings-v5-omni-small`、`jina-ai/jina-embeddings-v5-omni-nano`，
 以及系列別名 `jina-ai/jina-embeddings-v5-omni` → omni-small）也接受 Jina 原生的
 EmbeddingsV5Request 文件，並將其**完整轉送**至 `https://api.jina.ai/v1/embeddings`：
 
@@ -230,26 +231,32 @@ EmbeddingsV5Request 文件，並將其**完整轉送**至 `https://api.jina.ai/v
 }
 ```
 
-原生 `{ image | audio | video | pdf }` 值可以是公開的 HTTPS URL、`data:` URI 或原始
+原生的 `{ image | audio | video | pdf }` 值可以是公開的 HTTPS URL、`data:` URI，或原始
 base64。OmniRoute 不會將這些物件字串化，也不會擷取原生圖片 URL——Jina 會自行擷取
 公開媒體。額外的 Jina 欄位（`task`、`normalized`、`truncate`、`embedding_type`）會被
-轉送。僅文字的 Jina SKU 仍會拒絕非文字文件。
+轉送。僅支援文字的 Jina SKU 仍會拒絕非文字文件。
 
 安全性與傳輸限制：
 
 - 遠端媒體 URL 必須是公開的 HTTPS。標準 `{type,source:url}` 項目會由伺服器端擷取
-  （重新驗證重新導向、逾時、大小限制、公開 DNS、連線固定），並在呼叫提供者前
-  內嵌。Jina 原生 `{image:"https://..."}` 項目在經過相同的公開 HTTPS 檢查後會原樣
-  轉送；URL 由 Jina 擷取。
-- 內嵌 base64 媒體限制為每個項目解碼後 8 MiB，整個請求解碼後合計 16 MiB。
+  （包含重新驗證重新導向、逾時、大小限制、公開 DNS、連線固定），並在呼叫提供者前
+  內嵌。Jina 原生的 `{image:"https://..."}` 項目經過相同的公開 HTTPS 檢查後，會依原樣
+  轉送；Jina 會擷取該 URL。
+- 內嵌 base64 媒體的限制為每個項目解碼後最多 8 MiB，整個請求解碼後合計最多 16 MiB。
 
-提供者轉譯（標準項目絕不會原樣轉送）：
+提供者轉換（標準項目絕不會原封不動地轉送）：
 
-- Jina 多模態模型：每個頂層項目都會成為一個以模態為鍵的物件
+- Jina 多模態模型：每個頂層項目都會轉換為一個以模態為鍵的物件
   （`text`／`image`／`audio`／`video`／`pdf`），內嵌媒體使用資料 URI；每個
   頂層項目產生一個向量。
-- Gemini Embedding 2 系列：一個頂層陣列會成為單一原生
-  `models/{model}:embedContent` 請求，並包含 `content.parts`（`text` 或 `inline_data`）。
+- Gemini Embedding 2 系列：一個頂層陣列會轉換為單一原生
+  `models/{model}:embedContent` 請求，並使用 `content.parts`（`text` 或 `inline_data`）。
+- llama.cpp（`llama-cpp/<model>`，即本機伺服器載入的任何模型）：標準 `text` 項目
+  會轉換為純字串，而 `image`／`audio`／`video` 各自會轉換為一個
+  `{"content": [part]}` 物件，使用 llama-server 的聊天內容部分（`image_url`、
+  `input_audio`，格式為 `wav`／`mp3`／`flac`，以及 `input_video`），並內嵌資料；每個
+  頂層項目產生一個向量。伺服器必須搭配 `--embedding --mmproj …` 執行；若沒有投影器，
+  伺服器會自行拒絕媒體。不支援 `document`。
 - 沒有明確模態中繼資料的未知／動態模型會以 HTTP 400 拒絕結構化輸入。
 
 ```json
@@ -267,8 +274,8 @@ base64。OmniRoute 不會將這些物件字串化，也不會擷取原生圖片 
 }
 ```
 
-不支援的模型／模態組合會傳回 HTTP 400，而不是強制轉換該項目。舊版字串／權杖請求中的
-非輸入擴充欄位仍會原樣傳遞。
+不支援的模型／模態組合會回傳 HTTP 400，而不會強制轉換項目。舊版字串／權杖請求中的
+非輸入擴充欄位仍會原封不動地傳遞。
 
 ```bash
 # 列出所有嵌入模型
@@ -1165,7 +1172,7 @@ Content-Type: application/json
 }
 ```
 
-> **結構描述附註** (`setBudgetSchema`)：`apiKeyId` 為必填；`dailyLimitUsd`、`weeklyLimitUsd` 或 `monthlyLimitUsd` 中至少一項必須大於零。選填欄位：`warningThreshold`（0–1）、`resetInterval`（`daily` | `weekly` | `monthly`）、`resetTime`（`HH:MM`）。舊版的 `{keyId, limit, period}` 格式會傳回 `400 Bad Request`。
+> **結構描述注意事項** (`setBudgetSchema`)：`apiKeyId` 為必填；`dailyLimitUsd`、`weeklyLimitUsd` 或 `monthlyLimitUsd` 中至少一個必須大於零。選填欄位：`warningThreshold`（0–1）、`resetInterval`（`daily` | `weekly` | `monthly`）、`resetTime`（`HH:MM`）。舊版的 `{keyId, limit, period}` 格式會傳回 `400 Bad Request`。
 
 ## Token 限制
 

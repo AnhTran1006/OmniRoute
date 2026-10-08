@@ -4,9 +4,12 @@
 
 ---
 
-🌐 **Languages:** 🇺🇸 [English](../../../../reference/API_REFERENCE.md) · 🇪🇹 [am](../../../am/docs/reference/API_REFERENCE.md) · 🇸🇦 [ar](../../../ar/docs/reference/API_REFERENCE.md) · 🇦🇿 [az](../../../az/docs/reference/API_REFERENCE.md) · 🇧🇬 [bg](../../../bg/docs/reference/API_REFERENCE.md) · 🇧🇩 [bn](../../../bn/docs/reference/API_REFERENCE.md) · 🇧🇦 [bs](../../../bs/docs/reference/API_REFERENCE.md) · 🇨🇿 [cs](../../../cs/docs/reference/API_REFERENCE.md) · 🇩🇰 [da](../../../da/docs/reference/API_REFERENCE.md) · 🇩🇪 [de](../../../de/docs/reference/API_REFERENCE.md) · 🇬🇷 [el](../../../el/docs/reference/API_REFERENCE.md) · 🇪🇸 [es](../../../es/docs/reference/API_REFERENCE.md) · 🇪🇪 [et](../../../et/docs/reference/API_REFERENCE.md) · 🇮🇷 [fa](../../../fa/docs/reference/API_REFERENCE.md) · 🇫🇮 [fi](../../../fi/docs/reference/API_REFERENCE.md) · 🇫🇷 [fr](../../../fr/docs/reference/API_REFERENCE.md) · 🇮🇪 [ga](../../../ga/docs/reference/API_REFERENCE.md) · 🇮🇳 [gu](../../../gu/docs/reference/API_REFERENCE.md) · 🇳🇬 [ha](../../../ha/docs/reference/API_REFERENCE.md) · 🇮🇱 [he](../../../he/docs/reference/API_REFERENCE.md) · 🇮🇳 [hi](../../../hi/docs/reference/API_REFERENCE.md) · 🇭🇷 [hr](../../../hr/docs/reference/API_REFERENCE.md) · 🇭🇺 [hu](../../../hu/docs/reference/API_REFERENCE.md) · 🇦🇲 [hy](../../../hy/docs/reference/API_REFERENCE.md) · 🇮🇩 [id](../../../id/docs/reference/API_REFERENCE.md) · 🇳🇬 [ig](../../../ig/docs/reference/API_REFERENCE.md) · 🇯🇵 [ja](../../../ja/docs/reference/API_REFERENCE.md) · 🇬🇪 [ka](../../../ka/docs/reference/API_REFERENCE.md) · 🇰🇭 [km](../../../km/docs/reference/API_REFERENCE.md) · 🇮🇳 [kn](../../../kn/docs/reference/API_REFERENCE.md) · 🇰🇷 [ko](../../../ko/docs/reference/API_REFERENCE.md) · 🇱🇹 [lt](../../../lt/docs/reference/API_REFERENCE.md) · 🇱🇻 [lv](../../../lv/docs/reference/API_REFERENCE.md) · 🇮🇳 [ml](../../../ml/docs/reference/API_REFERENCE.md) · 🇮🇳 [mr](../../../mr/docs/reference/API_REFERENCE.md) · 🇲🇾 [ms](../../../ms/docs/reference/API_REFERENCE.md) · 🇲🇹 [mt](../../../mt/docs/reference/API_REFERENCE.md) · 🇲🇲 [my](../../../my/docs/reference/API_REFERENCE.md) · 🇳🇵 [ne](../../../ne/docs/reference/API_REFERENCE.md) · 🇳🇱 [nl](../../../nl/docs/reference/API_REFERENCE.md) · 🇳🇴 [no](../../../no/docs/reference/API_REFERENCE.md) · 🇮🇳 [or](../../../or/docs/reference/API_REFERENCE.md) · 🇮🇳 [pa](../../../pa/docs/reference/API_REFERENCE.md) · 🇵🇭 [phi](../../../phi/docs/reference/API_REFERENCE.md) · 🇵🇱 [pl](../../../pl/docs/reference/API_REFERENCE.md) · 🇵🇹 [pt](../../../pt/docs/reference/API_REFERENCE.md) · 🇧🇷 [pt-BR](../../../pt-BR/docs/reference/API_REFERENCE.md) · 🇷🇴 [ro](../../../ro/docs/reference/API_REFERENCE.md) · 🇷🇺 [ru](../../../ru/docs/reference/API_REFERENCE.md) · 🇱🇰 [si](../../../si/docs/reference/API_REFERENCE.md) · 🇸🇰 [sk](../../../sk/docs/reference/API_REFERENCE.md) · 🇸🇮 [sl](../../../sl/docs/reference/API_REFERENCE.md) · 🇷🇸 [sr](../../../sr/docs/reference/API_REFERENCE.md) · 🇸🇪 [sv](../../../sv/docs/reference/API_REFERENCE.md) · 🇰🇪 [sw](../../../sw/docs/reference/API_REFERENCE.md) · 🇮🇳 [ta](../../../ta/docs/reference/API_REFERENCE.md) · 🇮🇳 [te](../../../te/docs/reference/API_REFERENCE.md) · 🇹🇭 [th](../../../th/docs/reference/API_REFERENCE.md) · 🇹🇷 [tr](../../../tr/docs/reference/API_REFERENCE.md) · 🇺🇦 [uk-UA](../../../uk-UA/docs/reference/API_REFERENCE.md) · 🇵🇰 [ur](../../../ur/docs/reference/API_REFERENCE.md) · 🇺🇿 [uz](../../../uz/docs/reference/API_REFERENCE.md) · 🇻🇳 [vi](../../../vi/docs/reference/API_REFERENCE.md) · 🇳🇬 [yo](../../../yo/docs/reference/API_REFERENCE.md) · 🇨🇳 [zh-CN](../../../zh-CN/docs/reference/API_REFERENCE.md) · 🇹🇼 [zh-TW](../../../zh-TW/docs/reference/API_REFERENCE.md)
+🌐 **Lingue:** 🇺🇸 [English](./API_REFERENCE.md) | 🇪🇹 [አማርኛ](../i18n/am/docs/reference/API_REFERENCE.md) | 🇸🇦 [العربية](../i18n/ar/docs/reference/API_REFERENCE.md) | 🇦🇿 [Azərbaycan dili](../i18n/az/docs/reference/API_REFERENCE.md) | 🇧🇬 [Български](../i18n/bg/docs/reference/API_REFERENCE.md) | 🇧🇩 [বাংলা](../i18n/bn/docs/reference/API_REFERENCE.md) | 🇧🇦 [Bosanski](../i18n/bs/docs/reference/API_REFERENCE.md) | 🇨🇿 [Čeština](../i18n/cs/docs/reference/API_REFERENCE.md) | 🇩🇰 [Dansk](../i18n/da/docs/reference/API_REFERENCE.md) | 🇩🇪 [Deutsch](../i18n/de/docs/reference/API_REFERENCE.md) | 🇬🇷 [Ελληνικά](../i18n/el/docs/reference/API_REFERENCE.md) | 🇪🇸 [Español](../i18n/es/docs/reference/API_REFERENCE.md) | 🇪🇪 [Eesti](../i18n/et/docs/reference/API_REFERENCE.md) | 🇮🇷 [فارسی](../i18n/fa/docs/reference/API_REFERENCE.md) | 🇫🇮 [Suomi](../i18n/fi/docs/reference/API_REFERENCE.md) | 🇫🇷 [Français](../i18n/fr/docs/reference/API_REFERENCE.md) | 🇮🇪 [Gaeilge](../i18n/ga/docs/reference/API_REFERENCE.md) | 🇮🇳 [ગુજરાતી](../i18n/gu/docs/reference/API_REFERENCE.md) | 🇳🇬 [Hausa](../i18n/ha/docs/reference/API_REFERENCE.md) | 🇮🇱 [עברית](../i18n/he/docs/reference/API_REFERENCE.md) | 🇮🇳 [हिन्दी](../i18n/hi/docs/reference/API_REFERENCE.md) | 🇭🇷 [Hrvatski](../i18n/hr/docs/reference/API_REFERENCE.md) | 🇭🇺 [Magyar](../i18n/hu/docs/reference/API_REFERENCE.md) | 🇦🇲 [Հայերեն](../i18n/hy/docs/reference/API_REFERENCE.md) | 🇮🇩 [Bahasa Indonesia](../i18n/id/docs/reference/API_REFERENCE.md) | 🇳🇬 [Igbo](../i18n/ig/docs/reference/API_REFERENCE.md) | 🇮🇹 [Italiano](../i18n/it/docs/reference/API_REFERENCE.md) | 🇯🇵 [日本語](../i18n/ja/docs/reference/API_REFERENCE.md) | 🇬🇪 [ქართული](../i18n/ka/docs/reference/API_REFERENCE.md) | 🇰🇭 [ខ្មែរ](../i18n/km/docs/reference/API_REFERENCE.md) | 🇮🇳 [ಕನ್ನಡ](../i18n/kn/docs/reference/API_REFERENCE.md) | 🇰🇷 [한국어](../i18n/ko/docs/reference/API_REFERENCE.md) | 🇱🇹 [Lietuvių](../i18n/lt/docs/reference/API_REFERENCE.md) | 🇱🇻 [Latviešu](../i18n/lv/docs/reference/API_REFERENCE.md) | 🇮🇳 [മലയാളം](../i18n/ml/docs/reference/API_REFERENCE.md) | 🇮🇳 [मराठी](../i18n/mr/docs/reference/API_REFERENCE.md) | 🇲🇾 [Bahasa Melayu](../i18n/ms/docs/reference/API_REFERENCE.md) | 🇲🇹 [Malti](../i18n/mt/docs/reference/API_REFERENCE.md) | 🇲🇲 [မြန်မာ](../i18n/my/docs/reference/API_REFERENCE.md) | 🇳🇵 [नेपाली](../i18n/ne/docs/reference/API_REFERENCE.md) | 🇳🇱 [Nederlands](../i18n/nl/docs/reference/API_REFERENCE.md) | 🇳🇴 [Norsk](../i18n/no/docs/reference/API_REFERENCE.md) | 🇮🇳 [ଓଡ଼ିଆ](../i18n/or/docs/reference/API_REFERENCE.md) | 🇮🇳 [ਪੰਜਾਬੀ](../i18n/pa/docs/reference/API_REFERENCE.md) | 🇵🇭 [Filipino](../i18n/phi/docs/reference/API_REFERENCE.md) | 🇵🇱 [Polski](../i18n/pl/docs/reference/API_REFERENCE.md) | 🇵🇹 [Português (Portugal)](../i18n/pt/docs/reference/API_REFERENCE.md) | 🇧🇷 [Português (Brasil)](../i18n/pt-BR/docs/reference/API_REFERENCE.md) | 🇷🇴 [Română](../i18n/ro/docs/reference/API_REFERENCE.md) | 🇷🇺 [Русский](../i18n/ru/docs/reference/API_REFERENCE.md) | 🇱🇰 [සිංහල](../i18n/si/docs/reference/API_REFERENCE.md) | 🇸🇰 [Slovenčina](../i18n/sk/docs/reference/API_REFERENCE.md) | 🇸🇮 [Slovenščina](../i18n/sl/docs/reference/API_REFERENCE.md) | 🇷🇸 [Српски](../i18n/sr/docs/reference/API_REFERENCE.md) | 🇸🇪 [Svenska](../i18n/sv/docs/reference/API_REFERENCE.md) | 🇰🇪 [Kiswahili](../i18n/sw/docs/reference/API_REFERENCE.md) | 🇮🇳 [தமிழ்](../i18n/ta/docs/reference/API_REFERENCE.md) | 🇮🇳 [తెలుగు](../i18n/te/docs/reference/API_REFERENCE.md) | 🇹🇭 [ไทย](../i18n/th/docs/reference/API_REFERENCE.md) | 🇹🇷 [Türkçe](../i18n/tr/docs/reference/API_REFERENCE.md) | 🇺🇦 [Українська](../i18n/uk-UA/docs/reference/API_REFERENCE.md) | 🇵🇰 [اردو](../i18n/ur/docs/reference/API_REFERENCE.md) | 🇺🇿 [Oʻzbekcha](../i18n/uz/docs/reference/API_REFERENCE.md) | 🇻🇳 [Tiếng Việt](../i18n/vi/docs/reference/API_REFERENCE.md) | 🇳🇬 [Yorùbá](../i18n/yo/docs/reference/API_REFERENCE.md) | 🇨🇳 [中文 (简体)](../i18n/zh-CN/docs/reference/API_REFERENCE.md) | 🇹🇼 [中文 (繁體)](../i18n/zh-TW/docs/reference/API_REFERENCE.md)
 
-Riferimento principale per l'API OmniRoute. Illustra l'interfaccia pubblica `/v1` e gli endpoint di gestione più utilizzati; il file leggibile dalle macchine [`docs/openapi.yaml`](../openapi.yaml) e l'albero delle route in `src/app/api/` costituiscono le fonti esaustive.
+Riferimento principale per l'API OmniRoute. Descrive l'interfaccia pubblica `/v1` e gli endpoint di gestione più utilizzati; il file leggibile dalle macchine [`docs/openapi.yaml`](../openapi.yaml) e l'albero delle route in `src/app/api/` costituiscono le fonti esaustive.
+
+Per il protocollo specifico compatibile con OpenAI e la matrice delle funzionalità dei provider, consulta
+[`OPENAI_COMPATIBILITY.md`](./OPENAI_COMPATIBILITY.md).
 
 ---
 
@@ -204,11 +207,16 @@ Content-Type: application/json
 
 Provider disponibili: Nebius, OpenAI, Mistral, Together AI, Fireworks, NVIDIA, **OpenRouter**, Jina AI.
 
-Gli ID del catalogo sono nel formato `provider/model` (esempio: `jina-ai/jina-embeddings-v5-omni-small`). Vengono risolti anche gli ID dei modelli Jina senza prefisso presenti nel registro (ad esempio `jina-embeddings-v5-text-small`, `jina-reranker-v3.5`). Le operazioni Jina di embedding/reranking/classificazione/segmentazione usano innanzitutto le credenziali `jina-ai` della dashboard; `JINA_AI_API_KEY` viene usata come alternativa solo quando non esiste alcuna chiave nella dashboard. La scheda `jina-reader` è destinata esclusivamente a Reader / `r.jina.ai` (`POST /v1/web/fetch`) e non fornisce mai embedding o reranking.
+Gli ID del catalogo sono nel formato `provider/model` (esempio: `jina-ai/jina-embeddings-v5-omni-small`). Vengono risolti anche gli ID dei modelli Jina senza prefisso presenti nel registro (ad esempio `jina-embeddings-v5-text-small`, `jina-reranker-v3.5`). Le operazioni embed/rerank/classify/segment di Jina utilizzano prima le credenziali `jina-ai` della dashboard; `JINA_AI_API_KEY` viene usata come soluzione di riserva solo quando non esiste alcuna chiave nella dashboard. La scheda `jina-reader` è destinata esclusivamente a Reader / `r.jina.ai` (`POST /v1/web/fetch`) e non fornisce mai embedding o reranking.
 
-I modelli del registro che dichiarano il supporto multimodale accettano anche fino a 32 elementi strutturati indipendenti dal provider. I tipi di elementi multimediali sono `text`, `image`, `audio`, `video` e `document`. Il relativo `source` multimediale può essere `{"type":"url","url":"https://..."}` oppure `{"type":"base64","data":"...","media_type":"..."}`.
+I modelli del registro che dichiarano il supporto multimodale accettano inoltre fino a 32 elementi
+strutturati indipendenti dal provider. I tipi di elementi multimediali sono `text`, `image`, `audio`, `video` e `document`. Il relativo `source`
+è `{"type":"url","url":"https://..."}` oppure
+`{"type":"base64","data":"...","media_type":"..."}`.
 
-Jina v5 Omni (`jina-ai/jina-embeddings-v5-omni-small`, `jina-ai/jina-embeddings-v5-omni-nano` e l'alias di famiglia `jina-ai/jina-embeddings-v5-omni` → omni-small) accetta anche i documenti EmbeddingsV5Request nativi di Jina e **li inoltra senza modificarli** a `https://api.jina.ai/v1/embeddings`:
+Jina v5 Omni (`jina-ai/jina-embeddings-v5-omni-small`, `jina-ai/jina-embeddings-v5-omni-nano`
+e l'alias della famiglia `jina-ai/jina-embeddings-v5-omni` → omni-small) accetta anche i documenti
+EmbeddingsV5Request nativi di Jina e **li inoltra intatti** a `https://api.jina.ai/v1/embeddings`:
 
 ```json
 {
@@ -225,17 +233,32 @@ Jina v5 Omni (`jina-ai/jina-embeddings-v5-omni-small`, `jina-ai/jina-embeddings-
 }
 ```
 
-I valori nativi `{ image | audio | video | pdf }` possono essere un URL HTTPS pubblico, un URI `data:` o dati base64 non elaborati. OmniRoute non converte tali oggetti in stringhe né recupera gli URL delle immagini native: Jina recupera direttamente i contenuti multimediali pubblici. I campi Jina aggiuntivi (`task`, `normalized`, `truncate`, `embedding_type`) vengono inoltrati. Gli SKU Jina di solo testo continuano a rifiutare i documenti non testuali.
+I valori nativi `{ image | audio | video | pdf }` possono essere un URL HTTPS pubblico, un URI `data:` o dati
+base64 non elaborati. OmniRoute non converte questi oggetti in stringhe né recupera gli URL delle immagini native: Jina recupera
+direttamente i contenuti multimediali pubblici. I campi Jina aggiuntivi (`task`, `normalized`, `truncate`, `embedding_type`) vengono
+inoltrati. Gli SKU Jina di solo testo continuano a rifiutare i documenti non testuali.
 
 Limiti di sicurezza e trasporto:
 
-- Gli URL dei contenuti multimediali remoti devono essere HTTPS pubblici. Gli elementi canonici `{type,source:url}` vengono recuperati lato server (con nuova convalida dei reindirizzamenti, timeout, limiti di dimensione, DNS pubblico e blocco della connessione) e incorporati prima della chiamata al provider. Gli elementi Jina nativi `{image:"https://..."}` vengono inoltrati così come sono dopo lo stesso controllo HTTPS pubblico; Jina recupera l'URL.
-- I contenuti multimediali base64 incorporati sono limitati a 8 MiB decodificati per elemento e a 16 MiB decodificati nell'intera richiesta.
+- Gli URL dei contenuti multimediali remoti devono essere HTTPS pubblici. Gli elementi canonici `{type,source:url}` vengono recuperati
+  lato server (rivalidazione dei reindirizzamenti, timeout, limiti di dimensione, DNS pubblico, associazione fissa della connessione) e
+  incorporati prima della chiamata al provider. Gli elementi Jina nativi `{image:"https://..."}` vengono inoltrati così come sono
+  dopo lo stesso controllo HTTPS pubblico; Jina recupera l'URL.
+- I contenuti multimediali base64 inline sono limitati a 8 MiB decodificati per elemento e a 16 MiB decodificati per l'intera richiesta.
 
-Traduzione per provider (gli elementi canonici non vengono mai inoltrati senza modifiche):
+Traduzione per i provider (gli elementi canonici non vengono mai inoltrati senza modifiche):
 
-- Modelli multimodali Jina: ogni elemento di primo livello diventa un oggetto con chiave corrispondente alla modalità (`text` / `image` / `audio` / `video` / `pdf`), utilizzando URI di dati per i contenuti multimediali incorporati; un vettore per ogni elemento di primo livello.
-- Famiglia Gemini Embedding 2: un array di primo livello diventa una singola richiesta nativa `models/{model}:embedContent` con `content.parts` (`text` o `inline_data`).
+- Modelli multimodali Jina: ogni elemento di primo livello diventa un oggetto con chiave corrispondente alla modalità
+  (`text` / `image` / `audio` / `video` / `pdf`), utilizzando URI di dati per i contenuti multimediali inline; un vettore per ogni
+  elemento di primo livello.
+- Famiglia Gemini Embedding 2: un array di primo livello diventa una singola richiesta nativa
+  `models/{model}:embedContent` con `content.parts` (`text` o `inline_data`).
+- llama.cpp (`llama-cpp/<model>`, qualsiasi modello caricato dal server locale): gli elementi canonici `text`
+  diventano stringhe semplici, mentre `image` / `audio` / `video` diventano ciascuno un oggetto
+  `{"content": [part]}`, utilizzando le parti di contenuto della chat di llama-server (`image_url`,
+  `input_audio` con formato `wav` / `mp3` / `flac`, `input_video`) con dati inline; un vettore
+  per ogni elemento di primo livello. Il server deve essere eseguito con `--embedding --mmproj …`; senza un proiettore,
+  rifiuta autonomamente i contenuti multimediali. `document` non è supportato.
 - I modelli sconosciuti/dinamici senza metadati espliciti sulla modalità rifiutano l'input strutturato con HTTP 400.
 
 ```json
@@ -253,7 +276,8 @@ Traduzione per provider (gli elementi canonici non vengono mai inoltrati senza m
 }
 ```
 
-Le combinazioni modello/modalità non supportate restituiscono HTTP 400 anziché convertire forzatamente l'elemento. I campi di estensione diversi da `input` nelle richieste legacy con stringhe/token continuano a essere trasmessi senza modifiche.
+Le combinazioni modello/modalità non supportate restituiscono HTTP 400 anziché forzare la conversione dell'elemento. I campi di estensione
+diversi dall'input nelle richieste legacy basate su stringhe/token continuano a essere inoltrati senza modifiche.
 
 ```bash
 # Elenca tutti i modelli di embedding

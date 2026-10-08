@@ -4,9 +4,12 @@
 
 ---
 
-🌐 **Languages:** 🇺🇸 [English](../../../../reference/API_REFERENCE.md) · 🇪🇹 [am](../../../am/docs/reference/API_REFERENCE.md) · 🇸🇦 [ar](../../../ar/docs/reference/API_REFERENCE.md) · 🇦🇿 [az](../../../az/docs/reference/API_REFERENCE.md) · 🇧🇬 [bg](../../../bg/docs/reference/API_REFERENCE.md) · 🇧🇩 [bn](../../../bn/docs/reference/API_REFERENCE.md) · 🇧🇦 [bs](../../../bs/docs/reference/API_REFERENCE.md) · 🇨🇿 [cs](../../../cs/docs/reference/API_REFERENCE.md) · 🇩🇰 [da](../../../da/docs/reference/API_REFERENCE.md) · 🇩🇪 [de](../../../de/docs/reference/API_REFERENCE.md) · 🇬🇷 [el](../../../el/docs/reference/API_REFERENCE.md) · 🇪🇸 [es](../../../es/docs/reference/API_REFERENCE.md) · 🇪🇪 [et](../../../et/docs/reference/API_REFERENCE.md) · 🇮🇷 [fa](../../../fa/docs/reference/API_REFERENCE.md) · 🇫🇮 [fi](../../../fi/docs/reference/API_REFERENCE.md) · 🇫🇷 [fr](../../../fr/docs/reference/API_REFERENCE.md) · 🇮🇪 [ga](../../../ga/docs/reference/API_REFERENCE.md) · 🇮🇳 [gu](../../../gu/docs/reference/API_REFERENCE.md) · 🇳🇬 [ha](../../../ha/docs/reference/API_REFERENCE.md) · 🇮🇱 [he](../../../he/docs/reference/API_REFERENCE.md) · 🇮🇳 [hi](../../../hi/docs/reference/API_REFERENCE.md) · 🇭🇷 [hr](../../../hr/docs/reference/API_REFERENCE.md) · 🇭🇺 [hu](../../../hu/docs/reference/API_REFERENCE.md) · 🇦🇲 [hy](../../../hy/docs/reference/API_REFERENCE.md) · 🇮🇩 [id](../../../id/docs/reference/API_REFERENCE.md) · 🇳🇬 [ig](../../../ig/docs/reference/API_REFERENCE.md) · 🇮🇹 [it](../../../it/docs/reference/API_REFERENCE.md) · 🇯🇵 [ja](../../../ja/docs/reference/API_REFERENCE.md) · 🇬🇪 [ka](../../../ka/docs/reference/API_REFERENCE.md) · 🇰🇭 [km](../../../km/docs/reference/API_REFERENCE.md) · 🇮🇳 [kn](../../../kn/docs/reference/API_REFERENCE.md) · 🇰🇷 [ko](../../../ko/docs/reference/API_REFERENCE.md) · 🇱🇹 [lt](../../../lt/docs/reference/API_REFERENCE.md) · 🇱🇻 [lv](../../../lv/docs/reference/API_REFERENCE.md) · 🇮🇳 [ml](../../../ml/docs/reference/API_REFERENCE.md) · 🇮🇳 [mr](../../../mr/docs/reference/API_REFERENCE.md) · 🇲🇾 [ms](../../../ms/docs/reference/API_REFERENCE.md) · 🇲🇹 [mt](../../../mt/docs/reference/API_REFERENCE.md) · 🇲🇲 [my](../../../my/docs/reference/API_REFERENCE.md) · 🇳🇵 [ne](../../../ne/docs/reference/API_REFERENCE.md) · 🇳🇱 [nl](../../../nl/docs/reference/API_REFERENCE.md) · 🇳🇴 [no](../../../no/docs/reference/API_REFERENCE.md) · 🇮🇳 [pa](../../../pa/docs/reference/API_REFERENCE.md) · 🇵🇭 [phi](../../../phi/docs/reference/API_REFERENCE.md) · 🇵🇱 [pl](../../../pl/docs/reference/API_REFERENCE.md) · 🇵🇹 [pt](../../../pt/docs/reference/API_REFERENCE.md) · 🇧🇷 [pt-BR](../../../pt-BR/docs/reference/API_REFERENCE.md) · 🇷🇴 [ro](../../../ro/docs/reference/API_REFERENCE.md) · 🇷🇺 [ru](../../../ru/docs/reference/API_REFERENCE.md) · 🇱🇰 [si](../../../si/docs/reference/API_REFERENCE.md) · 🇸🇰 [sk](../../../sk/docs/reference/API_REFERENCE.md) · 🇸🇮 [sl](../../../sl/docs/reference/API_REFERENCE.md) · 🇷🇸 [sr](../../../sr/docs/reference/API_REFERENCE.md) · 🇸🇪 [sv](../../../sv/docs/reference/API_REFERENCE.md) · 🇰🇪 [sw](../../../sw/docs/reference/API_REFERENCE.md) · 🇮🇳 [ta](../../../ta/docs/reference/API_REFERENCE.md) · 🇮🇳 [te](../../../te/docs/reference/API_REFERENCE.md) · 🇹🇭 [th](../../../th/docs/reference/API_REFERENCE.md) · 🇹🇷 [tr](../../../tr/docs/reference/API_REFERENCE.md) · 🇺🇦 [uk-UA](../../../uk-UA/docs/reference/API_REFERENCE.md) · 🇵🇰 [ur](../../../ur/docs/reference/API_REFERENCE.md) · 🇺🇿 [uz](../../../uz/docs/reference/API_REFERENCE.md) · 🇻🇳 [vi](../../../vi/docs/reference/API_REFERENCE.md) · 🇳🇬 [yo](../../../yo/docs/reference/API_REFERENCE.md) · 🇨🇳 [zh-CN](../../../zh-CN/docs/reference/API_REFERENCE.md) · 🇹🇼 [zh-TW](../../../zh-TW/docs/reference/API_REFERENCE.md)
+🌐 **ଭାଷାଗୁଡ଼ିକ:** 🇺🇸 [English](./API_REFERENCE.md) | 🇪🇹 [አማርኛ](../i18n/am/docs/reference/API_REFERENCE.md) | 🇸🇦 [العربية](../i18n/ar/docs/reference/API_REFERENCE.md) | 🇦🇿 [Azərbaycan dili](../i18n/az/docs/reference/API_REFERENCE.md) | 🇧🇬 [Български](../i18n/bg/docs/reference/API_REFERENCE.md) | 🇧🇩 [বাংলা](../i18n/bn/docs/reference/API_REFERENCE.md) | 🇧🇦 [Bosanski](../i18n/bs/docs/reference/API_REFERENCE.md) | 🇨🇿 [Čeština](../i18n/cs/docs/reference/API_REFERENCE.md) | 🇩🇰 [Dansk](../i18n/da/docs/reference/API_REFERENCE.md) | 🇩🇪 [Deutsch](../i18n/de/docs/reference/API_REFERENCE.md) | 🇬🇷 [Ελληνικά](../i18n/el/docs/reference/API_REFERENCE.md) | 🇪🇸 [Español](../i18n/es/docs/reference/API_REFERENCE.md) | 🇪🇪 [Eesti](../i18n/et/docs/reference/API_REFERENCE.md) | 🇮🇷 [فارسی](../i18n/fa/docs/reference/API_REFERENCE.md) | 🇫🇮 [Suomi](../i18n/fi/docs/reference/API_REFERENCE.md) | 🇫🇷 [Français](../i18n/fr/docs/reference/API_REFERENCE.md) | 🇮🇪 [Gaeilge](../i18n/ga/docs/reference/API_REFERENCE.md) | 🇮🇳 [ગુજરાતી](../i18n/gu/docs/reference/API_REFERENCE.md) | 🇳🇬 [Hausa](../i18n/ha/docs/reference/API_REFERENCE.md) | 🇮🇱 [עברית](../i18n/he/docs/reference/API_REFERENCE.md) | 🇮🇳 [हिन्दी](../i18n/hi/docs/reference/API_REFERENCE.md) | 🇭🇷 [Hrvatski](../i18n/hr/docs/reference/API_REFERENCE.md) | 🇭🇺 [Magyar](../i18n/hu/docs/reference/API_REFERENCE.md) | 🇦🇲 [Հայերեն](../i18n/hy/docs/reference/API_REFERENCE.md) | 🇮🇩 [Bahasa Indonesia](../i18n/id/docs/reference/API_REFERENCE.md) | 🇳🇬 [Igbo](../i18n/ig/docs/reference/API_REFERENCE.md) | 🇮🇹 [Italiano](../i18n/it/docs/reference/API_REFERENCE.md) | 🇯🇵 [日本語](../i18n/ja/docs/reference/API_REFERENCE.md) | 🇬🇪 [ქართული](../i18n/ka/docs/reference/API_REFERENCE.md) | 🇰🇭 [ខ្មែរ](../i18n/km/docs/reference/API_REFERENCE.md) | 🇮🇳 [ಕನ್ನಡ](../i18n/kn/docs/reference/API_REFERENCE.md) | 🇰🇷 [한국어](../i18n/ko/docs/reference/API_REFERENCE.md) | 🇱🇹 [Lietuvių](../i18n/lt/docs/reference/API_REFERENCE.md) | 🇱🇻 [Latviešu](../i18n/lv/docs/reference/API_REFERENCE.md) | 🇮🇳 [മലയാളം](../i18n/ml/docs/reference/API_REFERENCE.md) | 🇮🇳 [मराठी](../i18n/mr/docs/reference/API_REFERENCE.md) | 🇲🇾 [Bahasa Melayu](../i18n/ms/docs/reference/API_REFERENCE.md) | 🇲🇹 [Malti](../i18n/mt/docs/reference/API_REFERENCE.md) | 🇲🇲 [မြန်မာ](../i18n/my/docs/reference/API_REFERENCE.md) | 🇳🇵 [नेपाली](../i18n/ne/docs/reference/API_REFERENCE.md) | 🇳🇱 [Nederlands](../i18n/nl/docs/reference/API_REFERENCE.md) | 🇳🇴 [Norsk](../i18n/no/docs/reference/API_REFERENCE.md) | 🇮🇳 [ଓଡ଼ିଆ](../i18n/or/docs/reference/API_REFERENCE.md) | 🇮🇳 [ਪੰਜਾਬੀ](../i18n/pa/docs/reference/API_REFERENCE.md) | 🇵🇭 [Filipino](../i18n/phi/docs/reference/API_REFERENCE.md) | 🇵🇱 [Polski](../i18n/pl/docs/reference/API_REFERENCE.md) | 🇵🇹 [Português (Portugal)](../i18n/pt/docs/reference/API_REFERENCE.md) | 🇧🇷 [Português (Brasil)](../i18n/pt-BR/docs/reference/API_REFERENCE.md) | 🇷🇴 [Română](../i18n/ro/docs/reference/API_REFERENCE.md) | 🇷🇺 [Русский](../i18n/ru/docs/reference/API_REFERENCE.md) | 🇱🇰 [සිංහල](../i18n/si/docs/reference/API_REFERENCE.md) | 🇸🇰 [Slovenčina](../i18n/sk/docs/reference/API_REFERENCE.md) | 🇸🇮 [Slovenščina](../i18n/sl/docs/reference/API_REFERENCE.md) | 🇷🇸 [Српски](../i18n/sr/docs/reference/API_REFERENCE.md) | 🇸🇪 [Svenska](../i18n/sv/docs/reference/API_REFERENCE.md) | 🇰🇪 [Kiswahili](../i18n/sw/docs/reference/API_REFERENCE.md) | 🇮🇳 [தமிழ்](../i18n/ta/docs/reference/API_REFERENCE.md) | 🇮🇳 [తెలుగు](../i18n/te/docs/reference/API_REFERENCE.md) | 🇹🇭 [ไทย](../i18n/th/docs/reference/API_REFERENCE.md) | 🇹🇷 [Türkçe](../i18n/tr/docs/reference/API_REFERENCE.md) | 🇺🇦 [Українська](../i18n/uk-UA/docs/reference/API_REFERENCE.md) | 🇵🇰 [اردو](../i18n/ur/docs/reference/API_REFERENCE.md) | 🇺🇿 [Oʻzbekcha](../i18n/uz/docs/reference/API_REFERENCE.md) | 🇻🇳 [Tiếng Việt](../i18n/vi/docs/reference/API_REFERENCE.md) | 🇳🇬 [Yorùbá](../i18n/yo/docs/reference/API_REFERENCE.md) | 🇨🇳 [中文 (简体)](../i18n/zh-CN/docs/reference/API_REFERENCE.md) | 🇹🇼 [中文 (繁體)](../i18n/zh-TW/docs/reference/API_REFERENCE.md)
 
-OmniRoute API ପାଇଁ ମୂଳ ସନ୍ଦର୍ଭ। ଏଥିରେ ସାର୍ବଜନୀନ `/v1` ପୃଷ୍ଠଭାଗ ଏବଂ ସର୍ବାଧିକ ବ୍ୟବହୃତ ପରିଚାଳନା ଏଣ୍ଡପଏଣ୍ଟଗୁଡ଼ିକ ଅନ୍ତର୍ଭୁକ୍ତ; ମେସିନ୍-ପଠନୀୟ [`docs/openapi.yaml`](../openapi.yaml) ଏବଂ `src/app/api/` ଅଧୀନରେ ଥିବା ରୁଟ୍ ଟ୍ରି ହେଉଛି ସମ୍ପୂର୍ଣ୍ଣ ଉତ୍ସଗୁଡ଼ିକ।
+OmniRoute API ପାଇଁ ମୂଳ ସନ୍ଦର୍ଭ। ଏହା ସାର୍ବଜନୀନ `/v1` ପୃଷ୍ଠଭାଗ ଏବଂ ସର୍ବାଧିକ ବ୍ୟବହୃତ ପରିଚାଳନା ଏଣ୍ଡପଏଣ୍ଟଗୁଡ଼ିକୁ ଅନ୍ତର୍ଭୁକ୍ତ କରେ; ମେସିନ୍-ପଠନଯୋଗ୍ୟ [`docs/openapi.yaml`](../openapi.yaml) ଏବଂ `src/app/api/` ଅଧୀନରେ ଥିବା ରୁଟ୍ ଟ୍ରି ହେଉଛି ସମ୍ପୂର୍ଣ୍ଣ ଉତ୍ସଗୁଡ଼ିକ।
+
+OpenAI-ସୁସଙ୍ଗତ ପ୍ରୋଟୋକଲ୍ ଏବଂ ପ୍ରଦାନକାରୀ କ୍ଷମତା ମ୍ୟାଟ୍ରିକ୍ସ ବିଷୟରେ କେନ୍ଦ୍ରିତ ସୂଚନା ପାଇଁ,
+[`OPENAI_COMPATIBILITY.md`](./OPENAI_COMPATIBILITY.md) ଦେଖନ୍ତୁ।
 
 ---
 
@@ -189,7 +192,7 @@ X-OmniRoute-Compression: <mode>; source=<source>
 
 ---
 
-## ଏମ୍ବେଡିଂଗ୍ସ
+## ଏମ୍ବେଡିଂଗୁଡ଼ିକ
 
 ```bash
 POST /v1/embeddings
@@ -202,13 +205,18 @@ Content-Type: application/json
 }
 ```
 
-ଉପଲବ୍ଧ ପ୍ରଦାତାଗଣ: Nebius, OpenAI, Mistral, Together AI, Fireworks, NVIDIA, **OpenRouter**, Jina AI।
+ଉପଲବ୍ଧ ପ୍ରଦାନକାରୀମାନେ: Nebius, OpenAI, Mistral, Together AI, Fireworks, NVIDIA, **OpenRouter**, Jina AI।
 
-କାଟାଲଗ୍ ଆଇଡିଗୁଡ଼ିକ ହେଉଛି `provider/model` (ଉଦାହରଣ: `jina-ai/jina-embeddings-v5-omni-small`)। ରେଜିଷ୍ଟ୍ରିରେ ଥିବା ବେୟାର ଜିନା ମଡେଲ ଆଇଡିଗୁଡ଼ିକ (ଯେପରିକି `jina-embeddings-v5-text-small`, `jina-reranker-v3.5`) ମଧ୍ୟ ସମାଧାନ ହୁଅନ୍ତି। ଜିନା embed/rerank/classify/segment ପ୍ରଥମେ ଡ୍ୟାସବୋର୍ଡ `jina-ai` ପ୍ରମାଣପତ୍ର ବ୍ୟବହାର କରନ୍ତି; `JINA_AI_API_KEY` କେବଳ ସେତେବେଳେ ଫଲବ୍ୟାକ ହୁଏ ଯେତେବେଳେ କୌଣସି ଡ୍ୟାସବୋର୍ଡ କୀ ନଥାଏ। `jina-reader` କାର୍ଡ କେବଳ Reader / `r.jina.ai` ପାଇଁ (`POST /v1/web/fetch`) ଏବଂ ଏହା କେବେ ବି embeddings କିମ୍ବା rerank ସେବା କରେ ନାହିଁ।
+କ୍ୟାଟାଲଗ୍ idଗୁଡ଼ିକ `provider/model` ଫର୍ମାଟ୍ରେ ଥାଏ (ଉଦାହରଣ: `jina-ai/jina-embeddings-v5-omni-small`)। ରେଜିଷ୍ଟ୍ରିରେ ଥିବା କେବଳ Jina ମଡେଲ୍ idଗୁଡ଼ିକ (ଉଦାହରଣ ସ୍ୱରୂପ `jina-embeddings-v5-text-small`, `jina-reranker-v3.5`) ମଧ୍ୟ ରିଜଲ୍ଭ ହୁଏ। Jina embed/rerank/classify/segment ପ୍ରଥମେ ଡ୍ୟାସ୍ବୋର୍ଡର `jina-ai` କ୍ରେଡେନ୍ସିଆଲ୍ ବ୍ୟବହାର କରେ; କୌଣସି ଡ୍ୟାସ୍ବୋର୍ଡ କୀ ନଥିଲେ ମାତ୍ର `JINA_AI_API_KEY` ଫଲ୍ବ୍ୟାକ୍ ଭାବେ ବ୍ୟବହୃତ ହୁଏ। `jina-reader` କାର୍ଡଟି କେବଳ Reader / `r.jina.ai` ପାଇଁ (`POST /v1/web/fetch`) ଏବଂ ଏହା କେବେବି embeddings କିମ୍ବା rerank ପ୍ରଦାନ କରେ ନାହିଁ।
 
-ରେଜିଷ୍ଟ୍ରି ମଡେଲଗୁଡ଼ିକ ଯେଉଁଗୁଡ଼ିକ ମଲ୍ଟିମୋଡାଲ ସମର୍ଥନ ବିଜ୍ଞାପନ କରନ୍ତି, ସେଗୁଡ଼ିକ 32 ପର୍ଯ୍ୟନ୍ତ ପ୍ରଦାତା-ନିରପେକ୍ଷ ଗଠନମୂଳକ ଆଇଟମ୍ ମଧ୍ୟ ଗ୍ରହଣ କରନ୍ତି। ମିଡିଆ ଆଇଟମ୍ ପ୍ରକାରଗୁଡ଼ିକ ହେଉଛି `text`, `image`, `audio`, `video`, ଏବଂ `document`। ସେମାନଙ୍କର ମିଡିଆ `source` ହେଉଛି ହରତଃ `{"type":"url","url":"https://..."}` କିମ୍ବା `{"type":"base64","data":"...","media_type":"..."}`।
+ମଲ୍ଟିମୋଡାଲ୍ ସମର୍ଥନ ଘୋଷଣା କରୁଥିବା ରେଜିଷ୍ଟ୍ରି ମଡେଲ୍ଗୁଡ଼ିକ ମଧ୍ୟ ସର୍ବାଧିକ 32ଟି ପ୍ରଦାନକାରୀ-ନିରପେକ୍ଷ ଗଠିତ
+ଆଇଟମ୍ ଗ୍ରହଣ କରେ। ମିଡିଆ ଆଇଟମ୍ର ପ୍ରକାରଗୁଡ଼ିକ ହେଉଛି `text`, `image`, `audio`, `video`, ଏବଂ `document`। ସେଗୁଡ଼ିକର ମିଡିଆ `source`
+ହୁଏ `{"type":"url","url":"https://..."}` କିମ୍ବା
+`{"type":"base64","data":"...","media_type":"..."}`।
 
-ଜିନା v5 Omni (`jina-ai/jina-embeddings-v5-omni-small`, `jina-ai/jina-embeddings-v5-omni-nano`, ଏବଂ ପରିବାର ଉପନାମ `jina-ai/jina-embeddings-v5-omni` → omni-small) ମଧ୍ୟ ଜିନାର ନେଟିଭ EmbeddingsV5Request ଡକ୍ୟୁମେଣ୍ଟଗୁଡ଼ିକୁ ଗ୍ରହଣ କରେ ଏବଂ **ସେଗୁଡ଼ିକୁ ଅପରିବର୍ତ୍ତିତ ରୂପେ** `https://api.jina.ai/v1/embeddings` କୁ ଅଗ୍ରେସର କରେ:
+Jina v5 Omni (`jina-ai/jina-embeddings-v5-omni-small`, `jina-ai/jina-embeddings-v5-omni-nano`,
+ଏବଂ ଫ୍ୟାମିଲି ଏଲିଆସ୍ `jina-ai/jina-embeddings-v5-omni` → omni-small) Jinaର ନେଟିଭ୍
+EmbeddingsV5Request ଡକ୍ୟୁମେଣ୍ଟଗୁଡ଼ିକୁ ମଧ୍ୟ ଗ୍ରହଣ କରେ ଏବଂ ସେଗୁଡ଼ିକୁ `https://api.jina.ai/v1/embeddings`କୁ **ଅପରିବର୍ତ୍ତିତ ଭାବେ ଫରୱାର୍ଡ କରେ**:
 
 ```json
 {
@@ -225,21 +233,32 @@ Content-Type: application/json
 }
 ```
 
-ନେଟିଭ `{ image | audio | video | pdf }` ମୂଲ୍ୟଗୁଡ଼ିକ ଏକ ସାର୍ବଜନୀନ HTTPS URL, ଏକ `data:` URI, କିମ୍ବା କଞ୍ଚା ବେସ୍୧୪ ହୋଇପାରେ। OmniRoute ସେହି ଅବଜେକ୍ଟଗୁଡ଼ିକୁ ଷ୍ଟ୍ରିଙ୍ଗିଫାଇ କରେ ନାହିଁ କିମ୍ବା ନେଟିଭ ଇମେଜ୍ URL ଫେଚ କରେ ନାହିଁ — ଜିନା ନିଜେ ସାର୍ବଜନୀନ ମିଡିଆ ପୁନରୁଦ୍ଧାର କରେ। ଅତିରିକ୍ତ ଜିନା କ୍ଷେତ୍ରଗୁଡ଼ିକ (`task`, `normalized`, `truncate`, `embedding_type`) ଅଗ୍ରେସର କରାଯାଏ। କେବଳ ଟେକ୍ସଟ ଜିନା SKU ଗୁଡ଼ିକ ଏବେ ବି ଅଣ-ଟେକ୍ସଟ ଡକ୍ୟୁମେଣ୍ଟଗୁଡ଼ିକୁ ପ୍ରତ୍ୟାଖ୍ୟାନ କରନ୍ତି।
+ନେଟିଭ୍ `{ image | audio | video | pdf }` ମୂଲ୍ୟଗୁଡ଼ିକ ଏକ ସାର୍ବଜନୀନ HTTPS URL, ଏକ `data:` URI, କିମ୍ବା କଞ୍ଚା
+base64 ହୋଇପାରେ। OmniRoute ସେହି ଅବଜେକ୍ଟଗୁଡ଼ିକୁ ଷ୍ଟ୍ରିଙ୍ଗ୍ରେ ପରିଣତ କରେ ନାହିଁ କିମ୍ବା ନେଟିଭ୍ ଇମେଜ୍ URLଗୁଡ଼ିକୁ ଫେଚ୍ କରେ ନାହିଁ — Jina ନିଜେ
+ସାର୍ବଜନୀନ ମିଡିଆ ଆଣେ। ଅତିରିକ୍ତ Jina ଫିଲ୍ଡଗୁଡ଼ିକ (`task`, `normalized`, `truncate`, `embedding_type`)
+ଫରୱାର୍ଡ କରାଯାଏ। କେବଳ-ଟେକ୍ସଟ୍ Jina SKUଗୁଡ଼ିକ ଏବେ ମଧ୍ୟ ଅଣ-ଟେକ୍ସଟ୍ ଡକ୍ୟୁମେଣ୍ଟକୁ ପ୍ରତ୍ୟାଖ୍ୟାନ କରେ।
 
-ନିରାପତ୍ତା ଏବଂ ପରିବହନ ସୀମା:
+ସୁରକ୍ଷା ଏବଂ ପରିବହନ ସୀମା:
 
-- ରିମୋଟ ମିଡିଆ URL ଗୁଡ଼ିକ ସାର୍ବଜନୀନ HTTPS ହେବା ଆବଶ୍ୟକ। କାନୋନିକାଲ `{type,source:url}` ଆଇଟମ୍ ଗୁଡ଼ିକ ସର୍ଭର-ପାର୍ଶ୍ୱରେ ଫେଚ କରାଯାଏ (ରିଡାଇରେକ୍ଟ ପୁନଃଯାଞ୍ଚ, ଟାଇମଆଉଟ, ଆକାର ସୀମା, ସାର୍ବଜନୀନ DNS, କନେକ୍ସନ ପିନିଂ) ଏବଂ ପ୍ରଦାତା କଲ ପୂର୍ବରୁ ଇନଲାଇନ କରାଯାଏ। ଜିନା-ନେଟିଭ `{image:"https://..."}` ଆଇଟମ୍ ଗୁଡ଼ିକ ସମାନ ସାର୍ବଜନୀନ-HTTPS ଯାଞ୍ଚ ପରେ ଯଥାବତ ଅଗ୍ରେସର କରାଯାଏ; ଜିନା URL ଫେଚ କରେ।
+- ରିମୋଟ୍ ମିଡିଆ URLଗୁଡ଼ିକ ନିଶ୍ଚିତ ଭାବେ ସାର୍ବଜନୀନ HTTPS ହେବା ଆବଶ୍ୟକ। କ୍ୟାନୋନିକାଲ୍ `{type,source:url}` ଆଇଟମ୍ଗୁଡ଼ିକୁ
+  ସର୍ଭର୍ ପକ୍ଷରୁ ଫେଚ୍ କରାଯାଏ (ରିଡାଇରେକ୍ଟ ପୁନଃବୈଧୀକରଣ, ଟାଇମ୍ଆଉଟ୍, ଆକାର ସୀମା, ସାର୍ବଜନୀନ DNS, ସଂଯୋଗ ପିନିଂ) ଏବଂ
+  ପ୍ରଦାନକାରୀ କଲ୍ ପୂର୍ବରୁ ଇନ୍ଲାଇନ୍ କରାଯାଏ। Jina-ନେଟିଭ୍ `{image:"https://..."}` ଆଇଟମ୍ଗୁଡ଼ିକୁ ସମାନ ସାର୍ବଜନୀନ-HTTPS ଯାଞ୍ଚ ପରେ
+  ଯେପରି ଅଛି ସେପରି ଫରୱାର୍ଡ କରାଯାଏ; Jina URLଟିକୁ ଫେଚ୍ କରେ।
+- ଇନ୍ଲାଇନ୍ base64 ମିଡିଆ ପ୍ରତି ଆଇଟମ୍ରେ ଡିକୋଡ୍ ହୋଇଥିବା 8 MiB ଏବଂ ସମଗ୍ର ଅନୁରୋଧରେ ଡିକୋଡ୍ ହୋଇଥିବା 16 MiB ପର୍ଯ୍ୟନ୍ତ ସୀମିତ।
 
-- ଇନଲାଇନ ବେସ୍୧୪ ମିଡିଆ ପ୍ରତି ଆଇଟମ୍ ପାଇଁ 8 MiB ଡିକୋଡେଡ ଏବଂ ଅନୁରୋଧ ମଧ୍ୟରେ 16 MiB ଡିକୋଡେଡ ମଧ୍ୟରେ ସୀମିତ।
+ପ୍ରଦାନକାରୀ ରୂପାନ୍ତରଣ (କ୍ୟାନୋନିକାଲ୍ ଆଇଟମ୍ଗୁଡ଼ିକୁ କେବେବି ଅପରିବର୍ତ୍ତିତ ଭାବେ ଫରୱାର୍ଡ କରାଯାଏ ନାହିଁ):
 
-ପ୍ରଦାତା ଅନୁବାଦ (କାନୋନିକାଲ ଆଇଟମ୍ ଗୁଡ଼ିକ କେବେ ବି ଅପରିବର୍ତ୍ତିତ ଅଗ୍ରେସର କରାଯାଏ ନାହିଁ):
-
-- ଜିନା ମଲ୍ଟିମୋଡାଲ ମଡେଲଗୁଡ଼ିକ: ପ୍ରତ୍ୟେକ ଟପ୍-ଲେଭଲ ଆଇଟମ୍ ଗୋଟିଏ ମୋଡାଲିଟି-କୀ ଅବଜେକ୍ଟ (`text` / `image` / `audio` / `video` / `pdf`) ହୋଇଯାଏ, ଇନଲାଇନ ମିଡିଆ ପାଇଁ ଡାଟା URI ବ୍ୟବହାର କରି; ପ୍ରତି ଟପ୍-ଲେଭଲ ଆଇଟମ୍ ପାଇଁ ଗୋଟିଏ ଭେକ୍ଟର।
-
-- Gemini Embedding 2 ପରିବାର: ଗୋଟିଏ ଟପ୍-ଲେଭଲ ଆରେ ଏକକ ନେଟିଭ `models/{model}:embedContent` ଅନୁରୋଧରେ ପରିଣତ ହୁଏ, `content.parts` (`text` କିମ୍ବା `inline_data`) ସହିତ।
-
-- ଅଜ୍ଞାତ/ଡାଇନାମିକ ମଡେଲଗୁଡ଼ିକ ଯେଉଁଗୁଡ଼ିକରେ ସ୍ପଷ୍ଟ ମୋଡାଲିଟି ମେଟାଡାଟା ନାହିଁ, ସେଗୁଡ଼ିକ HTTP 400 ସହିତ ଗଠନମୂଳକ ଇନପୁଟକୁ ପ୍ରତ୍ୟାଖ୍ୟାନ କରନ୍ତି।
+- Jina ମଲ୍ଟିମୋଡାଲ୍ ମଡେଲ୍ଗୁଡ଼ିକ: ପ୍ରତ୍ୟେକ ଶୀର୍ଷ-ସ୍ତରୀୟ ଆଇଟମ୍ ଗୋଟିଏ ମୋଡାଲିଟି-କୀଯୁକ୍ତ ଅବଜେକ୍ଟରେ ପରିଣତ ହୁଏ
+  (`text` / `image` / `audio` / `video` / `pdf`), ଯେଉଁଥିରେ ଇନ୍ଲାଇନ୍ ମିଡିଆ ପାଇଁ data URI ବ୍ୟବହାର କରାଯାଏ; ପ୍ରତ୍ୟେକ
+  ଶୀର୍ଷ-ସ୍ତରୀୟ ଆଇଟମ୍ ପାଇଁ ଗୋଟିଏ ଭେକ୍ଟର୍।
+- Gemini Embedding 2 ଫ୍ୟାମିଲି: ଗୋଟିଏ ଶୀର୍ଷ-ସ୍ତରୀୟ ଆରେ ଏକକ ନେଟିଭ୍
+  `models/{model}:embedContent` ଅନୁରୋଧରେ ପରିଣତ ହୁଏ, ଯେଉଁଥିରେ `content.parts` (`text` କିମ୍ବା `inline_data`) ଥାଏ।
+- llama.cpp (`llama-cpp/<model>`, ସ୍ଥାନୀୟ ସର୍ଭର୍ ଲୋଡ୍ କରିଥିବା ଯେକୌଣସି ମଡେଲ୍): କ୍ୟାନୋନିକାଲ୍ `text` ଆଇଟମ୍ଗୁଡ଼ିକ
+  ସାଧାରଣ ଷ୍ଟ୍ରିଙ୍ଗ୍ରେ ପରିଣତ ହୁଏ, ଏବଂ `image` / `audio` / `video` ପ୍ରତ୍ୟେକ ଗୋଟିଏ
+  `{"content": [part]}` ଅବଜେକ୍ଟରେ ପରିଣତ ହୁଏ, ଯେଉଁଥିରେ llama-serverର ଚାଟ୍ କଣ୍ଟେଣ୍ଟ ପାର୍ଟଗୁଡ଼ିକ (`image_url`,
+  `input_audio`, ଫର୍ମାଟ୍ `wav` / `mp3` / `flac` ସହିତ, `input_video`) ଇନ୍ଲାଇନ୍ ଡାଟା ସହ ବ୍ୟବହୃତ ହୁଏ; ପ୍ରତ୍ୟେକ ଶୀର୍ଷ-ସ୍ତରୀୟ ଆଇଟମ୍ ପାଇଁ ଗୋଟିଏ ଭେକ୍ଟର୍। ସର୍ଭର୍ଟି `--embedding --mmproj …` ସହ ଚାଲିବା ଆବଶ୍ୟକ; ପ୍ରୋଜେକ୍ଟର୍ ବିନା ଏହା
+  ନିଜେ ମିଡିଆକୁ ପ୍ରତ୍ୟାଖ୍ୟାନ କରେ। `document` ସମର୍ଥିତ ନୁହେଁ।
+- ସ୍ପଷ୍ଟ ମୋଡାଲିଟି ମେଟାଡାଟା ନଥିବା ଅଜଣା/ଡାଇନାମିକ୍ ମଡେଲ୍ଗୁଡ଼ିକ HTTP 400 ସହିତ ଗଠିତ ଇନ୍ପୁଟ୍କୁ ପ୍ରତ୍ୟାଖ୍ୟାନ କରେ।
 
 ```json
 {
@@ -256,10 +275,11 @@ Content-Type: application/json
 }
 ```
 
-ଅସମର୍ଥିତ ମଡେଲ/ମୋଡାଲିଟି ସଂଯୋଗଗୁଡ଼ିକ ଆଇଟମ୍ ଉପରେ ବାଧ୍ୟ କରିବା ପରିବର୍ତ୍ତେ HTTP 400 ଫେରାଇଥାଏ। ଲିଗାସି ଷ୍ଟ୍ରିଙ୍ଗ/ଟୋକନ ଅନୁରୋଧଗୁଡ଼ିକରେ ଇନପୁଟ-ବ୍ୟତୀତ ଏକ୍ସଟେନସନ କ୍ଷେତ୍ରଗୁଡ଼ିକ ଅପରିବର୍ତ୍ତିତ ରୂପେ ପାର ହୋଇଥାଏ।
+ଅସମର୍ଥିତ ମଡେଲ୍/ମୋଡାଲିଟି ସଂଯୋଜନଗୁଡ଼ିକ ଆଇଟମ୍କୁ ବାଧ୍ୟତାମୂଳକ ଭାବେ ରୂପାନ୍ତର କରିବା ପରିବର୍ତ୍ତେ HTTP 400 ଫେରାଏ। ପୁରୁଣା ଷ୍ଟ୍ରିଙ୍ଗ୍/ଟୋକେନ୍ ଅନୁରୋଧଗୁଡ଼ିକର ଅଣ-ଇନ୍ପୁଟ୍
+ଏକ୍ସଟେନ୍ସନ୍ ଫିଲ୍ଡଗୁଡ଼ିକ ପୂର୍ବପରି ଅପରିବର୍ତ୍ତିତ ଭାବେ ପାସ୍ ହେବା ଜାରି ରଖେ।
 
 ```bash
-# ସମସ୍ତ ଏମ୍ବେଡିଂ ମଡେଲଗୁଡ଼ିକୁ ତାଲିକା କରନ୍ତୁ
+# ସମସ୍ତ embedding ମଡେଲ୍ର ତାଲିକା ଦେଖାନ୍ତୁ
 GET /v1/embeddings
 ```
 

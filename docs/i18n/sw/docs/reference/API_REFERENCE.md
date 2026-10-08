@@ -4,9 +4,12 @@
 
 ---
 
-🌐 **Languages:** 🇺🇸 [English](../../../../reference/API_REFERENCE.md) · 🇪🇹 [am](../../../am/docs/reference/API_REFERENCE.md) · 🇸🇦 [ar](../../../ar/docs/reference/API_REFERENCE.md) · 🇦🇿 [az](../../../az/docs/reference/API_REFERENCE.md) · 🇧🇬 [bg](../../../bg/docs/reference/API_REFERENCE.md) · 🇧🇩 [bn](../../../bn/docs/reference/API_REFERENCE.md) · 🇧🇦 [bs](../../../bs/docs/reference/API_REFERENCE.md) · 🇨🇿 [cs](../../../cs/docs/reference/API_REFERENCE.md) · 🇩🇰 [da](../../../da/docs/reference/API_REFERENCE.md) · 🇩🇪 [de](../../../de/docs/reference/API_REFERENCE.md) · 🇬🇷 [el](../../../el/docs/reference/API_REFERENCE.md) · 🇪🇸 [es](../../../es/docs/reference/API_REFERENCE.md) · 🇪🇪 [et](../../../et/docs/reference/API_REFERENCE.md) · 🇮🇷 [fa](../../../fa/docs/reference/API_REFERENCE.md) · 🇫🇮 [fi](../../../fi/docs/reference/API_REFERENCE.md) · 🇫🇷 [fr](../../../fr/docs/reference/API_REFERENCE.md) · 🇮🇪 [ga](../../../ga/docs/reference/API_REFERENCE.md) · 🇮🇳 [gu](../../../gu/docs/reference/API_REFERENCE.md) · 🇳🇬 [ha](../../../ha/docs/reference/API_REFERENCE.md) · 🇮🇱 [he](../../../he/docs/reference/API_REFERENCE.md) · 🇮🇳 [hi](../../../hi/docs/reference/API_REFERENCE.md) · 🇭🇷 [hr](../../../hr/docs/reference/API_REFERENCE.md) · 🇭🇺 [hu](../../../hu/docs/reference/API_REFERENCE.md) · 🇦🇲 [hy](../../../hy/docs/reference/API_REFERENCE.md) · 🇮🇩 [id](../../../id/docs/reference/API_REFERENCE.md) · 🇳🇬 [ig](../../../ig/docs/reference/API_REFERENCE.md) · 🇮🇹 [it](../../../it/docs/reference/API_REFERENCE.md) · 🇯🇵 [ja](../../../ja/docs/reference/API_REFERENCE.md) · 🇬🇪 [ka](../../../ka/docs/reference/API_REFERENCE.md) · 🇰🇭 [km](../../../km/docs/reference/API_REFERENCE.md) · 🇮🇳 [kn](../../../kn/docs/reference/API_REFERENCE.md) · 🇰🇷 [ko](../../../ko/docs/reference/API_REFERENCE.md) · 🇱🇹 [lt](../../../lt/docs/reference/API_REFERENCE.md) · 🇱🇻 [lv](../../../lv/docs/reference/API_REFERENCE.md) · 🇮🇳 [ml](../../../ml/docs/reference/API_REFERENCE.md) · 🇮🇳 [mr](../../../mr/docs/reference/API_REFERENCE.md) · 🇲🇾 [ms](../../../ms/docs/reference/API_REFERENCE.md) · 🇲🇹 [mt](../../../mt/docs/reference/API_REFERENCE.md) · 🇲🇲 [my](../../../my/docs/reference/API_REFERENCE.md) · 🇳🇵 [ne](../../../ne/docs/reference/API_REFERENCE.md) · 🇳🇱 [nl](../../../nl/docs/reference/API_REFERENCE.md) · 🇳🇴 [no](../../../no/docs/reference/API_REFERENCE.md) · 🇮🇳 [or](../../../or/docs/reference/API_REFERENCE.md) · 🇮🇳 [pa](../../../pa/docs/reference/API_REFERENCE.md) · 🇵🇭 [phi](../../../phi/docs/reference/API_REFERENCE.md) · 🇵🇱 [pl](../../../pl/docs/reference/API_REFERENCE.md) · 🇵🇹 [pt](../../../pt/docs/reference/API_REFERENCE.md) · 🇧🇷 [pt-BR](../../../pt-BR/docs/reference/API_REFERENCE.md) · 🇷🇴 [ro](../../../ro/docs/reference/API_REFERENCE.md) · 🇷🇺 [ru](../../../ru/docs/reference/API_REFERENCE.md) · 🇱🇰 [si](../../../si/docs/reference/API_REFERENCE.md) · 🇸🇰 [sk](../../../sk/docs/reference/API_REFERENCE.md) · 🇸🇮 [sl](../../../sl/docs/reference/API_REFERENCE.md) · 🇷🇸 [sr](../../../sr/docs/reference/API_REFERENCE.md) · 🇸🇪 [sv](../../../sv/docs/reference/API_REFERENCE.md) · 🇮🇳 [ta](../../../ta/docs/reference/API_REFERENCE.md) · 🇮🇳 [te](../../../te/docs/reference/API_REFERENCE.md) · 🇹🇭 [th](../../../th/docs/reference/API_REFERENCE.md) · 🇹🇷 [tr](../../../tr/docs/reference/API_REFERENCE.md) · 🇺🇦 [uk-UA](../../../uk-UA/docs/reference/API_REFERENCE.md) · 🇵🇰 [ur](../../../ur/docs/reference/API_REFERENCE.md) · 🇺🇿 [uz](../../../uz/docs/reference/API_REFERENCE.md) · 🇻🇳 [vi](../../../vi/docs/reference/API_REFERENCE.md) · 🇳🇬 [yo](../../../yo/docs/reference/API_REFERENCE.md) · 🇨🇳 [zh-CN](../../../zh-CN/docs/reference/API_REFERENCE.md) · 🇹🇼 [zh-TW](../../../zh-TW/docs/reference/API_REFERENCE.md)
+🌐 **Lugha:** 🇺🇸 [Kiingereza](./API_REFERENCE.md) | 🇪🇹 [አማርኛ](../i18n/am/docs/reference/API_REFERENCE.md) | 🇸🇦 [العربية](../i18n/ar/docs/reference/API_REFERENCE.md) | 🇦🇿 [Azərbaycan dili](../i18n/az/docs/reference/API_REFERENCE.md) | 🇧🇬 [Български](../i18n/bg/docs/reference/API_REFERENCE.md) | 🇧🇩 [বাংলা](../i18n/bn/docs/reference/API_REFERENCE.md) | 🇧🇦 [Bosanski](../i18n/bs/docs/reference/API_REFERENCE.md) | 🇨🇿 [Čeština](../i18n/cs/docs/reference/API_REFERENCE.md) | 🇩🇰 [Dansk](../i18n/da/docs/reference/API_REFERENCE.md) | 🇩🇪 [Deutsch](../i18n/de/docs/reference/API_REFERENCE.md) | 🇬🇷 [Ελληνικά](../i18n/el/docs/reference/API_REFERENCE.md) | 🇪🇸 [Español](../i18n/es/docs/reference/API_REFERENCE.md) | 🇪🇪 [Eesti](../i18n/et/docs/reference/API_REFERENCE.md) | 🇮🇷 [فارسی](../i18n/fa/docs/reference/API_REFERENCE.md) | 🇫🇮 [Suomi](../i18n/fi/docs/reference/API_REFERENCE.md) | 🇫🇷 [Français](../i18n/fr/docs/reference/API_REFERENCE.md) | 🇮🇪 [Gaeilge](../i18n/ga/docs/reference/API_REFERENCE.md) | 🇮🇳 [ગુજરાતી](../i18n/gu/docs/reference/API_REFERENCE.md) | 🇳🇬 [Hausa](../i18n/ha/docs/reference/API_REFERENCE.md) | 🇮🇱 [עברית](../i18n/he/docs/reference/API_REFERENCE.md) | 🇮🇳 [हिन्दी](../i18n/hi/docs/reference/API_REFERENCE.md) | 🇭🇷 [Hrvatski](../i18n/hr/docs/reference/API_REFERENCE.md) | 🇭🇺 [Magyar](../i18n/hu/docs/reference/API_REFERENCE.md) | 🇦🇲 [Հայերեն](../i18n/hy/docs/reference/API_REFERENCE.md) | 🇮🇩 [Bahasa Indonesia](../i18n/id/docs/reference/API_REFERENCE.md) | 🇳🇬 [Igbo](../i18n/ig/docs/reference/API_REFERENCE.md) | 🇮🇹 [Italiano](../i18n/it/docs/reference/API_REFERENCE.md) | 🇯🇵 [日本語](../i18n/ja/docs/reference/API_REFERENCE.md) | 🇬🇪 [ქართული](../i18n/ka/docs/reference/API_REFERENCE.md) | 🇰🇭 [ខ្មែរ](../i18n/km/docs/reference/API_REFERENCE.md) | 🇮🇳 [ಕನ್ನಡ](../i18n/kn/docs/reference/API_REFERENCE.md) | 🇰🇷 [한국어](../i18n/ko/docs/reference/API_REFERENCE.md) | 🇱🇹 [Lietuvių](../i18n/lt/docs/reference/API_REFERENCE.md) | 🇱🇻 [Latviešu](../i18n/lv/docs/reference/API_REFERENCE.md) | 🇮🇳 [മലയാളം](../i18n/ml/docs/reference/API_REFERENCE.md) | 🇮🇳 [मराठी](../i18n/mr/docs/reference/API_REFERENCE.md) | 🇲🇾 [Bahasa Melayu](../i18n/ms/docs/reference/API_REFERENCE.md) | 🇲🇹 [Malti](../i18n/mt/docs/reference/API_REFERENCE.md) | 🇲🇲 [မြန်မာ](../i18n/my/docs/reference/API_REFERENCE.md) | 🇳🇵 [नेपाली](../i18n/ne/docs/reference/API_REFERENCE.md) | 🇳🇱 [Nederlands](../i18n/nl/docs/reference/API_REFERENCE.md) | 🇳🇴 [Norsk](../i18n/no/docs/reference/API_REFERENCE.md) | 🇮🇳 [ଓଡ଼ିଆ](../i18n/or/docs/reference/API_REFERENCE.md) | 🇮🇳 [ਪੰਜਾਬੀ](../i18n/pa/docs/reference/API_REFERENCE.md) | 🇵🇭 [Filipino](../i18n/phi/docs/reference/API_REFERENCE.md) | 🇵🇱 [Polski](../i18n/pl/docs/reference/API_REFERENCE.md) | 🇵🇹 [Português (Portugal)](../i18n/pt/docs/reference/API_REFERENCE.md) | 🇧🇷 [Português (Brasil)](../i18n/pt-BR/docs/reference/API_REFERENCE.md) | 🇷🇴 [Română](../i18n/ro/docs/reference/API_REFERENCE.md) | 🇷🇺 [Русский](../i18n/ru/docs/reference/API_REFERENCE.md) | 🇱🇰 [සිංහල](../i18n/si/docs/reference/API_REFERENCE.md) | 🇸🇰 [Slovenčina](../i18n/sk/docs/reference/API_REFERENCE.md) | 🇸🇮 [Slovenščina](../i18n/sl/docs/reference/API_REFERENCE.md) | 🇷🇸 [Српски](../i18n/sr/docs/reference/API_REFERENCE.md) | 🇸🇪 [Svenska](../i18n/sv/docs/reference/API_REFERENCE.md) | 🇰🇪 [Kiswahili](../i18n/sw/docs/reference/API_REFERENCE.md) | 🇮🇳 [தமிழ்](../i18n/ta/docs/reference/API_REFERENCE.md) | 🇮🇳 [తెలుగు](../i18n/te/docs/reference/API_REFERENCE.md) | 🇹🇭 [ไทย](../i18n/th/docs/reference/API_REFERENCE.md) | 🇹🇷 [Türkçe](../i18n/tr/docs/reference/API_REFERENCE.md) | 🇺🇦 [Українська](../i18n/uk-UA/docs/reference/API_REFERENCE.md) | 🇵🇰 [اردو](../i18n/ur/docs/reference/API_REFERENCE.md) | 🇺🇿 [Oʻzbekcha](../i18n/uz/docs/reference/API_REFERENCE.md) | 🇻🇳 [Tiếng Việt](../i18n/vi/docs/reference/API_REFERENCE.md) | 🇳🇬 [Yorùbá](../i18n/yo/docs/reference/API_REFERENCE.md) | 🇨🇳 [中文 (简体)](../i18n/zh-CN/docs/reference/API_REFERENCE.md) | 🇹🇼 [中文 (繁體)](../i18n/zh-TW/docs/reference/API_REFERENCE.md)
 
-Rejeleo kuu la API ya OmniRoute. Linahusu sehemu ya umma ya `/v1` na vituo vya mwisho vya usimamizi vinavyotumika zaidi; [`docs/openapi.yaml`](../openapi.yaml) inayoweza kusomeka na mashine pamoja na mti wa njia ulio chini ya `src/app/api/` ndiyo vyanzo kamili.
+Rejea kuu ya API ya OmniRoute. Inashughulikia kiolesura cha umma cha `/v1` na sehemu za mwisho za usimamizi zinazotumiwa zaidi; [`docs/openapi.yaml`](../openapi.yaml) inayoweza kusomeka na mashine na mti wa njia chini ya `src/app/api/` ndizo vyanzo kamili.
+
+Kwa itifaki mahususi inayooana na OpenAI na matriki ya uwezo wa watoa huduma, angalia
+[`OPENAI_COMPATIBILITY.md`](./OPENAI_COMPATIBILITY.md).
 
 ---
 
@@ -204,13 +207,16 @@ Content-Type: application/json
 
 Watoa huduma wanaopatikana: Nebius, OpenAI, Mistral, Together AI, Fireworks, NVIDIA, **OpenRouter**, Jina AI.
 
-Vitambulisho vya katalogi ni `provider/model` (mfano: `jina-ai/jina-embeddings-v5-omni-small`). Vitambulisho vya modeli za Jina visivyo na kiambishi cha mtoa huduma vinavyoonekana kwenye sajili (kwa mfano `jina-embeddings-v5-text-small`, `jina-reranker-v3.5`) pia vinatambulika. Operesheni za embed/rerank/classify/segment za Jina hutumia kwanza vitambulisho vya `jina-ai` vya dashibodi; `JINA_AI_API_KEY` hutumika kama mbadala tu wakati hakuna ufunguo wa dashibodi. Kadi ya `jina-reader` ni ya Reader / `r.jina.ai` pekee (`POST /v1/web/fetch`) na haitoi kamwe huduma za embeddings au rerank.
+Vitambulisho vya katalogi vina muundo wa `provider/model` (mfano: `jina-ai/jina-embeddings-v5-omni-small`). Vitambulisho vya msingi vya modeli za Jina vinavyoonekana kwenye sajili (kwa mfano `jina-embeddings-v5-text-small`, `jina-reranker-v3.5`) pia vinatambuliwa. Shughuli za Jina za embed/rerank/classify/segment hutumia kwanza vitambulisho vya `jina-ai` kutoka kwenye dashibodi; `JINA_AI_API_KEY` hutumika kama chaguo la akiba ikiwa tu hakuna ufunguo wa dashibodi. Kadi ya `jina-reader` ni ya Reader / `r.jina.ai` pekee (`POST /v1/web/fetch`) na haitoi kamwe huduma za upachikaji au upangaji upya.
 
-Modeli za sajili zinazotangaza usaidizi wa hali nyingi pia zinakubali hadi vipengee 32 vilivyoundwa kwa muundo usiotegemea mtoa huduma. Aina za vipengee vya midia ni `text`, `image`, `audio`, `video`, na `document`. `source` ya midia yake ni ama `{"type":"url","url":"https://..."}` au
+Modeli za sajili zinazotangaza usaidizi wa midia nyingi pia hukubali hadi vipengee 32 vilivyoundwa kwa muundo usiotegemea mtoa huduma.
+Aina za vipengee vya midia ni `text`, `image`, `audio`, `video`, na `document`. `source` ya midia hiyo
+ni `{"type":"url","url":"https://..."}` au
 `{"type":"base64","data":"...","media_type":"..."}`.
 
 Jina v5 Omni (`jina-ai/jina-embeddings-v5-omni-small`, `jina-ai/jina-embeddings-v5-omni-nano`,
-na lakabu ya familia `jina-ai/jina-embeddings-v5-omni` → omni-small) pia inakubali hati asilia za EmbeddingsV5Request za Jina na **kuzituma bila kuzibadilisha** hadi `https://api.jina.ai/v1/embeddings`:
+na lakabu ya familia `jina-ai/jina-embeddings-v5-omni` → omni-small) pia hukubali hati asilia za Jina za
+EmbeddingsV5Request na **huzituma mbele bila kuzibadilisha** hadi `https://api.jina.ai/v1/embeddings`:
 
 ```json
 {
@@ -227,18 +233,33 @@ na lakabu ya familia `jina-ai/jina-embeddings-v5-omni` → omni-small) pia inaku
 }
 ```
 
-Thamani asilia za `{ image | audio | video | pdf }` zinaweza kuwa URL ya umma ya HTTPS, URI ya `data:`, au base64 ghafi. OmniRoute haibadilishi vitu hivyo kuwa mifuatano ya maandishi wala kuchukua URL asilia za picha — Jina yenyewe huchukua midia ya umma. Sehemu za ziada za Jina (`task`, `normalized`, `truncate`, `embedding_type`) zinatumwa kama zilivyo. SKU za Jina za maandishi pekee bado zinakataa hati zisizo za maandishi.
+Thamani asilia za `{ image | audio | video | pdf }` zinaweza kuwa URL ya umma ya HTTPS, URI ya `data:`, au
+base64 ghafi. OmniRoute haibadilishi vipengee hivyo kuwa mifuatano wala haipakui URL asilia za picha — Jina hupakua
+midia ya umma yenyewe. Sehemu za ziada za Jina (`task`, `normalized`, `truncate`, `embedding_type`)
+hutumwa mbele. SKU za Jina zinazotumia maandishi pekee bado hukataa hati zisizo za maandishi.
 
 Mipaka ya usalama na usafirishaji:
 
-- URL za midia za mbali lazima ziwe za HTTPS ya umma. Vipengee vya kawaida vya `{type,source:url}` huchukuliwa upande wa seva (uthibitishaji upya wa uelekezaji, muda wa kuisha, vikomo vya ukubwa, DNS ya umma, na ubandikaji wa muunganisho) na kupachikwa kabla ya ombi kwa mtoa huduma. Vipengee asilia vya Jina vya `{image:"https://..."}` hutumwa kama vilivyo baada ya ukaguzi uleule wa HTTPS ya umma; Jina huchukua URL.
-- Midia ya base64 iliyopachikwa ina kikomo cha MiB 8 baada ya kusimbuliwa kwa kila kipengee na MiB 16 baada ya kusimbuliwa kwa ombi lote.
+- URL za midia ya mbali lazima ziwe za umma na zitumie HTTPS. Vipengee kanoni vya `{type,source:url}` hupakuliwa
+  upande wa seva (uthibitishaji upya wa uelekezaji, muda wa mwisho, vikomo vya ukubwa, DNS ya umma, ufungaji wa muunganisho) na
+  hupachikwa ndani kabla ya ombi kwa mtoa huduma. Vipengee asilia vya Jina vya `{image:"https://..."}` hutumwa mbele kama vilivyo
+  baada ya ukaguzi uleule wa HTTPS ya umma; Jina hupakua URL hiyo.
+- Midia ya base64 iliyopachikwa ndani ina kikomo cha MiB 8 baada ya kusimbuliwa kwa kila kipengee na MiB 16 baada ya kusimbuliwa katika ombi lote.
 
-Ubadilishaji kwa mtoa huduma (vipengee vya kawaida havitumwi kamwe bila kubadilishwa):
+Ubadilishaji kwa mtoa huduma (vipengee kanoni havitumwi kamwe bila kubadilishwa):
 
-- Modeli za Jina za hali nyingi: kila kipengee cha ngazi ya juu hubadilishwa kuwa kitu kimoja chenye ufunguo wa aina ya data (`text` / `image` / `audio` / `video` / `pdf`) kikitumia URI za data kwa midia iliyopachikwa; vekta moja kwa kila kipengee cha ngazi ya juu.
-- Familia ya Gemini Embedding 2: safu moja ya ngazi ya juu hubadilishwa kuwa ombi moja asilia la `models/{model}:embedContent` lenye `content.parts` (`text` au `inline_data`).
-- Modeli zisizojulikana/zilizoundwa kwa wakati halisi zisizo na metadata ya aina ya data iliyobainishwa hukataa ingizo lenye muundo kwa HTTP 400.
+- Modeli za midia nyingi za Jina: kila kipengee cha kiwango cha juu hubadilika kuwa kitu kimoja chenye ufunguo wa aina ya midia
+  (`text` / `image` / `audio` / `video` / `pdf`) kinachotumia URI za data kwa midia iliyopachikwa ndani; vekta moja kwa
+  kila kipengee cha kiwango cha juu.
+- Familia ya Gemini Embedding 2: safu moja ya kiwango cha juu hubadilika kuwa ombi moja asilia la
+  `models/{model}:embedContent` lenye `content.parts` (`text` au `inline_data`).
+- llama.cpp (`llama-cpp/<model>`, modeli yoyote iliyopakiwa na seva ya ndani): vipengee kanoni vya `text`
+  hubadilika kuwa mifuatano ya kawaida, na `image` / `audio` / `video` kila kimoja hubadilika kuwa kitu kimoja cha
+  `{"content": [part]}`, kwa kutumia sehemu za maudhui ya gumzo za llama-server (`image_url`,
+  `input_audio` yenye umbizo la `wav` / `mp3` / `flac`, `input_video`) zikiwa na data iliyopachikwa ndani; vekta moja
+  kwa kila kipengee cha kiwango cha juu. Seva lazima iendeshwe kwa `--embedding --mmproj …`; bila projekta
+  hukataa midia yenyewe. `document` haitumiki.
+- Modeli zisizojulikana/zinaobadilika ambazo hazina metadata dhahiri ya aina za midia hukataa ingizo lililoundwa kwa HTTP 400.
 
 ```json
 {
@@ -255,7 +276,8 @@ Ubadilishaji kwa mtoa huduma (vipengee vya kawaida havitumwi kamwe bila kubadili
 }
 ```
 
-Mchanganyiko wa modeli/aina ya data usiotumika hurejesha HTTP 400 badala ya kulazimisha ubadilishaji wa kipengee. Sehemu za viendelezi zisizo za ingizo kwenye maombi ya zamani ya mifuatano ya maandishi/tokeni zinaendelea kupitishwa bila kubadilishwa.
+Mchanganyiko usiotumika wa modeli/aina ya midia hurejesha HTTP 400 badala ya kulazimisha ubadilishaji wa kipengee. Sehemu za viendelezi
+zisizo za ingizo kwenye maombi ya zamani ya mifuatano/tokeni zinaendelea kupitishwa bila kubadilishwa.
 
 ```bash
 # Orodhesha modeli zote za upachikaji

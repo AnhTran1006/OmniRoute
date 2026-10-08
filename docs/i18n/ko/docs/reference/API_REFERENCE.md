@@ -4,9 +4,12 @@
 
 ---
 
-🌐 **Languages:** 🇺🇸 [English](../../../../reference/API_REFERENCE.md) · 🇪🇹 [am](../../../am/docs/reference/API_REFERENCE.md) · 🇸🇦 [ar](../../../ar/docs/reference/API_REFERENCE.md) · 🇦🇿 [az](../../../az/docs/reference/API_REFERENCE.md) · 🇧🇬 [bg](../../../bg/docs/reference/API_REFERENCE.md) · 🇧🇩 [bn](../../../bn/docs/reference/API_REFERENCE.md) · 🇧🇦 [bs](../../../bs/docs/reference/API_REFERENCE.md) · 🇨🇿 [cs](../../../cs/docs/reference/API_REFERENCE.md) · 🇩🇰 [da](../../../da/docs/reference/API_REFERENCE.md) · 🇩🇪 [de](../../../de/docs/reference/API_REFERENCE.md) · 🇬🇷 [el](../../../el/docs/reference/API_REFERENCE.md) · 🇪🇸 [es](../../../es/docs/reference/API_REFERENCE.md) · 🇪🇪 [et](../../../et/docs/reference/API_REFERENCE.md) · 🇮🇷 [fa](../../../fa/docs/reference/API_REFERENCE.md) · 🇫🇮 [fi](../../../fi/docs/reference/API_REFERENCE.md) · 🇫🇷 [fr](../../../fr/docs/reference/API_REFERENCE.md) · 🇮🇪 [ga](../../../ga/docs/reference/API_REFERENCE.md) · 🇮🇳 [gu](../../../gu/docs/reference/API_REFERENCE.md) · 🇳🇬 [ha](../../../ha/docs/reference/API_REFERENCE.md) · 🇮🇱 [he](../../../he/docs/reference/API_REFERENCE.md) · 🇮🇳 [hi](../../../hi/docs/reference/API_REFERENCE.md) · 🇭🇷 [hr](../../../hr/docs/reference/API_REFERENCE.md) · 🇭🇺 [hu](../../../hu/docs/reference/API_REFERENCE.md) · 🇦🇲 [hy](../../../hy/docs/reference/API_REFERENCE.md) · 🇮🇩 [id](../../../id/docs/reference/API_REFERENCE.md) · 🇳🇬 [ig](../../../ig/docs/reference/API_REFERENCE.md) · 🇮🇹 [it](../../../it/docs/reference/API_REFERENCE.md) · 🇯🇵 [ja](../../../ja/docs/reference/API_REFERENCE.md) · 🇬🇪 [ka](../../../ka/docs/reference/API_REFERENCE.md) · 🇰🇭 [km](../../../km/docs/reference/API_REFERENCE.md) · 🇮🇳 [kn](../../../kn/docs/reference/API_REFERENCE.md) · 🇱🇹 [lt](../../../lt/docs/reference/API_REFERENCE.md) · 🇱🇻 [lv](../../../lv/docs/reference/API_REFERENCE.md) · 🇮🇳 [ml](../../../ml/docs/reference/API_REFERENCE.md) · 🇮🇳 [mr](../../../mr/docs/reference/API_REFERENCE.md) · 🇲🇾 [ms](../../../ms/docs/reference/API_REFERENCE.md) · 🇲🇹 [mt](../../../mt/docs/reference/API_REFERENCE.md) · 🇲🇲 [my](../../../my/docs/reference/API_REFERENCE.md) · 🇳🇵 [ne](../../../ne/docs/reference/API_REFERENCE.md) · 🇳🇱 [nl](../../../nl/docs/reference/API_REFERENCE.md) · 🇳🇴 [no](../../../no/docs/reference/API_REFERENCE.md) · 🇮🇳 [or](../../../or/docs/reference/API_REFERENCE.md) · 🇮🇳 [pa](../../../pa/docs/reference/API_REFERENCE.md) · 🇵🇭 [phi](../../../phi/docs/reference/API_REFERENCE.md) · 🇵🇱 [pl](../../../pl/docs/reference/API_REFERENCE.md) · 🇵🇹 [pt](../../../pt/docs/reference/API_REFERENCE.md) · 🇧🇷 [pt-BR](../../../pt-BR/docs/reference/API_REFERENCE.md) · 🇷🇴 [ro](../../../ro/docs/reference/API_REFERENCE.md) · 🇷🇺 [ru](../../../ru/docs/reference/API_REFERENCE.md) · 🇱🇰 [si](../../../si/docs/reference/API_REFERENCE.md) · 🇸🇰 [sk](../../../sk/docs/reference/API_REFERENCE.md) · 🇸🇮 [sl](../../../sl/docs/reference/API_REFERENCE.md) · 🇷🇸 [sr](../../../sr/docs/reference/API_REFERENCE.md) · 🇸🇪 [sv](../../../sv/docs/reference/API_REFERENCE.md) · 🇰🇪 [sw](../../../sw/docs/reference/API_REFERENCE.md) · 🇮🇳 [ta](../../../ta/docs/reference/API_REFERENCE.md) · 🇮🇳 [te](../../../te/docs/reference/API_REFERENCE.md) · 🇹🇭 [th](../../../th/docs/reference/API_REFERENCE.md) · 🇹🇷 [tr](../../../tr/docs/reference/API_REFERENCE.md) · 🇺🇦 [uk-UA](../../../uk-UA/docs/reference/API_REFERENCE.md) · 🇵🇰 [ur](../../../ur/docs/reference/API_REFERENCE.md) · 🇺🇿 [uz](../../../uz/docs/reference/API_REFERENCE.md) · 🇻🇳 [vi](../../../vi/docs/reference/API_REFERENCE.md) · 🇳🇬 [yo](../../../yo/docs/reference/API_REFERENCE.md) · 🇨🇳 [zh-CN](../../../zh-CN/docs/reference/API_REFERENCE.md) · 🇹🇼 [zh-TW](../../../zh-TW/docs/reference/API_REFERENCE.md)
+🌐 **언어:** 🇺🇸 [English](./API_REFERENCE.md) | 🇪🇹 [አማርኛ](../i18n/am/docs/reference/API_REFERENCE.md) | 🇸🇦 [العربية](../i18n/ar/docs/reference/API_REFERENCE.md) | 🇦🇿 [Azərbaycan dili](../i18n/az/docs/reference/API_REFERENCE.md) | 🇧🇬 [Български](../i18n/bg/docs/reference/API_REFERENCE.md) | 🇧🇩 [বাংলা](../i18n/bn/docs/reference/API_REFERENCE.md) | 🇧🇦 [Bosanski](../i18n/bs/docs/reference/API_REFERENCE.md) | 🇨🇿 [Čeština](../i18n/cs/docs/reference/API_REFERENCE.md) | 🇩🇰 [Dansk](../i18n/da/docs/reference/API_REFERENCE.md) | 🇩🇪 [Deutsch](../i18n/de/docs/reference/API_REFERENCE.md) | 🇬🇷 [Ελληνικά](../i18n/el/docs/reference/API_REFERENCE.md) | 🇪🇸 [Español](../i18n/es/docs/reference/API_REFERENCE.md) | 🇪🇪 [Eesti](../i18n/et/docs/reference/API_REFERENCE.md) | 🇮🇷 [فارسی](../i18n/fa/docs/reference/API_REFERENCE.md) | 🇫🇮 [Suomi](../i18n/fi/docs/reference/API_REFERENCE.md) | 🇫🇷 [Français](../i18n/fr/docs/reference/API_REFERENCE.md) | 🇮🇪 [Gaeilge](../i18n/ga/docs/reference/API_REFERENCE.md) | 🇮🇳 [ગુજરાતી](../i18n/gu/docs/reference/API_REFERENCE.md) | 🇳🇬 [Hausa](../i18n/ha/docs/reference/API_REFERENCE.md) | 🇮🇱 [עברית](../i18n/he/docs/reference/API_REFERENCE.md) | 🇮🇳 [हिन्दी](../i18n/hi/docs/reference/API_REFERENCE.md) | 🇭🇷 [Hrvatski](../i18n/hr/docs/reference/API_REFERENCE.md) | 🇭🇺 [Magyar](../i18n/hu/docs/reference/API_REFERENCE.md) | 🇦🇲 [Հայերեն](../i18n/hy/docs/reference/API_REFERENCE.md) | 🇮🇩 [Bahasa Indonesia](../i18n/id/docs/reference/API_REFERENCE.md) | 🇳🇬 [Igbo](../i18n/ig/docs/reference/API_REFERENCE.md) | 🇮🇹 [Italiano](../i18n/it/docs/reference/API_REFERENCE.md) | 🇯🇵 [日本語](../i18n/ja/docs/reference/API_REFERENCE.md) | 🇬🇪 [ქართული](../i18n/ka/docs/reference/API_REFERENCE.md) | 🇰🇭 [ខ្មែរ](../i18n/km/docs/reference/API_REFERENCE.md) | 🇮🇳 [ಕನ್ನಡ](../i18n/kn/docs/reference/API_REFERENCE.md) | 🇰🇷 [한국어](../i18n/ko/docs/reference/API_REFERENCE.md) | 🇱🇹 [Lietuvių](../i18n/lt/docs/reference/API_REFERENCE.md) | 🇱🇻 [Latviešu](../i18n/lv/docs/reference/API_REFERENCE.md) | 🇮🇳 [മലയാളം](../i18n/ml/docs/reference/API_REFERENCE.md) | 🇮🇳 [मराठी](../i18n/mr/docs/reference/API_REFERENCE.md) | 🇲🇾 [Bahasa Melayu](../i18n/ms/docs/reference/API_REFERENCE.md) | 🇲🇹 [Malti](../i18n/mt/docs/reference/API_REFERENCE.md) | 🇲🇲 [မြန်မာ](../i18n/my/docs/reference/API_REFERENCE.md) | 🇳🇵 [नेपाली](../i18n/ne/docs/reference/API_REFERENCE.md) | 🇳🇱 [Nederlands](../i18n/nl/docs/reference/API_REFERENCE.md) | 🇳🇴 [Norsk](../i18n/no/docs/reference/API_REFERENCE.md) | 🇮🇳 [ଓଡ଼ିଆ](../i18n/or/docs/reference/API_REFERENCE.md) | 🇮🇳 [ਪੰਜਾਬੀ](../i18n/pa/docs/reference/API_REFERENCE.md) | 🇵🇭 [Filipino](../i18n/phi/docs/reference/API_REFERENCE.md) | 🇵🇱 [Polski](../i18n/pl/docs/reference/API_REFERENCE.md) | 🇵🇹 [Português (Portugal)](../i18n/pt/docs/reference/API_REFERENCE.md) | 🇧🇷 [Português (Brasil)](../i18n/pt-BR/docs/reference/API_REFERENCE.md) | 🇷🇴 [Română](../i18n/ro/docs/reference/API_REFERENCE.md) | 🇷🇺 [Русский](../i18n/ru/docs/reference/API_REFERENCE.md) | 🇱🇰 [සිංහල](../i18n/si/docs/reference/API_REFERENCE.md) | 🇸🇰 [Slovenčina](../i18n/sk/docs/reference/API_REFERENCE.md) | 🇸🇮 [Slovenščina](../i18n/sl/docs/reference/API_REFERENCE.md) | 🇷🇸 [Српски](../i18n/sr/docs/reference/API_REFERENCE.md) | 🇸🇪 [Svenska](../i18n/sv/docs/reference/API_REFERENCE.md) | 🇰🇪 [Kiswahili](../i18n/sw/docs/reference/API_REFERENCE.md) | 🇮🇳 [தமிழ்](../i18n/ta/docs/reference/API_REFERENCE.md) | 🇮🇳 [తెలుగు](../i18n/te/docs/reference/API_REFERENCE.md) | 🇹🇭 [ไทย](../i18n/th/docs/reference/API_REFERENCE.md) | 🇹🇷 [Türkçe](../i18n/tr/docs/reference/API_REFERENCE.md) | 🇺🇦 [Українська](../i18n/uk-UA/docs/reference/API_REFERENCE.md) | 🇵🇰 [اردو](../i18n/ur/docs/reference/API_REFERENCE.md) | 🇺🇿 [Oʻzbekcha](../i18n/uz/docs/reference/API_REFERENCE.md) | 🇻🇳 [Tiếng Việt](../i18n/vi/docs/reference/API_REFERENCE.md) | 🇳🇬 [Yorùbá](../i18n/yo/docs/reference/API_REFERENCE.md) | 🇨🇳 [中文 (简体)](../i18n/zh-CN/docs/reference/API_REFERENCE.md) | 🇹🇼 [中文 (繁體)](../i18n/zh-TW/docs/reference/API_REFERENCE.md)
 
-OmniRoute API의 핵심 참조 문서입니다. 공개 `/v1` 인터페이스와 가장 자주 사용되는 관리 엔드포인트를 다룹니다. 전체 내용은 기계 판독 가능한 [`docs/openapi.yaml`](../openapi.yaml)과 `src/app/api/` 아래의 라우트 트리를 참조하세요.
+OmniRoute API의 핵심 참조 문서입니다. 공개 `/v1` 인터페이스와 가장 많이 사용되는 관리 엔드포인트를 다룹니다. 전체 내용은 기계 판독 가능한 [`docs/openapi.yaml`](../openapi.yaml)과 `src/app/api/` 아래의 라우트 트리에서 확인할 수 있습니다.
+
+OpenAI 호환 프로토콜과 공급자 기능 매트릭스에 대한 자세한 내용은
+[`OPENAI_COMPATIBILITY.md`](./OPENAI_COMPATIBILITY.md)를 참조하세요.
 
 ---
 
@@ -202,18 +205,16 @@ Content-Type: application/json
 }
 ```
 
-사용 가능한 제공업체: Nebius, OpenAI, Mistral, Together AI, Fireworks, NVIDIA, **OpenRouter**, Jina AI.
+사용 가능한 제공자: Nebius, OpenAI, Mistral, Together AI, Fireworks, NVIDIA, **OpenRouter**, Jina AI.
 
-카탈로그 ID는 `provider/model` 형식입니다(예: `jina-ai/jina-embeddings-v5-omni-small`). 레지스트리에 표시되는 Jina 모델 ID만으로도(예: `jina-embeddings-v5-text-small`, `jina-reranker-v3.5`) 확인할 수 있습니다. Jina의 임베딩/재순위화/분류/분할은 먼저 대시보드의 `jina-ai` 자격 증명을 사용하며, 대시보드 키가 없는 경우에만 `JINA_AI_API_KEY`를 대체 수단으로 사용합니다. `jina-reader` 카드는 Reader / `r.jina.ai` 전용이며(`POST /v1/web/fetch`), 임베딩이나 재순위화에는 사용되지 않습니다.
+카탈로그 ID는 `provider/model` 형식입니다(예: `jina-ai/jina-embeddings-v5-omni-small`). 레지스트리에 표시되는 제공자 접두사 없는 Jina 모델 ID(예: `jina-embeddings-v5-text-small`, `jina-reranker-v3.5`)도 해석됩니다. Jina embed/rerank/classify/segment는 대시보드의 `jina-ai` 자격 증명을 우선 사용하며, `JINA_AI_API_KEY`는 대시보드 키가 없을 때만 대체 수단으로 사용됩니다. `jina-reader` 카드는 Reader / `r.jina.ai` 전용(`POST /v1/web/fetch`)이며 임베딩이나 리랭크를 제공하지 않습니다.
 
-멀티모달 지원을 명시하는 레지스트리 모델은 제공업체에 종속되지 않는 구조화된
-항목도 최대 32개까지 허용합니다. 미디어 항목 유형은 `text`, `image`, `audio`, `video`, `document`입니다. 해당 미디어의 `source`는
-`{"type":"url","url":"https://..."}` 또는
+멀티모달 지원을 명시하는 레지스트리 모델은 제공자에 종속되지 않는 구조화된 항목도 최대 32개까지 허용합니다. 미디어 항목 유형은 `text`, `image`, `audio`, `video`, `document`입니다. 해당 미디어의 `source`는 `{"type":"url","url":"https://..."}` 또는
 `{"type":"base64","data":"...","media_type":"..."}`입니다.
 
 Jina v5 Omni(`jina-ai/jina-embeddings-v5-omni-small`, `jina-ai/jina-embeddings-v5-omni-nano`,
-그리고 제품군 별칭 `jina-ai/jina-embeddings-v5-omni` → omni-small)는 Jina의 네이티브
-EmbeddingsV5Request 문서도 허용하며, 이를 `https://api.jina.ai/v1/embeddings`로 **변경 없이 전달합니다**:
+그리고 패밀리 별칭 `jina-ai/jina-embeddings-v5-omni` → omni-small)는 Jina의 네이티브
+EmbeddingsV5Request 문서도 허용하며, 이를 `https://api.jina.ai/v1/embeddings`로 **그대로 전달합니다**:
 
 ```json
 {
@@ -231,25 +232,31 @@ EmbeddingsV5Request 문서도 허용하며, 이를 `https://api.jina.ai/v1/embed
 ```
 
 네이티브 `{ image | audio | video | pdf }` 값은 공개 HTTPS URL, `data:` URI 또는 원시
-base64일 수 있습니다. OmniRoute는 이러한 객체를 문자열로 변환하거나 네이티브 이미지 URL을 가져오지 않으며, Jina가
+base64일 수 있습니다. OmniRoute는 이러한 객체를 문자열화하거나 네이티브 이미지 URL을 가져오지 않으며, Jina가
 공개 미디어를 직접 가져옵니다. 추가 Jina 필드(`task`, `normalized`, `truncate`, `embedding_type`)도
 전달됩니다. 텍스트 전용 Jina SKU는 여전히 텍스트가 아닌 문서를 거부합니다.
 
 보안 및 전송 제한:
 
 - 원격 미디어 URL은 공개 HTTPS여야 합니다. 표준 `{type,source:url}` 항목은
-  서버 측에서 가져온 후(리디렉션 재검증, 시간 제한, 크기 제한, 공개 DNS, 연결 고정)
-  제공업체 호출 전에 인라인으로 포함됩니다. Jina 네이티브 `{image:"https://..."}` 항목은 동일한
-  공개 HTTPS 검사를 거친 뒤 그대로 전달되며, Jina가 URL을 가져옵니다.
-- 인라인 base64 미디어는 항목당 디코딩 후 8 MiB, 요청 전체에서 디코딩 후 16 MiB로 제한됩니다.
+  서버 측에서 가져오며(리디렉션 재검증, 시간 제한, 크기 제한, 공개 DNS, 연결 고정),
+  제공자 호출 전에 인라인 처리됩니다. Jina 네이티브 `{image:"https://..."}` 항목은 동일한 공개 HTTPS 검사를
+  거친 후 그대로 전달되며, Jina가 URL을 가져옵니다.
+- 인라인 base64 미디어는 디코딩된 크기를 기준으로 항목당 8 MiB, 요청 전체에서 16 MiB로 제한됩니다.
 
-제공업체 변환(표준 항목은 변경 없이 전달되지 않음):
+제공자 변환(표준 항목은 변경되지 않은 상태로 전달되지 않음):
 
-- Jina 멀티모달 모델: 각 최상위 항목은 인라인 미디어에 데이터 URI를 사용하여
-  하나의 모달리티 키 객체(`text` / `image` / `audio` / `video` / `pdf`)가 되며, 최상위
+- Jina 멀티모달 모델: 각 최상위 항목은 하나의 모달리티 키 객체
+  (`text` / `image` / `audio` / `video` / `pdf`)가 되며, 인라인 미디어에는 데이터 URI를 사용합니다. 최상위
   항목당 하나의 벡터가 생성됩니다.
-- Gemini Embedding 2 제품군: 하나의 최상위 배열은 `content.parts`(`text` 또는 `inline_data`)를 사용하는
-  단일 네이티브 `models/{model}:embedContent` 요청이 됩니다.
+- Gemini Embedding 2 패밀리: 하나의 최상위 배열이 `content.parts`(`text` 또는 `inline_data`)를 포함하는 단일 네이티브
+  `models/{model}:embedContent` 요청이 됩니다.
+- llama.cpp(`llama-cpp/<model>`, 로컬 서버가 로드한 모든 모델): 표준 `text` 항목은
+  일반 문자열이 되고, `image` / `audio` / `video`는 각각 하나의
+  `{"content": [part]}` 객체가 됩니다. 이때 인라인 데이터와 함께 llama-server의 채팅 콘텐츠 파트(`image_url`,
+  `input_audio`와 형식 `wav` / `mp3` / `flac`, `input_video`)를 사용하며, 최상위 항목당
+  하나의 벡터가 생성됩니다. 서버는 `--embedding --mmproj …`로 실행되어야 하며, 프로젝터가 없으면
+  서버 자체에서 미디어를 거부합니다. `document`는 지원되지 않습니다.
 - 명시적인 모달리티 메타데이터가 없는 알 수 없는/동적 모델은 구조화된 입력을 HTTP 400으로 거부합니다.
 
 ```json
@@ -267,8 +274,8 @@ base64일 수 있습니다. OmniRoute는 이러한 객체를 문자열로 변환
 }
 ```
 
-지원되지 않는 모델/모달리티 조합은 항목을 강제로 변환하는 대신 HTTP 400을 반환합니다. 레거시 문자열/토큰 요청의
-입력 이외 확장 필드는 이전과 마찬가지로 변경 없이 전달됩니다.
+지원되지 않는 모델/모달리티 조합은 항목을 강제 변환하는 대신 HTTP 400을 반환합니다. 기존 문자열/토큰 요청의 입력 외
+확장 필드는 변경되지 않은 상태로 계속 전달됩니다.
 
 ```bash
 # 모든 임베딩 모델 나열

@@ -4,9 +4,12 @@
 
 ---
 
-🌐 **Teangacha:** 🇺🇸 [English](./API_REFERENCE.md) | 🇪🇹 [አማርኛ](../i18n/am/docs/reference/API_REFERENCE.md) | 🇸🇦 [العربية](../i18n/ar/docs/reference/API_REFERENCE.md) | 🇦🇿 [Azərbaycan dili](../i18n/az/docs/reference/API_REFERENCE.md) | 🇧🇬 [Български](../i18n/bg/docs/reference/API_REFERENCE.md) | 🇧🇩 [বাংলা](../i18n/bn/docs/reference/API_REFERENCE.md) | 🇧🇦 [Bosanski](../i18n/bs/docs/reference/API_REFERENCE.md) | 🇨🇿 [Čeština](../i18n/cs/docs/reference/API_REFERENCE.md) | 🇩🇰 [Dansk](../i18n/da/docs/reference/API_REFERENCE.md) | 🇩🇪 [Deutsch](../i18n/de/docs/reference/API_REFERENCE.md) | 🇬🇷 [Ελληνικά](../i18n/el/docs/reference/API_REFERENCE.md) | 🇪🇸 [Español](../i18n/es/docs/reference/API_REFERENCE.md) | 🇪🇪 [Eesti](../i18n/et/docs/reference/API_REFERENCE.md) | 🇮🇷 [فارسی](../i18n/fa/docs/reference/API_REFERENCE.md) | 🇫🇮 [Suomi](../i18n/fi/docs/reference/API_REFERENCE.md) | 🇫🇷 [Français](../i18n/fr/docs/reference/API_REFERENCE.md) | 🇮🇪 [Gaeilge](../i18n/ga/docs/reference/API_REFERENCE.md) | 🇮🇳 [ગુજરાતી](../i18n/gu/docs/reference/API_REFERENCE.md) | 🇳🇬 [Hausa](../i18n/ha/docs/reference/API_REFERENCE.md) | 🇮🇱 [עברית](../i18n/he/docs/reference/API_REFERENCE.md) | 🇮🇳 [हिन्दी](../i18n/hi/docs/reference/API_REFERENCE.md) | 🇭🇷 [Hrvatski](../i18n/hr/docs/reference/API_REFERENCE.md) | 🇭🇺 [Magyar](../i18n/hu/docs/reference/API_REFERENCE.md) | 🇦🇲 [Հայերեն](../i18n/hy/docs/reference/API_REFERENCE.md) | 🇮🇩 [Bahasa Indonesia](../i18n/id/docs/reference/API_REFERENCE.md) | 🇳🇬 [Igbo](../i18n/ig/docs/reference/API_REFERENCE.md) | 🇮🇹 [Italiano](../i18n/it/docs/reference/API_REFERENCE.md) | 🇯🇵 [日本語](../i18n/ja/docs/reference/API_REFERENCE.md) | 🇬🇪 [ქართული](../i18n/ka/docs/reference/API_REFERENCE.md) | 🇰🇭 [ខ្មែរ](../i18n/km/docs/reference/API_REFERENCE.md) | 🇮🇳 [ಕನ್ನಡ](../i18n/kn/docs/reference/API_REFERENCE.md) | 🇰🇷 [한국어](../i18n/ko/docs/reference/API_REFERENCE.md) | 🇱🇹 [Lietuvių](../i18n/lt/docs/reference/API_REFERENCE.md) | 🇱🇻 [Latviešu](../i18n/lv/docs/reference/API_REFERENCE.md) | 🇮🇳 [മലയാളം](../i18n/ml/docs/reference/API_REFERENCE.md) | 🇮🇳 [मराठी](../i18n/mr/docs/reference/API_REFERENCE.md) | 🇲🇾 [Bahasa Melayu](../i18n/ms/docs/reference/API_REFERENCE.md) | 🇲🇹 [Malti](../i18n/mt/docs/reference/API_REFERENCE.md) | 🇲🇲 [မြန်မာ](../i18n/my/docs/reference/API_REFERENCE.md) | 🇳🇵 [नेपाली](../i18n/ne/docs/reference/API_REFERENCE.md) | 🇳🇱 [Nederlands](../i18n/nl/docs/reference/API_REFERENCE.md) | 🇳🇴 [Norsk](../i18n/no/docs/reference/API_REFERENCE.md) | 🇮🇳 [ଓଡ଼ିଆ](../i18n/or/docs/reference/API_REFERENCE.md) | 🇮🇳 [ਪੰਜਾਬੀ](../i18n/pa/docs/reference/API_REFERENCE.md) | 🇵🇭 [Filipino](../i18n/phi/docs/reference/API_REFERENCE.md) | 🇵🇱 [Polski](../i18n/pl/docs/reference/API_REFERENCE.md) | 🇵🇹 [Português (Portugal)](../i18n/pt/docs/reference/API_REFERENCE.md) | 🇧🇷 [Português (Brasil)](../i18n/pt-BR/docs/reference/API_REFERENCE.md) | 🇷🇴 [Română](../i18n/ro/docs/reference/API_REFERENCE.md) | 🇷🇺 [Русский](../i18n/ru/docs/reference/API_REFERENCE.md) | 🇱🇰 [සිංහල](../i18n/si/docs/reference/API_REFERENCE.md) | 🇸🇰 [Slovenčina](../i18n/sk/docs/reference/API_REFERENCE.md) | 🇸🇮 [Slovenščina](../i18n/sl/docs/reference/API_REFERENCE.md) | 🇷🇸 [Српски](../i18n/sr/docs/reference/API_REFERENCE.md) | 🇸🇪 [Svenska](../i18n/sv/docs/reference/API_REFERENCE.md) | 🇰🇪 [Kiswahili](../i18n/sw/docs/reference/API_REFERENCE.md) | 🇮🇳 [தமிழ்](../i18n/ta/docs/reference/API_REFERENCE.md) | 🇮🇳 [తెలుగు](../i18n/te/docs/reference/API_REFERENCE.md) | 🇹🇭 [ไทย](../i18n/th/docs/reference/API_REFERENCE.md) | 🇹🇷 [Türkçe](../i18n/tr/docs/reference/API_REFERENCE.md) | 🇺🇦 [Українська](../i18n/uk-UA/docs/reference/API_REFERENCE.md) | 🇵🇰 [اردو](../i18n/ur/docs/reference/API_REFERENCE.md) | 🇺🇿 [Oʻzbekcha](../i18n/uz/docs/reference/API_REFERENCE.md) | 🇻🇳 [Tiếng Việt](../i18n/vi/docs/reference/API_REFERENCE.md) | 🇳🇬 [Yorùbá](../i18n/yo/docs/reference/API_REFERENCE.md) | 🇨🇳 [中文 (简体)](../i18n/zh-CN/docs/reference/API_REFERENCE.md) | 🇹🇼 [中文 (繁體)](../i18n/zh-TW/docs/reference/API_REFERENCE.md)
+🌐 **Teangacha:** 🇺🇸 [Béarla](./API_REFERENCE.md) | 🇪🇹 [አማርኛ](../i18n/am/docs/reference/API_REFERENCE.md) | 🇸🇦 [العربية](../i18n/ar/docs/reference/API_REFERENCE.md) | 🇦🇿 [Azərbaycan dili](../i18n/az/docs/reference/API_REFERENCE.md) | 🇧🇬 [Български](../i18n/bg/docs/reference/API_REFERENCE.md) | 🇧🇩 [বাংলা](../i18n/bn/docs/reference/API_REFERENCE.md) | 🇧🇦 [Bosanski](../i18n/bs/docs/reference/API_REFERENCE.md) | 🇨🇿 [Čeština](../i18n/cs/docs/reference/API_REFERENCE.md) | 🇩🇰 [Dansk](../i18n/da/docs/reference/API_REFERENCE.md) | 🇩🇪 [Deutsch](../i18n/de/docs/reference/API_REFERENCE.md) | 🇬🇷 [Ελληνικά](../i18n/el/docs/reference/API_REFERENCE.md) | 🇪🇸 [Español](../i18n/es/docs/reference/API_REFERENCE.md) | 🇪🇪 [Eesti](../i18n/et/docs/reference/API_REFERENCE.md) | 🇮🇷 [فارسی](../i18n/fa/docs/reference/API_REFERENCE.md) | 🇫🇮 [Suomi](../i18n/fi/docs/reference/API_REFERENCE.md) | 🇫🇷 [Français](../i18n/fr/docs/reference/API_REFERENCE.md) | 🇮🇪 [Gaeilge](../i18n/ga/docs/reference/API_REFERENCE.md) | 🇮🇳 [ગુજરાતી](../i18n/gu/docs/reference/API_REFERENCE.md) | 🇳🇬 [Hausa](../i18n/ha/docs/reference/API_REFERENCE.md) | 🇮🇱 [עברית](../i18n/he/docs/reference/API_REFERENCE.md) | 🇮🇳 [हिन्दी](../i18n/hi/docs/reference/API_REFERENCE.md) | 🇭🇷 [Hrvatski](../i18n/hr/docs/reference/API_REFERENCE.md) | 🇭🇺 [Magyar](../i18n/hu/docs/reference/API_REFERENCE.md) | 🇦🇲 [Հայերեն](../i18n/hy/docs/reference/API_REFERENCE.md) | 🇮🇩 [Bahasa Indonesia](../i18n/id/docs/reference/API_REFERENCE.md) | 🇳🇬 [Igbo](../i18n/ig/docs/reference/API_REFERENCE.md) | 🇮🇹 [Italiano](../i18n/it/docs/reference/API_REFERENCE.md) | 🇯🇵 [日本語](../i18n/ja/docs/reference/API_REFERENCE.md) | 🇬🇪 [ქართული](../i18n/ka/docs/reference/API_REFERENCE.md) | 🇰🇭 [ខ្មែរ](../i18n/km/docs/reference/API_REFERENCE.md) | 🇮🇳 [ಕನ್ನಡ](../i18n/kn/docs/reference/API_REFERENCE.md) | 🇰🇷 [한국어](../i18n/ko/docs/reference/API_REFERENCE.md) | 🇱🇹 [Lietuvių](../i18n/lt/docs/reference/API_REFERENCE.md) | 🇱🇻 [Latviešu](../i18n/lv/docs/reference/API_REFERENCE.md) | 🇮🇳 [മലയാളം](../i18n/ml/docs/reference/API_REFERENCE.md) | 🇮🇳 [मराठी](../i18n/mr/docs/reference/API_REFERENCE.md) | 🇲🇾 [Bahasa Melayu](../i18n/ms/docs/reference/API_REFERENCE.md) | 🇲🇹 [Malti](../i18n/mt/docs/reference/API_REFERENCE.md) | 🇲🇲 [မြန်မာ](../i18n/my/docs/reference/API_REFERENCE.md) | 🇳🇵 [नेपाली](../i18n/ne/docs/reference/API_REFERENCE.md) | 🇳🇱 [Nederlands](../i18n/nl/docs/reference/API_REFERENCE.md) | 🇳🇴 [Norsk](../i18n/no/docs/reference/API_REFERENCE.md) | 🇮🇳 [ଓଡ଼ିଆ](../i18n/or/docs/reference/API_REFERENCE.md) | 🇮🇳 [ਪੰਜਾਬੀ](../i18n/pa/docs/reference/API_REFERENCE.md) | 🇵🇭 [Filipino](../i18n/phi/docs/reference/API_REFERENCE.md) | 🇵🇱 [Polski](../i18n/pl/docs/reference/API_REFERENCE.md) | 🇵🇹 [Português (Portugal)](../i18n/pt/docs/reference/API_REFERENCE.md) | 🇧🇷 [Português (Brasil)](../i18n/pt-BR/docs/reference/API_REFERENCE.md) | 🇷🇴 [Română](../i18n/ro/docs/reference/API_REFERENCE.md) | 🇷🇺 [Русский](../i18n/ru/docs/reference/API_REFERENCE.md) | 🇱🇰 [සිංහල](../i18n/si/docs/reference/API_REFERENCE.md) | 🇸🇰 [Slovenčina](../i18n/sk/docs/reference/API_REFERENCE.md) | 🇸🇮 [Slovenščina](../i18n/sl/docs/reference/API_REFERENCE.md) | 🇷🇸 [Српски](../i18n/sr/docs/reference/API_REFERENCE.md) | 🇸🇪 [Svenska](../i18n/sv/docs/reference/API_REFERENCE.md) | 🇰🇪 [Kiswahili](../i18n/sw/docs/reference/API_REFERENCE.md) | 🇮🇳 [தமிழ்](../i18n/ta/docs/reference/API_REFERENCE.md) | 🇮🇳 [తెలుగు](../i18n/te/docs/reference/API_REFERENCE.md) | 🇹🇭 [ไทย](../i18n/th/docs/reference/API_REFERENCE.md) | 🇹🇷 [Türkçe](../i18n/tr/docs/reference/API_REFERENCE.md) | 🇺🇦 [Українська](../i18n/uk-UA/docs/reference/API_REFERENCE.md) | 🇵🇰 [اردو](../i18n/ur/docs/reference/API_REFERENCE.md) | 🇺🇿 [Oʻzbekcha](../i18n/uz/docs/reference/API_REFERENCE.md) | 🇻🇳 [Tiếng Việt](../i18n/vi/docs/reference/API_REFERENCE.md) | 🇳🇬 [Yorùbá](../i18n/yo/docs/reference/API_REFERENCE.md) | 🇨🇳 [中文 (简体)](../i18n/zh-CN/docs/reference/API_REFERENCE.md) | 🇹🇼 [中文 (繁體)](../i18n/zh-TW/docs/reference/API_REFERENCE.md)
 
-Croíthagairt d'API OmniRoute. Clúdaíonn sí an comhéadan poiblí `/v1` agus na críochphointí bainistíochta is mó a úsáidtear; is iad [`docs/openapi.yaml`](../openapi.yaml), atá inléite ag meaisín, agus an crann bealaí faoi `src/app/api/` na foinsí uileghabhálacha.
+Croíthagairt don API OmniRoute. Clúdaíonn sí an comhéadan poiblí `/v1` agus na críochphointí bainistíochta is mó a úsáidtear; is iad [`docs/openapi.yaml`](../openapi.yaml), atá inléite ag meaisín, agus an crann bealaí faoi `src/app/api/` na foinsí uileghabhálacha.
+
+Le haghaidh an phrótacail dhírithe atá comhoiriúnach le OpenAI agus mhaitrís inniúlachtaí na soláthraithe, féach
+[`OPENAI_COMPATIBILITY.md`](./OPENAI_COMPATIBILITY.md).
 
 ---
 
@@ -189,7 +192,7 @@ X-OmniRoute-Compression: <mode>; source=<source>
 
 ---
 
-## Leabúcháin
+## Leabuithe
 
 ```bash
 POST /v1/embeddings
@@ -204,16 +207,16 @@ Content-Type: application/json
 
 Soláthraithe atá ar fáil: Nebius, OpenAI, Mistral, Together AI, Fireworks, NVIDIA, **OpenRouter**, Jina AI.
 
-Is é formáid aitheantóirí na catalóige ná `provider/model` (mar shampla: `jina-ai/jina-embeddings-v5-omni-small`). Réitítear freisin aitheantóirí loma samhlacha Jina atá sa chlárlann (mar shampla `jina-embeddings-v5-text-small`, `jina-reranker-v3.5`). Úsáideann oibríochtaí leabaithe/athrangaithe/aicmithe/deighilte Jina dintiúir `jina-ai` ón deais ar dtús; ní úsáidtear `JINA_AI_API_KEY` mar rogha thánaisteach ach amháin nuair nach bhfuil eochair deaise ann. Is le haghaidh Reader / `r.jina.ai` amháin atá an cárta `jina-reader` (`POST /v1/web/fetch`) agus ní sholáthraíonn sé leabúcháin ná athrangú choíche.
+Is é `provider/model` formáid aitheantais na catalóige (sampla: `jina-ai/jina-embeddings-v5-omni-small`). Réitítear freisin aitheantais lom samhlacha Jina atá sa chlárlann (mar shampla `jina-embeddings-v5-text-small`, `jina-reranker-v3.5`). Úsáideann oibríochtaí leabaithe/athrangaithe/aicmithe/deighilte Jina dintiúir `jina-ai` an deais ar dtús; ní úsáidtear `JINA_AI_API_KEY` mar chúltaca ach amháin nuair nach bhfuil eochair deaise ann. Is le haghaidh Reader / `r.jina.ai` amháin atá an cárta `jina-reader` (`POST /v1/web/fetch`) agus ní sholáthraíonn sé leabuithe ná athrangú riamh.
 
-Glacann samhlacha clárlainne a fhógraíonn tacaíocht ilmhódach le suas le 32 mír struchtúrtha
-atá neodrach ó thaobh soláthraí de freisin. Is iad cineálacha míre meán ná `text`, `image`, `audio`, `video`, agus `document`. Is é a `source`
-meán ná `{"type":"url","url":"https://..."}` nó
+Glacann samhlacha sa chlárlann a fhógraíonn tacaíocht ilmhódach le suas le 32 mír struchtúrtha atá neodrach ó thaobh soláthraí de freisin.
+Is iad `text`, `image`, `audio`, `video`, agus `document` na cineálacha míre meán. Is é `source` na meán
+ná `{"type":"url","url":"https://..."}` nó
 `{"type":"base64","data":"...","media_type":"..."}`.
 
 Glacann Jina v5 Omni (`jina-ai/jina-embeddings-v5-omni-small`, `jina-ai/jina-embeddings-v5-omni-nano`,
 agus ailias an teaghlaigh `jina-ai/jina-embeddings-v5-omni` → omni-small) le cáipéisí dúchasacha
-EmbeddingsV5Request Jina freisin agus **cuireann sé ar aghaidh slán iad** chuig `https://api.jina.ai/v1/embeddings`:
+EmbeddingsV5Request Jina freisin agus **cuireann sé ar aghaidh gan athrú iad** chuig `https://api.jina.ai/v1/embeddings`:
 
 ```json
 {
@@ -230,26 +233,32 @@ EmbeddingsV5Request Jina freisin agus **cuireann sé ar aghaidh slán iad** chui
 }
 ```
 
-Féadfaidh luachanna dúchasacha `{ image | audio | video | pdf }` a bheith ina URL poiblí HTTPS, ina URI `data:`, nó ina mbunachar
-base64. Ní dhéanann OmniRoute na hoibiachtaí sin a shraithiú ná URLanna dúchasacha íomhánna a fháil — aisghabhann Jina
+Is féidir le luachanna dúchasacha `{ image | audio | video | pdf }` a bheith ina URL poiblí HTTPS, ina URI `data:`, nó ina
+mbonn64 amh. Ní thiontaíonn OmniRoute na hoibiachtaí sin ina dteaghráin agus ní aisghabhann sé URLanna dúchasacha íomhánna — aisghabhann Jina
 na meáin phoiblí féin. Cuirtear réimsí breise Jina (`task`, `normalized`, `truncate`, `embedding_type`) ar aghaidh.
-Diúltaíonn SKUanna Jina atá téacs-amháin fós do cháipéisí nach téacs iad.
+Diúltaíonn SKUanna Jina atá téacsamháin do cháipéisí nach téacs iad fós.
 
 Teorainneacha slándála agus iompair:
 
-- Ní mór do URLanna meán cianda a bheith ina HTTPS poiblí. Faightear míreanna canónacha `{type,source:url}`
+- Ní mór do URLanna cianmheán a bheith poiblí agus HTTPS a úsáid. Aisghabhtar míreanna canónacha `{type,source:url}`
   ar thaobh an fhreastalaí (athbhailíochtú atreoruithe, teorainn ama, teorainneacha méide, DNS poiblí, pionnáil naisc) agus
-  cuirtear isteach inlíne iad roimh ghlao an tsoláthraí. Cuirtear míreanna dúchasacha Jina `{image:"https://..."}` ar aghaidh mar atá
-  tar éis an tseiceála chéanna ar HTTPS poiblí; faigheann Jina an URL.
-- Tá meáin base64 inlíne teoranta do 8 MiB díchódaithe in aghaidh na míre agus 16 MiB díchódaithe ar fud na hiarrata.
+  inlínítear iad roimh ghlao an tsoláthraí. Cuirtear míreanna dúchasacha Jina `{image:"https://..."}` ar aghaidh mar atá siad
+  tar éis an tseiceála chéanna ar HTTPS poiblí; aisghabhann Jina an URL.
+- Tá meáin inlíne base64 teoranta do 8 MiB díchódaithe in aghaidh na míre agus 16 MiB díchódaithe ar fud na hiarrata.
 
-Aistriúchán soláthraí (ní chuirtear míreanna canónacha ar aghaidh gan athrú choíche):
+Aistriúchán soláthraí (ní chuirtear míreanna canónacha ar aghaidh gan athrú riamh):
 
 - Samhlacha ilmhódacha Jina: déantar oibiacht amháin eochraithe de réir módúlachta de gach mír ardleibhéil
-  (`text` / `image` / `audio` / `video` / `pdf`), agus URIanna sonraí á n-úsáid do mheáin inlíne; veicteoir amháin in aghaidh
-  gach míre ardleibhéil.
+  (`text` / `image` / `audio` / `video` / `pdf`), agus URIanna sonraí á n-úsáid le haghaidh meáin inlíne; veicteoir amháin in aghaidh
+  na míre ardleibhéil.
 - Teaghlach Gemini Embedding 2: déantar iarratas dúchasach aonair
-  `models/{model}:embedContent` d'eagar ardleibhéil amháin le `content.parts` (`text` nó `inline_data`).
+  `models/{model}:embedContent` d'eagar ardleibhéil amháin, le `content.parts` (`text` nó `inline_data`).
+- llama.cpp (`llama-cpp/<model>`, aon samhail atá luchtaithe ag an bhfreastalaí áitiúil): déantar gnáth-theaghráin de mhíreanna canónacha `text`,
+  agus déantar oibiacht amháin `{"content": [part]}` de gach mír `image` / `audio` / `video`,
+  ag úsáid codanna inneachair comhrá llama-server (`image_url`,
+  `input_audio` leis an bhformáid `wav` / `mp3` / `flac`, `input_video`) le sonraí inlíne; veicteoir amháin
+  in aghaidh na míre ardleibhéil. Ní mór don fhreastalaí a bheith ag rith le `--embedding --mmproj …`; gan teilgeoir,
+  diúltaíonn sé do na meáin féin. Ní thacaítear le `document`.
 - Diúltaíonn samhlacha anaithnide/dinimiciúla nach bhfuil meiteashonraí sainráite módúlachta acu d'ionchur struchtúrtha le HTTP 400.
 
 ```json
@@ -267,11 +276,11 @@ Aistriúchán soláthraí (ní chuirtear míreanna canónacha ar aghaidh gan ath
 }
 ```
 
-Tugann teaglamaí samhla/módúlachta nach dtacaítear leo HTTP 400 ar ais seachas an mhír a chomhéigniú. Leanann réimsí
-sínte nach réimsí ionchuir iad ar iarratais oidhreachta teaghráin/comharthaí de bheith curtha ar aghaidh gan athrú.
+Tugann teaglamaí samhla/módúlachta nach dtacaítear leo HTTP 400 ar ais seachas an mhír a chomhéigniú. Leanann réimsí sínte nach réimsí ionchuir iad
+ar iarrataí oidhreachta teaghráin/comharthaí de bheith curtha ar aghaidh gan athrú.
 
 ```bash
-# Liostaigh gach samhail leabúcháin
+# Liostaigh na samhlacha leabaithe go léir
 GET /v1/embeddings
 ```
 

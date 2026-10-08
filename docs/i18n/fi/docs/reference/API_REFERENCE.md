@@ -4,9 +4,12 @@
 
 ---
 
-🌐 **Languages:** 🇺🇸 [English](../../../../reference/API_REFERENCE.md) · 🇪🇹 [am](../../../am/docs/reference/API_REFERENCE.md) · 🇸🇦 [ar](../../../ar/docs/reference/API_REFERENCE.md) · 🇦🇿 [az](../../../az/docs/reference/API_REFERENCE.md) · 🇧🇬 [bg](../../../bg/docs/reference/API_REFERENCE.md) · 🇧🇩 [bn](../../../bn/docs/reference/API_REFERENCE.md) · 🇧🇦 [bs](../../../bs/docs/reference/API_REFERENCE.md) · 🇨🇿 [cs](../../../cs/docs/reference/API_REFERENCE.md) · 🇩🇰 [da](../../../da/docs/reference/API_REFERENCE.md) · 🇩🇪 [de](../../../de/docs/reference/API_REFERENCE.md) · 🇬🇷 [el](../../../el/docs/reference/API_REFERENCE.md) · 🇪🇸 [es](../../../es/docs/reference/API_REFERENCE.md) · 🇪🇪 [et](../../../et/docs/reference/API_REFERENCE.md) · 🇮🇷 [fa](../../../fa/docs/reference/API_REFERENCE.md) · 🇫🇷 [fr](../../../fr/docs/reference/API_REFERENCE.md) · 🇮🇪 [ga](../../../ga/docs/reference/API_REFERENCE.md) · 🇮🇳 [gu](../../../gu/docs/reference/API_REFERENCE.md) · 🇳🇬 [ha](../../../ha/docs/reference/API_REFERENCE.md) · 🇮🇱 [he](../../../he/docs/reference/API_REFERENCE.md) · 🇮🇳 [hi](../../../hi/docs/reference/API_REFERENCE.md) · 🇭🇷 [hr](../../../hr/docs/reference/API_REFERENCE.md) · 🇭🇺 [hu](../../../hu/docs/reference/API_REFERENCE.md) · 🇦🇲 [hy](../../../hy/docs/reference/API_REFERENCE.md) · 🇮🇩 [id](../../../id/docs/reference/API_REFERENCE.md) · 🇳🇬 [ig](../../../ig/docs/reference/API_REFERENCE.md) · 🇮🇹 [it](../../../it/docs/reference/API_REFERENCE.md) · 🇯🇵 [ja](../../../ja/docs/reference/API_REFERENCE.md) · 🇬🇪 [ka](../../../ka/docs/reference/API_REFERENCE.md) · 🇰🇭 [km](../../../km/docs/reference/API_REFERENCE.md) · 🇮🇳 [kn](../../../kn/docs/reference/API_REFERENCE.md) · 🇰🇷 [ko](../../../ko/docs/reference/API_REFERENCE.md) · 🇱🇹 [lt](../../../lt/docs/reference/API_REFERENCE.md) · 🇱🇻 [lv](../../../lv/docs/reference/API_REFERENCE.md) · 🇮🇳 [ml](../../../ml/docs/reference/API_REFERENCE.md) · 🇮🇳 [mr](../../../mr/docs/reference/API_REFERENCE.md) · 🇲🇾 [ms](../../../ms/docs/reference/API_REFERENCE.md) · 🇲🇹 [mt](../../../mt/docs/reference/API_REFERENCE.md) · 🇲🇲 [my](../../../my/docs/reference/API_REFERENCE.md) · 🇳🇵 [ne](../../../ne/docs/reference/API_REFERENCE.md) · 🇳🇱 [nl](../../../nl/docs/reference/API_REFERENCE.md) · 🇳🇴 [no](../../../no/docs/reference/API_REFERENCE.md) · 🇮🇳 [or](../../../or/docs/reference/API_REFERENCE.md) · 🇮🇳 [pa](../../../pa/docs/reference/API_REFERENCE.md) · 🇵🇭 [phi](../../../phi/docs/reference/API_REFERENCE.md) · 🇵🇱 [pl](../../../pl/docs/reference/API_REFERENCE.md) · 🇵🇹 [pt](../../../pt/docs/reference/API_REFERENCE.md) · 🇧🇷 [pt-BR](../../../pt-BR/docs/reference/API_REFERENCE.md) · 🇷🇴 [ro](../../../ro/docs/reference/API_REFERENCE.md) · 🇷🇺 [ru](../../../ru/docs/reference/API_REFERENCE.md) · 🇱🇰 [si](../../../si/docs/reference/API_REFERENCE.md) · 🇸🇰 [sk](../../../sk/docs/reference/API_REFERENCE.md) · 🇸🇮 [sl](../../../sl/docs/reference/API_REFERENCE.md) · 🇷🇸 [sr](../../../sr/docs/reference/API_REFERENCE.md) · 🇸🇪 [sv](../../../sv/docs/reference/API_REFERENCE.md) · 🇰🇪 [sw](../../../sw/docs/reference/API_REFERENCE.md) · 🇮🇳 [ta](../../../ta/docs/reference/API_REFERENCE.md) · 🇮🇳 [te](../../../te/docs/reference/API_REFERENCE.md) · 🇹🇭 [th](../../../th/docs/reference/API_REFERENCE.md) · 🇹🇷 [tr](../../../tr/docs/reference/API_REFERENCE.md) · 🇺🇦 [uk-UA](../../../uk-UA/docs/reference/API_REFERENCE.md) · 🇵🇰 [ur](../../../ur/docs/reference/API_REFERENCE.md) · 🇺🇿 [uz](../../../uz/docs/reference/API_REFERENCE.md) · 🇻🇳 [vi](../../../vi/docs/reference/API_REFERENCE.md) · 🇳🇬 [yo](../../../yo/docs/reference/API_REFERENCE.md) · 🇨🇳 [zh-CN](../../../zh-CN/docs/reference/API_REFERENCE.md) · 🇹🇼 [zh-TW](../../../zh-TW/docs/reference/API_REFERENCE.md)
+🌐 **Kielet:** 🇺🇸 [English](./API_REFERENCE.md) | 🇪🇹 [አማርኛ](../i18n/am/docs/reference/API_REFERENCE.md) | 🇸🇦 [العربية](../i18n/ar/docs/reference/API_REFERENCE.md) | 🇦🇿 [Azərbaycan dili](../i18n/az/docs/reference/API_REFERENCE.md) | 🇧🇬 [Български](../i18n/bg/docs/reference/API_REFERENCE.md) | 🇧🇩 [বাংলা](../i18n/bn/docs/reference/API_REFERENCE.md) | 🇧🇦 [Bosanski](../i18n/bs/docs/reference/API_REFERENCE.md) | 🇨🇿 [Čeština](../i18n/cs/docs/reference/API_REFERENCE.md) | 🇩🇰 [Dansk](../i18n/da/docs/reference/API_REFERENCE.md) | 🇩🇪 [Deutsch](../i18n/de/docs/reference/API_REFERENCE.md) | 🇬🇷 [Ελληνικά](../i18n/el/docs/reference/API_REFERENCE.md) | 🇪🇸 [Español](../i18n/es/docs/reference/API_REFERENCE.md) | 🇪🇪 [Eesti](../i18n/et/docs/reference/API_REFERENCE.md) | 🇮🇷 [فارسی](../i18n/fa/docs/reference/API_REFERENCE.md) | 🇫🇮 [Suomi](../i18n/fi/docs/reference/API_REFERENCE.md) | 🇫🇷 [Français](../i18n/fr/docs/reference/API_REFERENCE.md) | 🇮🇪 [Gaeilge](../i18n/ga/docs/reference/API_REFERENCE.md) | 🇮🇳 [ગુજરાતી](../i18n/gu/docs/reference/API_REFERENCE.md) | 🇳🇬 [Hausa](../i18n/ha/docs/reference/API_REFERENCE.md) | 🇮🇱 [עברית](../i18n/he/docs/reference/API_REFERENCE.md) | 🇮🇳 [हिन्दी](../i18n/hi/docs/reference/API_REFERENCE.md) | 🇭🇷 [Hrvatski](../i18n/hr/docs/reference/API_REFERENCE.md) | 🇭🇺 [Magyar](../i18n/hu/docs/reference/API_REFERENCE.md) | 🇦🇲 [Հայերեն](../i18n/hy/docs/reference/API_REFERENCE.md) | 🇮🇩 [Bahasa Indonesia](../i18n/id/docs/reference/API_REFERENCE.md) | 🇳🇬 [Igbo](../i18n/ig/docs/reference/API_REFERENCE.md) | 🇮🇹 [Italiano](../i18n/it/docs/reference/API_REFERENCE.md) | 🇯🇵 [日本語](../i18n/ja/docs/reference/API_REFERENCE.md) | 🇬🇪 [ქართული](../i18n/ka/docs/reference/API_REFERENCE.md) | 🇰🇭 [ខ្មែរ](../i18n/km/docs/reference/API_REFERENCE.md) | 🇮🇳 [ಕನ್ನಡ](../i18n/kn/docs/reference/API_REFERENCE.md) | 🇰🇷 [한국어](../i18n/ko/docs/reference/API_REFERENCE.md) | 🇱🇹 [Lietuvių](../i18n/lt/docs/reference/API_REFERENCE.md) | 🇱🇻 [Latviešu](../i18n/lv/docs/reference/API_REFERENCE.md) | 🇮🇳 [മലയാളം](../i18n/ml/docs/reference/API_REFERENCE.md) | 🇮🇳 [मराठी](../i18n/mr/docs/reference/API_REFERENCE.md) | 🇲🇾 [Bahasa Melayu](../i18n/ms/docs/reference/API_REFERENCE.md) | 🇲🇹 [Malti](../i18n/mt/docs/reference/API_REFERENCE.md) | 🇲🇲 [မြန်မာ](../i18n/my/docs/reference/API_REFERENCE.md) | 🇳🇵 [नेपाली](../i18n/ne/docs/reference/API_REFERENCE.md) | 🇳🇱 [Nederlands](../i18n/nl/docs/reference/API_REFERENCE.md) | 🇳🇴 [Norsk](../i18n/no/docs/reference/API_REFERENCE.md) | 🇮🇳 [ଓଡ଼ିଆ](../i18n/or/docs/reference/API_REFERENCE.md) | 🇮🇳 [ਪੰਜਾਬੀ](../i18n/pa/docs/reference/API_REFERENCE.md) | 🇵🇭 [Filipino](../i18n/phi/docs/reference/API_REFERENCE.md) | 🇵🇱 [Polski](../i18n/pl/docs/reference/API_REFERENCE.md) | 🇵🇹 [Português (Portugal)](../i18n/pt/docs/reference/API_REFERENCE.md) | 🇧🇷 [Português (Brasil)](../i18n/pt-BR/docs/reference/API_REFERENCE.md) | 🇷🇴 [Română](../i18n/ro/docs/reference/API_REFERENCE.md) | 🇷🇺 [Русский](../i18n/ru/docs/reference/API_REFERENCE.md) | 🇱🇰 [සිංහල](../i18n/si/docs/reference/API_REFERENCE.md) | 🇸🇰 [Slovenčina](../i18n/sk/docs/reference/API_REFERENCE.md) | 🇸🇮 [Slovenščina](../i18n/sl/docs/reference/API_REFERENCE.md) | 🇷🇸 [Српски](../i18n/sr/docs/reference/API_REFERENCE.md) | 🇸🇪 [Svenska](../i18n/sv/docs/reference/API_REFERENCE.md) | 🇰🇪 [Kiswahili](../i18n/sw/docs/reference/API_REFERENCE.md) | 🇮🇳 [தமிழ்](../i18n/ta/docs/reference/API_REFERENCE.md) | 🇮🇳 [తెలుగు](../i18n/te/docs/reference/API_REFERENCE.md) | 🇹🇭 [ไทย](../i18n/th/docs/reference/API_REFERENCE.md) | 🇹🇷 [Türkçe](../i18n/tr/docs/reference/API_REFERENCE.md) | 🇺🇦 [Українська](../i18n/uk-UA/docs/reference/API_REFERENCE.md) | 🇵🇰 [اردو](../i18n/ur/docs/reference/API_REFERENCE.md) | 🇺🇿 [Oʻzbekcha](../i18n/uz/docs/reference/API_REFERENCE.md) | 🇻🇳 [Tiếng Việt](../i18n/vi/docs/reference/API_REFERENCE.md) | 🇳🇬 [Yorùbá](../i18n/yo/docs/reference/API_REFERENCE.md) | 🇨🇳 [中文 (简体)](../i18n/zh-CN/docs/reference/API_REFERENCE.md) | 🇹🇼 [中文 (繁體)](../i18n/zh-TW/docs/reference/API_REFERENCE.md)
 
-OmniRoute APIn keskeinen viitedokumentaatio. Se kattaa julkisen `/v1`-rajapinnan ja käytetyimmät hallintapäätepisteet; koneellisesti luettava [`docs/openapi.yaml`](../openapi.yaml) ja hakemiston `src/app/api/` alla oleva reittipuu ovat kattavat lähteet.
+OmniRoute APIn keskeinen viitedokumentaatio. Se kattaa julkisen `/v1`-rajapinnan ja yleisimmin käytetyt hallintapäätepisteet; koneellisesti luettava [`docs/openapi.yaml`](../openapi.yaml) ja hakemiston `src/app/api/` alla oleva reittipuu ovat kattavat lähteet.
+
+OpenAI-yhteensopivaan protokollaan ja palveluntarjoajien ominaisuusmatriisiin keskittyvät tiedot ovat dokumentissa
+[`OPENAI_COMPATIBILITY.md`](./OPENAI_COMPATIBILITY.md).
 
 ---
 
@@ -229,11 +232,16 @@ Content-Type: application/json
 
 Saatavilla olevat palveluntarjoajat: Nebius, OpenAI, Mistral, Together AI, Fireworks, NVIDIA, **OpenRouter**, Jina AI.
 
-Luettelotunnisteet ovat muotoa `provider/model` (esimerkki: `jina-ai/jina-embeddings-v5-omni-small`). Rekisterissä esiintyvät Jinan pelkät mallitunnisteet (esimerkiksi `jina-embeddings-v5-text-small`, `jina-reranker-v3.5`) selvitetään myös. Jinan embed/rerank/classify/segment käyttää ensisijaisesti hallintapaneelin `jina-ai`-tunnistetietoja; `JINA_AI_API_KEY` toimii varavaihtoehtona vain, jos hallintapaneelin avainta ei ole. `jina-reader`-kortti on tarkoitettu vain Readerille / `r.jina.ai`:lle (`POST /v1/web/fetch`), eikä se koskaan tarjoa upotuksia tai uudelleenjärjestystä.
+Luettelotunnukset ovat muodossa `provider/model` (esimerkki: `jina-ai/jina-embeddings-v5-omni-small`). Myös rekisterissä esiintyvät Jina-mallien pelkät tunnukset (esimerkiksi `jina-embeddings-v5-text-small`, `jina-reranker-v3.5`) ratkaistaan. Jinan upotus-, uudelleenjärjestely-, luokittelu- ja segmentointitoiminnot käyttävät ensisijaisesti hallintapaneelin `jina-ai`-tunnistetietoja; `JINA_AI_API_KEY`-arvoa käytetään varavaihtoehtona vain, jos hallintapaneelin avainta ei ole. `jina-reader`-kortti on tarkoitettu vain Readerille / `r.jina.ai`-palvelulle (`POST /v1/web/fetch`), eikä se koskaan tarjoa upotuksia tai uudelleenjärjestelyä.
 
-Rekisterimallit, jotka ilmoittavat tukevansa multimodaalisuutta, hyväksyvät myös enintään 32 palveluntarjoajasta riippumatonta rakenteista kohdetta. Mediakohteiden tyypit ovat `text`, `image`, `audio`, `video` ja `document`. Niiden median `source` on joko `{"type":"url","url":"https://..."}` tai `{"type":"base64","data":"...","media_type":"..."}`.
+Monimodaalista tukea ilmoittavat rekisterimallit hyväksyvät myös enintään 32 palveluntarjoajasta riippumatonta rakenteista
+kohdetta. Mediakohteiden tyypit ovat `text`, `image`, `audio`, `video` ja `document`. Niiden median `source`
+on joko `{"type":"url","url":"https://..."}` tai
+`{"type":"base64","data":"...","media_type":"..."}`.
 
-Jina v5 Omni (`jina-ai/jina-embeddings-v5-omni-small`, `jina-ai/jina-embeddings-v5-omni-nano` ja tuoteperheen alias `jina-ai/jina-embeddings-v5-omni` → omni-small) hyväksyy myös Jinan natiivit EmbeddingsV5Request-dokumentit ja **välittää ne muuttamattomina** osoitteeseen `https://api.jina.ai/v1/embeddings`:
+Jina v5 Omni (`jina-ai/jina-embeddings-v5-omni-small`, `jina-ai/jina-embeddings-v5-omni-nano`
+ja perhealias `jina-ai/jina-embeddings-v5-omni` → omni-small) hyväksyy myös Jinan alkuperäiset
+EmbeddingsV5Request-dokumentit ja **välittää ne muuttamattomina** osoitteeseen `https://api.jina.ai/v1/embeddings`:
 
 ```json
 {
@@ -250,18 +258,33 @@ Jina v5 Omni (`jina-ai/jina-embeddings-v5-omni-small`, `jina-ai/jina-embeddings-
 }
 ```
 
-Natiivien `{ image | audio | video | pdf }`-arvot voivat olla julkinen HTTPS-URL-osoite, `data:`-URI tai käsittelemätön base64-data. OmniRoute ei muunna näitä objekteja merkkijonoiksi eikä nouda natiivien kuvien URL-osoitteita — Jina noutaa julkisen median itse. Jinan lisäkentät (`task`, `normalized`, `truncate`, `embedding_type`) välitetään eteenpäin. Vain tekstiä tukevat Jina-tuoteversiot hylkäävät edelleen muut kuin tekstidokumentit.
+Alkuperäiset `{ image | audio | video | pdf }`-arvot voivat olla julkinen HTTPS-URL-osoite, `data:`-URI tai raaka
+base64-data. OmniRoute ei muunna näitä objekteja merkkijonoiksi eikä nouda alkuperäisiä kuvien URL-osoitteita — Jina noutaa
+julkisen median itse. Jinan lisäkentät (`task`, `normalized`, `truncate`, `embedding_type`)
+välitetään edelleen. Vain tekstiä tukevat Jina-SKU:t hylkäävät edelleen muut kuin tekstidokumentit.
 
 Tietoturva- ja siirtorajoitukset:
 
-- Etämedian URL-osoitteiden on oltava julkisia HTTPS-osoitteita. Kanoniset `{type,source:url}`-kohteet noudetaan palvelinpuolella (uudelleenohjausten uudelleenvalidointi, aikakatkaisu, kokorajoitukset, julkinen DNS ja yhteyden kiinnitys) ja upotetaan ennen palveluntarjoajakutsua. Jinan natiivit `{image:"https://..."}`-kohteet välitetään sellaisinaan saman julkista HTTPS-osoitetta koskevan tarkistuksen jälkeen; Jina noutaa URL-osoitteen.
-- Sisäisen base64-median purettu koko on rajoitettu 8 MiB:iin kohdetta kohti ja yhteensä 16 MiB:iin pyyntöä kohti.
+- Etämedian URL-osoitteiden on oltava julkisia HTTPS-osoitteita. Kanoniset `{type,source:url}`-kohteet noudetaan
+  palvelinpuolella (uudelleenohjausten uudelleenvalidointi, aikakatkaisu, kokorajoitukset, julkinen DNS, yhteyden kiinnitys) ja
+  upotetaan ennen palveluntarjoajakutsua. Jinan alkuperäiset `{image:"https://..."}`-kohteet välitetään sellaisinaan
+  saman julkisen HTTPS-tarkistuksen jälkeen; Jina noutaa URL-osoitteen.
+- Sisäisen base64-median purettu koko on rajoitettu 8 MiB:uun kohdetta kohti ja 16 MiB:uun koko pyynnössä.
 
 Palveluntarjoajakohtainen muunnos (kanonisia kohteita ei koskaan välitetä muuttamattomina):
 
-- Jinan multimodaaliset mallit: jokaisesta ylätason kohteesta tulee yksi modaliteettiavaimella varustettu objekti (`text` / `image` / `audio` / `video` / `pdf`), joka käyttää sisäiselle medialle data-URI-tunnisteita; yksi vektori kutakin ylätason kohdetta kohti.
-- Gemini Embedding 2 -tuoteperhe: yhdestä ylätason taulukosta muodostetaan yksi natiivi `models/{model}:embedContent`-pyyntö, jossa on `content.parts` (`text` tai `inline_data`).
-- Tuntemattomat/dynaamiset mallit, joilla ei ole eksplisiittisiä modaliteettien metatietoja, hylkäävät rakenteisen syötteen HTTP 400 -vastauksella.
+- Jinan monimodaaliset mallit: jokaisesta ylimmän tason kohteesta tulee yksi modaliteettiavaimella varustettu objekti
+  (`text` / `image` / `audio` / `video` / `pdf`), joka käyttää data-URI-osoitteita sisäiselle medialle; yksi vektori kutakin
+  ylimmän tason kohdetta kohti.
+- Gemini Embedding 2 -perhe: yhdestä ylimmän tason taulukosta tulee yksi alkuperäinen
+  `models/{model}:embedContent`-pyyntö, jossa on `content.parts` (`text` tai `inline_data`).
+- llama.cpp (`llama-cpp/<model>`, mikä tahansa paikallisen palvelimen lataama malli): kanoniset `text`-kohteet
+  muunnetaan tavallisiksi merkkijonoiksi, ja `image` / `audio` / `video` muunnetaan kukin yhdeksi
+  `{"content": [part]}`-objektiksi käyttäen llama-serverin keskustelusisällön osia (`image_url`,
+  `input_audio`, jonka muoto on `wav` / `mp3` / `flac`, `input_video`) ja sisäistä dataa; yksi vektori
+  kutakin ylimmän tason kohdetta kohti. Palvelin on käynnistettävä valinnoilla `--embedding --mmproj …`; ilman projektoria se
+  hylkää median itse. `document`-tyyppiä ei tueta.
+- Tuntemattomat/dynaamiset mallit, joilla ei ole nimenomaisia modaliteettien metatietoja, hylkäävät rakenteisen syötteen HTTP 400 -vastauksella.
 
 ```json
 {
@@ -278,7 +301,8 @@ Palveluntarjoajakohtainen muunnos (kanonisia kohteita ei koskaan välitetä muut
 }
 ```
 
-Mallit ja modaliteetit, joiden yhdistelmää ei tueta, palauttavat HTTP 400 -vastauksen kohteen pakkomuuntamisen sijaan. Vanhojen merkkijono-/tunnistepyyntöjen muut kuin syötekenttiin liittyvät laajennuskentät välitetään edelleen muuttamattomina.
+Mallin ja modaliteetin yhdistelmät, joita ei tueta, palauttavat HTTP 400 -vastauksen kohteen pakkomuunnoksen sijaan. Muut kuin syötekentät sisältävät
+laajennuskentät välitetään vanhoissa merkkijono-/tunnistepyynnöissä edelleen muuttamattomina.
 
 ```bash
 # Luettele kaikki upotusmallit
