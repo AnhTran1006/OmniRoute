@@ -5229,6 +5229,7 @@
       "oauth": "Bu sağlayıcı, proxy/yönlendirici kullanımı için yetkilendirilmemiş resmi ürün oturumunuzu/OAuth'unuzu kullanır. Yoğun otonom ajan kullanımını (OpenCloud tarzı, uzun çok adımlı akışlar, büyük toplu işlemler) önermiyoruz — üst sağlayıcı hesabı kısıtlayarak veya yasaklayarak tepki verebilir. Kullanım riski size aittir.",
       "webCookie": "Bu sağlayıcı, web oturumu çerezleriniz aracılığıyla kimlik doğrulaması yapar. Üst servis oturumu istediği zaman geçersiz kılabilir ve tekrar giriş yapmanızı gerektirebilir. Uzun süreli gözetimsiz işlemler için önerilmez. Kullanım riski size aittir.",
       "deprecated": "Bu sağlayıcının desteği üst sağlayıcısı tarafından sonlandırılmıştır ve haber verilmeksizin çalışmayı durdurabilir. Mevcut bağlantılar, üst sağlayıcı erişimi tamamen kaldırana kadar çalışmaya devam edebilir. Alternatifleri değerlendirin.",
+      "official-client-only": "Üst sağlayıcı, ücretsiz modu resmi istemcileriyle sınırlar ve proxy'ler üzerinden kullanılan hesapları askıya alır. Riski size aittir; ücretli API (freebuff.com/account/api) onaylı yöntemdir.",
       "dontShowAgain": "Bu sağlayıcı için bunu bir daha gösterme",
       "understand": "Anladım, devam et",
       "cancel": "İptal"

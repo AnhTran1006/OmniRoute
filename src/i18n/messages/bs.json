@@ -5229,6 +5229,7 @@
       "oauth": "Ovaj provajder koristi vašu službenu sesiju proizvoda/OAuth, koja nije ovlaštena za upotrebu proxyja/rutera. Ne preporučujemo intenzivno korištenje autonomnih agenata (OpenCloud stil, dugi višestepeni tokovi, velike serije) — upstream može reagovati ograničavanjem ili banovanjem računa. Koristite na sopstveni rizik.",
       "webCookie": "Ovaj provajder se autentifikuje putem vaših kolačića web sesije. Upstream servis može poništiti sesiju u bilo kojem trenutku, što će zahtijevati ponovnu prijavu. Nije preporučljivo za duge operacije bez nadzora. Koristite na sopstveni rizik.",
       "deprecated": "Ovaj provajder je obustavljen od strane upstream-a i može prestati raditi bez najave. Postojeće konekcije mogu nastaviti raditi dok upstream potpuno ne ukloni pristup. Razmotrite alternative.",
+      "official-client-only": "Izvorni servis ograničava besplatni način rada na svoje zvanične klijente i suspenduje račune koji se koriste putem proxyja. Koristite na vlastitu odgovornost; plaćeni API (freebuff.com/account/api) je odobreni način pristupa.",
       "dontShowAgain": "Ne prikazuj ovo ponovo za ovog provajdera",
       "understand": "Razumijem, nastavi",
       "cancel": "Otkaži"

@@ -5229,6 +5229,7 @@
       "oauth": "Este proveedor utiliza la sesión/OAuth de tu producto oficial, cuyo uso con proxies o routers no está autorizado. No recomendamos un uso intensivo de agentes autónomos (al estilo de OpenCloud, flujos largos de varios pasos o lotes grandes), ya que el servicio de origen podría responder restringiendo o bloqueando la cuenta. Úsalo bajo tu propia responsabilidad.",
       "webCookie": "Este proveedor se autentica mediante las cookies de tu sesión web. El servicio de origen puede invalidar la sesión en cualquier momento, por lo que tendrás que volver a iniciar sesión. No se recomienda para operaciones largas sin supervisión. Úsalo bajo tu propia responsabilidad.",
       "deprecated": "Este proveedor fue descontinuado por su servicio de origen y puede dejar de funcionar sin previo aviso. Las conexiones existentes pueden seguir funcionando hasta que el servicio de origen elimine por completo el acceso. Considera otras alternativas.",
+      "official-client-only": "El proveedor original restringe el modo gratuito a sus clientes oficiales y suspende las cuentas utilizadas a través de proxies. Úsalo bajo tu propia responsabilidad; la API de pago (freebuff.com/account/api) es la vía autorizada.",
       "dontShowAgain": "No volver a mostrar esto para este proveedor",
       "understand": "Entiendo, continuar",
       "cancel": "Cancelar"

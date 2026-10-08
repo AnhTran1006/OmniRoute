@@ -5229,6 +5229,7 @@
       "oauth": "Ce fournisseur utilise votre session produit officielle/OAuth, ce qui n'est pas autorisé pour une utilisation via proxy/routeur. Nous ne recommandons pas une utilisation intensive par des agents autonomes (style OpenCloud, flux longs à étapes multiples, lots volumineux) — le service amont pourrait réagir en restreignant ou en bannissant le compte. À utiliser à vos risques et périls.",
       "webCookie": "Ce fournisseur s'authentifie via les cookies de votre session web. Le service amont peut invalider la session à tout moment, vous obligeant à vous reconnecter. Non recommandé pour les opérations longues sans surveillance. À utiliser à vos risques et périls.",
       "deprecated": "Ce fournisseur a été abandonné par son service amont et peut cesser de fonctionner sans préavis. Les connexions existantes peuvent continuer à fonctionner jusqu'à ce que le service amont supprime complètement l'accès. Envisagez des alternatives.",
+      "official-client-only": "Le service en amont limite le mode gratuit à ses clients officiels et suspend les comptes utilisés via des proxys. Utilisez-le à vos propres risques ; l’API payante (freebuff.com/account/api) est la voie autorisée.",
       "dontShowAgain": "Ne plus afficher cela pour ce fournisseur",
       "understand": "Je comprends, continuer",
       "cancel": "Annuler"

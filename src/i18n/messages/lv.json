@@ -5229,6 +5229,7 @@
       "oauth": "Šis nodrošinātājs izmanto jūsu oficiālā produkta sesiju/OAuth, kas nav paredzēta izmantošanai ar starpniekserveri/maršrutētāju. Mēs neiesakām intensīvu autonomo aģentu izmantošanu (OpenCloud stila, ilgas vairāku soļu plūsmas, lielas pakešu apstrādes) — augšupējais pakalpojums var reaģēt, ierobežojot vai bloķējot kontu. Lietojiet uz savu risku.",
       "webCookie": "Šis nodrošinātājs autentificējas, izmantojot jūsu tīmekļa sesijas sīkfailus. Augšupējais pakalpojums jebkurā laikā var atcelt sesiju, tāpēc būs jāpiesakās vēlreiz. Nav ieteicams ilgstošām darbībām bez uzraudzības. Lietojiet uz savu risku.",
       "deprecated": "Augšupējais pakalpojums ir pārtraucis šī nodrošinātāja darbību, un tas var pārstāt darboties bez brīdinājuma. Esošie savienojumi var turpināt darboties, līdz augšupējais pakalpojums pilnībā noņem piekļuvi. Apsveriet alternatīvas.",
+      "official-client-only": "Augšupējais pakalpojums ierobežo bezmaksas režīmu, atļaujot to izmantot tikai savos oficiālajos klientos, un aptur kontu darbību, ja tie tiek izmantoti ar starpniekserveriem. Izmantojiet uz savu risku; maksas API (freebuff.com/account/api) ir oficiāli atļautais risinājums.",
       "dontShowAgain": "Vairs nerādīt šo paziņojumu šim nodrošinātājam",
       "understand": "Saprotu, turpināt",
       "cancel": "Atcelt"

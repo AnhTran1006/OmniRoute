@@ -5229,6 +5229,7 @@
       "oauth": "See pakkuja kasutab teie ametlikku tootesessiooni/OAuthi, mille kasutamine puhverserveris või ruuteris ei ole lubatud. Me ei soovita seda kasutada intensiivseks autonoomseks agenttööks (OpenCloud-laadne kasutus, pikad mitmeetapilised töövood, suured partiid) — ülesvooluteenus võib reageerida konto piiramise või blokeerimisega. Kasutage omal vastutusel.",
       "webCookie": "See pakkuja kasutab autentimiseks teie veebiseansi küpsiseid. Ülesvooluteenus võib seansi igal ajal kehtetuks muuta, mistõttu peate uuesti sisse logima. Ei ole soovitatav pikkadeks järelevalveta toiminguteks. Kasutage omal vastutusel.",
       "deprecated": "Ülesvooluteenus lõpetas selle pakkuja toe ja see võib etteteatamata töötamast lakata. Olemasolevad ühendused võivad jätkata töötamist, kuni ülesvooluteenus eemaldab juurdepääsu täielikult. Kaaluge alternatiive.",
+      "official-client-only": "Ülesvooluteenus piirab tasuta režiimi kasutamise oma ametlike klientidega ja peatab puhverserverite kaudu kasutatavad kontod. Kasutage omal vastutusel; tasuline API (freebuff.com/account/api) on ametlikult heakskiidetud viis.",
       "dontShowAgain": "Ära näita seda selle pakkuja puhul enam",
       "understand": "Saan aru, jätka",
       "cancel": "Tühista"

@@ -5229,6 +5229,7 @@
       "oauth": "Onye na-eweta ọrụ a na-eji nnọkọ/OAuth nke ngwaahịa gị nyere n'onwe ya, nke a na-enyeghị ikike maka ojiji proxy/router. Anyị anaghị akwado iji ya nke ukwuu maka ndị nnọchi anya na-arụ ọrụ n'onwe ha (ụdị OpenCloud, usoro ogologo nwere ọtụtụ nzọụkwụ, nnukwu ìgwè arịrịọ) — ọrụ upstream nwere ike ịzaghachi site n'igbochi ma ọ bụ machibido akaụntụ ahụ. Jiri ya n'ihe ize ndụ nke gị.",
       "webCookie": "Onye na-eweta ọrụ a na-eji kuki nnọkọ webụ gị eme nkwenye njirimara. Ọrụ upstream nwere ike ime ka nnọkọ ahụ ghara ịdị irè n'oge ọ bụla, nke ga-achọ ka ịbanye ọzọ. A naghị akwado ya maka ọrụ ogologo oge a na-ahapụghị onye nlekọta. Jiri ya n'ihe ize ndụ nke gị.",
       "deprecated": "Ọrụ upstream ya akwụsịla onye na-eweta ọrụ a, ọ nwekwara ike ịkwụsị ịrụ ọrụ n'enweghị ọkwa. Njikọ ndị dị ugbu a nwere ike ịga n'ihu na-arụ ọrụ ruo mgbe upstream wepụrụ ohere kpamkpam. Tụlee nhọrọ ndị ọzọ.",
+      "official-client-only": "Ọrụ dị n’elu na-amachi ọnọdụ efu naanị na ngwa ndị ahịa ya nke ukara ma na-akwụsị akaụntụ ndị e ji proxy mee ihe. Jiri ya n’ụzọ ị ga-aza maka ya; API a na-akwụ ụgwọ (freebuff.com/account/api) bụ ụzọ akwadoro.",
       "dontShowAgain": "Egosikwala nke a ọzọ maka onye na-eweta ọrụ a",
       "understand": "Aghọtara m, gaa n'ihu",
       "cancel": "Kagbuo"

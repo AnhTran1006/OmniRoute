@@ -5229,6 +5229,7 @@
       "oauth": "Gumagamit ang provider na ito ng iyong opisyal na session ng produkto/OAuth, na hindi awtorisado para sa paggamit ng proxy/router. Hindi namin inirerekomenda ang masinsinang paggamit ng autonomous agent (estilong OpenCloud, mahabang multi-step na flow, malalaking batch) — maaaring tumugon ang upstream sa pamamagitan ng paghihigpit o pag-ban sa account. Gamitin sa sarili mong panganib.",
       "webCookie": "Nagpapatotoo ang provider na ito sa pamamagitan ng iyong mga cookie sa web session. Maaaring pawalang-bisa ng upstream na serbisyo ang session anumang oras, na nangangailangan sa iyong mag-log in muli. Hindi inirerekomenda para sa mahabang operasyon na walang bantay. Gamitin sa sarili mong panganib.",
       "deprecated": "Itinigil na ang provider na ito ng upstream nito at maaaring huminto sa paggana nang walang abiso. Maaaring patuloy na gumana ang mga umiiral na koneksyon hanggang sa ganap na alisin ng upstream ang access. Isaalang-alang ang mga alternatibo.",
+      "official-client-only": "Nililimitahan ng upstream ang libreng mode sa mga opisyal nitong client at sinususpinde ang mga account na ginagamit sa pamamagitan ng mga proxy. Gamitin sa sarili mong panganib; ang bayad na API (freebuff.com/account/api) ang awtorisadong paraan.",
       "dontShowAgain": "Huwag nang ipakita ito muli para sa provider na ito",
       "understand": "Naiintindihan ko, magpatuloy",
       "cancel": "Kanselahin"

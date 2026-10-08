@@ -5229,6 +5229,7 @@
       "oauth": "Denna leverantör använder din officiella produktsession/OAuth, vilket inte är godkänt för proxy-/routeranvändning. Vi rekommenderar inte intensiv användning av autonoma agenter (OpenCloud-stil, långa flerstegsflöden, stora batcher) — uppströmsleverantören kan reagera genom att begränsa eller stänga av kontot. Används på egen risk.",
       "webCookie": "Denna leverantör autentiserar via dina webbsessionscookies. Uppströmstjänsten kan ogiltigförklara sessionen när som helst, vilket kräver att du loggar in igen. Rekommenderas inte för långa obevakade körningar. Används på egen risk.",
       "deprecated": "Denna leverantör har avvecklats av sin uppströmsleverantör och kan sluta fungera utan förvarning. Befintliga anslutningar kan fortsätta fungera tills uppströmsleverantören helt tar bort åtkomsten. Överväg alternativ.",
+      "official-client-only": "Uppströmstjänsten begränsar gratisläget till sina officiella klienter och stänger av konton som används via proxyservrar. Använd på egen risk; det betalda API:et (freebuff.com/account/api) är den godkända vägen.",
       "dontShowAgain": "Visa inte detta igen för denna leverantör",
       "understand": "Jag förstår, fortsätt",
       "cancel": "Avbryt"

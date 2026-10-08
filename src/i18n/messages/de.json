@@ -5229,6 +5229,7 @@
       "oauth": "Dieser Anbieter verwendet Ihre offizielle Produktsitzung/OAuth, die nicht für die Proxy-/Router-Nutzung autorisiert ist. Wir empfehlen keine intensive Nutzung durch autonome Agenten (im OpenCloud-Stil, lange mehrstufige Abläufe, große Batches) — der Upstream-Anbieter kann darauf reagieren, indem er das Konto einschränkt oder sperrt. Nutzung auf eigene Gefahr.",
       "webCookie": "Dieser Anbieter authentifiziert sich über Ihre Web-Sitzungscookies. Der Upstream-Dienst kann die Sitzung jederzeit ungültig machen, sodass Sie sich erneut anmelden müssen. Nicht empfohlen für lange unbeaufsichtigte Vorgänge. Nutzung auf eigene Gefahr.",
       "deprecated": "Dieser Anbieter wurde von seinem Upstream-Anbieter eingestellt und funktioniert möglicherweise ohne Vorankündigung nicht mehr. Bestehende Verbindungen funktionieren möglicherweise weiter, bis der Upstream-Anbieter den Zugriff vollständig entfernt. Erwägen Sie Alternativen.",
+      "official-client-only": "Der Upstream-Anbieter beschränkt den kostenlosen Modus auf seine offiziellen Clients und sperrt Konten, die über Proxys verwendet werden. Die Nutzung erfolgt auf eigene Gefahr; die kostenpflichtige API (freebuff.com/account/api) ist der offiziell vorgesehene Weg.",
       "dontShowAgain": "Für diesen Anbieter nicht mehr anzeigen",
       "understand": "Ich verstehe, fortfahren",
       "cancel": "Abbrechen"

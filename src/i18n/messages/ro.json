@@ -5229,6 +5229,7 @@
       "oauth": "Acest furnizor utilizează sesiunea oficială a produsului/OAuth, care nu este autorizată pentru utilizarea ca proxy/router. Nu recomandăm utilizarea intensivă a agenților autonomi (stil OpenCloud, fluxuri lungi cu mai mulți pași, loturi mari) — upstream-ul poate reacționa prin restricționarea sau blocarea contului. Utilizați pe propriul risc.",
       "webCookie": "Acest furnizor se autentifică prin cookie-urile sesiunii web. Serviciul upstream poate invalida sesiunea în orice moment, solicitându-vă să vă autentificați din nou. Nu este recomandat pentru operațiuni lungi nesupravegheate. Utilizați pe propriul risc.",
       "deprecated": "Acest furnizor a fost întrerupt de către upstream-ul său și poate înceta să funcționeze fără notificare prealabilă. Conexiunile existente pot continua să funcționeze până când upstream-ul elimină complet accesul. Luați în considerare alternative.",
+      "official-client-only": "Serviciul din amonte restricționează modul gratuit la clienții săi oficiali și suspendă conturile utilizate prin proxy-uri. Folosiți-l pe propriul risc; API-ul cu plată (freebuff.com/account/api) este calea autorizată.",
       "dontShowAgain": "Nu mai afișa acest mesaj pentru acest furnizor",
       "understand": "Am înțeles, continuă",
       "cancel": "Anulează"

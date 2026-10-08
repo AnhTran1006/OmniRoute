@@ -5229,6 +5229,7 @@
       "oauth": "Bu provayder rasmiy mahsulot seansingiz/OAuth’ingizdan foydalanadi, undan proksi/router sifatida foydalanishga ruxsat berilmagan. Intensiv avtonom agentlardan foydalanishni (OpenCloud uslubida, uzoq ko‘p bosqichli jarayonlar, katta paketlar) tavsiya etmaymiz — yuqori oqim xizmati bunga javoban hisobni cheklashi yoki bloklashi mumkin. Foydalanish xavfi o‘zingizda.",
       "webCookie": "Bu provayder veb-seans cookie-fayllaringiz orqali autentifikatsiya qiladi. Yuqori oqim xizmati seansni istalgan vaqtda bekor qilishi mumkin, bunda qayta kirishingiz talab etiladi. Uzoq vaqt nazoratsiz bajariladigan amallar uchun tavsiya etilmaydi. Foydalanish xavfi o‘zingizda.",
       "deprecated": "Bu provayderning yuqori oqim xizmati uni to‘xtatgan va u ogohlantirishsiz ishlamay qolishi mumkin. Mavjud ulanishlar yuqori oqim xizmati kirishni butunlay olib tashlamaguncha ishlashda davom etishi mumkin. Muqobil variantlarni ko‘rib chiqing.",
+      "official-client-only": "Yuqori oqimdagi xizmat bepul rejimni faqat rasmiy mijozlari bilan cheklaydi va proksi orqali foydalanilgan hisoblarni toʻxtatib qoʻyadi. Oʻz xavfingiz ostida foydalaning; pulli API (freebuff.com/account/api) rasman tasdiqlangan yoʻldir.",
       "dontShowAgain": "Bu provayder uchun buni boshqa ko‘rsatmaslik",
       "understand": "Tushundim, davom etaman",
       "cancel": "Bekor qilish"

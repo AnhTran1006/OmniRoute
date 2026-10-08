@@ -5229,6 +5229,7 @@
       "oauth": "Ta ponudnik uporablja vašo uradno sejo izdelka/OAuth, ki ni odobrena za uporabo s posredniškim strežnikom ali usmerjevalnikom. Ne priporočamo intenzivne uporabe avtonomnih agentov (v slogu OpenCloud, dolgih večstopenjskih postopkov ali velikih paketov) — nadrejena storitev se lahko odzove z omejitvijo ali blokiranjem računa. Uporabljate na lastno odgovornost.",
       "webCookie": "Ta ponudnik preverja pristnost s piškotki vaše spletne seje. Nadrejena storitev lahko kadar koli razveljavi sejo, zato se boste morali znova prijaviti. Ni priporočljivo za dolgotrajna nenadzorovana opravila. Uporabljate na lastno odgovornost.",
       "deprecated": "Nadrejena storitev je tega ponudnika ukinila, zato lahko kadar koli in brez opozorila preneha delovati. Obstoječe povezave bodo morda delovale, dokler nadrejena storitev dostopa ne odstrani v celoti. Razmislite o drugih možnostih.",
+      "official-client-only": "Ponudnik omejuje brezplačni način na svoje uradne odjemalce in začasno onemogoči račune, uporabljene prek posredniških strežnikov. Uporabljate na lastno odgovornost; plačljivi API (freebuff.com/account/api) je odobrena možnost.",
       "dontShowAgain": "Tega opozorila za tega ponudnika ne prikaži več",
       "understand": "Razumem, nadaljuj",
       "cancel": "Prekliči"

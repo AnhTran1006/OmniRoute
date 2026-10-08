@@ -5229,6 +5229,7 @@
       "oauth": "Bu provayder proksi/router istifadəsi üçün icazə verilməyən rəsmi məhsul sessiyanızdan/OAuth-dan istifadə edir. İntensiv avtonom agent istifadəsini (OpenCloud tərzi, uzun çoxmərhələli axınlar, böyük paketlər) tövsiyə etmirik — upstream xidmət hesabı məhdudlaşdırmaqla və ya bloklamaqla reaksiya verə bilər. Riski öz üzərinizə götürərək istifadə edin.",
       "webCookie": "Bu provayder veb sessiya kukiləriniz vasitəsilə autentifikasiya edir. Upstream xidmət istənilən vaxt sessiyanı ləğv edə bilər və bu da yenidən daxil olmağınızı tələb edər. Uzunmüddətli nəzarətsiz əməliyyatlar üçün tövsiyə edilmir. Riski öz üzərinizə götürərək istifadə edin.",
       "deprecated": "Bu provayderin fəaliyyəti upstream tərəfindən dayandırılıb və xəbərdarlıq edilmədən işləməyi dayandıra bilər. Mövcud bağlantılar upstream girişi tamamilə silənə qədər işləməyə davam edə bilər. Alternativləri nəzərdən keçirin.",
+      "official-client-only": "Əsas xidmət pulsuz rejimi yalnız öz rəsmi klientləri ilə məhdudlaşdırır və proksilər vasitəsilə istifadə olunan hesabları dayandırır. Riski öz üzərinizə götürərək istifadə edin; ödənişli API (freebuff.com/account/api) təsdiqlənmiş yoldur.",
       "dontShowAgain": "Bu provayder üçün bunu bir daha göstərmə",
       "understand": "Başa düşdüm, davam et",
       "cancel": "Ləğv et"

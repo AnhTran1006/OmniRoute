@@ -5229,6 +5229,7 @@
       "oauth": "Mtoa huduma huyu anatumia kipindi chako rasmi cha bidhaa/OAuth, ambacho hakijaidhinishwa kwa matumizi ya proksi/ruta. Hatupendekezi matumizi makubwa ya ejenti inayojitegemea (mtindo wa OpenCloud, mtiririko mrefu wa hatua nyingi, makundi makubwa) — upstream inaweza kuchukua hatua kwa kuzuia au kupiga marufuku akaunti. Tumia kwa hatari yako mwenyewe.",
       "webCookie": "Mtoa huduma huyu anathibitisha kupitia kuki za kipindi chako cha wavuti. Huduma ya upstream inaweza kubatilisha kipindi wakati wowote, ikikuhitaji uingie tena. Haipendekezwi kwa shughuli ndefu zisizosimamiwa. Tumia kwa hatari yako mwenyewe.",
       "deprecated": "Mtoa huduma huyu alisitishwa na upstream yake na anaweza kuacha kufanya kazi bila taarifa. Muunganisho uliopo unaweza kuendelea kufanya kazi hadi upstream iondoe kabisa ufikiaji. Fikiria njia mbadala.",
+      "official-client-only": "Huduma ya chanzo huzuia hali ya bila malipo kwa viteja vyake rasmi na husimamisha akaunti zinazotumiwa kupitia proksi. Tumia kwa tahadhari yako mwenyewe; API ya kulipia (freebuff.com/account/api) ndiyo njia iliyoidhinishwa.",
       "dontShowAgain": "Usionyeshe hii tena kwa mtoa huduma huyu",
       "understand": "Nimeelewa, endelea",
       "cancel": "Ghairi"

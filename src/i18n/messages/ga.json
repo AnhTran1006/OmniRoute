@@ -5229,6 +5229,7 @@
       "oauth": "Úsáideann an soláthraí seo do sheisiún oifigiúil táirge/OAuth, nach bhfuil ceadaithe le haghaidh úsáide seachfhreastalaí/ródaire. Ní mholaimid dianúsáid gníomhairí uathrialacha (ar nós OpenCloud, sreafaí fada ilchéime, baisceanna móra) — d'fhéadfadh an tseirbhís réamhtheachtach freagairt tríd an gcuntas a shrianadh nó a thoirmeasc. Úsáid ar do phriacal féin.",
       "webCookie": "Déanann an soláthraí seo fíordheimhniú trí fhianáin do sheisiúin gréasáin. D'fhéadfadh an tseirbhís réamhtheachtach an seisiún a chur ar neamhní tráth ar bith, rud a d'éileodh ort logáil isteach arís. Ní mholtar é d'oibríochtaí fada gan duine ina bhfeighil. Úsáid ar do phriacal féin.",
       "deprecated": "Chuir an tseirbhís réamhtheachtach deireadh leis an soláthraí seo agus d'fhéadfadh sé éirí as feidhm gan fógra. D'fhéadfadh na naisc atá ann cheana leanúint de bheith ag obair go dtí go mbainfidh an tseirbhís réamhtheachtach rochtain go hiomlán. Smaoinigh ar roghanna eile.",
+      "official-client-only": "Cuireann an tseirbhís réamhtheachtach srian ar an mód saor in aisce dá cliaint oifigiúla agus cuireann sí cuntais a úsáidtear trí sheachfhreastalaithe ar fionraí. Úsáid ar do phriacal féin é; is é an API íoctha (freebuff.com/account/api) an bealach ceadaithe.",
       "dontShowAgain": "Ná taispeáin seo arís don soláthraí seo",
       "understand": "Tuigim, lean ar aghaidh",
       "cancel": "Cealaigh"

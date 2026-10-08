@@ -5229,6 +5229,7 @@
       "oauth": "Šis teikėjas autentifikuoja naudodamas jūsų oficialų produkto seansą / OAuth, tačiau toks naudojimas su tarpiniu serveriu ar maršruto parinktuvu nėra leidžiamas. Nerekomenduojame intensyviai naudoti autonominių agentų (OpenCloud tipo, ilgų kelių etapų procesų ar didelių paketų) — išorinė paslauga gali apriboti arba užblokuoti paskyrą. Naudokite savo rizika.",
       "webCookie": "Šis teikėjas autentifikuoja naudodamas jūsų žiniatinklio seanso slapukus. Išorinė paslauga gali bet kada panaikinti seanso galiojimą, todėl turėsite prisijungti iš naujo. Nerekomenduojama ilgoms neprižiūrimoms operacijoms. Naudokite savo rizika.",
       "deprecated": "Išorinė paslauga nutraukė šio teikėjo palaikymą, todėl jis gali nustoti veikti be įspėjimo. Esami ryšiai gali veikti tol, kol išorinė paslauga visiškai panaikins prieigą. Apsvarstykite alternatyvas.",
+      "official-client-only": "Pirminis paslaugos teikėjas leidžia nemokamą režimą naudoti tik savo oficialiuose klientuose ir sustabdo per tarpinius serverius naudojamas paskyras. Naudokite savo rizika; mokama API (freebuff.com/account/api) yra patvirtintas būdas.",
       "dontShowAgain": "Daugiau to nerodyti šiam teikėjui",
       "understand": "Suprantu, tęsti toliau",
       "cancel": "Atšaukti"

@@ -5229,6 +5229,7 @@
       "oauth": "Penyedia ini menggunakan sesi/OAuth produk resmi Anda, yang tidak diizinkan untuk penggunaan proxy/router. Kami tidak menyarankan penggunaan agen otonom yang intensif (gaya OpenCloud, alur multi-langkah yang panjang, batch besar) — upstream dapat bereaksi dengan membatasi atau memblokir akun. Gunakan dengan risiko Anda sendiri.",
       "webCookie": "Penyedia ini mengautentikasi melalui cookie sesi web Anda. Layanan upstream dapat membatalkan sesi kapan saja, mengharuskan Anda untuk masuk kembali. Tidak disarankan untuk operasi tanpa pengawasan yang lama. Gunakan dengan risiko Anda sendiri.",
       "deprecated": "Penyedia ini telah dihentikan oleh upstream-nya dan mungkin berhenti berfungsi tanpa pemberitahuan. Koneksi yang ada mungkin tetap berfungsi hingga upstream sepenuhnya menghapus akses. Pertimbangkan alternatif lain.",
+      "official-client-only": "Penyedia upstream membatasi mode gratis hanya untuk klien resminya dan menangguhkan akun yang digunakan melalui proksi. Gunakan dengan risiko Anda sendiri; API berbayar (freebuff.com/account/api) adalah jalur yang disetujui.",
       "dontShowAgain": "Jangan tampilkan ini lagi untuk penyedia ini",
       "understand": "Saya mengerti, lanjutkan",
       "cancel": "Batal"

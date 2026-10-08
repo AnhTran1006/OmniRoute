@@ -5229,6 +5229,7 @@
       "oauth": "Wannan mai samarwa yana amfani da zaman samfurinka na hukuma/OAuth, wanda ba a ba da izinin amfani da shi don proxy/router ba. Ba mu ba da shawarar amfani mai yawa da wakili mai cin gashin kansa ba (irin na OpenCloud, dogayen ayyuka masu matakai da yawa, manyan rukuni-rukuni) — sabis na upstream na iya mayar da martani ta hanyar taƙaita ko dakatar da asusun. Yi amfani da shi bisa kasadar kanka.",
       "webCookie": "Wannan mai samarwa yana tabbatar da shaidarka ta hanyar cookies na zaman yanar gizonka. Sabis na asali na iya soke zaman a kowane lokaci, wanda zai buƙaci ka sake shiga. Ba a ba da shawarar amfani da shi don dogayen ayyukan da ba a sa ido a kansu ba. Yi amfani da shi bisa kasadar kanka.",
       "deprecated": "Sabis ɗin asali ya dakatar da wannan mai samarwa, kuma yana iya daina aiki ba tare da sanarwa ba. Haɗin da ke akwai na iya ci gaba da aiki har sai sabis ɗin asali ya cire damar gaba ɗaya. Yi la’akari da wasu zaɓuɓɓuka.",
+      "official-client-only": "Sabis na sama yana taƙaita yanayin kyauta ga manhajojinsa na hukuma kuma yana dakatar da asusun da aka yi amfani da su ta hanyar proxies. Yi amfani da shi bisa haɗarinka; API mai biyan kuɗi (freebuff.com/account/api) ita ce hanyar da aka amince da ita.",
       "dontShowAgain": "Kada a sake nuna mini wannan ga wannan mai samarwa",
       "understand": "Na fahimta, ci gaba",
       "cancel": "Soke"

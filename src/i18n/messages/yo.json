@@ -5229,6 +5229,7 @@
       "oauth": "Olùpèsè yìí ń lo session/OAuth ọjà rẹ tó jẹ́ ti ọ̀nà àṣẹ, èyí tí a kò fún láṣẹ fún lílo proxy/router. A kò ṣeduro lílo agent aládàáṣiṣẹ́ tó lekoko (ara OpenCloud, àwọn ìṣàn iṣẹ́ onígbésẹ̀ púpọ̀ tó gùn, àwọn batch ńlá) — upstream lè fèsì nípa dídín lílo àkọọ́lẹ̀ náà kù tàbí fífi òfin dè é. Lò ó ní ewu ara rẹ.",
       "webCookie": "Olùpèsè yìí ń jẹ́rìí ìdánimọ̀ nípasẹ̀ àwọn cookie session wẹ́ẹ̀bù rẹ. Iṣẹ́ upstream lè sọ session náà di asán nígbàkigbà, tí yóò sì béèrè pé kí o tún wọlé. A kò ṣeduro rẹ̀ fún àwọn iṣẹ́ gígùn tí kò ní ẹni tó ń bójú tó. Lò ó ní ewu ara rẹ.",
       "deprecated": "Upstream rẹ̀ ti dáwọ́ olùpèsè yìí dúró, ó sì lè ṣíwọ́ iṣẹ́ láìsí ìkìlọ̀. Àwọn ìsopọ̀ tó wà tẹ́lẹ̀ lè máa ṣiṣẹ́ títí upstream yóò fi yọ ààyè wọlé kúrò pátápátá. Gbé àwọn àṣàyàn mìíràn yẹ̀ wò.",
+      "official-client-only": "Olùpèsè orísun náà fi ìpo ọ̀fẹ́ mọ́ àwọn ohun èlò oníbàárà ìfọwọ́sí rẹ̀, ó sì máa ń dá àwọn àkọọ́lẹ̀ tí a lò nípasẹ̀ àwọn aṣojú dúró. Lò ó ní ewu tirẹ; API alá-sanwó (freebuff.com/account/api) ni ọ̀nà tí a fọwọ́ sí.",
       "dontShowAgain": "Má ṣe fi èyí hàn lẹ́ẹ̀kan sí i fún olùpèsè yìí",
       "understand": "Ó yé mi, tẹ̀síwájú",
       "cancel": "Fagilé"

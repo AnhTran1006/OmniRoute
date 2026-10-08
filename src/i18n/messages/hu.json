@@ -5229,6 +5229,7 @@
       "oauth": "Ez a szolgáltató a hivatalos termékmunkamenetet/OAuth-ot használja, amely nem engedélyezett proxy/router használatra. Nem javasoljuk az intenzív autonóm ágens használatot (OpenCloud-stílusú, hosszú, többlépéses folyamatok, nagy kötegek) — az upstream szolgáltató a fiók korlátozásával vagy kitiltásával reagálhat. Saját felelősségre használja.",
       "webCookie": "Ez a szolgáltató a webes munkamenet-sütik segítségével hitelesít. Az upstream szolgáltatás bármikor érvénytelenítheti a munkamenetet, ami újbóli bejelentkezést igényel. Hosszú, felügyelet nélküli műveletekhez nem ajánlott. Saját felelősségre használja.",
       "deprecated": "Ezt a szolgáltatót az upstream szolgáltató megszüntette, és előzetes értesítés nélkül leállhat a működése. A meglévő kapcsolatok továbbra is működhetnek, amíg az upstream teljesen el nem távolítja a hozzáférést. Fontolja meg az alternatívákat.",
+      "official-client-only": "A szolgáltató az ingyenes mód használatát a hivatalos klienseire korlátozza, és felfüggeszti a proxykon keresztül használt fiókokat. Csak saját felelősségére használja; a fizetős API (freebuff.com/account/api) a hivatalosan támogatott megoldás.",
       "dontShowAgain": "Ne jelenjen meg újra ennél a szolgáltatónál",
       "understand": "Megértettem, folytatás",
       "cancel": "Mégse"

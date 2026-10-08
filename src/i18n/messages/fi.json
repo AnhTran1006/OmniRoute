@@ -5229,6 +5229,7 @@
       "oauth": "Tämä tarjoaja käyttää virallista tuote-istuntoasi/OAuthia, jota ei ole valtuutettu välityspalvelin-/reititinkäyttöön. Emme suosittele intensiivistä autonomisten agenttien käyttöä (OpenCloud-tyyliset, pitkät monivaiheiset työnkulut, suuret erät) — ylävirta saattaa reagoida rajoittamalla tiliä tai estämällä sen. Käyttö omalla vastuulla.",
       "webCookie": "Tämä tarjoaja todennetaan verkkosessiosi evästeiden kautta. Ylävirran palvelu voi mitätöidä istunnon milloin tahansa, jolloin sinun on kirjauduttava uudelleen sisään. Ei suositella pitkiin valvomattomiin toimintoihin. Käyttö omalla vastuulla.",
       "deprecated": "Ylävirran tarjoaja on lakkauttanut tämän palvelun, ja se saattaa lakata toimimasta ilman erillistä ilmoitusta. Olemassa olevat yhteydet voivat jatkaa toimintaansa, kunnes ylävirta poistaa pääsyn kokonaan. Harkitse vaihtoehtoja.",
+      "official-client-only": "Taustapalvelu rajoittaa maksuttoman tilan virallisiin asiakasohjelmiinsa ja jäädyttää välityspalvelinten kautta käytetyt tilit. Käytä omalla vastuullasi; maksullinen API (freebuff.com/account/api) on hyväksytty tapa.",
       "dontShowAgain": "Älä näytä tätä uudelleen tälle tarjoajalle",
       "understand": "Ymmärrän, jatka",
       "cancel": "Peruuta"

@@ -5229,6 +5229,7 @@
       "oauth": "Denne udbyder bruger din officielle produktsession/OAuth, som ikke er godkendt til proxy-/routerbrug. Vi anbefaler ikke intensiv brug af autonome agenter (OpenCloud-stil, lange flertrinsforløb, store batches) — upstream-tjenesten kan reagere ved at begrænse eller spærre kontoen. Brug på eget ansvar.",
       "webCookie": "Denne udbyder godkender via dine websessionscookies. Upstream-tjenesten kan til enhver tid gøre sessionen ugyldig, hvilket kræver, at du logger ind igen. Anbefales ikke til lange uovervågede handlinger. Brug på eget ansvar.",
       "deprecated": "Denne udbyder blev afbrudt af sin upstream og kan holde op med at fungere uden varsel. Eksisterende forbindelser kan fortsætte med at fungere, indtil upstream helt fjerner adgangen. Overvej alternativer.",
+      "official-client-only": "Opstrømstjenesten begrænser gratis tilstand til sine officielle klienter og suspenderer konti, der bruges via proxyer. Brug på eget ansvar; det betalte API (freebuff.com/account/api) er den godkendte løsning.",
       "dontShowAgain": "Vis ikke dette igen for denne udbyder",
       "understand": "Jeg forstår, fortsæt",
       "cancel": "Annuller"

@@ -5229,6 +5229,7 @@
       "oauth": "Tento poskytovatel používá vaši oficiální relaci/OAuth produktu, což není autorizováno pro použití jako proxy/router. Nedoporučujeme intenzivní používání autonomních agentů (styl OpenCloud, dlouhé vícekrokové toky, velké dávky) — upstream může reagovat omezením nebo zablokováním účtu. Používejte na vlastní riziko.",
       "webCookie": "Tento poskytovatel se autentizuje pomocí souborů cookie vaší webové relace. Služba upstream může relaci kdykoli zneplatnit, což bude vyžadovat opětovné přihlášení. Nedoporučuje se pro dlouhé bezobslužné operace. Používejte na vlastní riziko.",
       "deprecated": "Tento poskytovatel byl ukončen svým upstreamem a může bez předchozího upozornění přestat fungovat. Existující připojení mohou fungovat i nadále, dokud upstream přístup zcela neodstraní. Zvažte alternativy.",
+      "official-client-only": "Poskytovatel omezuje bezplatný režim na své oficiální klienty a pozastavuje účty používané prostřednictvím proxy serverů. Používejte na vlastní nebezpečí; placené API (freebuff.com/account/api) je schválenou cestou.",
       "dontShowAgain": "Pro tohoto poskytovatele již znovu nezobrazovat",
       "understand": "Rozumím, pokračovat",
       "cancel": "Zrušit"

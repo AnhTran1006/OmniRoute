@@ -5229,6 +5229,7 @@
       "oauth": "Dan il-fornitur juża s-sessjoni uffiċjali tal-prodott/OAuth tiegħek, li mhijiex awtorizzata għall-użu bħala proxy/router. Ma nirrakkomandawx użu intensiv minn aġenti awtonomi (stil OpenCloud, flussi twal b'diversi passi, lottijiet kbar) — is-servizz upstream jista' jirreaġixxi billi jirrestrinġi jew jimblokka l-kont. Użah bir-riskju tiegħek.",
       "webCookie": "Dan il-fornitur jawtentika permezz tal-cookies tas-sessjoni web tiegħek. Is-servizz upstream jista' jinvalida s-sessjoni fi kwalunkwe ħin, u jkollok terġa' tidħol. Mhux rakkomandat għal operazzjonijiet twal mingħajr superviżjoni. Użah bir-riskju tiegħek.",
       "deprecated": "Dan il-fornitur twaqqaf mis-servizz upstream tiegħu u jista' jieqaf jaħdem mingħajr avviż. Il-konnessjonijiet eżistenti jistgħu jibqgħu jaħdmu sakemm is-servizz upstream ineħħi l-aċċess kompletament. Ikkunsidra alternattivi.",
+      "official-client-only": "Is-servizz upstream jirrestrinġi l-modalità bla ħlas għall-klijenti uffiċjali tiegħu u jissospendi l-kontijiet użati permezz ta’ proxies. Użah għar-riskju tiegħek; l-API bi ħlas (freebuff.com/account/api) hija l-mezz awtorizzat.",
       "dontShowAgain": "Terġax turi dan għal dan il-fornitur",
       "understand": "Nifhem, kompli",
       "cancel": "Ikkanċella"

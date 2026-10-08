@@ -5229,6 +5229,7 @@
       "oauth": "Nhà cung cấp này sử dụng phiên đăng nhập/OAuth chính thức của sản phẩm, vốn không được cấp phép để dùng làm proxy/bộ định tuyến. Chúng tôi không khuyến khích sử dụng tác nhân tự trị cường độ cao (kiểu OpenCloud, luồng nhiều bước kéo dài, các lô lớn) — dịch vụ ngược dòng có thể phản ứng bằng cách hạn chế hoặc cấm tài khoản. Tự chịu rủi ro khi sử dụng.",
       "webCookie": "Nhà cung cấp này xác thực thông qua cookie phiên web của bạn. Dịch vụ ngược dòng có thể vô hiệu hóa phiên bất kỳ lúc nào, yêu cầu bạn phải đăng nhập lại. Không khuyến khích cho các hoạt động dài hạn không có sự giám sát. Tự chịu rủi ro khi sử dụng.",
       "deprecated": "Nhà cung cấp này đã bị ngừng hoạt động bởi dịch vụ ngược dòng của nó và có thể ngừng hoạt động mà không cần báo trước. Các kết nối hiện tại có thể tiếp tục hoạt động cho đến khi dịch vụ ngược dòng loại bỏ hoàn toàn quyền truy cập. Hãy cân nhắc các giải pháp thay thế.",
+      "official-client-only": "Nhà cung cấp thượng nguồn giới hạn chế độ miễn phí cho các ứng dụng khách chính thức và đình chỉ các tài khoản được sử dụng thông qua proxy. Bạn tự chịu rủi ro khi sử dụng; API trả phí (freebuff.com/account/api) là phương thức được cho phép.",
       "dontShowAgain": "Không hiển thị lại thông báo này cho nhà cung cấp này",
       "understand": "Tôi đã hiểu, tiếp tục",
       "cancel": "Hủy"
