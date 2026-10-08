@@ -34,6 +34,7 @@ const SKIP_DIRS = new Set([
   "coverage",
   ".source",
   ".tmp",
+  "_artifacts",
   "_tasks",
   "_ideia",
   "_mono_repo",
