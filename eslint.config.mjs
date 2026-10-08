@@ -171,6 +171,22 @@ const eslintConfig = [
       "react-hooks/rules-of-hooks": "off",
     },
   },
+  // These tests use a deliberately minimal hook harness that copies the
+  // captured hook value into an external assertion ref. The React compiler's
+  // immutability rule cannot model that test-only handoff; production hook code
+  // remains covered by the default rule.
+  {
+    files: [
+      "tests/unit/ui/use-improve-prompt.test.tsx",
+      "tests/unit/ui/use-presets.test.tsx",
+      "tests/unit/ui/use-stream-metrics.test.tsx",
+      "tests/unit/ui/use-structured-output.test.tsx",
+      "tests/unit/ui/use-tools-builder.test.tsx",
+    ],
+    rules: {
+      "react-hooks/immutability": "off",
+    },
+  },
   // JS/JSX files do not match eslint-config-next's TypeScript block. Register
   // the plugin only for that disjoint scope so the shared unused-vars ratchet
   // works without redefining the plugin for TS/TSX under ESLint 10.
@@ -229,6 +245,14 @@ const eslintConfig = [
       ".omnivscodeagent/**",
       // _tasks/ — planning/handoff/research artifacts (gitignored, external code)
       "_tasks/**",
+      // Private release/quality artifacts are intentionally outside the source
+      // tree. Some contain their own ESLint configs and dependency assumptions;
+      // traversing them from `npm run lint` makes the root gate depend on local
+      // generated files (for example, a missing @eslint/js in a copied config).
+      "_artifacts/**",
+      ".artifacts/**",
+      "output/**",
+      ".playwright-cli/**",
       // .agents/ — skill definitions + their helper scripts (gitignored; the
       // canonical copy lives here and is symlinked into .claude/).
       ".agents/**",
