@@ -12971,7 +12971,10 @@ paths:
       summary: "GET combos"
       responses:
         "200":
-          description: OK
+          description: >-
+            OK. When capabilities are included, each `model` step in `models[]` carries
+            `supportsVision` (`true`, `false`, or `null` when no capability source knows),
+            and `capabilities.multimodal` is true exactly when every member reports `true`.
   /api/v1/completions:
     post:
       tags:
