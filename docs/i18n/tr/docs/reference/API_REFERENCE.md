@@ -286,12 +286,31 @@ Content-Type: application/json
 
 {
   "model": "openai/gpt-image-2",
-  "prompt": "A beautiful sunset over mountains",
+  "prompt": "Dağların üzerinde güzel bir gün batımı",
   "size": "1024x1024"
 }
 ```
 
-Kullanılabilir sağlayıcılar: OpenAI (GPT Image 2), xAI (Grok Image), Together AI (FLUX), Fireworks AI, Nebius (FLUX), Hyperbolic, NanoBanana, **OpenRouter**, SD WebUI (yerel), ComfyUI (yerel).
+Kullanılabilir sağlayıcılar arasında OpenAI (GPT Image 2), xAI (Grok Image), Together AI (FLUX), Fireworks AI, Nebius (FLUX), Hyperbolic, NanoBanana, **OpenRouter**, **ZenMux**, SD WebUI (yerel) ve ComfyUI (yerel) bulunur.
+
+ZenMux, mevcut API anahtarı bağlantısını yeniden kullanır ve `zenmux/` veya `zm/` öneklerini kabul eder:
+
+- `zenmux/openai/gpt-image-2`, ZenMux'ın OpenAI Images API'sini kullanır. Seçenekler arasında `size`,
+  `quality`, `n`, `output_format`, `output_compression`, `background` ve `response_format` bulunur.
+- `zm/meta/muse-image-1.0` gibi diğer yayıncılar, ZenMux'ın Vertex AI `:predict`
+  uç noktasını kullanır. `n`, `sampleCount` ile; `aspect_ratio`, `aspectRatio` ile; `image_size`
+  (`1K`, `2K`, `4K`) ise `sampleImageSize` ile eşleştirilir. Piksel cinsinden bir `size` yalnızca en-boy oranı sağlar;
+  piksel boyutları garanti edilmez. Desteklenen oranlar, çözünürlükler ve sayılar modele göre değişir.
+- `zm/inclusionai/ming-image-0.1-design` kendi boyutlarını seçer. `size`,
+  `aspect_ratio` ve `image_size` değerlerini belirtmeyin; açıkça belirtilen değerler HTTP 400 döndürür. PNG, JPEG ve WebP
+  biçimleri `output_format` ile istenebilir.
+
+Bu entegrasyon, referans görsel düzenlemeyi değil, metinden görsel oluşturmayı destekler. Vertex
+çıktısı `data[].b64_json` biçimine normalize edilir; `response_format: "url"`, yalnızca görsel baytları mevcut olduğunda üst sağlayıcıdan gelen bir
+HTTPS URL'si veya base64 veri URL'si döndürür. Boş/filtrelenmiş çıktılar,
+boş bir başarı yanıtı yerine hata döndürür. Model erişimi ZenMux hesabına bağlıdır.
+Bkz. [ZenMux Vertex API'si](https://docs.zenmux.ai/api/vertexai/generate-images) ve
+[OpenAI Images API'si](https://docs.zenmux.ai/api/openai/generate-an-image).
 
 ```bash
 # Tüm görsel modellerini listele
@@ -417,37 +436,37 @@ Bir sidecar süreç dışında çalıştığında ve `open-sse/config/providerPl
 
 ## Uyumluluk Uç Noktaları
 
-| Yöntem | Yol                                       | Biçim                                  |
-| ------ | ----------------------------------------- | -------------------------------------- |
-| POST   | `/v1/chat/completions`                    | OpenAI                                 |
-| POST   | `/v1/messages`                            | Anthropic                              |
-| POST   | `/v1/responses`                           | OpenAI Responses                       |
-| POST   | `/v1/embeddings`                          | OpenAI                                 |
-| POST   | `/v1/images/generations`                  | OpenAI Images                          |
-| POST   | `/v1/images/edits`                        | OpenAI Images (düzenleme/inpaint)      |
-| POST   | `/v1/videos/generations`                  | OpenAI tarzı video oluşturma           |
-| POST   | `/v1/music/generations`                   | OpenAI tarzı müzik oluşturma           |
-| POST   | `/v1/audio/transcriptions`                | OpenAI Audio (STT)                     |
-| POST   | `/v1/audio/speech`                        | OpenAI TTS (ses gövdesi döndürür)      |
-| POST   | `/v1/rerank`                              | Cohere/Voyage tarzı yeniden sıralama   |
-| POST   | `/v1/classify`                            | Jina sınıflandırma (`api.jina.ai`)     |
-| POST   | `/v1/segment`                             | Jina bölümleyici (`segment.jina.ai`)   |
-| POST   | `/v1/moderations`                         | OpenAI Moderations                     |
-| GET    | `/v1/models`                              | OpenAI                                 |
-| POST   | `/v1/messages/count_tokens`               | Anthropic                              |
-| GET    | `/v1beta/models`                          | Gemini                                 |
-| POST   | `/v1beta/models/{...path}`                | Gemini generateContent                 |
-| POST   | `/v1/api/chat`                            | Ollama                                 |
-| GET    | `/api/v1/vscode/{token}/`                 | OpenAI katalog takma adı               |
-| GET    | `/api/v1/vscode/{token}/models`           | OpenAI modelleri takma adı             |
-| POST   | `/api/v1/vscode/{token}/chat/completions` | OpenAI belirteçli takma adı            |
-| POST   | `/api/v1/vscode/{token}/responses`        | OpenAI Responses belirteçli takma adı  |
-| POST   | `/api/v1/vscode/{token}/api/chat`         | Ollama belirteçli takma adı            |
-| GET    | `/api/v1/vscode/{token}/api/tags`         | Ollama etiketleri belirteçli takma adı |
+| Yöntem | Yol                                       | Biçim                                   |
+| ------ | ----------------------------------------- | --------------------------------------- |
+| POST   | `/v1/chat/completions`                    | OpenAI                                  |
+| POST   | `/v1/messages`                            | Anthropic                               |
+| POST   | `/v1/responses`                           | OpenAI Responses                        |
+| POST   | `/v1/embeddings`                          | OpenAI                                  |
+| POST   | `/v1/images/generations`                  | OpenAI Images                           |
+| POST   | `/v1/images/edits`                        | OpenAI Images (düzenleme/inpaint)       |
+| POST   | `/v1/videos/generations`                  | OpenAI tarzı video oluşturma            |
+| POST   | `/v1/music/generations`                   | OpenAI tarzı müzik oluşturma            |
+| POST   | `/v1/audio/transcriptions`                | OpenAI Audio (STT)                      |
+| POST   | `/v1/audio/speech`                        | OpenAI TTS (ses gövdesi döndürür)       |
+| POST   | `/v1/rerank`                              | Cohere/Voyage tarzı yeniden sıralama    |
+| POST   | `/v1/classify`                            | Jina sınıflandırma (`api.jina.ai`)      |
+| POST   | `/v1/segment`                             | Jina bölümleyici (`segment.jina.ai`)    |
+| POST   | `/v1/moderations`                         | OpenAI Moderations                      |
+| GET    | `/v1/models`                              | OpenAI                                  |
+| POST   | `/v1/messages/count_tokens`               | Anthropic                               |
+| GET    | `/v1beta/models`                          | Gemini                                  |
+| POST   | `/v1beta/models/{...path}`                | Gemini generateContent                  |
+| POST   | `/v1/api/chat`                            | Ollama                                  |
+| GET    | `/api/v1/vscode/{token}/`                 | OpenAI katalog diğer adı                |
+| GET    | `/api/v1/vscode/{token}/models`           | OpenAI modelleri diğer adı              |
+| POST   | `/api/v1/vscode/{token}/chat/completions` | OpenAI token içeren diğer ad            |
+| POST   | `/api/v1/vscode/{token}/responses`        | OpenAI Responses token içeren diğer ad  |
+| POST   | `/api/v1/vscode/{token}/api/chat`         | Ollama token içeren diğer ad            |
+| GET    | `/api/v1/vscode/{token}/api/tags`         | Ollama etiketleri token içeren diğer ad |
 
-Tüm POST rotaları aynı yapıyı izler: `Bearer your-api-key` + Zod ile doğrulanan JSON gövdesi (`v1RerankSchema`, `v1ModerationSchema`, `v1AudioSpeechSchema` vb.; bkz. `src/shared/validation/schemas.ts`). Şema doğrulaması başarısız olduğunda 4xx döndürülür.
+Tüm POST rotaları aynı yapıyı izler: `Bearer your-api-key` + Zod ile doğrulanmış JSON gövdesi (`v1RerankSchema`, `v1ModerationSchema`, `v1AudioSpeechSchema` vb.; bkz. `src/shared/validation/schemas.ts`). Şema doğrulaması başarısız olduğunda 4xx döndürülür.
 
-`Authorization: Bearer ...` ekleyemeyen istemciler için OmniRoute, API anahtarlarını URL içinde hem sorgu dizesi uyumluluğu (`?token=...`, `?apiKey=...`, `?api_key=...`, `?key=...`) hem de aşağıda belgelenen özel `/api/v1/vscode/{token}/...` uç noktaları aracılığıyla kabul eder.
+`Authorization: Bearer ...` ekleyemeyen istemciler için OmniRoute, aşağıda belgelenen özel `/api/v1/vscode/{token}/...` uç noktalarının yanı sıra sorgu dizesi uyumluluğu (`?token=...`, `?apiKey=...`, `?api_key=...`, `?key=...`) aracılığıyla URL içindeki API anahtarlarını da kabul eder.
 
 ```bash
 # Yeniden sıralama (bulut kayıt defteri sağlayıcısı veya "<prefix>/<model>" biçiminde OpenAI uyumlu bir sağlayıcı düğümü)
@@ -459,53 +478,52 @@ POST /v1/classify    { "model": "jina-embeddings-v5-text-small", "input": ["..."
 # Jina bölümleyici
 POST /v1/segment     { "content": "...", "return_chunks": true }
 
-# Jina arama (s.jina.ai; sağlayıcı takma adları: jina-search, jina-ai, jina)
+# Jina arama (s.jina.ai; sağlayıcı diğer adları: jina-search, jina-ai, jina)
 POST /v1/search      { "query": "...", "provider": "jina-search" }
 
 # Moderasyonlar
 POST /v1/moderations { "model": "omni-moderation-latest", "input": "..." }
 
-# TTS — audio/mpeg (veya istenen biçimde) gövdesi döndürür
+# TTS — audio/mpeg (veya istenen biçimde) gövde döndürür
 POST /v1/audio/speech { "model": "openai/tts-1", "input": "Hello", "voice": "alloy" }
 
-# Soniox TTS bir dil ve ses gerektirir: `language` varsayılan olarak "en" olur; eksik
-# bir ses veya OpenAI standart ses adı (alloy, nova, …) "Adrian" olur
+# Soniox TTS bir dil ve ses gerektirir: `language` varsayılan olarak "en" değerini alır; eksik
+# bir ses veya standart bir OpenAI ses adı (alloy, nova, …) "Adrian" değerine dönüşür
 POST /v1/audio/speech { "model": "soniox/tts-rt-v1", "input": "Xin chào", "voice": "Adrian", "language": "vi" }
 
-# Görsel düzenleme (multipart)
+# Görüntü düzenleme (multipart)
 POST /v1/images/edits  -F image=@input.png -F prompt="..." -F mask=@mask.png
 
-# Video / müzik oluşturma (sağlayıcı ön ekli model kimliği)
+# Video / müzik oluşturma (sağlayıcı önekli model kimliği)
 POST /v1/videos/generations { "model": "runway/gen-3", "prompt": "..." }
 POST /v1/music/generations  { "model": "kie/suno-v4.0",   "prompt": "..." }
 ```
 
-> **Yeniden sıralama sağlayıcı düğümleri:** `POST /v1/rerank`, `<node-prefix>/<model>` biçiminde
-> adreslenen OpenAI uyumlu sağlayıcı düğümlerine (oMLX, vLLM, Infinity, bir ağ geçidinin
-> arkasındaki TEI, …) de yönlendirme yapar. Geri döngü düğümleri (`localhost`, `127.0.0.1`,
-> `172.16.0.0/12`) her zaman uygundur. Başka herhangi bir ana makinedeki düğümler — bir LAN
-> makinesi veya Tailscale eş düğümü — yalnızca operatör `RERANK_REMOTE_PROVIDER_NODES` özellik
-> bayrağını etkinleştirdiğinde **ve** düğümün temel URL'si sağlayıcının giden URL politikasını
-> (`OMNIROUTE_ALLOW_LOCAL_PROVIDER_URLS` / `OMNIROUTE_ALLOW_PRIVATE_PROVIDER_URLS`) geçtiğinde
-> uygundur; bulut meta verisi ana makinelerine hiçbir zaman yönlendirme yapılmaz. Bellek
-> motorunun yeniden sıralama adımı bu rotayı geri döngü üzerinden çağırır; dolayısıyla aynı
-> kural, Bellek ayarlarındaki `rerankProviderModel` için de geçerlidir.
+> **Yeniden sıralama sağlayıcı düğümleri:** `POST /v1/rerank`, `<node-prefix>/<model>` olarak adreslenen
+> OpenAI uyumlu sağlayıcı düğümlerine de yönlendirme yapar (oMLX, vLLM, Infinity, bir ağ geçidinin
+> arkasındaki TEI, …). Geri döngü düğümleri (`localhost`, `127.0.0.1`, `172.16.0.0/12`) her zaman
+> kullanılabilir. Başka herhangi bir ana makinedeki düğümler — bir LAN makinesi veya Tailscale eşi —
+> yalnızca operatör `RERANK_REMOTE_PROVIDER_NODES` özellik bayrağını etkinleştirdiğinde **ve** düğümün
+> temel URL'si sağlayıcının giden URL politikasından geçtiğinde
+> (`OMNIROUTE_ALLOW_LOCAL_PROVIDER_URLS` / `OMNIROUTE_ALLOW_PRIVATE_PROVIDER_URLS`) kullanılabilir.
+> Bellek motorunun yeniden sıralama adımı bu rotayı geri döngü üzerinden çağırır; dolayısıyla aynı
+> kural Bellek ayarlarındaki `rerankProviderModel` için de geçerlidir.
 >
-> **Yerel sunucu yapıları:** düğüm `<base>/v1/rerank` adresinden, 404 durumunda ise
-> `<base>/rerank` adresinden çağrılır (Infinity, TEI). Yukarı akış gövdesi hem Cohere/OpenAI
-> yazımını (`documents`, `return_documents`) hem de TEI yazımını (`texts`, `return_text`) taşır
-> ve yukarı akış yanıtı Cohere zarfına normalleştirilir: TEI'nin yalın
-> `[{index, score, text}]` yapısı, ince ağ geçitlerinden gelen `{results: [{index, score}]}` ve
-> Voyage tarzı `{data: [...]}` yapılarının tümü istemciye puana göre sıralanmış ve `top_n` ile
-> sınırlandırılmış `{results: [{index, relevance_score, document?}]}` olarak döner.
+> **Yerel sunucu yapıları:** düğüm önce `<base>/v1/rerank`, 404 durumunda ise `<base>/rerank`
+> (Infinity, TEI) üzerinden çağrılır. Üst sunucu gövdesi hem Cohere/OpenAI yazımını (`documents`,
+> `return_documents`) hem de TEI yazımını (`texts`, `return_text`) taşır ve üst sunucu yanıtı
+> Cohere zarfına normalleştirilir: TEI'nin yalın `[{index, score, text}]` yanıtı, ince ağ geçitlerinden
+> gelen `{results: [{index, score}]}` ve Voyage tarzı `{data: [...]}` yanıtlarının tümü istemciye
+> `{results: [{index, relevance_score, document?}]}` olarak, puana göre sıralanmış ve `top_n` ile
+> sınırlandırılmış biçimde döner.
 
-> **Sağlayıcı düğümü keşfi:** OpenAI uyumlu bir sağlayıcı düğümündeki modeller, düğüm ön eki altında `GET /v1/models`
-> içinde görünür. Uç nokta meta verisi taşımayan satırlar (yerel `/v1/models` listelemelerinde tipik olduğu üzere)
-> düğümün `apiType` değerini devralır; böylece bir `embeddings` düğümünün modelleri varsayılan olarak sohbet türüne ayarlanmak yerine `type: "embedding"`,
-> bir `rerank` düğümünün modelleri ise `type: "rerank"` olur. Senkronize edilmiş veya manuel olarak eklenmiş bir satırdaki açık
-> `supportedEndpoints` değeri yine de önceliklidir.
+> **Sağlayıcı düğümü keşfi:** OpenAI uyumlu bir sağlayıcı düğümündeki modeller, düğüm öneki altında `GET /v1/models`
+> yanıtında görünür. Uç nokta meta verisi taşımayan satırlar (yerel `/v1/models` listelerinde tipik olduğu üzere)
+> düğümün `apiType` değerini devralır; böylece bir `embeddings` düğümünün modelleri varsayılan olarak sohbet türüne ayarlanmak yerine `type: "embedding"`, bir
+> `rerank` düğümünün modelleri ise `type: "rerank"` olur. Eşitlenmiş veya elle eklenmiş bir satırdaki açıkça belirtilen
+> `supportedEndpoints` yine de önceliklidir.
 
-### Özel Sağlayıcı Rotaları
+### Sağlayıcıya Özel Rotalar
 
 ```bash
 POST /v1/providers/{provider}/chat/completions
@@ -513,7 +531,7 @@ POST /v1/providers/{provider}/embeddings
 POST /v1/providers/{provider}/images/generations
 ```
 
-Eksikse sağlayıcı ön eki otomatik olarak eklenir. Eşleşmeyen modeller `400` döndürür.
+Sağlayıcı öneki eksikse otomatik olarak eklenir. Eşleşmeyen modeller `400` döndürür.
 
 ---
 
@@ -795,7 +813,7 @@ X-OmniRoute-No-Cache: true
 
 ## Pano ve Yönetim
 
-Yönetim rotaları (`/api/*`, herkese açık kimlik doğrulama/oturum açma rotaları hariç) sıradan çıkarım API anahtarlarıyla **yetkilendirilemez**. Kimlik bilgisi türleri, kapsamlar ve curl örnekleri:
+Yönetim rotaları (`/api/*`, herkese açık kimlik doğrulama/oturum açma rotaları hariç) sıradan çıkarım API anahtarlarıyla **yetkilendirilmez**. Kimlik bilgisi aileleri, kapsamlar ve curl örnekleri:
 [Yönetim Kimlik Doğrulaması](../guides/MANAGEMENT-AUTH.md).
 
 ### Kimlik Doğrulama
@@ -804,7 +822,7 @@ Yönetim rotaları (`/api/*`, herkese açık kimlik doğrulama/oturum açma rota
 | ----------------------------- | ------- | ---------------------------------- |
 | `/api/auth/login`             | POST    | Oturum açma                        |
 | `/api/auth/logout`            | POST    | Oturumu kapatma                    |
-| `/api/settings/require-login` | GET/PUT | Oturum açma gereksinimini aç/kapat |
+| `/api/settings/require-login` | GET/PUT | Oturum açma zorunluluğunu aç/kapat |
 
 ### Sağlayıcı Yönetimi
 
@@ -815,11 +833,27 @@ Yönetim rotaları (`/api/*`, herkese açık kimlik doğrulama/oturum açma rota
 | `/api/providers/[id]/test`              | POST                  | Sağlayıcı bağlantısını test etme                                                                                                                       |
 | `/api/providers/[id]/models`            | GET                   | Sağlayıcı modellerini listeleme                                                                                                                        |
 | `/api/providers/validate`               | POST                  | Sağlayıcı yapılandırmasını doğrulama                                                                                                                   |
-| `/api/providers/bulk`                   | POST                  | TEK bir sağlayıcı için API anahtarlarını toplu olarak ekleme                                                                                           |
-| `/api/providers/import`                 | POST                  | Ayrıştırılmış bir CSV/JSON dosyasından heterojen bir sağlayıcı LİSTESİNİ içe aktarma (#6836); satır başına kısmi hata sonuçları                        |
+| `/api/providers/bulk`                   | POST                  | BİR sağlayıcı için API anahtarlarını toplu olarak ekleme                                                                                               |
+| `/api/providers/import`                 | POST                  | Ayrıştırılmış bir CSV/JSON dosyasından heterojen bir sağlayıcı LİSTESİ içe aktarma (#6836); satır başına kısmi hata sonuçları                          |
 | `/api/provider-nodes*`                  | Çeşitli               | Sağlayıcı düğümü yönetimi                                                                                                                              |
 | `/api/provider-models`                  | GET/POST/PATCH/DELETE | Özel modeller (ekleme, güncelleme, gizleme/gösterme, silme)                                                                                            |
 | `/api/provider-models/validate-and-add` | POST                  | Yönetim kimlik doğrulamalı, isteğe bağlı katı bağlantı doğrulaması ve atomik özel model kaydı; bkz. [Model doğrulaması](../guides/MODEL-VALIDATION.md) |
+
+Özel Chat Completions düğümleri, açık akıl yürütme devre dışı bırakma isteklerini üst akış arka ucuna uyarlar. Başarılı bir bağlantı testi, `/models` girdisi tanınan bir `owned_by` değerini (`vllm`, `sglang` veya `llamacpp`) doğrulayan her tam model kimliği için sohbet şablonu denetimlerini otomatik olarak seçer. Şeffaf OpenAI uyumlu sarmalayıcılar, özgün model girdisini iç içe geçmiş bir `openai` nesnesinin içinde koruyabilir; algılama, bu tür en fazla üç zarfı izler. Sahiplik bilgisi eksik, bilinmeyen veya çelişkili olan modeller, sıradan OpenAI davranışını korur. Algılama, mevcut katalog isteğini yeniden kullanır, hiçbir tamamlama belirteci oluşturmaz ve bağlantı uç noktası değiştiğinde geçersiz kılınır.
+
+Bu meta verileri sunmayan bir arka uç için davranışı sabitlemek üzere mevcut kısmi sağlayıcı güncelleme API'sini kullanın:
+
+```json
+{
+  "providerSpecificData": {
+    "reasoningControl": "chat-template"
+  }
+}
+```
+
+Bu gövdeyi `PUT /api/providers/<connection-id>` ile gönderin. Bu bağlantıda, `none` olarak açıkça belirtilen bir akıl yürütme çabası `chat_template_kwargs.thinking=false` ve `chat_template_kwargs.enable_thinking=false` biçiminde gönderilir. Sunucu tarafındaki bir akıl yürütme kuralı belirli bir çabayı zorunlu kılmadığı sürece, açıkça belirtilen yerel şablon değerleri geçerliliğini korur. Bu ayar yalnızca özel bir OpenAI uyumlu bağlantı bir Chat Completions gövdesi gönderdiğinde uygulanır; Responses istekleri ve sıradan sağlayıcılar yerel istek biçimlerini korur. Sıradan OpenAI `reasoning_effort` doğrudan aktarımını zorunlu kılmak için `reasoningControl` değerini `openai` olarak ayarlayın veya otomatik algılamayı kullanmak için bu alanı atlayın/değerini `null` olarak ayarlayın.
+
+Claude Code otomatik mod sınıflandırıcı istekleri, açık akıl yürütme denetimleri içermediğinde yerel düşünmeyi varsayılan olarak devre dışı bırakır. Algılama, model adlarını veya tamamlama sınırlarını değil, Claude biçimindeki isteklerde bulunan sınıflandırıcının sistem işaretleyicisini kullanır. Açık gövde denetimleri, desteklenen çaba/düşünme üst bilgileri, yönlendirme kuralları ve çözümlenmiş model çabası mevcut önceliklerini korur. Her iki sınıflandırıcı aşaması da istemlerini, tamamlama sınırlarını, durdurma dizilerini ve üst akıştan gelen gerçek izin kararlarını korur; ikinci aşama, talep edilen görünür akıl yürütmeyi sıradan metin olarak üretmeye devam edebilir.
 
 ### OAuth Akışları
 
@@ -837,87 +871,87 @@ Yönetim rotaları (`/api/*`, herkese açık kimlik doğrulama/oturum açma rota
 | `/api/keys*`          | Çeşitli  | API anahtarı yönetimi                 |
 | `/api/pricing`        | GET      | Model fiyatlandırması                 |
 
-### Kullanım ve Analizler
+### Kullanım ve Analiz
 
-| Uç Nokta                         | Yöntem          | Açıklama                                                                                                                                                                                                                                                                                                                         |
-| -------------------------------- | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/api/usage/history`             | GET             | Kullanım geçmişi                                                                                                                                                                                                                                                                                                                 |
-| `/api/usage/logs`                | GET             | Kullanım günlükleri                                                                                                                                                                                                                                                                                                              |
-| `/api/usage/request-logs`        | GET             | İstek düzeyindeki günlükler                                                                                                                                                                                                                                                                                                      |
-| `/api/usage/[connectionId]`      | GET             | Bağlantı başına kullanım                                                                                                                                                                                                                                                                                                         |
-| `/api/usage/token-limits`        | GET/POST/DELETE | API anahtarı başına token sınırı bütçeleri                                                                                                                                                                                                                                                                                       |
-| `/api/usage/model-latency-stats` | GET             | Sağlayıcı/model başına kayan gecikme toplamı (ort./p50/p95/p99, başarı oranı); filtreler: `windowHours`/`minSamples`/`maxRows`/`provider`/`model` (#6873)                                                                                                                                                                        |
-| `/api/usage/cache-health`        | GET             | `call_logs` üzerindeki istem önbelleği durumu özeti — yazma/okuma oranı, p50/p90/p99 yazma boyutu dağılımı, yoğun yazma konsantrasyonu, model başına döküm ve `healthy`/`degraded`/`thrash`/`no-data` değerlendirmesi; sorgu parametreleri: `range` (`1h`\|`24h`\|`7d`\|`30d`, varsayılan `24h`) ve isteğe bağlı `model` (#8827) |
+| Uç Nokta                         | Yöntem          | Açıklama                                                                                                                                                                                                                                                                                                                            |
+| -------------------------------- | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/api/usage/history`             | GET             | Kullanım geçmişi                                                                                                                                                                                                                                                                                                                    |
+| `/api/usage/logs`                | GET             | Kullanım günlükleri                                                                                                                                                                                                                                                                                                                 |
+| `/api/usage/request-logs`        | GET             | İstek düzeyindeki günlükler                                                                                                                                                                                                                                                                                                         |
+| `/api/usage/[connectionId]`      | GET             | Bağlantı başına kullanım                                                                                                                                                                                                                                                                                                            |
+| `/api/usage/token-limits`        | GET/POST/DELETE | API anahtarı başına token sınırı bütçeleri                                                                                                                                                                                                                                                                                          |
+| `/api/usage/model-latency-stats` | GET             | Sağlayıcı/model başına kayan gecikme süresi özeti (ort./p50/p95/p99, başarı oranı); filtreler: `windowHours`/`minSamples`/`maxRows`/`provider`/`model` (#6873)                                                                                                                                                                      |
+| `/api/usage/cache-health`        | GET             | `call_logs` üzerindeki istem önbelleği sağlığı özeti — yazma/okuma oranı, p50/p90/p99 yazma boyutu dağılımı, yoğun yazma konsantrasyonu, model başına dağılım ve `healthy`/`degraded`/`thrash`/`no-data` değerlendirmesi; sorgu parametreleri: `range` (`1h`\|`24h`\|`7d`\|`30d`, varsayılan `24h`) ve isteğe bağlı `model` (#8827) |
 
 ### Ayarlar
 
-| Uç Nokta                              | Yöntem        | Açıklama                                                                                                                                                                                       |
-| ------------------------------------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/api/settings`                       | GET/PUT/PATCH | Genel ayarlar                                                                                                                                                                                  |
-| `/api/settings/proxy`                 | GET/PUT       | Ağ proxy yapılandırması                                                                                                                                                                        |
-| `/api/settings/proxy/test`            | POST          | Proxy bağlantısını test etme                                                                                                                                                                   |
-| `/api/settings/ip-filter`             | GET/PUT       | IP izin listesi/engelleme listesi                                                                                                                                                              |
-| `/api/settings/thinking-budget`       | GET/PUT       | Düşünme/akıl yürütme **isteği** yeniden yazma modu (aynen geçirme / otomatik çıkarma / özel / uyarlamalı). Sıkıştırmadan bağımsızdır. Bkz. [THINKING_BUDGET.md](../guides/THINKING_BUDGET.md). |
-| `/api/settings/system-prompt`         | GET/PUT       | Genel sistem istemi                                                                                                                                                                            |
-| `/api/settings/compression`           | GET/PUT       | Genel sıkıştırma yapılandırması                                                                                                                                                                |
-| `/api/settings/purge-request-history` | POST          | İstek günlüğü satırlarını ve yerel çağrı günlüğü yapıtlarını temizleme                                                                                                                         |
+| Uç Nokta                              | Yöntem        | Açıklama                                                                                                                                                                                           |
+| ------------------------------------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/api/settings`                       | GET/PUT/PATCH | Genel ayarlar                                                                                                                                                                                      |
+| `/api/settings/proxy`                 | GET/PUT       | Ağ proxy yapılandırması                                                                                                                                                                            |
+| `/api/settings/proxy/test`            | POST          | Proxy bağlantısını test etme                                                                                                                                                                       |
+| `/api/settings/ip-filter`             | GET/PUT       | IP izin listesi/engelleme listesi                                                                                                                                                                  |
+| `/api/settings/thinking-budget`       | GET/PUT       | Düşünme/akıl yürütme **isteği** yeniden yazma modu (aynen geçirme / otomatik kaldırma / özel / uyarlanabilir). Sıkıştırmadan bağımsızdır. Bkz. [THINKING_BUDGET.md](../guides/THINKING_BUDGET.md). |
+| `/api/settings/system-prompt`         | GET/PUT       | Genel sistem istemi                                                                                                                                                                                |
+| `/api/settings/compression`           | GET/PUT       | Genel sıkıştırma yapılandırması                                                                                                                                                                    |
+| `/api/settings/purge-request-history` | POST          | İstek günlüğü satırlarını ve yerel çağrı günlüğü kalıntılarını temizleme                                                                                                                           |
 
 ### Bağlam ve Sıkıştırma
 
-| Uç Nokta                               | Yöntem         | Açıklama                                                                       |
-| -------------------------------------- | -------------- | ------------------------------------------------------------------------------ |
-| `/api/compression/preview`             | POST           | off/lite/standard/aggressive/ultra/RTK/stacked sıkıştırmasını önizleme         |
-| `/api/compression/language-packs`      | GET            | Kullanılabilir Caveman dil paketlerini listeleme                               |
-| `/api/compression/rules`               | GET            | Caveman kuralı meta verilerini listeleme                                       |
-| `/api/context/caveman/config`          | GET/PUT        | Caveman'a özgü ayarlar için diğer ad                                           |
-| `/api/context/rtk/config`              | GET/PUT        | Özel filtreler ve ham çıktı saklama dâhil RTK'ye özgü ayarlar                  |
-| `/api/context/rtk/filters`             | GET            | RTK filtre kataloğu ve özel filtre tanılamaları                                |
-| `/api/context/rtk/test`                | POST           | Bir metin yüküne karşı RTK önizlemesi/testi çalıştırma                         |
-| `/api/context/rtk/raw-output/[id]`     | GET            | İşaretçi kimliğine göre saklanan, hassas verileri çıkarılmış ham çıktıyı okuma |
-| `/api/context/combos`                  | GET/POST       | Sıkıştırma kombinasyonlarını listeleme/oluşturma                               |
-| `/api/context/combos/[id]`             | GET/PUT/DELETE | Sıkıştırma kombinasyonu ayrıntısı/güncelleme/silme                             |
-| `/api/context/combos/[id]/assignments` | GET/PUT        | Sıkıştırma kombinasyonlarını yönlendirme kombinasyonlarına atama               |
-| `/api/context/analytics`               | GET            | Sıkıştırma analitiği için diğer ad                                             |
+| Uç Nokta                               | Yöntem         | Açıklama                                                                      |
+| -------------------------------------- | -------------- | ----------------------------------------------------------------------------- |
+| `/api/compression/preview`             | POST           | Kapalı/hafif/standart/agresif/ultra/RTK/yığınlanmış sıkıştırmayı önizleme     |
+| `/api/compression/language-packs`      | GET            | Kullanılabilir Caveman dil paketlerini listeleme                              |
+| `/api/compression/rules`               | GET            | Caveman kural meta verilerini listeleme                                       |
+| `/api/context/caveman/config`          | GET/PUT        | Caveman'e özgü ayarlar için takma ad                                          |
+| `/api/context/rtk/config`              | GET/PUT        | Özel filtreler ve ham çıktı saklama dâhil, RTK'ye özgü ayarlar                |
+| `/api/context/rtk/filters`             | GET            | RTK filtre kataloğu ve özel filtre tanılamaları                               |
+| `/api/context/rtk/test`                | POST           | Bir metin yükü üzerinde RTK önizlemesi/testi çalıştırma                       |
+| `/api/context/rtk/raw-output/[id]`     | GET            | İşaretçi kimliğine göre saklanan, hassas verileri gizlenmiş ham çıktıyı okuma |
+| `/api/context/combos`                  | GET/POST       | Sıkıştırma kombinasyonlarını listeleme/oluşturma                              |
+| `/api/context/combos/[id]`             | GET/PUT/DELETE | Sıkıştırma kombinasyonu ayrıntısı/güncelleme/silme                            |
+| `/api/context/combos/[id]/assignments` | GET/PUT        | Sıkıştırma kombinasyonlarını yönlendirme kombinasyonlarına atama              |
+| `/api/context/analytics`               | GET            | Sıkıştırma analitiği için takma ad                                            |
 
 ### İzleme
 
-| Uç Nokta                             | Yöntem     | Açıklama                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| ------------------------------------ | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `/api/sessions`                      | GET        | Etkin oturumları izleme                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| `/api/rate-limits`                   | GET        | Hesap başına hız sınırları                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| `/api/monitoring/health`             | GET        | Sistem durumu denetimi + sağlayıcı özeti (`catalogCount`, `configuredCount`, `activeCount`, `monitoredCount`). Yönetim görünümü şunları içeren `credentialHealth` alanını içerir: yoklama önbelleği skalerleri, `failed>0` olduğunda `failedConnections` ve `staleDbNonOkCount` (gösterge değil, SQLite kalıcı `test_status` değeri). Bkz. [MONITORING_GUIDE.md](../ops/MONITORING_GUIDE.md#credentialhealth-probe-cache-vs-sqlite-test_status). |
-| `/api/cache/stats`                   | GET/DELETE | Önbellek istatistikleri / temizleme                                                                                                                                                                                                                                                                                                                                                                                                              |
-| `/api/modality-bridge/stats`         | GET        | Bellek içi `attempts`, başarılı işlemler/`bridged`, başarısız işlemler, önbellek isabetleri, `totalLatencyMs`, `latencySamples`, örnek sayısını payda olarak kullanan `averageLatencyMs` ve son kullanım zamanı (yeniden başlatmada sıfırlanır; yönetim kimlik doğrulaması)                                                                                                                                                                      |
-| `/api/modality-bridge/video/runtime` | GET        | Yönetim kimlik doğrulaması/yoklamasından önce katı, güvenilen geri döngü denetimi; hassas verilerden arındırılmış FFmpeg/ffprobe kullanılabilirlik ve sürüm bilgileri (no-store)                                                                                                                                                                                                                                                                 |
-| `/api/modality-bridge/video/extract` | POST       | Kimliği doğrulanmış dâhilî güvenilir geri döngü bayt aracısı; 50 MiB girdi, sınırlı kuyruk/32 MiB çıktı, kapasite için `503`, bağlantı kesilmesi için `499`, son süre için `504`; herkese açık bir yükleme API'si değildir                                                                                                                                                                                                                       |
+| Uç Nokta                             | Yöntem     | Açıklama                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| ------------------------------------ | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/api/sessions`                      | GET        | Etkin oturum takibi                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| `/api/rate-limits`                   | GET        | Hesap başına hız sınırları                                                                                                                                                                                                                                                                                                                                                                                                                |
+| `/api/monitoring/health`             | GET        | Sistem durumu denetimi + sağlayıcı özeti (`catalogCount`, `configuredCount`, `activeCount`, `monitoredCount`). Yönetim görünümü `credentialHealth` öğesini içerir: yoklama önbelleği skalerleri, `failed>0` olduğunda `failedConnections` ve `staleDbNonOkCount` (ölçüm göstergesi değil, kalıcı SQLite `test_status` değeri). Bkz. [MONITORING_GUIDE.md](../ops/MONITORING_GUIDE.md#credentialhealth-probe-cache-vs-sqlite-test_status). |
+| `/api/cache/stats`                   | GET/DELETE | Önbellek istatistikleri / temizleme                                                                                                                                                                                                                                                                                                                                                                                                       |
+| `/api/modality-bridge/stats`         | GET        | Bellek içi `attempts`, başarılı işlemler/`bridged`, hatalar, önbellek isabetleri, `totalLatencyMs`, `latencySamples`, örnek sayısını payda olarak kullanan `averageLatencyMs` ve son kullanım zamanı (yeniden başlatıldığında sıfırlanır; yönetim kimlik doğrulaması)                                                                                                                                                                     |
+| `/api/modality-bridge/video/runtime` | GET        | Yönetim kimlik doğrulaması/yoklamasından önce katı güvenilir geri döngü denetimi; temizlenmiş FFmpeg/ffprobe kullanılabilirlik ve sürüm bilgileri (depolanmaz)                                                                                                                                                                                                                                                                            |
+| `/api/modality-bridge/video/extract` | POST       | Dahili, kimliği doğrulanmış, güvenilir geri döngü bayt aracısı; 50 MiB girdi, sınırlandırılmış kuyruk/32 MiB çıktı, kapasite için `503`, bağlantı kesilmesi için `499`, süre sonu için `504`; herkese açık bir yükleme API'si değildir                                                                                                                                                                                                    |
 
 ### Yedekleme ve Dışa/İçe Aktarma
 
-| Uç Nokta                    | Yöntem | Açıklama                                            |
-| --------------------------- | ------ | --------------------------------------------------- |
-| `/api/db-backups`           | GET    | Kullanılabilir yedekleri listele                    |
-| `/api/db-backups`           | PUT    | Manuel yedek oluştur                                |
-| `/api/db-backups`           | POST   | Belirli bir yedekten geri yükle                     |
-| `/api/db-backups/export`    | GET    | Veritabanını .sqlite dosyası olarak indir           |
-| `/api/db-backups/import`    | POST   | Veritabanını değiştirmek için .sqlite dosyası yükle |
-| `/api/db-backups/exportAll` | GET    | Tam yedeği .tar.gz arşivi olarak indir              |
+| Uç Nokta                    | Yöntem | Açıklama                                              |
+| --------------------------- | ------ | ----------------------------------------------------- |
+| `/api/db-backups`           | GET    | Kullanılabilir yedekleri listeleme                    |
+| `/api/db-backups`           | PUT    | Manuel yedek oluşturma                                |
+| `/api/db-backups`           | POST   | Belirli bir yedekten geri yükleme                     |
+| `/api/db-backups/export`    | GET    | Veritabanını .sqlite dosyası olarak indirme           |
+| `/api/db-backups/import`    | POST   | Veritabanını değiştirmek için .sqlite dosyası yükleme |
+| `/api/db-backups/exportAll` | GET    | Tam yedeği .tar.gz arşivi olarak indirme              |
 
-### Bulut Senkronizasyonu
+### Bulut Eşitleme
 
-| Uç Nokta               | Yöntem  | Açıklama                        |
-| ---------------------- | ------- | ------------------------------- |
-| `/api/sync/cloud`      | Çeşitli | Bulut senkronizasyonu işlemleri |
-| `/api/sync/initialize` | POST    | Senkronizasyonu başlat          |
-| `/api/cloud/*`         | Çeşitli | Bulut yönetimi                  |
+| Uç Nokta               | Yöntem  | Açıklama                 |
+| ---------------------- | ------- | ------------------------ |
+| `/api/sync/cloud`      | Çeşitli | Bulut eşitleme işlemleri |
+| `/api/sync/initialize` | POST    | Eşitlemeyi başlatma      |
+| `/api/cloud/*`         | Çeşitli | Bulut yönetimi           |
 
 ### Tüneller
 
-| Uç Nokta                   | Yöntem | Açıklama                                                                              |
-| -------------------------- | ------ | ------------------------------------------------------------------------------------- |
-| `/api/tunnels/cloudflared` | GET    | Pano için Cloudflare Quick Tunnel kurulum/çalışma zamanı durumunu oku                 |
-| `/api/tunnels/cloudflared` | POST   | Cloudflare Quick Tunnel'ı etkinleştir veya devre dışı bırak (`action=enable/disable`) |
-| `/api/tunnels/ngrok`       | GET    | Pano için ngrok Tunnel çalışma zamanı durumunu oku                                    |
-| `/api/tunnels/ngrok`       | POST   | ngrok Tunnel'ı etkinleştir veya devre dışı bırak (`action=enable/disable`)            |
+| Uç Nokta                   | Yöntem | Açıklama                                                                                  |
+| -------------------------- | ------ | ----------------------------------------------------------------------------------------- |
+| `/api/tunnels/cloudflared` | GET    | Pano için Cloudflare Quick Tunnel kurulum/çalışma durumunu okuma                          |
+| `/api/tunnels/cloudflared` | POST   | Cloudflare Quick Tunnel'ı etkinleştirme veya devre dışı bırakma (`action=enable/disable`) |
+| `/api/tunnels/ngrok`       | GET    | Pano için ngrok Tunnel çalışma durumunu okuma                                             |
+| `/api/tunnels/ngrok`       | POST   | ngrok Tunnel'ı etkinleştirme veya devre dışı bırakma (`action=enable/disable`)            |
 
 ### CLI Araçları
 
@@ -939,26 +973,26 @@ CLI yanıtları şunları içerir: `installed`, `runnable`, `command`, `commandP
 | `/api/acp/agents` | POST   | Özel aracı ekle veya algılama önbelleğini yenile               |
 | `/api/acp/agents` | DELETE | `id` sorgu parametresine göre özel bir aracıyı kaldır          |
 
-GET yanıtı, `agents[]` (id, name, binary, version, installed, protocol, isCustom) ve `summary` (total, installed, notFound, builtIn, custom) içerir.
+GET yanıtı `agents[]` (id, name, binary, version, installed, protocol, isCustom) ve `summary` (total, installed, notFound, builtIn, custom) içerir.
 
 ### Dayanıklılık ve Hız Sınırları
 
-| Uç Nokta                          | Yöntem    | Açıklama                                                                                                  |
-| --------------------------------- | --------- | --------------------------------------------------------------------------------------------------------- |
-| `/api/resilience`                 | GET/PATCH | İstek kuyruğu, bağlantı bekleme süresi, sağlayıcı devre kesicisi ve bekleme ayarlarını al/güncelle        |
-| `/api/resilience/reset`           | POST      | Sağlayıcı devre kesicilerini sıfırla                                                                      |
-| `/api/resilience/model-cooldowns` | GET       | Etkin (sağlayıcı, bağlantı, model) bazlı kilitlenmeleri kalan süreye göre sıralayarak listele             |
-| `/api/resilience/model-cooldowns` | DELETE    | Bir model kilitlenmesini temizle — gövde: `{provider, model}` veya her şeyi temizlemek için `{all: true}` |
-| `/api/rate-limits`                | GET       | Hesap başına hız sınırı durumu                                                                            |
-| `/api/rate-limit`                 | GET       | Genel hız sınırı yapılandırması                                                                           |
+| Uç Nokta                          | Yöntem    | Açıklama                                                                                                         |
+| --------------------------------- | --------- | ---------------------------------------------------------------------------------------------------------------- |
+| `/api/resilience`                 | GET/PATCH | İstek kuyruğu, bağlantı bekleme süresi, sağlayıcı devre kesicisi ve bekleme ayarlarını al/güncelle               |
+| `/api/resilience/reset`           | POST      | Sağlayıcı devre kesicilerini sıfırla                                                                             |
+| `/api/resilience/model-cooldowns` | GET       | Etkin (sağlayıcı, bağlantı, model) bazlı kilitlenmeleri kalan süreye göre sıralanmış olarak listele              |
+| `/api/resilience/model-cooldowns` | DELETE    | Bir model kilitlenmesini temizle — gövde olarak `{provider, model}` veya tümünü silmek için `{all: true}` kullan |
+| `/api/rate-limits`                | GET       | Hesap bazında hız sınırı durumu                                                                                  |
+| `/api/rate-limit`                 | GET       | Genel hız sınırı yapılandırması                                                                                  |
 
-> Dört `/api/resilience/*` yolunun tamamı **yönetim kimlik doğrulaması** (`requireManagementAuth`) gerektirir. Sağlayıcı devre kesicisi, bağlantı bekleme süresi ve model kilitlenmesi arasındaki farkların tam açıklaması için [Dayanıklılık (genişletilmiş)](#resilience-extended) bölümüne bakın.
+> Dört `/api/resilience/*` rotasının tümü **yönetim kimlik doğrulaması** (`requireManagementAuth`) gerektirir. Sağlayıcı devre kesicisi, bağlantı bekleme süresi ve model kilitlenmesi arasındaki farkların tam açıklaması için [Dayanıklılık (genişletilmiş)](#resilience-extended) bölümüne bakın.
 
 ### Değerlendirmeler
 
-| Uç Nokta     | Yöntem   | Açıklama                                                   |
-| ------------ | -------- | ---------------------------------------------------------- |
-| `/api/evals` | GET/POST | Değerlendirme paketlerini listele / değerlendirme çalıştır |
+| Uç Nokta     | Yöntem   | Açıklama                                     |
+| ------------ | -------- | -------------------------------------------- |
+| `/api/evals` | GET/POST | Değerlendirme paketlerini listele / çalıştır |
 
 ### Politikalar
 
@@ -979,21 +1013,21 @@ GET yanıtı, `agents[]` (id, name, binary, version, installed, protocol, isCust
 | `/v1beta/models`           | GET    | Modelleri Gemini biçiminde listele  |
 | `/v1beta/models/{...path}` | POST   | Gemini `generateContent` uç noktası |
 
-Bu uç noktalar, yerel Gemini SDK uyumluluğu bekleyen istemciler için Gemini'nin API biçimini yansıtır.
+Bu uç noktalar, yerel Gemini SDK uyumluluğu bekleyen istemciler için Gemini API biçimini yansıtır.
 
 ### Dahili / Sistem API'leri
 
-| Uç Nokta                 | Yöntem | Açıklama                                                 |
-| ------------------------ | ------ | -------------------------------------------------------- |
-| `/api/init`              | GET    | Uygulama başlatma kontrolü (ilk çalıştırmada kullanılır) |
-| `/api/tags`              | GET    | Ollama uyumlu model etiketleri (Ollama istemcileri için) |
-| `/api/restart`           | POST   | Sunucunun düzgün şekilde yeniden başlatılmasını tetikler |
-| `/api/shutdown`          | POST   | Sunucunun düzgün şekilde kapatılmasını tetikler          |
-| `/api/system/env/repair` | POST   | OAuth sağlayıcısının ortam değişkenlerini onarır         |
+| Uç Nokta                 | Yöntem | Açıklama                                                   |
+| ------------------------ | ------ | ---------------------------------------------------------- |
+| `/api/init`              | GET    | Uygulama başlatma denetimi (ilk çalıştırmada kullanılır)   |
+| `/api/tags`              | GET    | Ollama uyumlu model etiketleri (Ollama istemcileri için)   |
+| `/api/restart`           | POST   | Sunucunun kontrollü biçimde yeniden başlatılmasını tetikle |
+| `/api/shutdown`          | POST   | Sunucunun kontrollü biçimde kapatılmasını tetikle          |
+| `/api/system/env/repair` | POST   | OAuth sağlayıcısı ortam değişkenlerini onar                |
 
 > **Not:** Bu uç noktalar sistem tarafından dahili olarak veya Ollama istemci uyumluluğu için kullanılır. Genellikle son kullanıcılar tarafından çağrılmazlar.
 
-### OAuth Ortam Değişkenlerini Onarma _(v3.6.1+)_
+### OAuth Ortamını Onarma _(v3.6.1+)_
 
 ```bash
 POST /api/system/env/repair
@@ -1004,7 +1038,7 @@ Content-Type: application/json
 }
 ```
 
-Belirli bir sağlayıcı için eksik veya bozulmuş OAuth ortam değişkenlerini onarır. Şunu döndürür:
+Belirli bir sağlayıcıya ait eksik veya bozulmuş OAuth ortam değişkenlerini onarır. Şunu döndürür:
 
 ```json
 {

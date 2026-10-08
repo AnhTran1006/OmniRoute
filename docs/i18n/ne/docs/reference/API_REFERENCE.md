@@ -262,7 +262,7 @@ GET /v1/embeddings
 
 ---
 
-## छवि उत्पादन
+## छवि निर्माण
 
 ```bash
 POST /v1/images/generations
@@ -276,10 +276,29 @@ Content-Type: application/json
 }
 ```
 
-उपलब्ध प्रदायकहरू: OpenAI (GPT Image 2), xAI (Grok Image), Together AI (FLUX), Fireworks AI, Nebius (FLUX), Hyperbolic, NanoBanana, **OpenRouter**, SD WebUI (स्थानीय), ComfyUI (स्थानीय)।
+उपलब्ध प्रदायकहरूमा OpenAI (GPT Image 2), xAI (Grok Image), Together AI (FLUX), Fireworks AI, Nebius (FLUX), Hyperbolic, NanoBanana, **OpenRouter**, **ZenMux**, SD WebUI (स्थानीय), ComfyUI (स्थानीय) समावेश छन्।
+
+ZenMux ले विद्यमान API-key जडान पुनः प्रयोग गर्छ र `zenmux/` वा `zm/` उपसर्गहरू स्वीकार गर्छ:
+
+- `zenmux/openai/gpt-image-2` ले ZenMux को OpenAI Images API प्रयोग गर्छ। विकल्पहरूमा `size`,
+  `quality`, `n`, `output_format`, `output_compression`, `background`, र `response_format` समावेश छन्।
+- `zm/meta/muse-image-1.0` जस्ता अन्य प्रकाशकहरूले ZenMux को Vertex AI `:predict`
+  endpoint प्रयोग गर्छन्। `n` लाई `sampleCount` मा, `aspect_ratio` लाई `aspectRatio` मा, र `image_size`
+  (`1K`, `2K`, `4K`) लाई `sampleImageSize` मा म्याप गरिन्छ। पिक्सेल `size` ले पक्ष अनुपात मात्र प्रदान गर्छ,
+  सुनिश्चित पिक्सेल आयामहरू होइन। समर्थित अनुपात, रिजोल्युसन, र सङ्ख्याहरू मोडेलअनुसार फरक हुन्छन्।
+- `zm/inclusionai/ming-image-0.1-design` ले आफ्नै आयामहरू छनोट गर्छ। `size`,
+  `aspect_ratio`, र `image_size` नदिनुहोस्; स्पष्ट मानहरूले HTTP 400 फर्काउँछन्। `output_format` मार्फत PNG, JPEG, र WebP
+  अनुरोध गर्न सकिन्छ।
+
+यो एकीकरणले पाठबाट छवि निर्माणलाई समर्थन गर्छ, सन्दर्भ-छवि सम्पादनलाई होइन। Vertex
+आउटपुटलाई `data[].b64_json` मा सामान्यीकृत गरिन्छ; `response_format: "url"` ले upstream
+HTTPS URL फर्काउँछ वा छविका बाइटहरू मात्र उपलब्ध हुँदा base64 data URL फर्काउँछ। खाली/फिल्टर गरिएका आउटपुटहरूले
+खाली सफलता प्रतिक्रिया दिनुको सट्टा त्रुटि फर्काउँछन्। मोडेल पहुँच ZenMux खातामा निर्भर हुन्छ।
+[ZenMux को Vertex API](https://docs.zenmux.ai/api/vertexai/generate-images) र
+[OpenAI Images API](https://docs.zenmux.ai/api/openai/generate-an-image) हेर्नुहोस्।
 
 ```bash
-# सबै छवि मोडेलहरू सूचीबद्ध गर्नुहोस्
+# सबै छवि मोडेलहरूको सूची देखाउनुहोस्
 GET /v1/images/generations
 ```
 
@@ -382,46 +401,46 @@ GET /api/v1/provider-plugin-manifest
 
 ## अनुकूलता एन्डपोइन्टहरू
 
-| विधि | पथ                                        | ढाँचा                              |
-| ---- | ----------------------------------------- | ---------------------------------- |
-| POST | `/v1/chat/completions`                    | OpenAI                             |
-| POST | `/v1/messages`                            | Anthropic                          |
-| POST | `/v1/responses`                           | OpenAI Responses                   |
-| POST | `/v1/embeddings`                          | OpenAI                             |
-| POST | `/v1/images/generations`                  | OpenAI Images                      |
-| POST | `/v1/images/edits`                        | OpenAI Images (सम्पादन/इनपेन्ट)    |
-| POST | `/v1/videos/generations`                  | OpenAI-शैलीको भिडियो उत्पादन       |
-| POST | `/v1/music/generations`                   | OpenAI-शैलीको सङ्गीत उत्पादन       |
-| POST | `/v1/audio/transcriptions`                | OpenAI Audio (STT)                 |
-| POST | `/v1/audio/speech`                        | OpenAI TTS (अडियो बडी फर्काउँछ)    |
-| POST | `/v1/rerank`                              | Cohere/Voyage-शैलीको पुनःक्रमाङ्कन |
-| POST | `/v1/classify`                            | Jina वर्गीकरण (`api.jina.ai`)      |
-| POST | `/v1/segment`                             | Jina खण्डक (`segment.jina.ai`)     |
-| POST | `/v1/moderations`                         | OpenAI Moderations                 |
-| GET  | `/v1/models`                              | OpenAI                             |
-| POST | `/v1/messages/count_tokens`               | Anthropic                          |
-| GET  | `/v1beta/models`                          | Gemini                             |
-| POST | `/v1beta/models/{...path}`                | Gemini generateContent             |
-| POST | `/v1/api/chat`                            | Ollama                             |
-| GET  | `/api/v1/vscode/{token}/`                 | OpenAI क्याटलग उपनाम               |
-| GET  | `/api/v1/vscode/{token}/models`           | OpenAI मोडेल उपनाम                 |
-| POST | `/api/v1/vscode/{token}/chat/completions` | OpenAI टोकनयुक्त उपनाम             |
-| POST | `/api/v1/vscode/{token}/responses`        | OpenAI Responses टोकनयुक्त उपनाम   |
-| POST | `/api/v1/vscode/{token}/api/chat`         | Ollama टोकनयुक्त उपनाम             |
-| GET  | `/api/v1/vscode/{token}/api/tags`         | Ollama tags टोकनयुक्त उपनाम        |
+| विधि | पथ                                        | ढाँचा                               |
+| ---- | ----------------------------------------- | ----------------------------------- |
+| POST | `/v1/chat/completions`                    | OpenAI                              |
+| POST | `/v1/messages`                            | Anthropic                           |
+| POST | `/v1/responses`                           | OpenAI Responses                    |
+| POST | `/v1/embeddings`                          | OpenAI                              |
+| POST | `/v1/images/generations`                  | OpenAI Images                       |
+| POST | `/v1/images/edits`                        | OpenAI Images (सम्पादन/इनपेन्ट)     |
+| POST | `/v1/videos/generations`                  | OpenAI-शैलीको भिडियो उत्पादन        |
+| POST | `/v1/music/generations`                   | OpenAI-शैलीको सङ्गीत उत्पादन        |
+| POST | `/v1/audio/transcriptions`                | OpenAI Audio (STT)                  |
+| POST | `/v1/audio/speech`                        | OpenAI TTS (अडियो बडी फर्काउँछ)     |
+| POST | `/v1/rerank`                              | Cohere/Voyage-शैलीको पुनःक्रमाङ्कन  |
+| POST | `/v1/classify`                            | Jina वर्गीकरण (`api.jina.ai`)       |
+| POST | `/v1/segment`                             | Jina सेग्मेन्टर (`segment.jina.ai`) |
+| POST | `/v1/moderations`                         | OpenAI Moderations                  |
+| GET  | `/v1/models`                              | OpenAI                              |
+| POST | `/v1/messages/count_tokens`               | Anthropic                           |
+| GET  | `/v1beta/models`                          | Gemini                              |
+| POST | `/v1beta/models/{...path}`                | Gemini generateContent              |
+| POST | `/v1/api/chat`                            | Ollama                              |
+| GET  | `/api/v1/vscode/{token}/`                 | OpenAI क्याटलग उपनाम                |
+| GET  | `/api/v1/vscode/{token}/models`           | OpenAI मोडेल उपनाम                  |
+| POST | `/api/v1/vscode/{token}/chat/completions` | OpenAI टोकनयुक्त उपनाम              |
+| POST | `/api/v1/vscode/{token}/responses`        | OpenAI Responses टोकनयुक्त उपनाम    |
+| POST | `/api/v1/vscode/{token}/api/chat`         | Ollama टोकनयुक्त उपनाम              |
+| GET  | `/api/v1/vscode/{token}/api/tags`         | Ollama ट्यागहरूको टोकनयुक्त उपनाम   |
 
-सबै POST रुटहरूले एउटै संरचना पालना गर्छन्: `Bearer your-api-key` + Zod-द्वारा प्रमाणीकरण गरिएको JSON बडी (`v1RerankSchema`, `v1ModerationSchema`, `v1AudioSpeechSchema`, आदि, `src/shared/validation/schemas.ts` हेर्नुहोस्)। स्किमा असफल हुँदा 4xx फर्काइन्छ।
+सबै POST रुटहरूले एउटै संरचना अनुसरण गर्छन्: `Bearer your-api-key` + Zod-द्वारा प्रमाणित JSON बडी (`v1RerankSchema`, `v1ModerationSchema`, `v1AudioSpeechSchema`, आदि, `src/shared/validation/schemas.ts` हेर्नुहोस्)। स्किमा असफल हुँदा 4xx फर्काइन्छ।
 
-`Authorization: Bearer ...` संलग्न गर्न नसक्ने क्लाइन्टहरूका लागि, OmniRoute ले क्वेरी-स्ट्रिङ अनुकूलता (`?token=...`, `?apiKey=...`, `?api_key=...`, `?key=...`) वा तल अभिलेखीकृत समर्पित `/api/v1/vscode/{token}/...` एन्डपोइन्टहरू मार्फत URL मा API कुञ्जीहरू पनि स्वीकार गर्छ।
+`Authorization: Bearer ...` संलग्न गर्न नसक्ने क्लाइन्टहरूका लागि, OmniRoute ले क्वेरी-स्ट्रिङ अनुकूलता (`?token=...`, `?apiKey=...`, `?api_key=...`, `?key=...`) वा तल दस्तावेजीकृत समर्पित `/api/v1/vscode/{token}/...` एन्डपोइन्टहरूबाट पनि URL मा API कुञ्जीहरू स्वीकार गर्छ।
 
 ```bash
-# पुनःक्रमाङ्कन (क्लाउड रजिस्ट्री प्रदायक, वा "<prefix>/<model>" का रूपमा OpenAI-सङ्गत प्रदायक नोड)
+# पुनःक्रमाङ्कन (क्लाउड रजिस्ट्री प्रदायक, वा "<prefix>/<model>" का रूपमा OpenAI-अनुकूल प्रदायक नोड)
 POST /v1/rerank      { "model": "jina-ai/jina-reranker-v3.5", "query": "...", "documents": ["..."] }
 
 # Jina वर्गीकरण (Foundation API प्रमाणहरू)
 POST /v1/classify    { "model": "jina-embeddings-v5-text-small", "input": ["..."], "labels": ["a", "b"] }
 
-# Jina खण्डक
+# Jina सेग्मेन्टर
 POST /v1/segment     { "content": "...", "return_chunks": true }
 
 # Jina खोज (s.jina.ai; प्रदायक उपनामहरू: jina-search, jina-ai, jina)
@@ -433,38 +452,38 @@ POST /v1/moderations { "model": "omni-moderation-latest", "input": "..." }
 # TTS — audio/mpeg (वा अनुरोध गरिएको ढाँचा) बडी फर्काउँछ
 POST /v1/audio/speech { "model": "openai/tts-1", "input": "Hello", "voice": "alloy" }
 
-# Soniox TTS लाई भाषा र आवाज आवश्यक पर्छ: `language` पूर्वनिर्धारित रूपमा "en" हुन्छ; नभएको
-# आवाज वा OpenAI को मानक आवाज नाम (alloy, nova, …) "Adrian" बन्छ
+# Soniox TTS लाई भाषा र आवाज आवश्यक हुन्छ: `language` को पूर्वनिर्धारित मान "en" हो; आवाज नदिइएको
+# वा OpenAI को स्टक आवाज नाम (alloy, nova, …) भएमा त्यो "Adrian" बन्छ
 POST /v1/audio/speech { "model": "soniox/tts-rt-v1", "input": "Xin chào", "voice": "Adrian", "language": "vi" }
 
 # छवि सम्पादन (multipart)
 POST /v1/images/edits  -F image=@input.png -F prompt="..." -F mask=@mask.png
 
-# भिडियो / सङ्गीत उत्पादन (प्रदायक-प्रिफिक्सयुक्त मोडेल ID)
+# भिडियो / सङ्गीत उत्पादन (प्रदायक-उपसर्गयुक्त मोडेल आईडी)
 POST /v1/videos/generations { "model": "runway/gen-3", "prompt": "..." }
 POST /v1/music/generations  { "model": "kie/suno-v4.0",   "prompt": "..." }
 ```
 
-> **पुनःक्रमाङ्कन प्रदायक नोडहरू:** `POST /v1/rerank` ले `<node-prefix>/<model>` का रूपमा सम्बोधन गरिएका OpenAI-सङ्गत प्रदायक नोडहरू
+> **पुनःक्रमाङ्कन प्रदायक नोडहरू:** `POST /v1/rerank` ले `<node-prefix>/<model>` का रूपमा सम्बोधन गरिएका OpenAI-अनुकूल प्रदायक नोडहरू
 > (oMLX, vLLM, Infinity, गेटवे पछाडिको TEI, …) तर्फ पनि रुट गर्छ। लुपब्याक
 > नोडहरू (`localhost`, `127.0.0.1`, `172.16.0.0/12`) सधैँ योग्य हुन्छन्। अन्य कुनै
-> होस्टमा रहेका नोडहरू — LAN बक्स वा Tailscale पियर — अपरेटरले
+> होस्टका नोडहरू — LAN बक्स वा Tailscale पियर — अपरेटरले
 > `RERANK_REMOTE_PROVIDER_NODES` सुविधा फ्ल्याग सक्षम गरेको **र** नोडको आधार URL ले प्रदायकको
-> आउटबाउन्ड URL नीति (`OMNIROUTE_ALLOW_LOCAL_PROVIDER_URLS` / `OMNIROUTE_ALLOW_PRIVATE_PROVIDER_URLS`) पार गरेको अवस्थामा मात्र योग्य हुन्छन्;
-> क्लाउड-मेटाडेटा होस्टहरूतर्फ कहिल्यै रुट गरिँदैन। मेमोरी इन्जिनको पुनःक्रमाङ्कन चरणले यस रुटलाई
-> लुपब्याकमार्फत कल गर्छ, त्यसैले यही नियमले Memory सेटिङहरूमा `rerankProviderModel` लाई पनि नियन्त्रित गर्छ।
+> आउटबाउन्ड URL नीति (`OMNIROUTE_ALLOW_LOCAL_PROVIDER_URLS` / `OMNIROUTE_ALLOW_PRIVATE_PROVIDER_URLS`) पार गरेको अवस्थामा मात्र योग्य हुन्छन्।
+> मेमोरी इन्जिनको पुनःक्रमाङ्कन चरणले लुपब्याकमार्फत
+> यो रुट कल गर्छ, त्यसैले यही नियमले Memory सेटिङहरूमा रहेको `rerankProviderModel` लाई नियन्त्रित गर्छ।
 >
 > **स्थानीय सर्भर संरचनाहरू:** नोडलाई `<base>/v1/rerank` मा र, 404 आएमा, `<base>/rerank`
 > (Infinity, TEI) मा कल गरिन्छ। अपस्ट्रिम बडीले Cohere/OpenAI हिज्जे (`documents`,
-> `return_documents`) र TEI हिज्जे (`texts`, `return_text`) दुवै बोक्छ, र अपस्ट्रिम प्रतिक्रियालाई
-> Cohere इनभेलपमा सामान्यीकृत गरिन्छ: TEI को सादा `[{index, score, text}]`, पातला गेटवेहरूबाट आएको
-> `{results: [{index, score}]}`, र Voyage-शैलीको `{data: [...]}` सबै क्लाइन्टमा
-> `{results: [{index, relevance_score, document?}]}` का रूपमा फर्कन्छन्, स्कोरअनुसार क्रमबद्ध हुन्छन् र `top_n` मा सीमित हुन्छन्।
+> `return_documents`) र TEI हिज्जे (`texts`, `return_text`) दुवै समावेश गर्छ, र अपस्ट्रिम प्रतिक्रिया
+> Cohere इनभेलपमा सामान्यीकृत गरिन्छ: TEI को साधारण `[{index, score, text}]`, पातला गेटवेहरूबाट आएको `{results: [{index, score}]}`
+> र Voyage-शैलीको `{data: [...]}` सबै क्लाइन्टमा
+> `{results: [{index, relevance_score, document?}]}` का रूपमा फर्किन्छन्, स्कोरअनुसार क्रमबद्ध हुन्छन् र `top_n` मा सीमित गरिन्छन्।
 
-> **प्रदायक-नोड खोज:** OpenAI-सङ्गत प्रदायक नोडका मोडेलहरू `GET /v1/models`
-> मा नोड उपसर्गअन्तर्गत देखा पर्छन्। एन्डपोइन्ट मेटाडेटा नभएका पङ्क्तिहरूले (स्थानीय `/v1/models` सूचीहरूमा सामान्य)
-> नोडको `apiType` उत्तराधिकारमा प्राप्त गर्छन्, त्यसैले `embeddings` नोडका मोडेलहरू पूर्वनिर्धारित रूपमा च्याटमा सेट हुनुको सट्टा `type: "embedding"` हुन्छन् र
-> `rerank` नोडका मोडेलहरू `type: "rerank"` हुन्छन्; सिङ्क गरिएको वा म्यानुअल रूपमा थपिएको पङ्क्तिमा स्पष्ट रूपमा दिइएको
+> **प्रदायक-नोड खोज:** OpenAI-सङ्गत प्रदायक नोडका मोडेलहरू नोड उपसर्गअन्तर्गत `GET /v1/models`
+> मा देखिन्छन्। कुनै endpoint metadata नभएका पङ्क्तिहरूले (स्थानीय `/v1/models` सूचीहरूमा सामान्य)
+> नोडको `apiType` प्राप्त गर्छन्, त्यसैले `embeddings` नोडका मोडेलहरू पूर्वनिर्धारित रूपमा chat नभई `type: "embedding"` हुन्छन् र
+> `rerank` नोडका मोडेलहरू `type: "rerank"` हुन्छन्; समक्रमण गरिएको वा म्यानुअल रूपमा थपिएको पङ्क्तिमा स्पष्ट रूपमा दिइएको
 > `supportedEndpoints` ले अझै पनि प्राथमिकता पाउँछ।
 
 ### समर्पित प्रदायक रुटहरू
@@ -475,7 +494,7 @@ POST /v1/providers/{provider}/embeddings
 POST /v1/providers/{provider}/images/generations
 ```
 
-प्रदायक उपसर्ग छुटेको भए स्वचालित रूपमा थपिन्छ। नमिल्ने मोडेलहरूले `400` फर्काउँछन्।
+प्रदायक उपसर्ग छुटेको छ भने स्वतः थपिन्छ। नमिल्ने मोडेलहरूले `400` फर्काउँछन्।
 
 ---
 
@@ -716,31 +735,68 @@ X-OmniRoute-No-Cache: true
 
 ## ड्यासबोर्ड र व्यवस्थापन
 
-व्यवस्थापन रुटहरू (`/api/*`, सार्वजनिक auth/login बाहेक) साधारण inference API कुञ्जीहरूद्वारा **अधिकृत हुँदैनन्**। क्रेडेन्सियलका प्रकारहरू, स्कोपहरू र curl उदाहरणहरू:
+व्यवस्थापन रुटहरू (सार्वजनिक auth/login बाहेकका `/api/*`) साधारण inference API कुञ्जीहरूद्वारा **अधिकृत हुँदैनन्**।
+क्रेडेन्सियलका प्रकारहरू, स्कोपहरू र curl उदाहरणहरूका लागि हेर्नुहोस्:
 [व्यवस्थापन प्रमाणीकरण](../guides/MANAGEMENT-AUTH.md)।
 
 ### प्रमाणीकरण
 
-| एन्डपोइन्ट                    | विधि    | विवरण                      |
-| ----------------------------- | ------- | -------------------------- |
-| `/api/auth/login`             | POST    | लगइन                       |
-| `/api/auth/logout`            | POST    | लगआउट                      |
-| `/api/settings/require-login` | GET/PUT | लगइन आवश्यक हुने/नहुने टगल |
+| एन्डपोइन्ट                    | विधि    | विवरण                                |
+| ----------------------------- | ------- | ------------------------------------ |
+| `/api/auth/login`             | POST    | लगइन                                 |
+| `/api/auth/logout`            | POST    | लगआउट                                |
+| `/api/settings/require-login` | GET/PUT | लगइन आवश्यक हुने/नहुने टगल गर्नुहोस् |
 
 ### प्रदायक व्यवस्थापन
 
-| एन्डपोइन्ट                              | विधि                  | विवरण                                                                                                                                          |
-| --------------------------------------- | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/api/providers`                        | GET/POST              | प्रदायकहरूको सूची हेर्नुहोस् / सिर्जना गर्नुहोस्                                                                                               |
-| `/api/providers/[id]`                   | GET/PUT/DELETE        | प्रदायक व्यवस्थापन गर्नुहोस्                                                                                                                   |
-| `/api/providers/[id]/test`              | POST                  | प्रदायकको जडान परीक्षण गर्नुहोस्                                                                                                               |
-| `/api/providers/[id]/models`            | GET                   | प्रदायकका मोडेलहरूको सूची हेर्नुहोस्                                                                                                           |
-| `/api/providers/validate`               | POST                  | प्रदायकको कन्फिग मान्य गर्नुहोस्                                                                                                               |
-| `/api/providers/bulk`                   | POST                  | एउटै प्रदायकका लागि API कुञ्जीहरू थोकमा थप्नुहोस्                                                                                              |
-| `/api/providers/import`                 | POST                  | पार्स गरिएको CSV/JSON फाइलबाट विविध प्रदायकहरूको सूची आयात गर्नुहोस् (#6836); प्रत्येक पङ्क्तिका आंशिक-विफलता परिणामहरू                        |
-| `/api/provider-nodes*`                  | विभिन्न               | प्रदायक नोड व्यवस्थापन                                                                                                                         |
-| `/api/provider-models`                  | GET/POST/PATCH/DELETE | अनुकूलन मोडेलहरू (थप्ने, अद्यावधिक गर्ने, लुकाउने/देखाउने, मेटाउने)                                                                            |
-| `/api/provider-models/validate-and-add` | POST                  | व्यवस्थापन-प्रमाणीकृत, वैकल्पिक कडा-जडान प्रमाणीकरण र एटोमिक अनुकूलन-मोडेल दर्ता; [मोडेल प्रमाणीकरण](../guides/MODEL-VALIDATION.md) हेर्नुहोस् |
+| एन्डपोइन्ट                              | विधि                  | विवरण                                                                                                                                           |
+| --------------------------------------- | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/api/providers`                        | GET/POST              | प्रदायकहरूको सूची हेर्नुहोस् / सिर्जना गर्नुहोस्                                                                                                |
+| `/api/providers/[id]`                   | GET/PUT/DELETE        | प्रदायक व्यवस्थापन गर्नुहोस्                                                                                                                    |
+| `/api/providers/[id]/test`              | POST                  | प्रदायकको जडान परीक्षण गर्नुहोस्                                                                                                                |
+| `/api/providers/[id]/models`            | GET                   | प्रदायकका मोडेलहरूको सूची हेर्नुहोस्                                                                                                            |
+| `/api/providers/validate`               | POST                  | प्रदायक कन्फिग मान्य गर्नुहोस्                                                                                                                  |
+| `/api/providers/bulk`                   | POST                  | एउटै प्रदायकका लागि API कुञ्जीहरू थोकमा थप्नुहोस्                                                                                               |
+| `/api/providers/import`                 | POST                  | पार्स गरिएको CSV/JSON फाइलबाट विविध प्रदायकहरूको सूची आयात गर्नुहोस् (#6836); प्रत्येक पङ्क्तिका आंशिक-विफलता परिणामहरू                         |
+| `/api/provider-nodes*`                  | विभिन्न               | प्रदायक नोड व्यवस्थापन                                                                                                                          |
+| `/api/provider-models`                  | GET/POST/PATCH/DELETE | अनुकूलन मोडेलहरू (थप्नुहोस्, अद्यावधिक गर्नुहोस्, लुकाउनुहोस्/देखाउनुहोस्, मेटाउनुहोस्)                                                         |
+| `/api/provider-models/validate-and-add` | POST                  | व्यवस्थापन-प्रमाणीकृत, स्वैच्छिक कडा-जडान प्रमाणीकरण र परमाणु अनुकूलन-मोडेल दर्ता; [मोडेल प्रमाणीकरण](../guides/MODEL-VALIDATION.md) हेर्नुहोस् |
+
+अनुकूलन Chat Completions नोडहरूले स्पष्ट reasoning अप्ट-आउटहरूलाई upstream backend अनुरूप बनाउँछन्।
+सफल जडान परीक्षणले `/models` प्रविष्टिले मान्यताप्राप्त `owned_by` मान प्रमाणित गर्ने प्रत्येक ठ्याक्कै मिल्ने
+मोडेल ID का लागि chat-template नियन्त्रणहरू स्वचालित रूपमा चयन गर्छ: `vllm`, `sglang`, वा `llamacpp`।
+पारदर्शी OpenAI-compatible wrapper हरूले मूल मोडेल प्रविष्टिलाई nested `openai` object भित्र सुरक्षित
+राख्न सक्छन्; पहिचानले यस्ता बढीमा तीनवटा envelope पछ्याउँछ। ownership हराएको, अज्ञात भएको वा
+बाझिएको मोडेलहरूले सामान्य OpenAI व्यवहार कायम राख्छन्। पहिचानले विद्यमान catalog अनुरोध पुनः प्रयोग गर्छ,
+कुनै completion token उत्पन्न गर्दैन र connection endpoint परिवर्तन हुँदा अमान्य हुन्छ।
+
+त्यो metadata उपलब्ध नगराउने backend का लागि व्यवहार निश्चित गर्न, विद्यमान आंशिक प्रदायक
+अपडेट API प्रयोग गर्नुहोस्:
+
+```json
+{
+  "providerSpecificData": {
+    "reasoningControl": "chat-template"
+  }
+}
+```
+
+त्यो body लाई `PUT /api/providers/<connection-id>` सँग पठाउनुहोस्। त्यस connection मा `none` को स्पष्ट
+reasoning effort लाई `chat_template_kwargs.thinking=false` र
+`chat_template_kwargs.enable_thinking=false` का रूपमा पठाइन्छ। server-side reasoning नियमले effort
+लागू नगरेसम्म स्पष्ट native template मानहरू नै आधिकारिक रहन्छन्। यो setting केवल अनुकूलन
+OpenAI-compatible connection ले Chat Completions body dispatch गर्दा मात्र लागू हुन्छ; Responses अनुरोधहरू
+र साधारण प्रदायकहरूले आफ्नो native request shape कायम राख्छन्। सामान्य OpenAI `reasoning_effort`
+passthrough बाध्य पार्न `reasoningControl` लाई `openai` मा सेट गर्नुहोस्, वा स्वचालित पहिचान प्रयोग गर्न
+यसलाई नदिनुहोस्/`null` मा सेट गर्नुहोस्।
+
+Claude Code auto-mode classifier अनुरोधहरूमा कुनै स्पष्ट reasoning नियन्त्रण नभएमा तिनले पूर्वनिर्धारित रूपमा
+native thinking लाई निष्क्रिय गर्छन्। पहिचानले मोडेलका नाम वा completion सीमा होइन, Claude-format
+अनुरोधहरूमा रहेको classifier को system marker प्रयोग गर्छ। स्पष्ट body नियन्त्रणहरू, समर्थित effort/thinking
+header हरू, routing नियमहरू र resolve गरिएको model effort ले आफ्नो विद्यमान प्राथमिकता कायम राख्छन्। दुवै
+classifier चरणहरूले आफ्ना prompt, completion सीमा, stop sequence र वास्तविक upstream permission
+verdict कायम राख्छन्; दोस्रो चरणले अझै पनि अनुरोध गरिएको देखिने reasoning लाई साधारण text का रूपमा
+उत्पादन गर्न सक्छ।
 
 ### OAuth प्रवाहहरू
 
@@ -760,118 +816,118 @@ X-OmniRoute-No-Cache: true
 
 ### प्रयोग र विश्लेषण
 
-| Endpoint                         | Method          | Description                                                                                                                                                                                                                                                                                                            |
-| -------------------------------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/api/usage/history`             | GET             | प्रयोग इतिहास                                                                                                                                                                                                                                                                                                          |
-| `/api/usage/logs`                | GET             | प्रयोग लगहरू                                                                                                                                                                                                                                                                                                           |
-| `/api/usage/request-logs`        | GET             | अनुरोध-स्तरीय लगहरू                                                                                                                                                                                                                                                                                                    |
-| `/api/usage/[connectionId]`      | GET             | प्रत्येक जडानको प्रयोग                                                                                                                                                                                                                                                                                                 |
-| `/api/usage/token-limits`        | GET/POST/DELETE | प्रत्येक API कुञ्जीका लागि टोकन-सीमा बजेटहरू                                                                                                                                                                                                                                                                           |
-| `/api/usage/model-latency-stats` | GET             | प्रत्येक प्रदायक/मोडेलको गतिशील विलम्बता समष्टि (औसत/p50/p95/p99, सफलता दर); फिल्टरहरू: `windowHours`/`minSamples`/`maxRows`/`provider`/`model` (#6873)                                                                                                                                                                |
-| `/api/usage/cache-health`        | GET             | `call_logs` मा आधारित प्रम्प्ट-क्यासको स्वास्थ्य सारांश — लेखन/पठन अनुपात, p50/p90/p99 लेखन-आकार वितरण, उच्च-लेखन सान्द्रता, प्रत्येक मोडेलअनुसार विभाजन, र `healthy`/`degraded`/`thrash`/`no-data` निष्कर्ष; क्वेरी प्यारामिटरहरू `range` (`1h`\|`24h`\|`7d`\|`30d`, पूर्वनिर्धारित `24h`) र वैकल्पिक `model` (#8827) |
+| एन्डपोइन्ट                       | विधि            | विवरण                                                                                                                                                                                                                                                                                                    |
+| -------------------------------- | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/api/usage/history`             | GET             | प्रयोग इतिहास                                                                                                                                                                                                                                                                                            |
+| `/api/usage/logs`                | GET             | प्रयोग लगहरू                                                                                                                                                                                                                                                                                             |
+| `/api/usage/request-logs`        | GET             | अनुरोध-स्तरीय लगहरू                                                                                                                                                                                                                                                                                      |
+| `/api/usage/[connectionId]`      | GET             | प्रति-जडान प्रयोग                                                                                                                                                                                                                                                                                        |
+| `/api/usage/token-limits`        | GET/POST/DELETE | प्रति-API-कुञ्जी टोकन-सीमा बजेटहरू                                                                                                                                                                                                                                                                       |
+| `/api/usage/model-latency-stats` | GET             | प्रदायक/मोडेलअनुसार रोलिङ विलम्बता समग्र तथ्याङ्क (औसत/p50/p95/p99, सफलता दर); फिल्टरहरू: `windowHours`/`minSamples`/`maxRows`/`provider`/`model` (#6873)                                                                                                                                                |
+| `/api/usage/cache-health`        | GET             | `call_logs` मा आधारित प्रम्प्ट-क्यास स्वास्थ्य सारांश — लेखन/पठन अनुपात, p50/p90/p99 लेखन-आकार वितरण, भारी-लेखन एकाग्रता, प्रति-मोडेल विभाजन, र `healthy`/`degraded`/`thrash`/`no-data` निर्णय; क्वेरी प्यारामिटरहरू `range` (`1h`\|`24h`\|`7d`\|`30d`, पूर्वनिर्धारित `24h`) र वैकल्पिक `model` (#8827) |
 
 ### सेटिङहरू
 
-| Endpoint                              | Method        | Description                                                                                                                                                                 |
-| ------------------------------------- | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/api/settings`                       | GET/PUT/PATCH | सामान्य सेटिङहरू                                                                                                                                                            |
-| `/api/settings/proxy`                 | GET/PUT       | नेटवर्क प्रोक्सी कन्फिगरेसन                                                                                                                                                 |
-| `/api/settings/proxy/test`            | POST          | प्रोक्सी जडान परीक्षण गर्नुहोस्                                                                                                                                             |
-| `/api/settings/ip-filter`             | GET/PUT       | IP अनुमति-सूची/रोक-सूची                                                                                                                                                     |
-| `/api/settings/thinking-budget`       | GET/PUT       | सोच/तर्क **अनुरोध** पुनर्लेखन मोड (यथावत् प्रवाह / स्वतः हटाउने / अनुकूलित / अनुकूली)। सङ्कुचनबाट स्वतन्त्र। [THINKING_BUDGET.md](../guides/THINKING_BUDGET.md) हेर्नुहोस्। |
-| `/api/settings/system-prompt`         | GET/PUT       | विश्वव्यापी प्रणाली प्रम्प्ट                                                                                                                                                |
-| `/api/settings/compression`           | GET/PUT       | विश्वव्यापी सङ्कुचन कन्फिगरेसन                                                                                                                                              |
-| `/api/settings/purge-request-history` | POST          | अनुरोध लगका पङ्क्तिहरू र स्थानीय कल-लग कलाकृतिहरू हटाउनुहोस्                                                                                                                |
+| Endpoint                              | Method        | Description                                                                                                                                                                           |
+| ------------------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/api/settings`                       | GET/PUT/PATCH | सामान्य सेटिङहरू                                                                                                                                                                      |
+| `/api/settings/proxy`                 | GET/PUT       | नेटवर्क प्रोक्सी कन्फिगरेसन                                                                                                                                                           |
+| `/api/settings/proxy/test`            | POST          | प्रोक्सी जडान परीक्षण गर्नुहोस्                                                                                                                                                       |
+| `/api/settings/ip-filter`             | GET/PUT       | IP अनुमति सूची/रोक सूची                                                                                                                                                               |
+| `/api/settings/thinking-budget`       | GET/PUT       | सोच/तर्कसम्बन्धी **अनुरोध** पुनर्लेखन मोड (जस्ताको तस्तै / स्वतः हटाउने / अनुकूलित / अनुकूली)। कम्प्रेसनबाट स्वतन्त्र। [THINKING_BUDGET.md](../guides/THINKING_BUDGET.md) हेर्नुहोस्। |
+| `/api/settings/system-prompt`         | GET/PUT       | विश्वव्यापी प्रणाली प्रम्प्ट                                                                                                                                                          |
+| `/api/settings/compression`           | GET/PUT       | विश्वव्यापी कम्प्रेसन कन्फिगरेसन                                                                                                                                                      |
+| `/api/settings/purge-request-history` | POST          | अनुरोध लगका पङ्क्तिहरू र स्थानीय कल-लग आर्टिफ्याक्टहरू खाली गर्नुहोस्                                                                                                                 |
 
-### सन्दर्भ र सङ्कुचन
+### सन्दर्भ र कम्प्रेसन
 
-| Endpoint                               | विधि           | विवरण                                                                  |
-| -------------------------------------- | -------------- | ---------------------------------------------------------------------- |
-| `/api/compression/preview`             | POST           | off/lite/standard/aggressive/ultra/RTK/stacked कम्प्रेसनको पूर्वावलोकन |
-| `/api/compression/language-packs`      | GET            | उपलब्ध Caveman भाषा प्याकहरूको सूची                                    |
-| `/api/compression/rules`               | GET            | Caveman नियम मेटाडेटाको सूची                                           |
-| `/api/context/caveman/config`          | GET/PUT        | Caveman-विशिष्ट सेटिङहरूको उपनाम                                       |
-| `/api/context/rtk/config`              | GET/PUT        | अनुकूलन फिल्टर र कच्चा आउटपुट अवधारणसहितका RTK-विशिष्ट सेटिङहरू        |
-| `/api/context/rtk/filters`             | GET            | RTK फिल्टर क्याटलग र अनुकूलन फिल्टर निदान                              |
-| `/api/context/rtk/test`                | POST           | टेक्स्ट पेलोडमा RTK पूर्वावलोकन/परीक्षण चलाउनुहोस्                     |
-| `/api/context/rtk/raw-output/[id]`     | GET            | पोइन्टर id मार्फत अवधारित सम्पादित कच्चा आउटपुट पढ्नुहोस्              |
-| `/api/context/combos`                  | GET/POST       | कम्प्रेसन कम्बोहरूको सूची/सिर्जना                                      |
-| `/api/context/combos/[id]`             | GET/PUT/DELETE | कम्प्रेसन कम्बोको विवरण/अद्यावधिक/मेटाइ                                |
-| `/api/context/combos/[id]/assignments` | GET/PUT        | राउटिङ कम्बोहरूमा कम्प्रेसन कम्बोहरू तोक्नुहोस्                        |
-| `/api/context/analytics`               | GET            | कम्प्रेसन विश्लेषिकीको उपनाम                                           |
+| Endpoint                               | Method         | Description                                                                |
+| -------------------------------------- | -------------- | -------------------------------------------------------------------------- |
+| `/api/compression/preview`             | POST           | बन्द/हल्का/मानक/आक्रामक/अल्ट्रा/RTK/स्ट्याक गरिएको कम्प्रेसनको पूर्वावलोकन |
+| `/api/compression/language-packs`      | GET            | उपलब्ध Caveman भाषा प्याकहरूको सूची                                        |
+| `/api/compression/rules`               | GET            | Caveman नियम मेटाडेटाको सूची                                               |
+| `/api/context/caveman/config`          | GET/PUT        | Caveman-विशिष्ट सेटिङ उपनाम                                                |
+| `/api/context/rtk/config`              | GET/PUT        | अनुकूलित फिल्टर र कच्चा आउटपुट अवधारणसहितका RTK-विशिष्ट सेटिङहरू           |
+| `/api/context/rtk/filters`             | GET            | RTK फिल्टर सूची र अनुकूलित-फिल्टर निदान                                    |
+| `/api/context/rtk/test`                | POST           | टेक्स्ट पेलोडमा RTK पूर्वावलोकन/परीक्षण चलाउनुहोस्                         |
+| `/api/context/rtk/raw-output/[id]`     | GET            | पोइन्टर id मार्फत अवधारित संशोधित कच्चा आउटपुट पढ्नुहोस्                   |
+| `/api/context/combos`                  | GET/POST       | कम्प्रेसन कम्बो सूची/सिर्जना                                               |
+| `/api/context/combos/[id]`             | GET/PUT/DELETE | कम्प्रेसन कम्बो विवरण/अद्यावधिक/मेटाइ                                      |
+| `/api/context/combos/[id]/assignments` | GET/PUT        | राउटिङ कम्बोहरूमा कम्प्रेसन कम्बोहरू तोक्नुहोस्                            |
+| `/api/context/analytics`               | GET            | कम्प्रेसन विश्लेषण उपनाम                                                   |
 
 ### अनुगमन
 
-| Endpoint                             | विधि       | विवरण                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Endpoint                             | Method     | Description                                                                                                                                                                                                                                                                                                                                                                                               |
 | ------------------------------------ | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `/api/sessions`                      | GET        | सक्रिय सत्र ट्र्याकिङ                                                                                                                                                                                                                                                                                                                                                                                     |
 | `/api/rate-limits`                   | GET        | प्रत्येक खाताका दर सीमाहरू                                                                                                                                                                                                                                                                                                                                                                                |
 | `/api/monitoring/health`             | GET        | स्वास्थ्य जाँच + प्रदायक सारांश (`catalogCount`, `configuredCount`, `activeCount`, `monitoredCount`)। व्यवस्थापन दृश्यमा `credentialHealth` समावेश हुन्छ: प्रोब-क्यास स्केलरहरू, `failed>0` हुँदा `failedConnections`, र `staleDbNonOkCount` (SQLite को स्थायी `test_status`, गेज होइन)। [MONITORING_GUIDE.md](../ops/MONITORING_GUIDE.md#credentialhealth-probe-cache-vs-sqlite-test_status) हेर्नुहोस्। |
-| `/api/cache/stats`                   | GET/DELETE | क्यास तथ्याङ्क / खाली गर्नुहोस्                                                                                                                                                                                                                                                                                                                                                                           |
-| `/api/modality-bridge/stats`         | GET        | इन-मेमोरी `attempts`, सफलताहरू/`bridged`, विफलताहरू, क्यास हिटहरू, `totalLatencyMs`, `latencySamples`, नमुना-हरमा आधारित `averageLatencyMs`, र अन्तिम प्रयोग समय (पुनः सुरु गर्दा रिसेट हुन्छ; व्यवस्थापन प्रमाणीकरण)                                                                                                                                                                                     |
+| `/api/cache/stats`                   | GET/DELETE | क्यास तथ्याङ्क / खाली गर्ने                                                                                                                                                                                                                                                                                                                                                                               |
+| `/api/modality-bridge/stats`         | GET        | इन-मेमोरी `attempts`, सफलताहरू/`bridged`, विफलताहरू, क्यास हिटहरू, `totalLatencyMs`, `latencySamples`, नमुना-आधारित `averageLatencyMs`, र अन्तिम प्रयोगको समय (पुनः सुरु गर्दा रिसेट हुन्छ; व्यवस्थापन प्रमाणीकरण)                                                                                                                                                                                        |
 | `/api/modality-bridge/video/runtime` | GET        | व्यवस्थापन प्रमाणीकरण/प्रोबअघि कडा विश्वसनीय-लुपब्याक जाँच; शुद्धीकृत FFmpeg/ffprobe उपलब्धता र संस्करणहरू (भण्डारण नगर्ने)                                                                                                                                                                                                                                                                               |
-| `/api/modality-bridge/video/extract` | POST       | आन्तरिक प्रमाणीकरण गरिएको विश्वसनीय-लुपब्याक बाइट ब्रोकर; 50 MiB इनपुट, सीमित क्यु/32 MiB आउटपुट, `503` क्षमता, `499` विच्छेदन, `504` समयसीमा; सार्वजनिक अपलोड API होइन                                                                                                                                                                                                                                   |
+| `/api/modality-bridge/video/extract` | POST       | आन्तरिक प्रमाणित विश्वसनीय-लुपब्याक बाइट ब्रोकर; 50 MiB इनपुट, सीमित क्यु/32 MiB आउटपुट, `503` क्षमता, `499` विच्छेद, `504` समयसीमा; यो सार्वजनिक अपलोड API होइन                                                                                                                                                                                                                                          |
 
 ### ब्याकअप र निर्यात/आयात
 
-| एन्डपोइन्ट                  | विधि | विवरण                                                 |
-| --------------------------- | ---- | ----------------------------------------------------- |
-| `/api/db-backups`           | GET  | उपलब्ध ब्याकअपहरूको सूची                              |
-| `/api/db-backups`           | PUT  | म्यानुअल ब्याकअप सिर्जना गर्ने                        |
-| `/api/db-backups`           | POST | निर्दिष्ट ब्याकअपबाट पुनर्स्थापना गर्ने               |
-| `/api/db-backups/export`    | GET  | डेटाबेसलाई .sqlite फाइलका रूपमा डाउनलोड गर्ने         |
-| `/api/db-backups/import`    | POST | डेटाबेस प्रतिस्थापन गर्न .sqlite फाइल अपलोड गर्ने     |
-| `/api/db-backups/exportAll` | GET  | पूर्ण ब्याकअपलाई .tar.gz अभिलेखका रूपमा डाउनलोड गर्ने |
+| Endpoint                    | Method | Description                                           |
+| --------------------------- | ------ | ----------------------------------------------------- |
+| `/api/db-backups`           | GET    | उपलब्ध ब्याकअपहरूको सूची                              |
+| `/api/db-backups`           | PUT    | म्यानुअल ब्याकअप सिर्जना गर्ने                        |
+| `/api/db-backups`           | POST   | निर्दिष्ट ब्याकअपबाट पुनर्स्थापना गर्ने               |
+| `/api/db-backups/export`    | GET    | डेटाबेसलाई .sqlite फाइलका रूपमा डाउनलोड गर्ने         |
+| `/api/db-backups/import`    | POST   | डेटाबेस प्रतिस्थापन गर्न .sqlite फाइल अपलोड गर्ने     |
+| `/api/db-backups/exportAll` | GET    | पूर्ण ब्याकअपलाई .tar.gz अभिलेखका रूपमा डाउनलोड गर्ने |
 
-### क्लाउड सिंक
+### क्लाउड सिङ्क
 
-| एन्डपोइन्ट             | विधि    | विवरण                  |
-| ---------------------- | ------- | ---------------------- |
-| `/api/sync/cloud`      | विभिन्न | क्लाउड सिंक सञ्चालनहरू |
-| `/api/sync/initialize` | POST    | सिंक प्रारम्भ गर्ने    |
-| `/api/cloud/*`         | विभिन्न | क्लाउड व्यवस्थापन      |
+| Endpoint               | Method  | Description             |
+| ---------------------- | ------- | ----------------------- |
+| `/api/sync/cloud`      | Various | क्लाउड सिङ्क सञ्चालनहरू |
+| `/api/sync/initialize` | POST    | सिङ्क प्रारम्भ गर्ने    |
+| `/api/cloud/*`         | Various | क्लाउड व्यवस्थापन       |
 
 ### टनेलहरू
 
-| एन्डपोइन्ट                 | विधि | विवरण                                                                    |
-| -------------------------- | ---- | ------------------------------------------------------------------------ |
-| `/api/tunnels/cloudflared` | GET  | ड्यासबोर्डका लागि Cloudflare Quick Tunnel को स्थापना/रनटाइम स्थिति पढ्ने |
-| `/api/tunnels/cloudflared` | POST | Cloudflare Quick Tunnel सक्षम वा अक्षम गर्ने (`action=enable/disable`)   |
-| `/api/tunnels/ngrok`       | GET  | ड्यासबोर्डका लागि ngrok Tunnel को रनटाइम स्थिति पढ्ने                    |
-| `/api/tunnels/ngrok`       | POST | ngrok Tunnel सक्षम वा अक्षम गर्ने (`action=enable/disable`)              |
+| Endpoint                   | Method | Description                                                              |
+| -------------------------- | ------ | ------------------------------------------------------------------------ |
+| `/api/tunnels/cloudflared` | GET    | ड्यासबोर्डका लागि Cloudflare Quick Tunnel को स्थापना/रनटाइम स्थिति पढ्ने |
+| `/api/tunnels/cloudflared` | POST   | Cloudflare Quick Tunnel सक्षम वा असक्षम गर्ने (`action=enable/disable`)  |
+| `/api/tunnels/ngrok`       | GET    | ड्यासबोर्डका लागि ngrok Tunnel को रनटाइम स्थिति पढ्ने                    |
+| `/api/tunnels/ngrok`       | POST   | ngrok Tunnel सक्षम वा असक्षम गर्ने (`action=enable/disable`)             |
 
 ### CLI उपकरणहरू
 
-| एन्डपोइन्ट                         | विधि | विवरण               |
-| ---------------------------------- | ---- | ------------------- |
-| `/api/cli-tools/claude-settings`   | GET  | Claude CLI स्थिति   |
-| `/api/cli-tools/codex-settings`    | GET  | Codex CLI स्थिति    |
-| `/api/cli-tools/droid-settings`    | GET  | Droid CLI स्थिति    |
-| `/api/cli-tools/openclaw-settings` | GET  | OpenClaw CLI स्थिति |
-| `/api/cli-tools/runtime/[toolId]`  | GET  | सामान्य CLI रनटाइम  |
+| एन्डपोइन्ट                         | विधि | विवरण                  |
+| ---------------------------------- | ---- | ---------------------- |
+| `/api/cli-tools/claude-settings`   | GET  | Claude CLI को स्थिति   |
+| `/api/cli-tools/codex-settings`    | GET  | Codex CLI को स्थिति    |
+| `/api/cli-tools/droid-settings`    | GET  | Droid CLI को स्थिति    |
+| `/api/cli-tools/openclaw-settings` | GET  | OpenClaw CLI को स्थिति |
+| `/api/cli-tools/runtime/[toolId]`  | GET  | सामान्य CLI रनटाइम     |
 
 CLI प्रतिक्रियाहरूमा यी समावेश हुन्छन्: `installed`, `runnable`, `command`, `commandPath`, `runtimeMode`, `reason`।
 
 ### ACP एजेन्टहरू
 
-| एन्डपोइन्ट        | विधि   | विवरण                                                                   |
-| ----------------- | ------ | ----------------------------------------------------------------------- |
-| `/api/acp/agents` | GET    | स्थितिसहित पत्ता लागेका सबै एजेन्टहरूको सूची (अन्तर्निर्मित + अनुकूलित) |
-| `/api/acp/agents` | POST   | अनुकूलित एजेन्ट थप्ने वा पहिचान क्यास ताजा गर्ने                        |
-| `/api/acp/agents` | DELETE | `id` क्वेरी प्यारामिटरद्वारा अनुकूलित एजेन्ट हटाउने                     |
+| एन्डपोइन्ट        | विधि   | विवरण                                                                    |
+| ----------------- | ------ | ------------------------------------------------------------------------ |
+| `/api/acp/agents` | GET    | स्थिति सहित पत्ता लागेका सबै एजेन्टहरूको सूची (अन्तर्निर्मित + अनुकूलित) |
+| `/api/acp/agents` | POST   | अनुकूलित एजेन्ट थप्ने वा पत्ता लगाउने क्यास रिफ्रेस गर्ने                |
+| `/api/acp/agents` | DELETE | `id` क्वेरी प्यारामिटरद्वारा अनुकूलित एजेन्ट हटाउने                      |
 
 GET प्रतिक्रियामा `agents[]` (id, name, binary, version, installed, protocol, isCustom) र `summary` (total, installed, notFound, builtIn, custom) समावेश हुन्छन्।
 
 ### लचिलोपन र दर सीमाहरू
 
-| एन्डपोइन्ट                        | विधि      | विवरण                                                                                     |
-| --------------------------------- | --------- | ----------------------------------------------------------------------------------------- |
-| `/api/resilience`                 | GET/PATCH | अनुरोध पङ्क्ति, जडान कूलडाउन, प्रदायक ब्रेकर र प्रतीक्षा सेटिङहरू प्राप्त/अद्यावधिक गर्ने |
-| `/api/resilience/reset`           | POST      | प्रदायक सर्किट ब्रेकरहरू रिसेट गर्ने                                                      |
-| `/api/resilience/model-cooldowns` | GET       | बाँकी समयअनुसार क्रमबद्ध सक्रिय प्रति-(प्रदायक, जडान, मोडेल) लकआउटहरूको सूची              |
-| `/api/resilience/model-cooldowns` | DELETE    | मोडेल लकआउट हटाउने — बडी `{provider, model}` वा सबै हटाउन `{all: true}`                   |
-| `/api/rate-limits`                | GET       | प्रति-खाता दर सीमा स्थिति                                                                 |
-| `/api/rate-limit`                 | GET       | विश्वव्यापी दर सीमा कन्फिगरेसन                                                            |
+| एन्डपोइन्ट                        | विधि      | विवरण                                                                                 |
+| --------------------------------- | --------- | ------------------------------------------------------------------------------------- |
+| `/api/resilience`                 | GET/PATCH | अनुरोध लाम, जडान कूलडाउन, प्रदायक ब्रेकर र प्रतीक्षा सेटिङहरू प्राप्त/अद्यावधिक गर्ने |
+| `/api/resilience/reset`           | POST      | प्रदायक सर्किट ब्रेकरहरू रिसेट गर्ने                                                  |
+| `/api/resilience/model-cooldowns` | GET       | बाँकी समयअनुसार क्रमबद्ध सक्रिय प्रति-(प्रदायक, जडान, मोडेल) लकआउटहरूको सूची          |
+| `/api/resilience/model-cooldowns` | DELETE    | मोडेल लकआउट हटाउने — बडी `{provider, model}` वा सबै हटाउन `{all: true}`               |
+| `/api/rate-limits`                | GET       | प्रति-खाता दर सीमा स्थिति                                                             |
+| `/api/rate-limit`                 | GET       | विश्वव्यापी दर सीमा कन्फिगरेसन                                                        |
 
 > सबै चारवटा `/api/resilience/*` रुटहरूका लागि **व्यवस्थापन प्रमाणीकरण** (`requireManagementAuth`) आवश्यक हुन्छ। प्रदायक ब्रेकर, जडान कूलडाउन र मोडेल लकआउटबीचको पूर्ण विवरणका लागि [लचिलोपन (विस्तारित)](#resilience-extended) हेर्नुहोस्।
 
@@ -889,9 +945,9 @@ GET प्रतिक्रियामा `agents[]` (id, name, binary, versio
 
 ### अनुपालन
 
-| एन्डपोइन्ट                  | विधि | विवरण                      |
-| --------------------------- | ---- | -------------------------- |
-| `/api/compliance/audit-log` | GET  | अनुपालन अडिट लग (अन्तिम N) |
+| एन्डपोइन्ट                  | विधि | विवरण                          |
+| --------------------------- | ---- | ------------------------------ |
+| `/api/compliance/audit-log` | GET  | अनुपालन अडिट लग (अन्तिम N वटा) |
 
 ### v1beta (Gemini-सङ्गत)
 
@@ -900,19 +956,19 @@ GET प्रतिक्रियामा `agents[]` (id, name, binary, versio
 | `/v1beta/models`           | GET  | Gemini ढाँचामा मोडेलहरूको सूची      |
 | `/v1beta/models/{...path}` | POST | Gemini `generateContent` एन्डपोइन्ट |
 
-यी एन्डपोइन्टहरूले नेटिभ Gemini SDK सङ्गतता अपेक्षा गर्ने क्लाइन्टहरूका लागि Gemini को API ढाँचा प्रतिबिम्बित गर्छन्।
+यी एन्डपोइन्टहरूले मूल Gemini SDK सङ्गतता अपेक्षा गर्ने क्लाइन्टहरूका लागि Gemini को API ढाँचालाई प्रतिबिम्बित गर्छन्।
 
 ### आन्तरिक / प्रणाली API हरू
 
-| एन्डपोइन्ट               | विधि | विवरण                                                         |
-| ------------------------ | ---- | ------------------------------------------------------------- |
-| `/api/init`              | GET  | एप्लिकेसन प्रारम्भिकरण जाँच (पहिलो पटक चलाउँदा प्रयोग गरिन्छ) |
-| `/api/tags`              | GET  | Ollama-संगत मोडेल ट्यागहरू (Ollama क्लाइन्टहरूका लागि)        |
-| `/api/restart`           | POST | सहज सर्भर पुनःसुरुआत ट्रिगर गर्छ                              |
-| `/api/shutdown`          | POST | सहज सर्भर बन्द प्रक्रिया ट्रिगर गर्छ                          |
-| `/api/system/env/repair` | POST | OAuth प्रदायकका वातावरण चरहरू मर्मत गर्छ                      |
+| एन्डपोइन्ट               | विधि | विवरण                                                        |
+| ------------------------ | ---- | ------------------------------------------------------------ |
+| `/api/init`              | GET  | अनुप्रयोग प्रारम्भिककरण जाँच (पहिलो पटक चलाउँदा प्रयोग हुने) |
+| `/api/tags`              | GET  | Ollama-सङ्गत मोडेल ट्यागहरू (Ollama क्लाइन्टहरूका लागि)      |
+| `/api/restart`           | POST | सहज सर्भर पुनःसुरुआत ट्रिगर गर्ने                            |
+| `/api/shutdown`          | POST | सहज सर्भर बन्द प्रक्रिया ट्रिगर गर्ने                        |
+| `/api/system/env/repair` | POST | OAuth प्रदायकका वातावरण चरहरू मर्मत गर्ने                    |
 
-> **नोट:** यी एन्डपोइन्टहरू प्रणालीद्वारा आन्तरिक रूपमा वा Ollama क्लाइन्टसँगको अनुकूलताका लागि प्रयोग गरिन्छन्। सामान्यतया अन्तिम प्रयोगकर्ताहरूले तिनलाई कल गर्दैनन्।
+> **नोट:** यी एन्डपोइन्टहरू प्रणालीद्वारा आन्तरिक रूपमा वा Ollama क्लाइन्ट सङ्गतताका लागि प्रयोग गरिन्छन्। सामान्यतया अन्तिम प्रयोगकर्ताहरूले तिनलाई कल गर्दैनन्।
 
 ### OAuth वातावरण मर्मत _(v3.6.1+)_
 
@@ -925,7 +981,7 @@ Content-Type: application/json
 }
 ```
 
-विशिष्ट प्रदायकका लागि छुटेका वा बिग्रिएका OAuth वातावरण चरहरू मर्मत गर्छ। यसले निम्न परिणाम फर्काउँछ:
+विशिष्ट प्रदायकका हराएका वा बिग्रिएका OAuth वातावरण चरहरू मर्मत गर्छ। यसले निम्न प्रतिक्रिया फर्काउँछ:
 
 ```json
 {
