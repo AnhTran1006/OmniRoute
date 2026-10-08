@@ -12,7 +12,7 @@ import {
 } from "./transport";
 import { SafeOutboundFetchError } from "@/shared/network/safeOutboundFetch";
 import { normalizeSessionCookieHeader } from "@/lib/providers/webCookieAuth";
-import { normalizeGeminiCookieInput } from "@omniroute/open-sse/utils/geminiCookies.ts";
+import { normalizeGeminiValidationCookie } from "@omniroute/open-sse/utils/geminiCookies.ts";
 import { buildJulesApiUrl } from "@/lib/cloudAgent/julesApi.ts";
 import {
   META_AI_ASBD_ID,
@@ -216,7 +216,15 @@ export async function validateGeminiWebProvider({ apiKey, providerSpecificData =
     }
 
     // Accept full cookie blob, bare value, or browser-export JSON.
-    const cookieHeader = normalizeGeminiCookieInput(raw);
+    // #15387: reject credentials without a __Secure-1PSID cookie before any network call.
+    const cookieHeader = normalizeGeminiValidationCookie(raw);
+    if (!cookieHeader) {
+      return {
+        valid: false,
+        error:
+          "No __Secure-1PSID cookie found — paste it from gemini.google.com DevTools → Cookies",
+      };
+    }
 
     const response = await validationRead("https://gemini.google.com/app", {
       headers: applyCustomUserAgent(
@@ -238,7 +246,17 @@ export async function validateGeminiWebProvider({ apiKey, providerSpecificData =
       };
     }
 
-    // 200/302 = valid, anything < 500 that isn't auth failure is acceptable
+    // #15387: a 200 is only a signed-in session when the page carries the SNlM0e token;
+    // a signed-out landing page also answers 200 for any junk cookie value.
+    if (response.status === 200) {
+      const body = await response.text().catch(() => "");
+      if (/"SNlM0e"\s*:\s*"[^"]+"/.test(body)) return { valid: true, error: null };
+      return {
+        valid: false,
+        error:
+          "Not signed in — the cookie was not accepted by gemini.google.com. Re-paste __Secure-1PSID from DevTools → Cookies",
+      };
+    }
     if (response.status < 500) {
       return { valid: true, error: null };
     }
@@ -280,7 +298,15 @@ export async function validateGeminiWebProvider({ apiKey, providerSpecificData =
           warning: "Cookie accepted. Full verification requires browser test on first chat.",
         };
       }
-      return { valid: true, error: null };
+      // #15387: only Google-owned redirect targets are acceptable; anything else is not a
+      // Gemini session signal.
+      if (/^https:\/\/([a-z0-9-]+\.)*google\.com(\/|$)/i.test(location)) {
+        return { valid: true, error: null };
+      }
+      return {
+        valid: false,
+        error: "Unexpected redirect from gemini.google.com — cookie not verified",
+      };
     }
     return toValidationErrorResult(error);
   }
