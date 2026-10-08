@@ -334,11 +334,11 @@ import { loadRulePack } from "omniroute/compression/ruleLoader";
 await loadRulePack("./my-custom-rules/hi/filler.json");
 ```
 
-Or place in a recognized location:
+Or place in the user overlay directory (`$DATA_DIR/compression/rules`, default `~/.omniroute/compression/rules`).
+A user rule with the same `name` as a bundled rule replaces it; new names are appended:
 
 ```
 ~/.omniroute/compression/rules/hi/filler.json  # User-level
-<project>/.compression/rules/hi/filler.json   # Project-level
 ```
 
 ### Best Practices for Language Packs
