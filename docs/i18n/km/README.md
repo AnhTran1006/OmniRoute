@@ -11,9 +11,9 @@
 <br/>
 <br/>
 
-# 🚀 OmniRoute — ច្រកទ្វារ AI ឥតគិតថ្លៃ
+# 🚀 OmniRoute — ច្រកផ្លូវ AI ឥតគិតថ្លៃ
 
-<img src="./docs/diagrams/readme-hero.svg" width="100%" alt="OmniRoute — កុំឈប់សរសេរកូដ។ រាល់ឧបករណ៍ AI → អ្នកផ្តល់សេវា 358 — ឥតគិតថ្លៃជាង 150 — តាមរយៈចំណុចបញ្ចប់តែមួយ។ Claude Code, Codex, Cursor, Cline, Copilot & Antigravity ទៅកាន់ Claude / GPT / Gemini ឥតគិតថ្លៃ ជាមួយនឹងការបម្រុងទុកដោយស្វ័យប្រវត្តិ។ ការបង្ហាប់ RTK + Caveman stacked compression រក្សាទុក 15–95% tokens (ជាមធ្យម ~89%) — មិនដែលប៉ះដែនកំណត់ឡើយ។ អ្នកផ្តល់សេវា AI 358 · កម្រិតឥតគិតថ្លៃជាង 150 · ~1.62 ពាន់លាន tokens ឥតគិតថ្លៃ/ខែ · យុទ្ធសាស្ត្រកំណត់ផ្លូវ 19 · ចាប់ផ្តើមដោយ $0។"/>
+<img src="./docs/diagrams/readme-hero.svg" width="100%" alt="OmniRoute — កុំឈប់សរសេរកូដ។ រាល់ឧបករណ៍ AI → អ្នកផ្តល់សេវា 359 — ឥតគិតថ្លៃ 150+ — តាមរយៈ endpoint តែមួយ។ Claude Code, Codex, Cursor, Cline, Copilot និង Antigravity ទៅកាន់ Claude / GPT / Gemini ឥតគិតថ្លៃ ជាមួយការប្តូរដោយស្វ័យប្រវត្តិនៅពេលបរាជ័យ។ ការបង្ហាប់ជាន់គ្នា RTK + Caveman សន្សំ token បាន 15–95% (ជាមធ្យម ~89%) — មិនប៉ះដែនកំណត់ទៀតឡើយ។ អ្នកផ្តល់សេវា AI 359 · កម្រិតឥតគិតថ្លៃ 150+ · token ឥតគិតថ្លៃ ~1.62B ក្នុងមួយខែ · យុទ្ធសាស្ត្រកំណត់ផ្លូវ 19 · ចាប់ផ្តើមដោយចំណាយ $0។"/>
 
 </div>
 
@@ -214,22 +214,22 @@
 
 <div align="center">
 
-## 🆓 ដំណើរការភ្លាមៗនៅពេលអ្នកដំឡើងវា — គ្មានគន្លឹះ គ្មានការកំណត់រចនាសម្ព័ន្ធ
+## 🆓 ដំណើរការភ្លាមៗនៅពេលអ្នកដំឡើងវា — មិនត្រូវការ key ឬ config
 
 </div>
 
-<img src="./docs/diagrams/works-zero-config.svg" width="100%" alt="ដំណើរការភ្លាមៗនៅពេលអ្នកដំឡើងវា — គ្មានការកំណត់រចនាសម្ព័ន្ធ។ បីជំហាន៖ 1. ដំឡើង — npm i -g omniroute, server ចាប់ផ្ដើមនៅលើ localhost:20128។ 2. ចង្អុលឧបករណ៍របស់អ្នកទៅកាន់ http://localhost:20128/v1 — ឧបករណ៍ណាមួយដែលត្រូវគ្នាជាមួយ OpenAI (Claude Code, Cursor, Cline)។ 3. វាឆ្លើយតប — ហៅ model auto សម្រាប់ការឆ្លើយតបភ្លាមៗ ដោយគ្មាន API key គ្មានការចុះឈ្មោះ គ្មានការកំណត់រចនាសម្ព័ន្ធ។ អ្នកផ្តល់សេវាគ្មានគន្លឹះ OpenCode Free ត្រូវបានភ្ជាប់ជាមុនទៅក្នុង auto combo ដូច្នេះការដំឡើងថ្មីនឹងឆ្លើយតបភ្លាមៗ។"/>
+<img src="./docs/diagrams/works-zero-config.svg" width="100%" alt="ដំណើរការភ្លាមៗនៅពេលអ្នកដំឡើងវា — មិនត្រូវការ config។ បីជំហាន៖ 1. ដំឡើង — npm i -g omniroute, server ចាប់ផ្ដើមនៅលើ localhost:20128។ 2. តម្រង់ tool របស់អ្នកទៅ http://localhost:20128/v1 — tool ណាមួយដែលត្រូវគ្នាជាមួយ OpenAI (Claude Code, Cursor, Cline)។ 3. វាឆ្លើយតប — ហៅ model auto ដើម្បីទទួលបានចម្លើយភ្លាមៗ ដោយមិនត្រូវការ API key មិនបាច់ចុះឈ្មោះ និងមិនបាច់កំណត់រចនាសម្ព័ន្ធ។ provider ដែលមិនត្រូវការ key គឺ OpenCode Free ត្រូវបានភ្ជាប់ជាមុនទៅក្នុងបន្សំ auto ដូច្នេះការដំឡើងថ្មីអាចឆ្លើយតបបានភ្លាមៗដោយមិនត្រូវរៀបចំអ្វីបន្ថែម។"/>
 
 ```bash
-# ការដំឡើងថ្មី គ្មានព័ត៌មានសម្ងាត់ — `auto` ដំណើរការរួចហើយ:
+# ការដំឡើងថ្មី មិនត្រូវការ credential — `auto` ដំណើរការរួចជាស្រេច៖
 curl http://localhost:20128/v1/chat/completions \
   -H "Content-Type: application/json" \
-  -d '{"model":"auto","messages":[{"role":"user","content":"Hello!"}]}'
+  -d '{"model":"auto","messages":[{"role":"user","content":"សួស្តី!"}]}'
 ```
 
-<sub>ចូលចិត្ត backend ឥតគិតថ្លៃជាក់លាក់មួយ? ហៅ `oc/…` (OpenCode Free) ដោយផ្ទាល់។ បន្ទាប់មកប្តូរទៅ `auto` ហើយអនុញ្ញាតឱ្យ OmniRoute ជ្រើសរើស។</sub>
+<sub>ចង់ប្រើ backend ឥតគិតថ្លៃជាក់លាក់មួយមែនទេ? ហៅ `oc/…` (OpenCode Free) ដោយផ្ទាល់។ បន្ទាប់មកប្ដូរទៅ `auto` ហើយទុកឱ្យ OmniRoute ជ្រើសរើស។</sub>
 
-<sub>📦 ចម្លង-បិទភ្ជាប់ស្គ្រីបចាប់ផ្ដើមរហ័សសម្រាប់ **Python, Node.js, PHP, និង cURL** → [`examples/quickstart/`](examples/quickstart/)</sub>
+<sub>📦 script ចាប់ផ្ដើមរហ័សដែលអាចចម្លងនិងបិទភ្ជាប់បាន សម្រាប់ **Python, Node.js, PHP និង cURL** → [`examples/quickstart/`](examples/quickstart/)</sub>
 
 <br/>
 
@@ -239,22 +239,22 @@ curl http://localhost:20128/v1/chat/completions \
 
 </div>
 
-<img src="./docs/diagrams/promise-pillars.svg" width="100%" alt="ការសន្យា — ចំណុចបញ្ចប់មួយ និងអ្នកផ្តល់សេវា 358 នាក់។ ការបម្រុងទុកដោយស្វ័យប្រវត្តិរក្សាការបញ្ជូនបន្តដរាបណាគោលដៅដែលមានសុខភាពល្អផ្សេងទៀតមាន។ សសរស្តម្ភប្រាំមួយ៖ ការបម្រុងទុកប្រកបដោយភាពធន់ទូទាំងអ្នកផ្តល់សេវា 358 នាក់ · សន្សំ token រហូតដល់ 95% លើបន្ទុកការងារដែលមានសិទ្ធិ · $0 ដើម្បីចាប់ផ្តើមជាមួយកម្រិតឥតគិតថ្លៃ 150+ និងអ្នកផ្តល់សេវាឥតគិតថ្លៃជារៀងរហូត 54 នាក់ (recurring/keyless) · ការរួមបញ្ចូល CLI/agent ចំនួន 36 តាមរយៈការកំណត់រចនាសម្ព័ន្ធមួយ · ភាពត្រូវគ្នាជាមួយ OpenAI, Claude, Gemini និង Responses API នៅ /v1 · ការគ្រប់គ្រងផលិតកម្មរួមមាន circuit breakers, TLS stealth, ឧបករណ៍ MCP 110, A2A, memory, guardrails, evals និងការប្រកាសតេស្តឋិតិវន្ត 39,000+ លើឯកសារតេស្តដែលបានតាមដាន 5,100+។"/>
+<img src="./docs/diagrams/promise-pillars.svg" width="100%" alt="ការសន្យា — endpoint មួយ និង provider ចំនួន 359។ fallback ស្វ័យប្រវត្តិបន្ត routing ដរាបណានៅមាន target ផ្សេងទៀតដែលមានស្ថានភាពល្អ។ សសរស្តម្ភប្រាំមួយ៖ fallback ដែលធន់ទ្រាំនៅទូទាំង provider ចំនួន 359 · សន្សំ token រហូតដល់ 95% លើ workload ដែលមានលក្ខណៈសម្បត្តិគ្រប់គ្រាន់ · ចាប់ផ្ដើមពី $0 ជាមួយ free tier ជាង 150 និង provider ឥតគិតថ្លៃជារៀងរហូតចំនួន 54 ដែលប្រើឡើងវិញបាន/មិនត្រូវការ key · integration ជាមួយ CLI/agent ចំនួន 36 តាមរយៈ config តែមួយ · ភាពត្រូវគ្នាជាមួយ OpenAI, Claude, Gemini និង Responses API នៅ /v1 · ការគ្រប់គ្រងសម្រាប់ production រួមមាន circuit breaker, TLS stealth, MCP ជាមួយ tool ចំនួន 110, A2A, memory, guardrail, eval និងសេចក្ដីប្រកាស static test ជាង 39,000 នៅទូទាំង test file ដែលបានតាមដានជាង 5,100។"/>
 
 <br/>
 <br/>
 
 <div align="center">
 
-# 🤔 ហេតុអ្វី OmniRoute?
+# 🤔 ហេតុអ្វីត្រូវប្រើ OmniRoute?
 
 </div>
 
-<img src="./docs/diagrams/why-pain-fix.svg" width="100%" alt="ហេតុអ្វី OmniRoute — បញ្ឈប់ការគ្រប់គ្រងផ្ទាំងគ្រប់គ្រង 10, API key ដែលមិនដំណើរការ និងវិក្កយបត្រដែលមិនបានរំពឹងទុក។ បញ្ហាប្រចាំថ្ងៃដប់ធៀបនឹងដំណោះស្រាយ៖ កូតាផុតកំណត់ដែលមិនបានប្រើ → ធ្វើឱ្យការជាវមានប្រសិទ្ធភាពបំផុត; ដែនកំណត់អត្រាពេលកំពុងសរសេរកូដ → ការបម្រុងទុកដោយស្វ័យប្រវត្តិ 4 កម្រិត (Subscription → API → Cheap → Free); លទ្ធផលឧបករណ៍ដុត token → RTK + ការបង្ហាប់ Caveman (15–95%); APIs ថ្លៃ → ការបញ្ជូនបន្តដែលប្រសើរសម្រាប់ថ្លៃដើម; ឧបករណ៍នីមួយៗមានការដំឡើងផ្ទាល់ខ្លួន → ចំណុចបញ្ចប់មួយ ផ្ទាំងគ្រប់គ្រងមួយ; AI ត្រូវបានបិទ → proxy 3 កម្រិត + TLS stealth; key ដែលមិនដំណើរការ → ភាពធន់ 3 ស្រទាប់ (circuit breakers, key cooldown, model lockout); ក្រុមចែករំលែកការជាវមួយ → key pools ជាមួយកូតាចែករំលែកស្មើៗគ្នា; prompts តាមរយៈ cloud របស់នរណាម្នាក់ → local-first ជាមួយ key ដែលបានអ៊ិនគ្រីប AES-256-GCM; គ្មានការមើលឃើញការចំណាយ → ការវិភាគផ្ទាល់ (ការប្រើប្រាស់, កូតា, ការសន្សំ, p95 latency)។"/>
+<img src="./docs/diagrams/why-pain-fix.svg" width="100%" alt="ហេតុអ្វីត្រូវប្រើ OmniRoute — ឈប់រវល់គ្រប់គ្រង dashboard ចំនួន 10, API key ដែលលែងដំណើរការ និងវិក្កយបត្រដែលកើតឡើងដោយមិនរំពឹងទុក។ បញ្ហាប្រចាំថ្ងៃដប់យ៉ាង និងដំណោះស្រាយ៖ quota ផុតកំណត់ទាំងមិនបានប្រើ → ប្រើ subscription ឱ្យអស់លទ្ធភាព; ជួប rate limit កណ្ដាលពេលសរសេរ code → auto-fallback 4 tier (Subscription → API → Cheap → Free); output របស់ tool ប្រើ token ច្រើន → ការបង្ហាប់ដោយ RTK + Caveman (15–95%); API ថ្លៃ → routing ដែលធ្វើឱ្យថ្លៃដើមមានប្រសិទ្ធភាព; tool នីមួយៗមានការដំឡើងរៀងៗខ្លួន → endpoint មួយ dashboard មួយ; AI ត្រូវបានទប់ស្កាត់ → proxy 3 កម្រិត + TLS stealth; key លែងដំណើរការ → ភាពធន់ទ្រាំ 3 ស្រទាប់ (circuit breaker, key cooldown, model lockout); ក្រុមចែករំលែក subscription មួយ → key pool ជាមួយ quota ដែលបែងចែកដោយស្មើភាព; prompt ឆ្លងកាត់ cloud របស់អ្នកដទៃ → local-first ជាមួយ key ដែលបានអ៊ិនគ្រីបដោយ AES-256-GCM; មិនអាចមើលឃើញការចំណាយ → analytics ផ្ទាល់ (ការប្រើប្រាស់, quota, ការសន្សំ, p95 latency)។"/>
 
 <div align="center">
 
-<img src="./docs/diagrams/tier-cascade.svg" width="100%" alt="លំហូរការស្នើសុំ OmniRoute៖ IDE ឬ CLI របស់អ្នក (Claude Code, Cursor, Cline…) ហៅចំណុចបញ្ចប់ក្នុងស្រុកមួយ (http://localhost:20128/v1); OmniRoute Smart Router (RTK + ការបង្ហាប់ Caveman, យុទ្ធសាស្រ្តបញ្ជូនបន្ត 19, circuit breakers, TLS stealth, MCP, A2A, guardrails) អាចបម្រុងទុកឆ្លងកាត់កម្រិតអ្នកផ្តល់សេវា 4 ខណៈពេលដែលគោលដៅដែលមានសុខភាពល្អនៅតែមាន — កម្រិត 1 ការជាវ, កម្រិត 2 API Key, កម្រិត 3 ថោក និង កម្រិត 4 ឥតគិតថ្លៃ។"/>
+<img src="./docs/diagrams/tier-cascade.svg" width="100%" alt="លំហូរ request របស់ OmniRoute៖ IDE ឬ CLI របស់អ្នក (Claude Code, Cursor, Cline…) ហៅ endpoint local តែមួយ (http://localhost:20128/v1); OmniRoute Smart Router (ការបង្ហាប់ដោយ RTK + Caveman, យុទ្ធសាស្ត្រ routing ចំនួន 19, circuit breaker, TLS stealth, MCP, A2A, guardrail) អាចធ្វើ fallback ឆ្លងកាត់ provider 4 tier ដរាបណានៅមាន target ដែលមានលក្ខណៈសម្បត្តិគ្រប់គ្រាន់ និងមានស្ថានភាពល្អ — Tier 1 Subscription, Tier 2 API Key, Tier 3 Cheap និង Tier 4 Free។"/>
 
 </div>
 
@@ -488,13 +488,13 @@ curl http://localhost:20128/v1/chat/completions \
 
 <div align="center">
 
-## 🏆 អ្វីដែលធ្វើឱ្យ OmniRoute លេចធ្លោ
+## 🏆 អ្វីដែលធ្វើឱ្យ OmniRoute លេចធ្លោខុសពីគេ
 
 </div>
 
-<img src="./docs/diagrams/comparison-table.svg" width="100%" alt="អ្វីដែលធ្វើឱ្យ OmniRoute លេចធ្លោ — រូបថតលក្ខណៈពិសេសចាស់មួយធៀបនឹង 9router, OpenRouter, CLIProxyAPI និង LiteLLM លើសមត្ថភាពចំនួន 13។ OmniRoute: អ្នកផ្តល់សេវា 358, កម្រិតឥតគិតថ្លៃជាង 150+ ដែលបានបង្កើតឡើង, យុទ្ធសាស្ត្រកំណត់ផ្លូវ 19, ការបង្ហាប់ថូខឹន 12-engine, ម៉ាស៊ីនមេ MCP ដែលបានបង្កើតឡើងជាមួយឧបករណ៍ 110, ពិធីការភ្នាក់ងារ A2A, អង្គចងចាំជាប់លាប់, របាំងការពារ, ភ្នាក់ងារពពក, ការលាក់បាំងស្នាមម្រាមដៃ TLS, Desktop/Termux/PWA និង 42 ភាសាក្នុងចំណោមភាសា UI i18n។ OmniRoute ត្រូវបានផ្តល់អាជ្ញាប័ណ្ណ MIT និងអាចបង្ហោះដោយខ្លួនឯងបាន។ សមត្ថភាព និងចំនួនគូប្រជែងអាចផ្លាស់ប្តូរបាន។ សូមមើលវិធីសាស្ត្រដែលបានភ្ជាប់។"/>
+<img src="./docs/diagrams/comparison-table.svg" width="100%" alt="អ្វីដែលធ្វើឱ្យ OmniRoute លេចធ្លោខុសពីគេ — ទិដ្ឋភាពសង្ខេបមុខងារតាមកាលបរិច្ឆេទ ប្រៀបធៀបជាមួយ 9router, OpenRouter, CLIProxyAPI និង LiteLLM លើសមត្ថភាពចំនួន 13។ OmniRoute៖ អ្នកផ្តល់សេវា 359, កម្រិតប្រើប្រាស់ឥតគិតថ្លៃដែលរួមបញ្ចូលស្រាប់ជាង 150, យុទ្ធសាស្ត្របញ្ជូនផ្លូវ 19, ការបង្ហាប់ថូខិនដោយម៉ាស៊ីន 12, ម៉ាស៊ីនមេ MCP ដែលរួមបញ្ចូលស្រាប់ជាមួយឧបករណ៍ 110, ពិធីការភ្នាក់ងារ A2A, អង្គចងចាំអចិន្ត្រៃយ៍, របាំងការពារ, ភ្នាក់ងារក្លោដ, ការលាក់បាំងស្នាមម្រាមដៃ TLS, Desktop/Termux/PWA និងភាសាតំបន់ UI ចំនួន 42។ OmniRoute មានអាជ្ញាបណ្ណ MIT និងអាចបង្ហោះដោយខ្លួនឯងបាន។ សមត្ថភាព និងចំនួនរបស់គូប្រកួតប្រជែងអាចផ្លាស់ប្តូរ សូមមើលវិធីសាស្ត្រដែលបានភ្ជាប់។"/>
 
-<sub>📊 វិធីសាស្ត្រពេញលេញ &amp; លម្អិតតាមលក្ខណៈពិសេស ធៀបនឹង 9router, OpenRouter, CLIProxyAPI &amp; LiteLLM → [`docs/comparison/OMNIROUTE_VS_ALTERNATIVES.md`](docs/comparison/OMNIROUTE_VS_ALTERNATIVES.md)</sub>
+<sub>📊 វិធីសាស្ត្រពេញលេញ &amp; ព័ត៌មានលម្អិតតាមមុខងារនីមួយៗ ប្រៀបធៀបជាមួយ 9router, OpenRouter, CLIProxyAPI &amp; LiteLLM → [`docs/comparison/OMNIROUTE_VS_ALTERNATIVES.md`](docs/comparison/OMNIROUTE_VS_ALTERNATIVES.md)</sub>
 
 <br/>
 
@@ -1256,29 +1256,29 @@ process ដូចគ្នានៅលើ port តែមួយ ដូច្ន�
 <br/>
 <div align="center">
 
-## 🛠️ បច្ចេកវិទ្យាដែលប្រើប្រាស់
+## 🛠️ បច្ចេកវិទ្យាដែលប្រើ
 
 </div>
 
 <table>
   <tr><th align="left">ស្រទាប់</th><th align="left">បច្ចេកវិទ្យា</th></tr>
-  <tr><td nowrap><b>បរិស្ថានដំណើរការ</b></td><td>Node.js 22.x / 24.x LTS — <code>&gt;=22.22.2 &lt;23 || &gt;=24.0.0 &lt;27</code></td></tr>
+  <tr><td nowrap><b>បរិស្ថានប្រតិបត្តិការ</b></td><td>Node.js 22.x / 24.x LTS — <code>&gt;=22.22.2 &lt;23 || &gt;=24.0.0 &lt;27</code></td></tr>
   <tr><td nowrap><b>ភាសា</b></td><td>TypeScript 6.0 — <b>TypeScript 100%</b> នៅទូទាំង <code>src/</code> និង <code>open-sse/</code> (គ្មាន <code>any</code> នៅក្នុងស្នូលចាប់តាំងពី v2.0)</td></tr>
   <tr><td nowrap><b>Framework</b></td><td>Next.js 16 + React 19 + Tailwind CSS 4</td></tr>
-  <tr><td nowrap><b>មូលដ្ឋានទិន្នន័យ</b></td><td>better-sqlite3 (SQLite, ការកត់ត្រាបែប WAL) + LowDB (JSON ចាស់) — ម៉ូឌុលដែន 137, ការធ្វើចំណាកស្រុក 193</td></tr>
-  <tr><td nowrap><b>អង្គចងចាំ</b></td><td>ការស្វែងរកអត្ថបទពេញលេញ SQLite FTS5 + ការបង្កប់វ៉ិចទ័រដែលបានកំណត់បរិមាណជា int8, ការថយចុះដែលមានប្រភេទ</td></tr>
-  <tr><td nowrap><b>Schema</b></td><td>Zod 4 — ការផ្ទៀងផ្ទាត់ I/O របស់ឧបករណ៍ MCP + កិច្ចសន្យា API</td></tr>
+  <tr><td nowrap><b>មូលដ្ឋានទិន្នន័យ</b></td><td>better-sqlite3 (SQLite, ការកត់ត្រាតាម WAL) + LowDB (JSON ចាស់) — ម៉ូឌុលដែន 137, ការផ្ទេរទិន្នន័យ 199</td></tr>
+  <tr><td nowrap><b>អង្គចងចាំ</b></td><td>ការស្វែងរកអត្ថបទពេញលេញ SQLite FTS5 + vector embeddings ដែលបាន quantize ជា int8, ការថយចុះដែលមានប្រភេទ</td></tr>
+  <tr><td nowrap><b>គ្រោងការណ៍</b></td><td>Zod 4 — ការផ្ទៀងផ្ទាត់ I/O របស់ឧបករណ៍ MCP + កិច្ចសន្យា API</td></tr>
   <tr><td nowrap><b>ពិធីការ</b></td><td>MCP (stdio / HTTP / SSE) + A2A v0.3 (JSON-RPC 2.0 + SSE)</td></tr>
-  <tr><td nowrap><b>ការផ្សាយស្ទ្រីម</b></td><td>Server-Sent Events (SSE) + ស្ពាន WebSocket (<code>/v1/ws</code>)</td></tr>
+  <tr><td nowrap><b>ការផ្សាយបន្ត</b></td><td>Server-Sent Events (SSE) + ស្ពាន WebSocket (<code>/v1/ws</code>)</td></tr>
   <tr><td nowrap><b>ការបង្ហាប់</b></td><td>ខ្សែដំណើរការម៉ាស៊ីន 12 — RTK, Caveman, LLMLingua-2 (MobileBERT ONNX), GCF, OmniGlyph</td></tr>
-  <tr><td nowrap><b>ការផ្ទៀងផ្ទាត់អត្តសញ្ញាណ &amp; សុវត្ថិភាព</b></td><td>OAuth 2.0 (PKCE) + JWT + API Keys + ការផ្ទៀងផ្ទាត់អត្តសញ្ញាណ MCP តាមវិសាលភាព · AES-256-GCM សម្រាប់ទិន្នន័យដែលរក្សាទុក · DOMPurify</td></tr>
-  <tr><td nowrap><b>ភាពលាក់លៀម</b></td><td>wreq-js — ការក្លែងស្នាមម្រាមដៃ JA3 / JA4 TLS, ប្រូកស៊ី 3 កម្រិត</td></tr>
-  <tr><td nowrap><b>ភាពធន់</b></td><td>ឧបករណ៍ផ្ដាច់សៀគ្វី, ការពន្យារពេលថយក្រោយអិចស្ប៉ូណង់ស្យែល, ការទប់ស្កាត់ thundering herd, ការស្ដារដោយខ្លួនឯងតាម auto-combo</td></tr>
-  <tr><td nowrap><b>ការកត់ត្រា</b></td><td>pino — កំណត់ហេតុ JSON ដែលមានរចនាសម្ព័ន្ធ ជាមួយបរិបទសំណើ</td></tr>
-  <tr><td nowrap><b>ការធ្វើតេស្ត</b></td><td>កម្មវិធីដំណើរការតេស្ត Node.js + Vitest — <b>សេចក្ដីប្រកាសតេស្តឋិតិវន្ត 39,000+</b> នៅទូទាំងឯកសារតេស្តដែលបានតាមដាន 5,100+ (ឯកតា, សមាហរណកម្ម, E2E, សុវត្ថិភាព, ប្រព័ន្ធអេកូឡូស៊ី)</td></tr>
+  <tr><td nowrap><b>ការផ្ទៀងផ្ទាត់ &amp; សុវត្ថិភាព</b></td><td>OAuth 2.0 (PKCE) + JWT + API Keys + ការផ្ទៀងផ្ទាត់តាមវិសាលភាព MCP · AES-256-GCM សម្រាប់ទិន្នន័យពេលរក្សាទុក · DOMPurify</td></tr>
+  <tr><td nowrap><b>ភាពលាក់លៀម</b></td><td>wreq-js — ការក្លែងបន្លំស្នាមផ្តិត TLS របស់ JA3 / JA4, proxy 3 កម្រិត</td></tr>
+  <tr><td nowrap><b>ភាពធន់</b></td><td>Circuit breaker, exponential backoff, ការទប់ស្កាត់ anti-thundering-herd, ការស្តារដោយខ្លួនឯងតាម auto-combo</td></tr>
+  <tr><td nowrap><b>ការកត់ត្រា</b></td><td>pino — កំណត់ហេតុ JSON ដែលមានរចនាសម្ព័ន្ធជាមួយបរិបទសំណើ</td></tr>
+  <tr><td nowrap><b>ការធ្វើតេស្ត</b></td><td>កម្មវិធីដំណើរការតេស្ត Node.js + Vitest — <b>សេចក្តីប្រកាសតេស្តឋិតិវន្ត 39,000+</b> នៅទូទាំងឯកសារតេស្តដែលបានតាមដាន 5,100+ (ឯកតា, សមាហរណកម្ម, E2E, សុវត្ថិភាព, ប្រព័ន្ធអេកូឡូស៊ី)</td></tr>
   <tr><td nowrap><b>វេទិកា</b></td><td>កុំព្យូទ័រលើតុ (Electron) · Android (Termux) · PWA (កម្មវិធីរុករកណាមួយ)</td></tr>
-  <tr><td nowrap><b>CI/CD</b></td><td>GitHub Actions — បោះផ្សាយទៅ npm និង Docker Hub ដោយស្វ័យប្រវត្តិនៅពេលចេញផ្សាយ</td></tr>
-  <tr><td nowrap><b>តំណភ្ជាប់</b></td><td><a href="https://omniroute.online">គេហទំព័រ</a> · <a href="https://www.npmjs.com/package/omniroute">npm</a> · <a href="https://hub.docker.com/r/diegosouzapw/omniroute">Docker Hub</a></td></tr>
+  <tr><td nowrap><b>CI/CD</b></td><td>GitHub Actions — បោះផ្សាយទៅ npm ដោយស្វ័យប្រវត្តិ + Docker Hub ពេលចេញកំណែថ្មី</td></tr>
+  <tr><td nowrap><b>តំណ</b></td><td><a href="https://omniroute.online">គេហទំព័រ</a> · <a href="https://www.npmjs.com/package/omniroute">npm</a> · <a href="https://hub.docker.com/r/diegosouzapw/omniroute">Docker Hub</a></td></tr>
 </table>
 
 <div align="center">

@@ -13,7 +13,7 @@
 
 # 🚀 OmniRoute — nemokamas DI šliuzas
 
-<img src="./docs/diagrams/readme-hero.svg" width="100%" alt="OmniRoute — niekada nenustokite programuoti. Kiekvienas DI įrankis → 358 paslaugų teikėjai — daugiau nei 150 nemokamų — per vieną galinį tašką. Claude Code, Codex, Cursor, Cline, Copilot ir Antigravity prijungiami prie NEMOKAMŲ Claude / GPT / Gemini su automatiniu atsarginiu perjungimu. Kartu naudojamas RTK + Caveman glaudinimas sutaupo 15–95 % žetonų (vidutiniškai ~89 %) — niekada nepasiekite limitų. 358 DI paslaugų teikėjai · daugiau nei 150 nemokamų planų · ~1,62 mlrd. nemokamų žetonų per mėn. · 19 maršruto parinkimo strategijų · pradėkite už $0."/>
+<img src="./docs/diagrams/readme-hero.svg" width="100%" alt="OmniRoute — niekada nenustokite programuoti. Kiekvienas DI įrankis → 359 paslaugų teikėjai — daugiau nei 150 nemokamų — per vieną prieigos tašką. Claude Code, Codex, Cursor, Cline, Copilot ir Antigravity su NEMOKAMAIS Claude / GPT / Gemini bei automatiniu atsarginiu perjungimu. RTK ir Caveman daugiasluoksnis glaudinimas sutaupo 15–95 % žetonų (vidutiniškai ~89 %) — niekada nepasiekite limitų. 359 DI paslaugų teikėjai · daugiau nei 150 nemokamų planų · ~1,62 mlrd. nemokamų žetonų per mėn. · 19 maršruto parinkimo strategijų · pradėkite už $0."/>
 
 </div>
 
@@ -215,11 +215,11 @@
 
 <div align="center">
 
-## 🆓 Veikia iškart įdiegus — nereikia nei raktų, nei konfigūracijos
+## 🆓 Veikia vos įdiegus — jokių raktų, jokios konfigūracijos
 
 </div>
 
-<img src="./docs/diagrams/works-zero-config.svg" width="100%" alt="Veikia iškart įdiegus — nereikia jokios konfigūracijos. Trys žingsniai: 1. Įdiekite — npm i -g omniroute, serveris paleidžiamas adresu localhost:20128. 2. Nukreipkite savo įrankį į http://localhost:20128/v1 — tinka bet kuris su OpenAI suderinamas įrankis (Claude Code, Cursor, Cline). 3. Jis atsako — iškvieskite modelį auto ir akimirksniu gaukite atsakymą be API rakto, registracijos ar konfigūracijos. Rakto nereikalaujantis teikėjas OpenCode Free yra iš anksto įtrauktas į auto derinį, todėl ką tik įdiegta sistema veikia iškart."/>
+<img src="./docs/diagrams/works-zero-config.svg" width="100%" alt="Veikia vos įdiegus — nereikia jokios konfigūracijos. Trys žingsniai: 1. Įdiekite — npm i -g omniroute, serveris paleidžiamas adresu localhost:20128. 2. Nukreipkite savo įrankį į http://localhost:20128/v1 — tinka bet kuris su OpenAI suderinamas įrankis (Claude Code, Cursor, Cline). 3. Jis atsako — iškvieskite modelį auto ir iškart gaukite atsakymą be API rakto, registracijos ar konfigūravimo. Rakto nereikalaujantis teikėjas OpenCode Free iš anksto įtrauktas į auto derinį, todėl ką tik įdiegta sistema veikia iškart."/>
 
 ```bash
 # Naujas diegimas, jokių prisijungimo duomenų — `auto` jau veikia:
@@ -228,9 +228,9 @@ curl http://localhost:20128/v1/chat/completions \
   -d '{"model":"auto","messages":[{"role":"user","content":"Hello!"}]}'
 ```
 
-<sub>Pageidaujate konkretaus nemokamo teikėjo? Iškvieskite `oc/…` (OpenCode Free) tiesiogiai. Tada pereikite prie `auto` ir leiskite OmniRoute pasirinkti.</sub>
+<sub>Pageidaujate konkretaus nemokamo galinio teikėjo? Tiesiogiai iškvieskite `oc/…` (OpenCode Free). Tada pereikite prie `auto` ir leiskite OmniRoute pasirinkti.</sub>
 
-<sub>📦 Nukopijuojami ir iškart paleidžiami greitosios pradžios scenarijai, skirti **Python, Node.js, PHP ir cURL** → [`examples/quickstart/`](examples/quickstart/)</sub>
+<sub>📦 Paruošti kopijuoti ir įklijuoti greitosios pradžios scenarijai, skirti **Python, Node.js, PHP ir cURL** → [`examples/quickstart/`](examples/quickstart/)</sub>
 
 <br/>
 
@@ -240,7 +240,7 @@ curl http://localhost:20128/v1/chat/completions \
 
 </div>
 
-<img src="./docs/diagrams/promise-pillars.svg" width="100%" alt="Pažadas — viena galinė prieiga ir 358 teikėjai. Automatinis perjungimas tęsia užklausų nukreipimą, kol pasiekiama kita tinkamai veikianti paskirties vieta. Šeši ramsčiai: atsparus perjungimas tarp 358 teikėjų · iki 95 % mažesnis žetonų naudojimas tinkamoms darbo apkrovoms · pradžia už $0 su daugiau nei 150 nemokamų planų ir 54 nuolat nemokamais periodiniais arba rakto nereikalaujančiais teikėjais · 36 CLI ir agentų integracijos naudojant vieną konfigūraciją · OpenAI, Claude, Gemini ir Responses API suderinamumas adresu /v1 · produkcinės aplinkos valdikliai, įskaitant grandinės pertraukiklius, TLS maskavimą, MCP 110 įrankių, A2A, atmintį, apsaugos priemones, vertinimus ir daugiau nei 39 000 statinių testų deklaracijų daugiau nei 5 100 stebimų testų failų."/>
+<img src="./docs/diagrams/promise-pillars.svg" width="100%" alt="Pažadas — vienas galinis taškas ir 359 teikėjai. Automatinis perjungimas po gedimo tęsia užklausų nukreipimą, kol pasiekiamas kitas veikiantis tikslas. Šeši ramsčiai: atsparus perjungimas po gedimo tarp 359 teikėjų · iki 95 % mažesnės žetonų sąnaudos tinkamiems darbo krūviams · pradėkite už $0 su daugiau nei 150 nemokamų planų ir 54 periodiškai atnaujinamais arba raktų nereikalaujančiais visam laikui nemokamais teikėjais · 36 CLI / agentų integracijos naudojant vieną konfigūraciją · suderinamumas su OpenAI, Claude, Gemini ir Responses API adresu /v1 · produkcinės aplinkos valdikliai, įskaitant grandinės pertraukiklius, TLS maskavimą, MCP 110 įrankių, A2A, atmintį, apsaugines ribas, vertinimus ir daugiau nei 39 000 statinių testų deklaracijų daugiau nei 5 100 stebimų testų failų."/>
 
 <br/>
 <br/>
@@ -251,11 +251,11 @@ curl http://localhost:20128/v1/chat/completions \
 
 </div>
 
-<img src="./docs/diagrams/why-pain-fix.svg" width="100%" alt="Kodėl OmniRoute — nebereikia blaškytis tarp 10 valdymo skydelių, neveikiančių API raktų ir netikėtų sąskaitų. Dešimt kasdienių problemų ir jų sprendimų: nepanaudotos kvotos galiojimo laikas baigiasi → maksimaliai išnaudokite prenumeratas; programavimo metu pasiekiami užklausų dažnio apribojimai → 4 lygių automatinis perjungimas (Prenumerata → API → Pigu → Nemokama); įrankių išvestis eikvoja žetonus → RTK + Caveman glaudinimas (15–95 %); brangios API → pagal sąnaudas optimizuotas nukreipimas; kiekvienam įrankiui reikia atskiros sąrankos → viena galinė prieiga, vienas valdymo skydelis; DI blokuojamas → 3 lygių tarpinis serveris + TLS maskavimas; neveikiantys raktai → 3 sluoksnių atsparumas (grandinės pertraukikliai, raktų atvėsinimas, modelio blokavimas); komanda dalijasi viena prenumerata → raktų telkiniai su sąžiningai paskirstytomis kvotomis; užklausos perduodamos per svetimą debesiją → pirmenybė vietiniam veikimui, naudojant AES-256-GCM užšifruotus raktus; nėra išlaidų matomumo → tiesioginė analitika (naudojimas, kvota, sutaupymai, p95 delsa)."/>
+<img src="./docs/diagrams/why-pain-fix.svg" width="100%" alt="Kodėl OmniRoute — nebereikia laviruoti tarp 10 valdymo skydelių, neveikiančių API raktų ir netikėtų sąskaitų. Dešimt kasdienių problemų ir jų sprendimų: nepanaudota kvota baigia galioti → maksimaliai išnaudokite prenumeratas; limitai pasiekiami programuojant → 4 lygių automatinis perjungimas (prenumerata → API → pigu → nemokama); įrankių išvestys eikvoja žetonus → RTK + Caveman glaudinimas (15–95 %); brangios API → pagal kainą optimizuotas nukreipimas; kiekvienam įrankiui reikia atskiros sąrankos → vienas galinis taškas, vienas valdymo skydelis; AI užblokuotas → 3 lygių įgaliotasis serveris + TLS maskavimas; neveikiantys raktai → 3 sluoksnių atsparumas (grandinės pertraukikliai, raktų atvėsinimas, modelio blokavimas); komanda dalijasi viena prenumerata → raktų telkiniai su sąžiningai paskirstytomis kvotomis; užklausos siunčiamos per svetimą debesiją → pirmenybė vietiniam apdorojimui ir AES-256-GCM užšifruoti raktai; nėra išlaidų matomumo → tiesioginė analizė (naudojimas, kvota, sutaupymai, p95 delsa)."/>
 
 <div align="center">
 
-<img src="./docs/diagrams/tier-cascade.svg" width="100%" alt="OmniRoute užklausos eiga: jūsų IDE arba CLI (Claude Code, Cursor, Cline…) kreipiasi į vieną vietinę galinę prieigą (http://localhost:20128/v1); OmniRoute išmanusis maršrutizatorius (RTK + Caveman glaudinimas, 19 nukreipimo strategijų, grandinės pertraukikliai, TLS maskavimas, MCP, A2A, apsaugos priemonės) gali automatiškai persijungti tarp 4 teikėjų lygių, kol lieka tinkama ir tinkamai veikianti paskirties vieta — 1 lygis: prenumerata, 2 lygis: API raktas, 3 lygis: pigu ir 4 lygis: nemokama."/>
+<img src="./docs/diagrams/tier-cascade.svg" width="100%" alt="OmniRoute užklausos eiga: jūsų IDE arba CLI (Claude Code, Cursor, Cline…) kreipiasi į vieną vietinį galinį tašką (http://localhost:20128/v1); OmniRoute išmanusis maršrutizatorius (RTK + Caveman glaudinimas, 19 nukreipimo strategijų, grandinės pertraukikliai, TLS maskavimas, MCP, A2A, apsauginės ribos) gali persijungti tarp 4 teikėjų lygių, kol lieka tinkamas ir veikiantis tikslas — 1 lygis: prenumerata, 2 lygis: API raktas, 3 lygis: pigu ir 4 lygis: nemokama."/>
 
 </div>
 
@@ -489,13 +489,13 @@ Visos **19** strategijų — derinkite jas kiekviename derinio žingsnyje:
 
 <div align="center">
 
-## 🏆 Kuo „OmniRoute“ išsiskiria
+## 🏆 Kuo išsiskiria OmniRoute
 
 </div>
 
-<img src="./docs/diagrams/comparison-table.svg" width="100%" alt="Kuo „OmniRoute“ išsiskiria — tam tikros datos funkcijų palyginimas su „9router“, „OpenRouter“, „CLIProxyAPI“ ir „LiteLLM“ pagal 13 galimybių. „OmniRoute“: 358 teikėjai, daugiau nei 150 integruotų nemokamų planų, 19 maršruto parinkimo strategijų, 12 variklių žetonų glaudinimas, integruotas MCP serveris su 110 įrankių, A2A agentų protokolas, išliekamoji atmintis, apsaugos priemonės, debesijos agentai, TLS kontrolinio atspaudo maskavimas, „Desktop“ / „Termux“ / PWA ir 42 lokalizuotos naudotojo sąsajos kalbos. „OmniRoute“ platinamas pagal MIT licenciją ir gali būti talpinamas savarankiškai. Konkurentų galimybės ir skaičiai gali keistis; žr. pateiktą nuorodą į metodiką."/>
+<img src="./docs/diagrams/comparison-table.svg" width="100%" alt="Kuo išsiskiria OmniRoute — funkcijų palyginimas su 9router, OpenRouter, CLIProxyAPI ir LiteLLM pagal 13 galimybių tam tikru laiko momentu. OmniRoute: 359 paslaugų teikėjai, daugiau nei 150 integruotų nemokamų planų, 19 maršruto parinkimo strategijų, 12 variklių žetonų glaudinimas, integruotas MCP serveris su 110 įrankių, A2A agentų protokolas, išliekamoji atmintis, apsaugos priemonės, debesijos agentai, TLS kontrolinio atspaudo maskavimas, Desktop/Termux/PWA ir 42 lokalizuotos naudotojo sąsajos kalbos. OmniRoute platinamas pagal MIT licenciją ir gali būti talpinamas savarankiškai. Konkurentų galimybės ir jų skaičius gali keistis; žr. susietą metodiką."/>
 
-<sub>📊 Visa metodika ir išsami informacija apie kiekvieną funkciją, palyginti su „9router“, „OpenRouter“, „CLIProxyAPI“ ir „LiteLLM“ → [`docs/comparison/OMNIROUTE_VS_ALTERNATIVES.md`](docs/comparison/OMNIROUTE_VS_ALTERNATIVES.md)</sub>
+<sub>📊 Visa metodika ir išsami informacija apie kiekvieną funkciją, palyginti su 9router, OpenRouter, CLIProxyAPI ir LiteLLM → [`docs/comparison/OMNIROUTE_VS_ALTERNATIVES.md`](docs/comparison/OMNIROUTE_VS_ALTERNATIVES.md)</sub>
 
 <br/>
 
@@ -1279,20 +1279,20 @@ Kanoniniai rodikliai 2026-08-24: **1.029 unikalūs vaizdo įrašai** · **11.132
 <table>
   <tr><th align="left">Sluoksnis</th><th align="left">Technologija</th></tr>
   <tr><td nowrap><b>Vykdymo aplinka</b></td><td>Node.js 22.x / 24.x LTS — <code>&gt;=22.22.2 &lt;23 || &gt;=24.0.0 &lt;27</code></td></tr>
-  <tr><td nowrap><b>Kalba</b></td><td>TypeScript 6.0 — <b>100 % TypeScript</b> aplankuose <code>src/</code> ir <code>open-sse/</code> (nuo v2.0 branduolyje nėra nė vieno <code>any</code>)</td></tr>
+  <tr><td nowrap><b>Kalba</b></td><td>TypeScript 6.0 — <b>100 % TypeScript</b> kataloguose <code>src/</code> ir <code>open-sse/</code> (nuo v2.0 branduolyje nėra nė vieno <code>any</code>)</td></tr>
   <tr><td nowrap><b>Karkasas</b></td><td>Next.js 16 + React 19 + Tailwind CSS 4</td></tr>
-  <tr><td nowrap><b>Duomenų bazė</b></td><td>better-sqlite3 (SQLite, WAL žurnalizavimas) + LowDB (senasis JSON formatas) — 137 domeno moduliai, 193 migracijos</td></tr>
-  <tr><td nowrap><b>Atmintis</b></td><td>SQLite FTS5 viso teksto paieška + int8 kvantuotos vektorinės įterptys, tipizuotas slopinimas</td></tr>
-  <tr><td nowrap><b>Schemos</b></td><td>Zod 4 — MCP įrankių įvesties ir išvesties tikrinimas + API sutartys</td></tr>
+  <tr><td nowrap><b>Duomenų bazė</b></td><td>better-sqlite3 (SQLite, WAL žurnalų rašymas) + LowDB (senesnio formato JSON) — 137 domeno moduliai, 199 migracijos</td></tr>
+  <tr><td nowrap><b>Atmintis</b></td><td>SQLite FTS5 viso teksto paieška + int8 kvantuotos vektorinės įterptys, tipizuotas nykimas</td></tr>
+  <tr><td nowrap><b>Schemos</b></td><td>Zod 4 — MCP įrankių įvesties ir išvesties validavimas + API sutartys</td></tr>
   <tr><td nowrap><b>Protokolai</b></td><td>MCP (stdio / HTTP / SSE) + A2A v0.3 (JSON-RPC 2.0 + SSE)</td></tr>
   <tr><td nowrap><b>Srautinis perdavimas</b></td><td>Server-Sent Events (SSE) + WebSocket tiltas (<code>/v1/ws</code>)</td></tr>
   <tr><td nowrap><b>Glaudinimas</b></td><td>12 variklių konvejeris — RTK, Caveman, LLMLingua-2 (MobileBERT ONNX), GCF, OmniGlyph</td></tr>
-  <tr><td nowrap><b>Autentifikavimas ir saugumas</b></td><td>OAuth 2.0 (PKCE) + JWT + API raktai + aprėptimi pagrįstas MCP autentifikavimas · AES-256-GCM šifravimas saugomiems duomenims · DOMPurify</td></tr>
+  <tr><td nowrap><b>Autentifikavimas ir saugumas</b></td><td>OAuth 2.0 (PKCE) + JWT + API raktai + MCP aprėptimi pagrįstas autentifikavimas · AES-256-GCM duomenims saugojimo metu · DOMPurify</td></tr>
   <tr><td nowrap><b>Maskavimas</b></td><td>wreq-js — JA3 / JA4 TLS kontrolinio atspaudo imitavimas, 3 lygių tarpinis serveris</td></tr>
-  <tr><td nowrap><b>Atsparumas</b></td><td>Grandinės pertraukiklis, eksponentinis delsos didinimas, apsauga nuo užklausų antplūdžio, automatinis kombinacijų atkūrimas</td></tr>
-  <tr><td nowrap><b>Žurnalų rašymas</b></td><td>pino — struktūrizuoti JSON žurnalai su užklausų kontekstu</td></tr>
-  <tr><td nowrap><b>Testavimas</b></td><td>Node.js testų vykdyklė + Vitest — <b>39 000+ statinių testų deklaracijų</b> daugiau nei 5 100 sekamų testų failų (modulių, integraciniai, E2E, saugumo, ekosistemos)</td></tr>
-  <tr><td nowrap><b>Platformos</b></td><td>Darbalaukis (Electron) · Android (Termux) · PWA (bet kuri naršyklė)</td></tr>
+  <tr><td nowrap><b>Atsparumas</b></td><td>Grandinės pertraukiklis, eksponentinis delsos didinimas, apsauga nuo vienalaikių užklausų antplūdžio, automatinis derinių atkūrimas</td></tr>
+  <tr><td nowrap><b>Žurnalų rašymas</b></td><td>pino — struktūrizuoti JSON žurnalai su užklausos kontekstu</td></tr>
+  <tr><td nowrap><b>Testavimas</b></td><td>Node.js testų vykdyklė + Vitest — <b>daugiau nei 39 000 statinių testų deklaracijų</b> daugiau nei 5 100 stebimų testų failų (modulių, integraciniai, E2E, saugumo, ekosistemos)</td></tr>
+  <tr><td nowrap><b>Platformos</b></td><td>Kompiuteriai (Electron) · Android (Termux) · PWA (bet kuri naršyklė)</td></tr>
   <tr><td nowrap><b>CI/CD</b></td><td>GitHub Actions — automatinis publikavimas į npm ir Docker Hub išleidimo metu</td></tr>
   <tr><td nowrap><b>Nuorodos</b></td><td><a href="https://omniroute.online">Svetainė</a> · <a href="https://www.npmjs.com/package/omniroute">npm</a> · <a href="https://hub.docker.com/r/diegosouzapw/omniroute">Docker Hub</a></td></tr>
 </table>
