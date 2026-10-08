@@ -205,7 +205,9 @@ test("shared set size includes live REGISTRY and retired Designer + Felo + Qwen 
   // Unifically (#14182) registers id "unifically" with the same alias — one REGISTRY member
   // (414 -> 415). BeatAPI (#14875) registers id "beatapi" with an identical alias — one more
   // (415 -> 416). Measured, not hand-derived: RESERVED_PROVIDER_PREFIXES.size.
-  assert.equal(RESERVED_PREFIX_COUNT, 416);
+  // ChatPlayground (#12690) registers id "chatplayground" and alias "cpl" — two more
+  // (416 -> 418). Measured: RESERVED_PROVIDER_PREFIXES.size after #12690 and #14875 both landed.
+  assert.equal(RESERVED_PREFIX_COUNT, 418);
 });
 
 test("isReservedProviderPrefix rejects non-string input", () => {
