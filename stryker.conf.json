@@ -42,6 +42,8 @@
   "plugins": ["@stryker-mutator/tap-runner"],
   "tap": {
     "testFiles": [
+      "tests/unit/provider-breaker-combo-probe-slot-consumed-15698.test.ts",
+      "tests/unit/provider-breaker-local-cooldown-refusal-15690.test.ts",
       "tests/unit/claude-passthrough-unsigned-thinking-12917.test.ts",
       "tests/unit/combo-error-code-terminal.test.ts",
       "tests/unit/model-validation-runner.test.ts",
