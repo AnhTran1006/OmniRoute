@@ -684,9 +684,9 @@ export class DefaultExecutor extends BaseExecutor {
     }
 
     // Forward client request metadata headers (from OpenCode or similar clients)
-    // Allowlist-based: only specific x-opencode-* headers and User-Agent are forwarded
+    // Allowlist-based: x-opencode-* headers only; the caller's User-Agent is NOT forwarded (#15632)
     if (clientHeaders) {
-      forwardOpencodeClientHeaders(headers, clientHeaders);
+      forwardOpencodeClientHeaders(headers, clientHeaders, { forwardUserAgent: false });
 
       // #3974: merge the client's negotiated anthropic-beta (allowlisted) into the
       // outbound set. The registry's static ANTHROPIC_BETA_CLAUDE_OAUTH lacks
