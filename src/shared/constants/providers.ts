@@ -1,6 +1,7 @@
 // Re-export service kinds from leaf module (avoids circular dep with providerSchema)
 export type { ServiceKind } from "./serviceKinds";
-export type RiskNoticeVariant = "oauth" | "webCookie" | "deprecated" | "embedded-service";
+export type RiskNoticeVariant =
+  "oauth" | "webCookie" | "deprecated" | "embedded-service" | "official-client-only";
 
 import { NOAUTH_PROVIDERS } from "./providers/noauth";
 export { supportsNoAuthProviderProxy } from "./providers/noauth";

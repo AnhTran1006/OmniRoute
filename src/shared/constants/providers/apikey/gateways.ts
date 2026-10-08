@@ -48,10 +48,10 @@ export const APIKEY_PROVIDERS_GATEWAYS = {
     website: "https://freebuff.com",
     hasFree: true,
     serviceKinds: ["llm"],
-    authHint:
-      "Enter Freebuff / Codebuff Auth Token (obtained via CLI login or automated harvester).",
-    freeNote: "Free Codebuff / Freebuff AI models.",
-    apiHint: "Token is authenticated against Codebuff upstream session pool.",
+    subscriptionRisk: true,
+    riskNoticeVariant: "official-client-only",
+    authHint: "Enter your Freebuff / Codebuff auth token from the CLI login.",
+    freeNote: "Free Freebuff models (official client only); paid API: freebuff.com/account/api.",
     passthroughModels: true,
   },
   "charm-hyper": {
