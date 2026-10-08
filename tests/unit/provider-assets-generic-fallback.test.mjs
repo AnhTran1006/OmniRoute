@@ -112,11 +112,18 @@ const retiredFilenamePattern = new RegExp(
 
 const SKIPPED_DIRECTORY_NAMES = new Set([
   ".cache",
+  ".artifacts",
+  ".build",
   ".next",
+  ".playwright-cli",
+  "_artifacts",
+  "build",
   "coverage",
   "dist",
   "dist-electron",
   "node_modules",
+  "out",
+  "output",
   "playwright-report",
   "test-results",
 ]);
