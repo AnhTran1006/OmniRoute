@@ -59,6 +59,7 @@ import { getPromptQlUsage } from "./usage/promptql.ts";
 import { getHyperAgentUsage } from "./usage/hyperagent.ts";
 import { getGitHubUsage, formatGitHubQuotaSnapshot, inferGitHubPlanName } from "./usage/github.ts";
 import { getCrofUsage } from "./usage/crof.ts";
+import { getClinepassUsage } from "./usage/clinepass.ts";
 import { getNanoGptUsage } from "./usage/nanogpt.ts";
 import { getQoderUsage, parseQoderUserStatusUsage } from "./usage/qoder.ts";
 // Re-exported para o teste qoder-usage-quota (importa parseQoderUserStatusUsage de services/usage).
@@ -194,6 +195,9 @@ export async function getUsageForProvider(
       return await getMiniMaxUsage(apiKey || "", provider);
     case "crof":
       return await getCrofUsage(apiKey || "");
+    case "clinepass":
+      // Dual-auth: OAuth WorkOS token in `accessToken`, or a BYOK key in `apiKey`.
+      return await getClinepassUsage(accessToken, apiKey);
     case "bailian-coding-plan":
       return await getBailianCodingPlanUsage(id || "", apiKey || "", providerSpecificData);
     case "qwen-cloud-token-plan":
@@ -215,9 +219,9 @@ export async function getUsageForProvider(
     case "opencode-zen":
       return await getOpencodeUsage(id || "", apiKey || "");
     case "xiaomi-mimo":
-      return await getXiaomiMimoUsage(id || "");
+      return await getXiaomiMimoUsage(id || "", "xiaomi-mimo", providerSpecificData);
     case "xiaomi-mimo-token-plan":
-      return await getXiaomiMimoUsage(id || "", "xiaomi-mimo-token-plan");
+      return await getXiaomiMimoUsage(id || "", "xiaomi-mimo-token-plan", providerSpecificData);
     case "xai":
       return await getXaiUsage(id || "");
     case "xai-oauth":
