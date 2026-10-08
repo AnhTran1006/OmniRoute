@@ -205,7 +205,19 @@ test("shared set size includes live REGISTRY and retired Designer + Felo + Qwen 
   // Unifically (#14182) registers id "unifically" with the same alias — one REGISTRY member
   // (414 -> 415). BeatAPI (#14875) registers id "beatapi" with an identical alias — one more
   // (415 -> 416). Measured, not hand-derived: RESERVED_PROVIDER_PREFIXES.size.
-  assert.equal(RESERVED_PREFIX_COUNT, 416);
+  // ChatPlayground (#12690) registers id "chatplayground" and alias "cpl" — two more
+  // (416 -> 418). Measured: RESERVED_PROVIDER_PREFIXES.size after #12690 and #14875 both landed.
+  // notrack-web (#12534): registry entry registers its id "notrack-web" + alias "ntw"
+  // (two new members, 418 -> 420). Do not fold this into a generic catalog bump — the
+  // dedicated notrack-web prefix test below is the regression lock for this provider.
+  assert.equal(RESERVED_PREFIX_COUNT, 420);
+});
+
+test("notrack-web registry id and alias stay reserved", () => {
+  assert.equal(RESERVED_PROVIDER_PREFIXES.has("notrack-web"), true);
+  assert.equal(RESERVED_PROVIDER_PREFIXES.has("ntw"), true);
+  assert.equal(isReservedProviderPrefix("notrack-web"), true);
+  assert.equal(isReservedProviderPrefix("ntw"), true);
 });
 
 test("isReservedProviderPrefix rejects non-string input", () => {
