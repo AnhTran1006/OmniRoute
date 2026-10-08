@@ -203,8 +203,9 @@ test("shared set size includes live REGISTRY and retired Designer + Felo + Qwen 
   // origin/release/v3.8.52 already measures 413 (test still 412, inherited).
   // onomeo registers id "onomeo" with the same alias — one REGISTRY member (413 -> 414).
   // Unifically (#14182) registers id "unifically" with the same alias — one REGISTRY member
-  // (414 -> 415).
-  assert.equal(RESERVED_PREFIX_COUNT, 415);
+  // (414 -> 415). BeatAPI (#14875) registers id "beatapi" with an identical alias — one more
+  // (415 -> 416). Measured, not hand-derived: RESERVED_PROVIDER_PREFIXES.size.
+  assert.equal(RESERVED_PREFIX_COUNT, 416);
 });
 
 test("isReservedProviderPrefix rejects non-string input", () => {
