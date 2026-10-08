@@ -8,6 +8,9 @@ import type { AutoComboSpec } from "./virtualFactory";
  */
 export function failClosedAutoConfig(spec?: Pick<AutoComboSpec, "tier">): {
   failClosedWhenEmpty?: true;
+  preserveRungOrder?: true;
 } {
+  // `auto/thrifty`: the pool is rung-ordered; scoring must not reshuffle the rungs.
+  if (spec?.tier === "thrifty") return { preserveRungOrder: true };
   return spec?.tier === "subscription" ? { failClosedWhenEmpty: true } : {};
 }
