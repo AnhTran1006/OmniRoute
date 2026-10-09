@@ -6,7 +6,6 @@ import {
   proxyConfigToUrl,
   proxyUrlForLogs,
 } from "@omniroute/open-sse/utils/proxyDispatcher.ts";
-import { probeEchoTargets } from "@/lib/proxyEchoTarget";
 import { testProxySchema } from "@/shared/validation/schemas";
 import { isValidationFailure, validateBody } from "@/shared/validation/helpers";
 import { createErrorResponse, createErrorResponseFromUnknown } from "@/lib/api/errorResponse";
@@ -14,10 +13,23 @@ import { createErrorResponse, createErrorResponseFromUnknown } from "@/lib/api/e
 import { extractRelayAuth, getProxyById } from "@/lib/db/proxies";
 import { requireManagementAuth } from "@/lib/api/requireManagementAuth";
 import { sanitizeErrorMessage } from "@omniroute/open-sse/utils/error";
-import { buildRelayTestResult } from "./relayTestResult";
+import { buildRelayTestResult, parseEchoIp } from "./relayTestResult";
 import { recordRelayProbe } from "@/lib/db/relayProbeStats";
 
 const BASE_SUPPORTED_PROXY_TYPES = new Set(["http", "https"]);
+const EGRESS_IP_TARGETS = [
+  // Keep these targets identical to scripts/ad-hoc/test_cloudflare_relay.py.
+  // The relay, not this OmniRoute host, must make the outbound connection.
+  { family: "ipv4" as const, url: "https://api.ipify.org" },
+  { family: "ipv6" as const, url: "https://api6.ipify.org" },
+];
+type RelayProbeResult = {
+  family: "ipv4" | "ipv6";
+  statusCode: number;
+  ip: string | null;
+  headers: Record<string, string | string[] | undefined>;
+};
+type ProxyProbeResult = Omit<RelayProbeResult, "headers">;
 
 function getErrorMessage(error: unknown, fallbackMessage: string): string {
   return sanitizeErrorMessage(error) || fallbackMessage;
@@ -37,7 +49,7 @@ function supportedTypesMessage() {
 /**
  * POST /api/settings/proxy/test — test proxy connectivity
  * Body: { proxy: { type, host, port, username?, password? } }
- * Returns: { success, publicIp?, latencyMs?, error? }
+ * Returns: { success, publicIp?, ipv4?, ipv6?, latencyMs?, error? }
  */
 export async function POST(request: Request) {
   const authError = await requireManagementAuth(request);
@@ -107,35 +119,59 @@ export async function POST(request: Request) {
       const controller2 = new AbortController();
       const timeout2 = setTimeout(() => controller2.abort(), 10000);
       try {
-        // Send request to the relay URL with relay headers; relay forwards to ipify
-        const res = await undiciRequest(`${relayUrl}/`, {
-          method: "GET",
-          signal: controller2.signal,
-          headersTimeout: 10000,
-          bodyTimeout: 10000,
-          headers: {
-            "x-relay-target": "https://api64.ipify.org",
-            "x-relay-path": "/?format=json",
-            "x-relay-auth": relayAuth,
-          },
-        });
-        const text = await res.body.text();
-        let parsedIp: { ip?: string } = {};
-        try {
-          parsedIp = JSON.parse(text) as { ip?: string };
-        } catch {}
+        const results = await Promise.allSettled(
+          EGRESS_IP_TARGETS.map(async ({ family, url }) => {
+            const res = await undiciRequest(`${relayUrl}/`, {
+              method: "GET",
+              signal: controller2.signal,
+              headersTimeout: 10000,
+              bodyTimeout: 10000,
+              headers: {
+                "x-relay-target": url,
+                "x-relay-path": "/",
+                "x-relay-auth": relayAuth,
+                "cache-control": "no-cache",
+              },
+            });
+            const text = await res.body.text();
+            return {
+              family,
+              statusCode: res.statusCode,
+              ip: res.statusCode === 200 ? parseEchoIp(text) : null,
+              headers: res.headers,
+            };
+          })
+        );
+        const successful = results
+          .filter(
+            (result): result is PromiseFulfilledResult<RelayProbeResult> =>
+              result.status === "fulfilled" && result.value.statusCode === 200
+          )
+          .map((result) => result.value);
+        const ipv4 = successful.find((result) => result.family === "ipv4")?.ip ?? null;
+        const ipv6 = successful.find((result) => result.family === "ipv6")?.ip ?? null;
+        const firstResponse = results.find(
+          (result): result is PromiseFulfilledResult<RelayProbeResult> =>
+            result.status === "fulfilled"
+        );
+        const statusCode = successful.length > 0 ? 200 : (firstResponse?.value.statusCode ?? 502);
+        const responseHeaders = successful[0]?.headers;
         const relayResult = buildRelayTestResult({
-          statusCode: res.statusCode,
-          publicIp: parsedIp.ip || null,
+          statusCode,
+          publicIp: ipv6 || ipv4,
+          ipv4,
+          ipv6,
           latencyMs: Date.now() - start,
           relayUrl,
           relayAuthPresent: relayAuth.length > 0,
-          relayResponseHeaders: {
-            get: (name: string) => {
-              const value = res.headers[name.toLowerCase()];
-              return value === undefined ? null : String(value);
-            },
-          },
+          relayResponseHeaders: responseHeaders
+            ? {
+                get: (name: string) => {
+                  const value = responseHeaders[name.toLowerCase()];
+                  return value === undefined ? null : String(value);
+                },
+              }
+            : undefined,
         });
         // #5890: track relay probe outcomes so the dashboard can surface a
         // relayTested / relayAlive pulse and flag an unhealthy sidecar backend.
@@ -154,6 +190,9 @@ export async function POST(request: Request) {
         console.warn(`[ProxyTest] relay ${relayHost} request failed: ${message}`);
         return Response.json({
           success: false,
+          publicIp: null,
+          ipv4: null,
+          ipv6: null,
           error: message,
           latencyMs: Date.now() - start,
           proxyUrl: relayUrl,
@@ -219,40 +258,45 @@ export async function POST(request: Request) {
     const dispatcher = createProxyDispatcher(proxyUrl);
 
     try {
-      // #9694: an IPv4-only SOCKS5/SSH tunnel has no route to the IPv6-first
-      // echo target and used to hang here until the deadline, reporting a
-      // healthy proxy as dead. Each target gets its own slice of the budget.
-      const { result: responseText } = await probeEchoTargets(async (url, timeoutMs) => {
-        const controller = new AbortController();
-        const timeout = setTimeout(() => controller.abort(), timeoutMs);
-        try {
-          const result = await undiciRequest(url, {
-            method: "GET",
-            dispatcher,
-            signal: controller.signal,
-            headersTimeout: timeoutMs,
-            bodyTimeout: timeoutMs,
-          });
-          return await result.body.text();
-        } finally {
-          clearTimeout(timeout);
-        }
-      }, 10000);
-      let parsed: { ip?: string };
-      try {
-        const parsedJson = JSON.parse(responseText);
-        if (parsedJson && typeof parsedJson === "object") {
-          parsed = parsedJson as { ip?: string };
-        } else {
-          parsed = { ip: String(parsedJson) };
-        }
-      } catch {
-        parsed = { ip: responseText.trim() };
+      // Probe both address families in parallel so the result shows every
+      // egress family available through the proxy without doubling latency.
+      const results = await Promise.allSettled(
+        EGRESS_IP_TARGETS.map(async ({ family, url }) => {
+          const controller = new AbortController();
+          const timeout = setTimeout(() => controller.abort(), 10000);
+          try {
+            const result = await undiciRequest(url, {
+              method: "GET",
+              dispatcher,
+              signal: controller.signal,
+              headersTimeout: 10000,
+              bodyTimeout: 10000,
+            });
+            return {
+              family,
+              statusCode: result.statusCode,
+              ip: result.statusCode === 200 ? parseEchoIp(await result.body.text()) : null,
+            };
+          } finally {
+            clearTimeout(timeout);
+          }
+        })
+      );
+      const successful = results.filter(
+        (result): result is PromiseFulfilledResult<ProxyProbeResult> =>
+          result.status === "fulfilled" && result.value.statusCode === 200
+      );
+      if (successful.length === 0) {
+        throw new Error("Both IPv4 and IPv6 egress probes failed");
       }
+      const ipv4 = successful.find((result) => result.value.family === "ipv4")?.value.ip ?? null;
+      const ipv6 = successful.find((result) => result.value.family === "ipv6")?.value.ip ?? null;
 
       return Response.json({
         success: true,
-        publicIp: parsed.ip || null,
+        publicIp: ipv6 || ipv4,
+        ipv4,
+        ipv6,
         latencyMs: Date.now() - startTime,
         proxyUrl: publicProxyUrl,
       });
@@ -265,6 +309,9 @@ export async function POST(request: Request) {
       console.warn(`[ProxyTest] ${proxyType} proxy ${publicProxyUrl} failed: ${message}`);
       return Response.json({
         success: false,
+        publicIp: null,
+        ipv4: null,
+        ipv6: null,
         error: message,
         latencyMs: Date.now() - startTime,
         proxyUrl: publicProxyUrl,

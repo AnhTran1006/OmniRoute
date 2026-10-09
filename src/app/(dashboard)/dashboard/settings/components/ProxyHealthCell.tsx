@@ -7,6 +7,8 @@ import type { SweepVerdict } from "@/lib/proxyHealth/sweepVerdict";
 interface TestResult {
   success: boolean;
   publicIp?: string;
+  ipv4?: string | null;
+  ipv6?: string | null;
   latencyMs?: number | null;
   error?: string;
 }
@@ -61,6 +63,8 @@ export function ProxyHealthCell({ testResult, health }: ProxyHealthCellProps) {
       return (
         <div className="flex flex-col gap-0.5">
           <span className="text-emerald-400">{t("testPassed")}</span>
+          {testResult.ipv4 && <span className="text-emerald-400">✓ {testResult.ipv4}</span>}
+          {testResult.ipv6 && <span className="text-emerald-400">✓ {testResult.ipv6}</span>}
           {testResult.latencyMs != null && (
             <span
               className={

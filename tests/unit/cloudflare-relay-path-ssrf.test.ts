@@ -42,6 +42,7 @@ describe("cloudflare relay worker — no string-concat SSRF hole", () => {
       worker.includes("resolved.url"),
       "the Cloudflare worker must fetch the SSRF-validated resolved url"
     );
+    assert.ok(worker.includes('cache: "no-store"'), "Cloudflare relay must bypass upstream caches");
   });
 
   it("keeps the auth check and the private-host guard", () => {

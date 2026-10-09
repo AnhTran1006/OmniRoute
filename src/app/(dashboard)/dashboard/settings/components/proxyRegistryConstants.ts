@@ -28,6 +28,8 @@ export type HealthInfo = {
 export type TestResult = {
   success: boolean;
   publicIp?: string;
+  ipv4?: string | null;
+  ipv6?: string | null;
   latencyMs?: number;
   country?: string;
   error?: string;
