@@ -16,7 +16,9 @@
  *    the validated host. Bound to a LITERAL const name so the hardcoded call
  *    site still resolves when the SWC-minified standalone build mangles the
  *    source function's own name in `.toString()` output (#6149).
- *  - Strips Host + relay control headers before forwarding upstream.
+ *  - Strips Host, relay control headers and client-identity headers
+ *    (CF-Connecting-IP / X-Forwarded-For / cf-ip*) before forwarding upstream,
+ *    so the caller's origin IP is not disclosed to the target.
  *
  * The string template is fed to Cloudflare's PUT /accounts/{id}/workers/scripts/{name}
  * API with main_module=index.js (ESM Workers Modules format).
@@ -31,6 +33,7 @@
 import { randomUUID } from "crypto";
 import { resolveRelayTarget } from "@/app/api/settings/proxy/deno-deploy/route";
 import { isPrivateRelayHostname } from "@/lib/proxyRelay/privateHostname";
+import { sanitizeRelayForwardHeaders } from "@/lib/proxyRelay/relayForwardHeaders";
 
 /**
  * Build the multipart/form-data request body for Cloudflare's Worker
@@ -87,6 +90,8 @@ const resolveRelayTarget = ${resolveRelayTarget.toString()};
 
 const isPrivateHostname = ${isPrivateRelayHostname.toString()};
 
+const sanitizeRelayForwardHeaders = ${sanitizeRelayForwardHeaders.toString()};
+
 async function handleRelay(request) {
   const auth = request.headers.get("x-relay-auth");
   if (auth !== "${relayAuth}") {
@@ -109,14 +114,11 @@ async function handleRelay(request) {
   }
   const relayPath = request.headers.get("x-relay-path") || "/";
   const headers = new Headers(request.headers);
-  [
-    "host", "connection", "content-length", "keep-alive", "proxy-connection",
-    "proxy-authenticate", "proxy-authorization", "transfer-encoding", "te", "trailer", "upgrade",
-    "x-relay-target", "x-relay-path", "x-relay-auth",
-  ].forEach((h) => headers.delete(h));
+  sanitizeRelayForwardHeaders(headers);
   const init = {
     method: request.method,
     headers,
+    cache: "no-store",
   };
   if (request.method !== "GET" && request.method !== "HEAD") {
     init.body = request.body;

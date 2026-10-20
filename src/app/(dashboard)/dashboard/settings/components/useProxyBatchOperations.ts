@@ -12,6 +12,9 @@ interface AutoTestResult {
   port: number;
   alive: boolean;
   latencyMs: number | null;
+  publicIp?: string | null;
+  ipv4?: string | null;
+  ipv6?: string | null;
   error?: string;
 }
 
@@ -21,12 +24,9 @@ export function useProxyBatchOperations(load: () => Promise<void>) {
   const [autoTesting, setAutoTesting] = useState(false);
   const [batchActivating, setBatchActivating] = useState(false);
 
-  const toggleSelectAll = useCallback(
-    (allSelected: boolean, items: Array<{ id: string }>) => {
-      setSelectedIds(allSelected ? new Set() : new Set(items.map((i) => i.id)));
-    },
-    []
-  );
+  const toggleSelectAll = useCallback((allSelected: boolean, items: Array<{ id: string }>) => {
+    setSelectedIds(allSelected ? new Set() : new Set(items.map((i) => i.id)));
+  }, []);
 
   const toggleSelect = useCallback((id: string) => {
     setSelectedIds((prev) => {
@@ -47,8 +47,9 @@ export function useProxyBatchOperations(load: () => Promise<void>) {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ ids: Array.from(selectedIds), force: true }),
         });
-        const data: { error?: { message?: string }; results?: BatchDeleteResult[] } =
-          await res.json().catch(() => ({}));
+        const data: { error?: { message?: string }; results?: BatchDeleteResult[] } = await res
+          .json()
+          .catch(() => ({}));
         if (res.ok) {
           setSelectedIds(new Set());
           await load();
@@ -95,7 +96,21 @@ export function useProxyBatchOperations(load: () => Promise<void>) {
   const handleAutoTestAll = useCallback(
     async (
       setError: (msg: string | null) => void,
-      setTestById: React.Dispatch<React.SetStateAction<Record<string, { success: boolean; publicIp?: string; latencyMs?: number | null; error?: string } | null>>>
+      setTestById: React.Dispatch<
+        React.SetStateAction<
+          Record<
+            string,
+            {
+              success: boolean;
+              publicIp?: string;
+              ipv4?: string | null;
+              ipv6?: string | null;
+              latencyMs?: number | null;
+              error?: string;
+            } | null
+          >
+        >
+      >
     ) => {
       setAutoTesting(true);
       try {
@@ -104,14 +119,27 @@ export function useProxyBatchOperations(load: () => Promise<void>) {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({}),
         });
-        const data: { error?: { message?: string }; results?: AutoTestResult[] } =
-          await res.json().catch(() => ({}));
+        const data: { error?: { message?: string }; results?: AutoTestResult[] } = await res
+          .json()
+          .catch(() => ({}));
         if (res.ok && data?.results) {
-          const newTestResults: Record<string, { success: boolean; publicIp?: string; latencyMs?: number | null; error?: string } | null> = {};
+          const newTestResults: Record<
+            string,
+            {
+              success: boolean;
+              publicIp?: string;
+              ipv4?: string | null;
+              ipv6?: string | null;
+              latencyMs?: number | null;
+              error?: string;
+            } | null
+          > = {};
           for (const r of data.results) {
             newTestResults[r.proxyId] = {
               success: r.alive,
-              publicIp: r.alive ? r.host : undefined,
+              publicIp: r.publicIp ?? undefined,
+              ipv4: r.ipv4,
+              ipv6: r.ipv6,
               latencyMs: r.latencyMs,
               error: r.error,
             };

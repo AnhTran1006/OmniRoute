@@ -10,6 +10,7 @@ import { encrypt } from "@/lib/db/encryption";
 // so they import one source of truth rather than diverging copies.
 import { resolveRelayTarget } from "../deno-deploy/route";
 import { isPrivateRelayHostname } from "@/lib/proxyRelay/privateHostname";
+import { sanitizeRelayForwardHeaders } from "@/lib/proxyRelay/relayForwardHeaders";
 
 const VERCEL_API_BASE = process.env.VERCEL_API_BASE || "https://api.vercel.com";
 const POLL_INTERVAL_MS = 3000;
@@ -25,11 +26,17 @@ function buildRelayFunction(relayAuth: string): string {
   // bound to a LITERAL const name (not a bare declaration) so the hardcoded
   // call site below resolves even when the SWC-minified standalone build mangles
   // the source function's own name in `.toString()` output (#6149).
+  // `sanitizeRelayForwardHeaders` (shared with the Deno worker and the
+  // Cloudflare emitter) strips client-identity headers before forwarding —
+  // otherwise Vercel's `Forwarded` / `X-Vercel-Proxied-For` / `X-Vercel-Ip-*` /
+  // `X-Vercel-Oidc-Token` reach the upstream and leak the caller's origin IP.
   return `export const config = { runtime: "edge" };
 
 const resolveRelayTarget = ${resolveRelayTarget.toString()};
 
 const isPrivateHostname = ${isPrivateRelayHostname.toString()};
+
+const sanitizeRelayForwardHeaders = ${sanitizeRelayForwardHeaders.toString()};
 
 export default async function handler(req) {
   const auth = req.headers.get("x-relay-auth");
@@ -53,16 +60,13 @@ export default async function handler(req) {
     return new Response(resolved.reason, { status: resolved.status });
   }
   const headers = new Headers(req.headers);
-  [
-    "host", "connection", "content-length", "keep-alive", "proxy-connection",
-    "proxy-authenticate", "proxy-authorization", "transfer-encoding", "te", "trailer", "upgrade",
-    "x-relay-target", "x-relay-path", "x-relay-auth",
-  ].forEach(h => headers.delete(h));
+  sanitizeRelayForwardHeaders(headers);
   const upstream = await fetch(resolved.url, {
     method: req.method,
     headers,
     body: req.method !== "GET" && req.method !== "HEAD" ? req.body : undefined,
     duplex: "half",
+    cache: "no-store",
   });
   return new Response(upstream.body, { status: upstream.status, headers: upstream.headers });
 }`;

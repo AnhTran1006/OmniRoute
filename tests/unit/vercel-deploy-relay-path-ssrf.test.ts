@@ -75,6 +75,7 @@ describe("buildRelayFunction — generated Vercel worker has no string-concat SS
       worker.includes("resolved.url"),
       "the Vercel worker must fetch the SSRF-validated resolved url"
     );
+    assert.ok(worker.includes('cache: "no-store"'), "Vercel relay must bypass upstream caches");
   });
 
   it("still ships the edge runtime config marker", () => {

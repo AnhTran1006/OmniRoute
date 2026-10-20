@@ -17,8 +17,6 @@ export type HealthInfo = {
   measured: boolean;
   transportOk: number;
   transportFailures: number;
-  slowAbandoned: number;
-  clientAborted: number;
   upstream4xx: number;
   upstream5xx: number;
   connectionTests: number;
@@ -30,6 +28,8 @@ export type HealthInfo = {
 export type TestResult = {
   success: boolean;
   publicIp?: string;
+  ipv4?: string | null;
+  ipv6?: string | null;
   latencyMs?: number;
   country?: string;
   error?: string;

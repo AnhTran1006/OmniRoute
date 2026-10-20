@@ -4,18 +4,30 @@
 // `success: false` but carried no `error` field, so the dashboard rendered a bare
 // "failed" with no diagnostic and nothing was logged server-side.
 
-// Free-plan edge relays (Vercel / Deno / Cloudflare) cold-start slowly: the first
-// request after idle routinely takes 10-25s, so a 10s budget reported healthy
-// relays as dead. Covers the abort timer and undici's headers/body timeouts.
-export const RELAY_TEST_TIMEOUT_MS = 30_000;
-
 export interface RelayTestResult {
   success: boolean;
   publicIp: string | null;
+  ipv4: string | null;
+  ipv6: string | null;
   latencyMs: number;
   proxyUrl: string;
   error?: string;
   relay?: RelayAwareness;
+}
+
+export function parseEchoIp(body: string): string | null {
+  const trimmed = body.trim();
+  if (!trimmed) return null;
+  try {
+    const parsed: unknown = JSON.parse(trimmed);
+    if (parsed && typeof parsed === "object" && "ip" in parsed) {
+      const ip = (parsed as { ip?: unknown }).ip;
+      return typeof ip === "string" && ip.trim() ? ip.trim() : null;
+    }
+    return typeof parsed === "string" && parsed.trim() ? parsed.trim() : null;
+  } catch {
+    return trimmed;
+  }
 }
 
 // Echoed from the relay response headers so the dashboard can show which
@@ -34,6 +46,8 @@ type HeaderAccessor = { get(name: string): string | null };
 export function buildRelayTestResult(input: {
   statusCode: number;
   publicIp: string | null;
+  ipv4?: string | null;
+  ipv6?: string | null;
   latencyMs: number;
   relayUrl: string;
   relayAuthPresent: boolean;
@@ -41,7 +55,14 @@ export function buildRelayTestResult(input: {
 }): RelayTestResult {
   const { statusCode, publicIp, latencyMs, relayUrl, relayAuthPresent } = input;
   const success = statusCode === 200;
-  const result: RelayTestResult = { success, publicIp, latencyMs, proxyUrl: relayUrl };
+  const result: RelayTestResult = {
+    success,
+    publicIp,
+    ipv4: input.ipv4 ?? null,
+    ipv6: input.ipv6 ?? null,
+    latencyMs,
+    proxyUrl: relayUrl,
+  };
   if (!success) {
     let error = `Relay returned HTTP ${statusCode}`;
     if (statusCode === 401 || statusCode === 403) {
